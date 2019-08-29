@@ -106,6 +106,7 @@ Validamos este prototipo con nuestras colegas y creamos un wireframe de alta fid
 
 8 directories, 17 files
 ```
+.
 
 ### `src/index.html`
 
