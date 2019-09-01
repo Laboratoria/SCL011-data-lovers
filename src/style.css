@@ -1,3 +1,7 @@
 body {
-    
+    background-image: url(https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/fondo.jpg?raw=true);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
    }
