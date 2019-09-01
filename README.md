@@ -30,8 +30,25 @@ Los datos que más le importan en el juego son
 
 ## **3. Test de Usabilidad**
 
-Realizamos un wirframe de baja fidelidad para poder guiarnos en la creación del prototipo de alta fidelidad de la página.
-Validamos este prototipo con nuestras colegas y creamos un wireframe de alta fidelidad el que testeamos con xxxx usuarios con distintos niveles de conocimiento, tanto del tema en cuestion como conocimientos digitales.
+Realizamos un wireframe de baja fidelidad para poder guiarnos en la creación del prototipo de alta fidelidad de la página.
+A continuación se presentan los primeros sketch que realizamos para nuestra página.
+
+![Sketch1](https://github.com/PalomaZelada/SCL011-data-lovers/blob/master/images/sketch.jpg)
+
+
+![Sketch2](https://github.com/PalomaZelada/SCL011-data-lovers/blob/master/images/sketch2.png)
+
+
+Despues de validar este diseño con nuestras compañeras y creamos un wireframe de alta fidelidad el que testeamos con 5 usuarios con distintos niveles de conocimiento, tanto del tema en cuestión como conocimientos digitales. Durante la prueba les entregamos a los usuarios tareas a realizar dentro de la página y con ayuda de la herramienta Loom grabamos sus comentarios.
+La mayoría opinó que la página era fácil de usar y no era confusa, que tenía un diseño llamativo, pero pidieron mejorar algunos aspectos:
+
+- Mejorar la tipografía de la página y los diseños de los titulos
+- Explicar el uso de la página
+- Disminuir el protagonismo de la Pokedex del inicio
+- Que los botones se destaquen 
+
+Entonces tomando en consideración las opiniones de los usuarios que realizaron el testeo decidimos implementar los cambios necesarios para mejorar el uso de la página.
+
 
 ## **4. Consideraciones generales**
 
