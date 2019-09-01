@@ -50,9 +50,20 @@ La mayoría opinó que la página era fácil de usar y no era confusa, que tení
 Entonces tomando en consideración las opiniones de los usuarios que realizaron el testeo decidimos implementar los cambios necesarios para mejorar el uso de la página.
 
 
-## **4. Consideraciones generales**
+## **4. Historias de Usuario**
 
-
+	• Historia de usuario : “¡Yo como jugador de Pokémon Go!, quiero una pagina web para conocer todos los pokemon de Kanto y algunos datos relevantes del juegos”
+➡ Criterios de aceptación: Creamos una web que muestre un buscador (pokedex) y una zona de estadisticas
+	• Historia de usuario : “¡Yo como jugador de Pokémon Go ! , quiero poder ver todos los Pokémon de la región de Kanto para así poder conocerlos o identificar los que no tengo”
+➡ Criterios de aceptación: Creamos en la aplicación web un contenedor en la pantalla principal con todos los Pokémon para que el usuario pueda reconocerlos, identificarlos y acceder a su información inmediatamente.
+	• Historia de usuario : “¡Yo como jugador de Pokémon Go!, quiero ordenar los Pokémon por nombre y por número para así poder encontrarlos fácilmente”
+➡ Criterios de aceptación Creamos en la aplicación Web un selector en la pantalla, con 4 opciones, ordenando por nombres (a-z), números y viceversa, esto permite encontrarlos rápidamente según la opción que se escoja.
+	• Historia de usuario : “¡Yo como jugador de Pokémon Go!, quiero poder filtrar los Pokémon por su tipo para poder ver solo aquellos de mi tipo favorito”
+➡ Criterios de aceptación Creamos en la aplicación Web un selector en la pantalla, con los tipos de pokemon, especificando los 15 tipos que existen en la primera generación.
+	• Historia de usuario : “¡Yo como jugador de Pokémon Go!, quiero poder seleccionar un Pokémon para obtener su información.
+➡ Criterios de aceptación Creamos en la aplicación Web una carta de cada pokemon que al voltearse muestre en pantalla el la información del pokemon solicitado.
+	• Historia de Usuario: "¡¡Yo como jugador de Pokémon Go!, quiero conocer el porcentaje de Pokémon por tipo de huevos para saber en qué huevo puedo conseguir más variedad de pokemon"
+➡ Criterios de aceptación La plataforma debe tener una sección de estadísticas donde exista un selector y el usuario escoja cada huevo para mostrar en una imagen todos los pokemón que aparecen en cada tipo de huevo.
 
 ## **5. Criterios de Aceptación Mínimos del Proyecto**
 
