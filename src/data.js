@@ -31,6 +31,6 @@ function anadir(e) {
  }
 
 
-// // window.onload = example;
+// window.onload = example;
 
 };

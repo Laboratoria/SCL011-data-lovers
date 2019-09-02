@@ -1,10 +1,11 @@
-const RICKANDMORTY = {
+const RICKANDMORTY = {add
   "info": {
     "count": 493,
     "pages": 25,
     "next": "https://rickandmortyapi.com/api/character/?page=2",
     "prev": ""
   },
+
   "results": [{
     "id": 1,
     "name": "Rick Sanchez",
