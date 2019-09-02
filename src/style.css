@@ -1,43 +1,65 @@
 #main-header {
 	background: white;
 	color: black;
-    height: 180px;
-    
+   
+  
+    /* Fuente y color del texto */
 }	
 	#main-header a {
         color: black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Black Ops One', cursive;
 	}
  
+    /* Aca va la direccion de los botones del menu */
 
 nav {
         float: right;
     
     }
-
+ 
+    /* Aca va la distancia entre un bloque y otro */
 nav ul {
             margin: 0;
             padding: 0x;
             list-style: block;
-            padding-right: 100px;
+            padding-right: 0px;
         }
-        
-            nav ul li {
+
+        /* Acá va la altura de los botones */
+            nav ul li { 
                 display: inline-block;
                 line-height: 90px;
             }
-                
+                /* Acá va la distancia de los botones */
                 nav ul li a {
                     display: block;
-                    padding: 0 10px;
+                    padding: 20px 50px;
                     text-decoration: none;
                 }
                 
                     nav ul li a:hover {
                         background: #02B1C8;
                     }
-.backrick {
-    width:108px;
-height:138px;
+ .backrick {
+                        width:100%;
+                    }
+
+ 
+#select-type{
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
-               
+ 
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}               
