@@ -1,1 +1,3 @@
-/* Manejo del DOM */
+const allPokemon = POKEMON.pokemon;
+
+console.log(allPokemon);
