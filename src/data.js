@@ -1,10 +1,16 @@
-/* Manejo de data */
+window.POKEMON = {
+  orderAlphabetic (name)  {
+    let namePokemon = pokemon.name
+console.log(namePokemon);    
+let aToZ = namePokemon.sort
+    console.log(this.orderAlphabetic);
+  }
+  
+ 
+}
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
 
-const example = () => {
-  return 'example';
-};
+// const example = () => {
+//  return 'example';
+//};
 
-window.example = example;
