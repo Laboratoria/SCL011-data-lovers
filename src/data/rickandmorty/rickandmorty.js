@@ -1,4 +1,4 @@
-const RICKANDMORTY = {add
+const RICKANDMORTY = {
   "info": {
     "count": 493,
     "pages": 25,
@@ -9376,3 +9376,4 @@ const RICKANDMORTY = {add
     "created": "2018-05-22T17:51:07.373Z"
   }]
 }
+

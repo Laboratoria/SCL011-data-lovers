@@ -5,10 +5,11 @@
 
 const data = () => {
     //imprimo mi Json en consola para verla y guiarme
-    console.log(RICKANDMORTY.results);
+    // console.log(RICKANDMORTY.results);
 
     //Creo una variable boton y con el querySelector accedo a el valor  
     button = document.querySelector('[type="button"]');
+    console.log(button);
     //Asigno el valor del nombre 
     nuevoItem = RICKANDMORTY.results[0].name;
     //Asino el valor de la imagen
@@ -46,11 +47,5 @@ function anadir(e) {
      }
  }
 
-<<<<<<< HEAD
-
-// window.onload = example;
-
-};
-=======
 window.onload = data;
->>>>>>> 27bd1cd6daea33eb75adc4af440a418a928de6b9
+
