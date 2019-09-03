@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    background-color: #1B2838;
+ }
+ #linksNav, #orderDate{
+    text-align: right;
+ }
+ #linksNav{
+ background-color: #2A475E;
+ padding: 1%;
+ }
+ #textSelect, .links{
+    color: white;
+ }
+ .links{
+    font-size: 20px;
+    padding: 2em;
+ }
+ #filters{
+    text-align: center;
+    padding: 2em 3em;
+ }
+ .btnActive, .btnfilters{
+    border: none;
+    border-radius: 20px;
+    margin-left: 5pt;
+    height: 30px;
+    font-size: 15px;
+ }
+ .btnActive{
+    background-color: #B55123;
+ }
+ .btnfilters{
+    background-color: #FB8637;
+ }
+ .btnfilters:hover{
+    background-color: #C36C2D;
+ }

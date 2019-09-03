@@ -6,14 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+    <div id="root">
+    <header id="titleHeader">
+      <nav id="linksNav">
+              <a target="_blank" class="links" href="https://steamcommunity.com/app/440">Steam Community</a>
+              <a target="_blank" class="links" href="https://help.steampowered.com/es-419/">Steam Support</a>
+              <a target="_blank" class="links" href="https://wiki.teamfortress.com/wiki/Main_Page">TF2 Wiki</a>
+      </nav>
+    </header>
+    <main>
+      <section id="filters">
+          <button class="btnActive">Mostrar Todo</button>
+          <button class="btnfilters">Steam Updates</button>
+          <button class="btnfilters">TF2 Blog</button>
+          <button class="btnfilters">Eurogamer</button>
+          <button class="btnfilters">PC Gamer</button>
+          <button class="btnfilters">RPS</button>
+      </section>
+      <section id="orderDate">
+          <label id="textSelect"><strong>Ordenar por Fecha:</strong></label>
+          <select name="select" id="orderSelect">
+              <option value="">ordenar desde...</option>
+              <option value="">Más recientes</option>
+              <option value="">Más antiguos</option>
+          </select>
+      </section>
+    </main>
+    </div>
     <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
