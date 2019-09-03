@@ -2,7 +2,7 @@
 
 ## **Índice**
 
-* [Preámbulo](#preámbulo)
+* [Contexto](#contexto)
 * [Descripción](#resumen-del-proyecto)
 * [Consideraciones generales](#consideraciones-generales)
 * [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
@@ -15,19 +15,17 @@
 
 ***
 
-## **1. Preámbulo**
+## **1. Contexto**
 
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
+**Steam** es una plataforma de distribución digital de videojuegos desarrollada por Valve Corporation. Fue lanzada en Septiembre del 2003 como una forma para Valve de proveer actualizaciones automáticas a sus juegos, pero eventualmente se expandió para incluir juegos que no son de Valve de distribuidores third-party. Steam ofrece gestión digital de derechos, servidores de emparejamiento, transmisiones de vídeo y servicios de redes sociales. También provee al usuario con la instalación y actualización automática de juegos y características de comunidad tales como grupos y listas de amigos, guardado en la nube, voz en el juego y funcionalidad de chat. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Steam))
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+**Team Fortress 2 *(TF2)*** es un videojuego multijugador de disparos en primera persona desarrollado y publicado por Valve Corporation. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Team_Fortress_2))
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
+Descripción en Steam:
+```
+Nueve clases diferentes ofrecen una amplia variedad de habilidades tácticas y personalidades. Constantemente actualizado con nuevos modos de juego, mapas, equipamiento y, lo que es más importante, ¡sombreros!
+```
+Según estadísticas de Steam, en la actualidad existen más de 43.000 jugadores de TF2 y se encuentra en el lugar número 11 de clasificación por número de jugadores.
 
 ![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
 
@@ -130,10 +128,27 @@ el problema (o problemas) que tiene tu usuario.
 
 ### **5.2 Historias de usuario**
 
-Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition o done_) para cada una.
+En base a nuestras entrevistas y primer testeo de usuario, hicimos 3 historias de usuario que irían en función de responder los requerimientos del usuario.
+
+#### **Historia 1**
+```
+Yo como persona apasionada a los videojuegos quiero acceder de una manera más sencilla a la información dependiendo de mis intereses en el juego.
+```
+Esta historia responde a la necesidad de filtros
+
+
+#### **Historia 2**
+```
+Yo como persona apasionada a los videojuegos quiero saber cada cuánto hay actualizaciones y mejoras del TF2 para poder darme cuenta si el juego aún está vigente.
+```
+Esta historia responde a Cálculo
+
+#### **Historia 3**
+```
+Yo como persona preocupada de los videojuegos quiero ver primero si hay eventos o actualizaciones nuevas para poder participar activamente tanto del juego como de la comunidad.
+```
+Esta es para orden
+
 
 ### **5.3 Diseño de la Interfaz de Usuario**
 
