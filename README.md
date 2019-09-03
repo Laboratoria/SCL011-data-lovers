@@ -149,9 +149,7 @@ Entonces tomando en consideración las opiniones de los usuarios que realizaron 
 
 
 ### `test/data.spec.js`
-## **8. Evaluación**
-### **General**
-### **Tech**
-## **10. Contenido de referencia**
-### **Diseño de experiencia de usuario (User Experience Design)**
-### **Desarrollo Front-end**
+## **8. Organización del Equipo **
+
+master: Romina Garrido.
+develop: Paloma Zelada.
