@@ -32,6 +32,76 @@ Según estadísticas de Steam, en la actualidad existen más de 43.000 jugadores
 \* Puedes ver el datalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
 y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
 
+
+## **Usuario Objetivo**
+Al ser _Steam_ una plataforma de video juegos, la cantidad de usuarios que la utilizan y leerian sus noticias, son enormes, pero, la _data_ disponible a trabajar contiene noticias de un mismo video Juego; _Team Fortress 2_. Debido a lo anterior, fuimos capaces de definir rapidamente un usuario Objetivo.
+Nuestros Usuarios son:
+Personas que juegen o hayan jugado el video juego _"Team Fortress 2"_ en su versión para computador, con una rango etario entre los 20 y 30 años.
+
+## Primeras Entrevistas:
+En una primera instancia, decidimos hacer una pequeña entrevista, para definir los intereses de nuestros usuarios con respecto al proyecto.
+*_Algunas Preguntas fueron modificadas según lo que respondía el usuario_*
+* 1er usuario; Hombre, 23 años.
+    ¿cómo llegaste a jugar 'TF2'?
+    - Me lo Recomendó un amigo hace años, en el colegio.
+    ¿Por qué lo dejaste de Jugar?
+    - Porque perdía mucho y me frustraba, Aparte se me hechó a perder el PC en ese tiempo, así que tampoco lo podía jugar.
+    ¿Usabas la Plataforma _Steam_ con regularidad?
+    - sí, desde que comencé a jugar.
+    ¿Y leias las noticias sobre el juego?
+    - No, porque no sabía que había noticias sobre ese juego. Pero, me informo arto sobre otros juegos de rockstar games, cómo el GTA...
+    Si entras a una pagina que informa sobre un juego, ¿que te gustaría leer?
+    - Bueno, a mí al menos, lo que más me gusta es saber sobre el contenido que se irá añadiendo, o que podrá mejorar el juego con alguna actuaización.
+* 2do Usuario; mujer 26 años.
+    ¿cómo llegaste a jugar 'TF2'?
+    - Una amiga lo jugaba
+    ¿Que te llama la atención del juego?
+    - era gratis.
+    ¿Usas Steam con regularidad?
+    - No, antes sí.
+    ¿haz leído noticias de Video Juegos?
+    - Sí.
+    ¿Que peinsas de ellas?
+    - Innecesarias
+    Si entras a una pagina que informa sobre un juego, ¿que te gustaría leer?
+    - Noticias sobre eventos, porque me gusta participar de ellos.
+* 3er Usuario: mujer, 20 años.
+    ¿Hace cuanto juegas 'TF2'?
+    - A pesar de todos los años que tiene, nunca me enteré de que existía el juego, así que empece a jugarlo como hace un año.
+    ¿Cómo llegaste a jugar 'TF2'?
+    - Una amiga me lo recomendó, porque dijo que se parecia al Overwatch pero gratis.
+    ¿que te llama la atención del juego?
+    - El diseño de los personajes, es lo que más me gusta. Los mapas igual son buenos, pero cada personaje es único.
+    ¿Usas la Plataforma de Steam de forma habitual?
+    - Sí la uso habitualmente.
+    ¿Lees noticias sobre el TF2?
+    - Sí me gusta mantenerme al tanto de lo que pasa en el juego. O también las actualizaciones, aunque sean pocas.
+* 4to Usuario: Hombre, 28 años
+    ¿Cuanto tiempo jugaste TF2?
+    - como 100 - 120 horas.
+    ¿como llegaste a jugar TF2?
+    - Era _Gamer_ pobre. Busqué en Steam 'Free To Play' y me salió el TF2
+    ¿Que es lo que te llama más la atención del juego?
+    - Lo enfermo que era, es muy bizarro y son muy chistoso los match.
+    ¿Usas la plataforma de Steam de forma habitual?
+    - Sí, con mi cuenta actual. Me conecto todos los días para actualizar lod juegos o ver alguna oferta.
+    ¿Lees noticias sobre el TF2 en Steam?
+    - Sí, leí la ultima, sobre el aniversario 12 del juego y que aún se seguía actualizando.
+    ¿Cúales son las que más te interesan?
+    - Las de actualización. Yo que estoy estudiando algo ligado al medio te puedo decir queme sorprende un juego que tenga mas de 10 años y no lo dejen tirado. Es el compromiso de _valve_ como desarrollador...
+* 5to usuario: Hombre, 30 años.
+    ¿Hace cuanto juegas el TF2?
+    - 10 años
+    ¿Cómo llegaste a jugar el TF2?
+    - A travez de Steam. Buscabamos juegos colaborativos y en equipo, no tan realistas, tipo animación, así lo encontramos.
+    ¿qué es lo que más te llama la atención?
+    - Las modalidades de juegos , por ejemplo: casual, competitivo, capturar a bandera, carga explosiva y otros más. Te da la oportunidad de jugar contra otros players o cómo con la maquina; Mann vs Machine. Lo mejor es que los micropagos que tiene no son para ganar nivel o tener mayor skill, es simplemente Skins.
+    ¿usas la plataforma de steam de forma habitual?
+    - sí, se inicia con el pc.
+    ¿Lees noticias sobre el TF2?
+    - solo las que aparecen en el inicio o si sale algun modo nuevo. Cosas como mantenimiento o mejoras en actualizaciones no, esas me las pillo en el juego solamente.
+-------------------------------
+
 ## **2. Resumen del proyecto**
 
 En este proyecto **construirás una _página web_ para visualizar un
