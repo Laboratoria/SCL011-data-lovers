@@ -1,0 +1,38 @@
+#root{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+} 
+#ulItem{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 30%; */
+    align-content: space-between;
+}
+
+img{
+    width: 30%;
+}
+.charData {
+    font-family: Bangers;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    list-style: none;
+}
+
+.liItem {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
