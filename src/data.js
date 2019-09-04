@@ -1,3 +1,6 @@
+
+
+
     const dataName = (data) => {
         let name = [];
         for (let i = 0; i < data.length; i++) {
@@ -22,10 +25,11 @@
         return img;
       }
 
-     
+  
+      
+    })
 
 
       window.data= data;
       window.dataGender = gender;
       window.dataImg = img;
-
