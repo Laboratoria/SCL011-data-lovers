@@ -59,4 +59,5 @@ opcioncatalogo.addEventListener("click", ()=>{
     }
 });
 
+}}}}
 
