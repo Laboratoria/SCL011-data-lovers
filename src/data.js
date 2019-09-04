@@ -1,10 +1,20 @@
-/* Manejo de data */
+const lolData= Object.values(LOL.data);
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+window.lolData= lolData;
 
-const example = () => {
-  return 'example';
-};
+const mostPower= (data, getAttack)=>{
+  let powered=[];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i]["info"][getAttack] ==10) {
+      powered.push(data[i]);
+    }
+  }
+  return powered;
+}
 
-window.example = example;
+//console.log(mostPower((lolData(info)), "attack"))
+
+//return dataLol;
+
+//window.example = example;
+

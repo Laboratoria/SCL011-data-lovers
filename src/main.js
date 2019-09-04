@@ -1,1 +1,1 @@
-/* Manejo del DOM */
+document.getElementById("lolData").innerHTML= "";
