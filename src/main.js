@@ -1,1 +1,1 @@
-document.getElementById("lolData").innerHTML= "";
+// document.getElementById("lolData").innerHTML= "";
