@@ -56,7 +56,6 @@ a:hover {
 
 .welcome {
     display: flex;
-    /* margin: auto; */
     width: 50%;
     margin-top: 10%;
     justify-content: center;
