@@ -1,67 +1,70 @@
-#main-header {
-	background: white;
-	color: black;
-   
-  
-    /* Fuente y color del texto */
-}	
-	#main-header a {
-        color: black;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Black Ops One', cursive;
-	}
- 
-    /* Aca va la direccion de los botones del menu */
+@import url("../tipografia/PTSerif-Bold.ttf");
+
+/* Estilos generales */
+
+body {
+    display: flex;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(32, 35, 41);
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1.5em;
+}
 
 nav {
-        float: right;
-    
-    }
- 
-    /* Aca va la distancia entre un bloque y otro */
-nav ul {
-            margin: 0;
-            padding: 0x;
-            list-style: block;
-            padding-right: 0px;
-        }
-
-        /* Acá va la altura de los botones */
-            nav ul li { 
-                display: inline-block;
-                line-height: 90px;
-            }
-                /* Acá va la distancia de los botones */
-                nav ul li a {
-                    display: block;
-                    padding: 20px 50px;
-                    text-decoration: none;
-                }
-                
-                    nav ul li a:hover {
-                        background: #02B1C8;
-                    }
-
-                    /* ACA VA EL TEXTO CON LA IMAGEN */
-
- .backrick {
-                        width:100%;
-                    }
-
- 
-.texto-encima{
-   
-  font-family: 'Black Ops One', cursive;
-    font-weight: 1500;
-    color: black;
-    margin: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    font-size: 2rem;
-    transform: translate(-50%, -50%);
-      
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
 }
+
+a:hover {
+    background-color: rgb(68, 141, 72, 0.8);
+}
+
+.logo {
+    width: 13em;
+}
+
+
+/* Pantalla de bienvenido */
+
+.container-welcome {
+    background-image: url("../img/rickmortyfondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: 1em;
+    height: 100vh;
+    width: 100vw;
+}
+
+.welcome {
+    display: flex;
+    /* margin: auto; */
+    width: 50%;
+    margin-top: 10%;
+    justify-content: center;
+    font-size: 1.5em;
+    color: rgb(32, 34, 38);
+}
+
+
  
 #card {
     display: flex;
@@ -71,5 +74,24 @@ nav ul {
 
 
 
+/* Pie de pagina */
 
+footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    color: white;
+}
 
+.btns {
+    display: flex;
+}
+
+.btn {
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+}
