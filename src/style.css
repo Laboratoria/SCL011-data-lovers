@@ -63,6 +63,12 @@ nav ul {
       
 }
  
+#card {
+    display: flex;
+    backface-visibility: black;
+    
+}
+
 
 
 
