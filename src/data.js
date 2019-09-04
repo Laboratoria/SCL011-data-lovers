@@ -4,7 +4,7 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 // const data = () => {
-    
+
 
 //     //Creo una variable boton y con el querySelector accedo a el valor  
 //     button = document.querySelector('[type="button"]');
@@ -28,7 +28,7 @@
 //         let name = document.createElement("p");
 //         let photo = document.createElement("IMG");
 //         let gender = document.createElement("p");
-        
+
 
 //         //Asigno el contenido de name
 //         name.innerHTML = nuevoItem;
@@ -47,4 +47,3 @@
 //  }
 
 // window.onload = data;
-

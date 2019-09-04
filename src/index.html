@@ -4,51 +4,55 @@
 <head>
     <meta charset="utf-8">
     <title>Rick & Morty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     <link rel="stylesheet" href="style.css" />
-  
+
 </head>
 
 <body>
-    <div id="root"></div>
-    <header id="main-header">
+    <!-- Html Semantico -->
+    <section id="container">
+        <!-- Encabezado -->
+        <header class="menu-main" id="main-header">
+            <!-- Menu -->
 
-        <img id="logo" src="https://i.ibb.co/j52Gf4Y/58f37720a4fa116215a9240f.png" alt="Logo-png" style="height:128px;">
+            <nav class="menu">
+                <img class="logo" id="logo" src="../img/RickandMorty.png" alt="Logo-png">
+                <a href="#">Personajes </a>
+                <a href="#">Videos</a>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li><a href="#">Personajes </a></li>
-                <li><a href="#">Videos</a></li>
-            </ul>
-            <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Rubik&display=swap" rel="stylesheet">
-        </nav>
-    </header>
+        <!-- Bienvenido -->
+        <section class="container-welcome">
+            <div class="welcome">
+                <h1>Encuentra a todos los personajes de Rick And Morty </h1>
+            </div>
+            <div class="btns" id="buttons">
 
- 
-    
-    <section>
-        <div id="select-type">
+                <button class="btnfemale btn" id="" type="button">Femenino</button>
+                <button class="btnmale btn" id="" type="button ">Masculino</button>
+                <button class="btnunknown btn" id="" type="button ">Desconocido</button>
 
-            <img src="https://i.ibb.co/xLQrN7Q/fondowebrick.png" class="backrick">
-            <div class="texto-encima">Busca tu personaje favorito de Rick&Morty directamente en nuestra web, por el momento solo puedes escoger de la A-Z pero pronto tendremos más noticias</div>
-            <form action="#">
+            </div>
 
-                <input type="button" value="male">
-
-            </form>
+        </section>
+        <section class="container-cards">
 
             <div id="element"></div>
-         </div>
-        
-    </section>
 
-            
-   
+        </section>
+
+
+    </section>
+    <footer>
+        © Copyright 2019 Crusiris Nuñez y Constanza Zarate - Todos los Derechos Reservados
+    </footer>
+
 
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-
 </body>
 
-</html> 
-
+</html>
