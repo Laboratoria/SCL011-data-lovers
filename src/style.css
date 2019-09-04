@@ -1,7 +1,8 @@
-header{
-    color: #EABE3F;
-    text-align: inline;
-}
-html{
-    background-color: #EABE3F;
+
+body{
+    background-image: url("https://i.ibb.co/xH74kDy/lom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+background-attachment: fixed;
 }

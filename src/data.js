@@ -15,10 +15,3 @@ const mostPower= (data, getAttack)=>{
   }
   return powered;
 }
-
-//console.log(mostPower((lolData(info)), "attack"))
-
-//return dataLol;
-
-//window.example = example;
-
