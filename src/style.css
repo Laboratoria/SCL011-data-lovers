@@ -65,6 +65,15 @@ a:hover {
 }
 
 
+ 
+#card {
+    display: flex;
+    backface-visibility: black;
+    
+}
+
+
+
 /* Pie de pagina */
 
 footer {
