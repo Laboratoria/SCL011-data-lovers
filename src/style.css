@@ -63,6 +63,11 @@ a:hover {
     color: rgb(32, 34, 38);
 }
 
+#card {
+    display: flex;
+    backface-visibility: black;
+}
+
 
 /* Pie de pagina */
 
