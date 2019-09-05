@@ -1,5 +1,7 @@
 const ricks = RICKANDMORTY.results;
 
+// acá recorre todos los elementos y los imprime en pantalla
+
 for ( let i=0; i < ricks.length;i++ ){ 
 //Conectando mi id de html con mi js a traves de la variable containerr
 let container = document.getElementById("element");
@@ -14,6 +16,7 @@ btnmale.addEventListener("click", () => {
     let img = document.createElement("img");
 
     // Asigno el valor de las etiquetas img y p
+    // al usar i recorre todos 
     let name = document.createTextNode(ricks[i].name);
     let photo = (ricks[i].image);
 
