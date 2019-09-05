@@ -1,30 +1,21 @@
 const ricks = RICKANDMORTY.results;
-console.log(ricks);
+
+for ( let i=0; i < ricks.length;i++ ){ 
 //Conectando mi id de html con mi js a traves de la variable containerr
 let container = document.getElementById("element");
 
 const btnmale = document.getElementById("male");
 
+
+
 btnmale.addEventListener("click", () => {
-    console.log("funciona");
-    //Al hacer click en el boton se me creara un div, img, p,
-<<<<<<< HEAD
-    
-    for (let i=0; i<ricks.lenght; i++) { 
-        
-
-   
-    let container = document.createElement("div");
-    let img = document.createElement("img");
-=======
-
->>>>>>> 620515ca74c8238fcc24988560cd3f17fb032415
+     //Al hacer click en el boton se me creara un div, img, p,
     let parraf = document.createElement("p");
     let img = document.createElement("img");
 
     // Asigno el valor de las etiquetas img y p
-    let name = document.createTextNode(ricks[0].name);
-    let photo = (ricks[0].image);
+    let name = document.createTextNode(ricks[i].name);
+    let photo = (ricks[i].image);
 
     // asignando padres e hijos
     parraf.appendChild(name);
@@ -36,7 +27,9 @@ btnmale.addEventListener("click", () => {
     container.appendChild(parraf);
     container.appendChild(img);
 
-} }
+}
+
+
 
 
 
@@ -60,6 +53,5 @@ btnmale.addEventListener("click", () => {
 
 
 
+)}
 
-
-);
