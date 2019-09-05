@@ -1,5 +1,3 @@
-@import url("../tipografia/PTSerif-Bold.ttf");
-
 /* Estilos generales */
 
 body {
@@ -81,9 +79,8 @@ footer {
     color: white;
 }
 
-.btns {
-    display: flex;
-}
+
+/* .btns {} */
 
 .btn {
     width: 200px;
