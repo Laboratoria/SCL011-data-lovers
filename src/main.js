@@ -1,19 +1,30 @@
 const ricks = RICKANDMORTY.results;
 console.log(ricks);
+//Conectando mi id de html con mi js a traves de la variable containerr
+let container = document.getElementById("element");
 
-document.getElementById("male").addEventListener("click", () => {
+const btnmale = document.getElementById("male");
+
+btnmale.addEventListener("click", () => {
+    console.log("funciona");
     //Al hacer click en el boton se me creara un div, img, p,
-    let container = document.createElement("div");
-    let img = document.createElement("img");
+
     let parraf = document.createElement("p");
+    let img = document.createElement("img");
 
-    // Insertar el texto de la etiquetas img y p
-    let textparraf = document.createTextNode(ricks[0].name);
-    let imgconten = img.src = (ricks[0].image);
+    // Asigno el valor de las etiquetas img y p
+    let name = document.createTextNode(ricks[0].name);
+    let photo = (ricks[0].image);
 
-    //Inserta en el html asignando padres e hijos
+    // asignando padres e hijos
+    parraf.appendChild(name);
 
-    container.appendChild(textparraf, imgconten);
+    img.setAttribute("src", photo);
+
+    //Mostrar tarjeta en el contenedor especifico
+
+    container.appendChild(parraf);
+    container.appendChild(img);
 
 
 
