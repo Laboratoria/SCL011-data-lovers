@@ -1,5 +1,3 @@
-@import url("../tipografia/PTSerif-Bold.ttf");
-
 /* Estilos generales */
 
 body {
@@ -56,7 +54,6 @@ a:hover {
 
 .welcome {
     display: flex;
-    /* margin: auto; */
     width: 50%;
     margin-top: 10%;
     justify-content: center;
@@ -64,14 +61,10 @@ a:hover {
     color: rgb(32, 34, 38);
 }
 
-
- 
 #card {
     display: flex;
     backface-visibility: black;
-    
 }
-
 
 
 /* Pie de pagina */
@@ -86,9 +79,8 @@ footer {
     color: white;
 }
 
-.btns {
-    display: flex;
-}
+
+/* .btns {} */
 
 .btn {
     width: 200px;
