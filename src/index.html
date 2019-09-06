@@ -6,40 +6,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div class="row" id="leagueoflegends"> 
     </div>
 <div id="menu" class="header"></div>
 <header>
     
   <div class="container-img">
-
-   <img id = "leagueoflegends" src="https://i.ibb.co/ZYnfsrY/lol-logo.png"> 
+      <div id="leagueOfLegends">
+   <img id = "league" src="https://i.ibb.co/ZYnfsrY/lol-logo.png"> 
   </div>
 </header>
-<section>
-  <div class="btn">
-     <button id="btntank">tank</button>
-     <button id="btnfighter">fighter</button>
-     <button id="btnmage">mage</button>
-     <button id="btnassassin">assassin</button>
-     <button id="btnmarksman">marksman</button>
-     <button id="btnsupport">support</button>
 
+<section>
+
+  <button value="champion" id="btnchampion">champion</button>
+
+  <div id="select">
+
+  <div class="lolfilter">
+
+    <select id="lol" name="filter" class="lol">
+        <option value="Assassin">Assassin</option>
+        <option value="Fighter">Fighter</option>
+        <option value="Mage">Mage</option>
+        <option value="Marksman">Marksman</option>
+        <option value="Support">Support</option>
+        <option value="Tank">Tank</option>
+        </select>
+</div>
   </div>
 </section>
 
 
-
-
-
-
-
-
+    <footer>
+      <nav id="menu" class="menu">
+        <ul class="menuNavegation">
+            <li class="current"><a href="https://las.leagueoflegends.com/es/news/">Noticias</a></li>
+            <li class="current"><a href="https://signup.las.leagueoflegends.com/es/signup/index#/">Jugar</a></li>
+            <li class="current"><a href="https://las.leagueoflegends.com/es/page/unete-la-comunidad-de-league-legends">Comunidad</a></li>
+            <li class="current"><a href="">Estadísticas</a></li>
+        </ul>
+    </nav>
+    </footer>
     <div id="root"></div>
-    
-  
-     <script src="./data/lol/lol.js"></script> 
-   
+
+    <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
