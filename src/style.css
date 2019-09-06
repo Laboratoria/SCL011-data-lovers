@@ -6,7 +6,7 @@
 #ulItem{
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     /* width: 30%; */
     align-content: space-between;
 }
@@ -20,6 +20,7 @@ img{
     flex-flow: column nowrap;
     width: 30%;
     list-style: none;
+    color: rgb(19, 49, 26);
 }
 
 .liItem {
@@ -33,6 +34,6 @@ img{
 
 @media only screen and (min-width: 600px) {
     body {
-      background-color: lightblue;
+      /*background-image: url("https://images.alphacoders.com/876/thumb-1920-876589.jpg");*/
     }
   }
