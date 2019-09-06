@@ -16,17 +16,20 @@ window.filterData={
       let titleData= document.createElement("h4")
       titleData.textContent= takeData[i].title
       //console.log (titleData)
-      let newsContent= document.createElement("p")
-      newsContent.textContent= takeData[i].contents
+      let newsContent= document.createElement("p");
+      let textNewContent = document.createTextNode(takeData[i].contents);
+      newsContent.appendChild(textNewContent);
+      //newsContent.textContent= takeData[i].contents
       //console.log(newsContent)
       // armemos
-      //const contenedor = document.getElementById("conte");
-      //contenedor.innerHTML= `<p> Hola </p>`
+      const contenedor = document.getElementById("conte");
+      contenedor.innerHTML=
+      `<p>${takeData[i].contents}</p>`
       changesData.appendChild(newsCards);
       newsCards.appendChild(titleData)
       newsCards.appendChild(newsContent)
       console.log(newsCards.appendChild(newsContent))
-      const design = document.getElementById("content").appendChild(changesData).innerHTML;
+      const design = document.getElementById("content").appendChild(changesData);
          //const arrow =[];
               if (takeData[i].feedlabel =="TF2 Blog"){
               concatenartf2+= design;
