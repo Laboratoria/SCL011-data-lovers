@@ -1,31 +1,49 @@
-// const dataName = (data) => {
-//     let name = [];
-//     for (let i = 0; i < data.length; i++) {
-//         name.push(data[i].name);
-//     }
-//     return name;
-// }
+/* Manejo de data */
 
 
-// const dataGender = (data) => {
-//     let gender = [];
-//     for (let i = 0; i < data.length; i++) {
-//         name.push(data[i].gender);
-//     }
-//     return gender;
-// }
+window.filter = {
+    //Funcion que recorre la data y devuelve un array de objetos que tienen la propiedad masculina
+    filterMale: (ricks) => {
 
-// const dataImg = (data) => {
-//     let img = [];
-//     for (let i = 0; i < data.length; i++) {
-//         name.push(data[i].img);
-//     }
-//     return img;
-// }
+        //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
+        let male = ricks.filter(obj => (obj.gender === "Male"));
+
+        //console.log(male);
+
+        //Retorno el resultado para recogerlo en el main.js
+        return male;
+
+    },
 
 
+    //Funcion que recorre la data y devuelve un array de objetos que tienen la propiedad Femenina
+    filterFemale: (ricks) => {
+
+        //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
+        let female = ricks.filter(obj => (obj.gender === "Female"));
+
+        console.log(female);
+
+        //Retorno el resultado para recogerlo en el main.js
+        return female;
+
+    },
 
 
-// window.data = data;
-// window.dataGender = gender;
-// window.dataImg = img;
+    //Funcion que recorre la data y devuelve un array de objetos que tienen la propiedad Desconocida
+    filterUnknown: (ricks) => {
+
+        //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
+        let unknown = ricks.filter(obj => (obj.gender === "unknown"));
+
+        console.log(unknown);
+
+        //Retorno el resultado para recogerlo en el main.js
+        return unknown;
+
+    }
+
+
+
+
+}
