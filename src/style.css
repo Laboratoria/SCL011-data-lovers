@@ -91,17 +91,30 @@ footer {
 }
 
 h2 {
-    width: 200px;
-    height: 200px;
-    margin: 3px;
     text-align: center;
-    float: right;
-    align-self: flex-end;
+
+  
+ 
+   
     
 }
 
 #male 
 {
-    background-image: url(https://i.ibb.co/7RLPNgd/boton-morty.png);
+    background-image: url(https://i.ibb.co/X3X1QCb/hombres.png);
     
 }
+
+#female 
+{
+    background-image: url(https://i.ibb.co/Gc2pGyk/mujeres.png);
+    
+}
+
+#unknown 
+{
+    background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
+    
+}
+
+
