@@ -1,40 +1,66 @@
-const ricks = RICKANDMORTY.results;
-const characMale = window.filter.filterMale(ricks);
-const characFemale = window.filter.filterFemale(ricks);
-const characUnknown = window.filter.filterUnknown(ricks);
+ //Data completa
+ const ricks = RICKANDMORTY.results;
 
-//acá recorre todos los elementos y los imprime en pantalla
+ //Data de Masculinos
+ const characMale = window.filter.filterMale(ricks);
 
-for (let i = 0; i < characMale.length; i++) {
-    //Conectando mi id de html con mi js a traves de la variable containerr
-    let container = document.getElementById("element");
+ //Data de Femeninos
+ const characFemale = window.filter.filterFemale(ricks);
 
-    const btnmale = document.getElementById("male");
-
+ //Data de Desconocido
+ const characUnknown = window.filter.filterUnknown(ricks);
 
 
-    btnmale.addEventListener("click", () => {
-            //Al hacer click en el boton se me creara un div, img, p,
-            let parraf = document.createElement("p");
-            let img = document.createElement("img");
+ //Asignando botones a al id del html
+ const btnmale = document.getElementById("male");
+ const btnfemale = document.getElementById("female");
+ const btnunknown = document.getElementById("unknown");
 
-            // Asigno el valor de las etiquetas img y p
-            // al usar i recorre todos 
-            let name = document.createTextNode(characMale[i].name);
-            let photo = (characMale[i].image);
-
-            // asignando padres e hijos
-            parraf.appendChild(name);
-
-            img.setAttribute("src", photo);
-
-            //Mostrar tarjeta en el contenedor especifico
-
-            container.appendChild(parraf);
-            container.appendChild(img);
-
-        }
+ //Asignando eventos a los botones
+ btnmale.addEventListener("click", () => {
+     showData('male');
+ });
+ btnfemale.addEventListener("click", () => {
+     showData('female');
+ });
+ btnunknown.addEventListener("click", () => {
+     showData('unknown');
+ });
 
 
-    )
-}
+ const showData = (type) => {
+     let dataSelected = [];
+     if (type === "male") {
+         dataSelected = characMale.slice();
+         console.log(dataSelected);
+     } else if (type === "female") {
+         dataSelected = characFemale.slice();
+         //console.log("seleccionaste female");
+         console.log(dataSelected);
+     } else if (type === "unknown") {
+         dataSelected = characUnknown.slice();
+         //console.log("seleccionaste unknown");
+         console.log(dataSelected);
+     }
+
+     for (let i = 0; i < dataSelected.length; i++) {
+         //Creo elementos
+         let parraf = document.createElement("p");
+         let img = document.createElement("img");
+
+         // Asigno el valor de las etiquetas img y p
+         // al usar i recorre todos 
+         let name = document.createTextNode(dataSelected[i].name);
+         let photo = (dataSelected[i].image);
+
+         // asignando padres e hijos
+         parraf.appendChild(name);
+
+         img.setAttribute("src", photo);
+
+         //Mostrar tarjeta en el contenedor especifico
+
+         container.appendChild(parraf);
+         container.appendChild(img);
+     }
+ }
