@@ -1,4 +1,4 @@
-const ricks = RICKANDMORTY.results;
+const ricks= RICKANDMORTY.results;
 
 // acá recorre todos los elementos y los imprime en pantalla
 
@@ -8,29 +8,33 @@ let container = document.getElementById("element");
 
 const btnmale = document.getElementById("male");
 
-
-
 btnmale.addEventListener("click", () => {
      //Al hacer click en el boton se me creara un div, img, p,
     let parraf = document.createElement("p");
     let img = document.createElement("img");
+    let genero = document.createElement("p");
 
     // Asigno el valor de las etiquetas img y p
     // al usar i recorre todos 
     let name = document.createTextNode(ricks[i].name);
     let photo = (ricks[i].image);
+    let gender = document.createTextNode(ricks[i].gender);
 
     // asignando padres e hijos
     parraf.appendChild(name);
 
     img.setAttribute("src", photo);
 
+    genero.appendChild(gender);
+
     //Mostrar tarjeta en el contenedor especifico
 
     container.appendChild(parraf);
     container.appendChild(img);
+    container.appendChild(genero);
 
 }
+
 
 
 
