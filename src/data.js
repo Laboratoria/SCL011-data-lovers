@@ -1,59 +1,46 @@
-window.filterRicks {
+/* Manejo de data */
 
-const femaleFilter = () => {
 
-    gender: (ricks) =>{
-console.log(ricks);
-        let genderResult = [""];
-        for(let i=0; i < RICKANDMORTY.length; i++){
-          if (RICKANDMORTY[i].gender == condition){
-            console.log(RICKANDMORTY[i].gender);
-          };
-        };
-        return genderResult;
-      }
+window.filter = {
+    //Funcion que recorre la data y devuelve un array de objetos que tienen la propiedad masculina
+    filterMale: (ricks) => {
+
+        //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
+        let male = ricks.filter(obj => (obj.gender === "Male"));
+
+
+        //Retorno el resultado para recogerlo en el main.js
+        return male;
+
+    },
+
+
+    //Funcion que recorre la data y devuelve un array de objetos que tienen la propiedad Femenina
+    filterFemale: (ricks) => {
+
+        //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
+        let female = ricks.filter(obj => (obj.gender === "Female"));
+
+
+        //Retorno el resultado para recogerlo en el main.js
+        return female;
+
+    },
+
+
+    //Funcion que recorre la data y devuelve un array de objetos que tienen la propiedad Desconocida
+    filterUnknown: (ricks) => {
+
+        //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
+        let unknown = ricks.filter(obj => (obj.gender === "unknown"));
+
+
+        //Retorno el resultado para recogerlo en el main.js
+        return unknown;
+
     }
+
+
+
+
 }
-
-
-  
- 
-// let dataFilter = RICKANDMORTY.results;
-// let filterNewArray = dataFilter.filter(element => {
-//     return element.gender
-
-
-
-
-
-// const dataName = (data) => {
-//     let name = [];
-//     for (let i = 0; i < data.length; i++) {
-//         name.push(data[i].name);
-//     }
-//     return name;
-// }
-
-
-// const dataGender = (data) => {
-//     let gender = [];
-//     for (let i = 0; i < data.length; i++) {
-//         name.push(data[i].gender);
-//     }
-//     return gender;
-// }
-
-// const dataImg = (data) => {
-//     let img = [];
-//     for (let i = 0; i < data.length; i++) {
-//         name.push(data[i].img);
-//     }
-//     return img;
-// }
-
-
-
-
-// window.data = data;
-// window.dataGender = gender;
-// window.dataImg = img;

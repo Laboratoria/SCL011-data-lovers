@@ -86,4 +86,22 @@ footer {
     width: 200px;
     height: 200px;
     margin: 3px;
+    background-color: transparent;
+    display: inline-flex;
+}
+
+h2 {
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+    text-align: center;
+    float: right;
+    align-self: flex-end;
+    
+}
+
+#male 
+{
+    background-image: url(https://i.ibb.co/7RLPNgd/boton-morty.png);
+    
 }
