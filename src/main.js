@@ -34,15 +34,15 @@
      let dataSelected = [];
      if (type === "male") {
          dataSelected = characMale.slice();
-         console.log(dataSelected);
+     
      } else if (type === "female") {
          dataSelected = characFemale.slice();
          //console.log("seleccionaste female");
-         console.log(dataSelected);
+ 
      } else if (type === "unknown") {
          dataSelected = characUnknown.slice();
          //console.log("seleccionaste unknown");
-         console.log(dataSelected);
+     
      }
 
      const containerr = document.getElementById("element");
