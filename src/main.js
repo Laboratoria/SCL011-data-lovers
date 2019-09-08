@@ -1,10 +1,37 @@
+const allPokemonData= POKEMON.pokemon;
+window.allPokemonData= allPokemonData;
+//Llama al espacio del html para mostrar los resultados
+let showCardsComplete = document.getElementById("results");
+//Donde se creará la tarjeta
+let pokemonCards="";
 
-/* Manejo del DOM */
-let newElement = document.createElement("h2");
-//crear contenido del mensaje
-let insertText = document.createTextNode("Bienvenido a Master Pokemon Go");
-//llamar let e insertar el mensaje
-newElement.appendChild(insertText);
-//agregar ubicacion en html
-document.getElementById("home").appendChild(newElement);
+//Recorre la data completa, element es el nombre que le asigna a cada elemento que contiene la data
+allPokemonData.forEach((element=>{
+  //concatenamos para que vaya sumando una tarjeta tras otra
+  pokemonCards +=
+  //creamos divs uno muestra la imagen y otro un espacio de texto para el nombre
+  `<div class="cardStyle">
+  <img src="${element.img}" alt="imagenPokemon">
+  <h4>${element.name}</h4>
+  </div>`
+  //imprimimos en el espacio results lo que le añadimos a pokemonCards
+  showCardsComplete.innerHTML= pokemonCards;
+}))
+
+//Funciones para sacar el value de los selects
+function alphabeticSort(){
+    let valor = document.getElementById("alphabeticOrder").value;
+    sortAlphabetic(valor);
+  } 
+
+ function filtrarPorTipo(){
+    let valor = document.getElementById("filterType").value;
+    filterPokemonType(valor);
+  }
+
+ 
+function filterOfEggs(){
+    let valor = document.getElementById("eggFilter").value;
+    filterEggs(valor);
+  } 
 
