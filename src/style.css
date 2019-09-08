@@ -135,6 +135,7 @@ footer:hover {
     margin: 20px;
     background-color: transparent;
     display: inline-flex;
+    
 }
 
 .btn:hover {
@@ -155,6 +156,18 @@ h2 {
 
 #unknown {
     background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
+}
+
+/* Video */
+
+#video {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    
 }
 
 /* Responsive */
