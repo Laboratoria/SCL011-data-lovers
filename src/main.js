@@ -62,6 +62,8 @@
          let name = document.createTextNode(dataSelected[i].name);
          let photo = (dataSelected[i].image);
 
+         //Asigno un atributo de tipo clase para darle estilo
+         card.setAttribute("class", "card");
          // asignando padres e hijos
          parraf.appendChild(name);
          img.setAttribute("src", photo);
