@@ -4,6 +4,7 @@ body {
     display: flex;
     font-family: 'PT Serif', serif;
     margin: 0;
+    background: rgb(32, 35, 41);
 }
 
 
@@ -61,11 +62,6 @@ a:hover {
     color: rgb(32, 34, 38);
 }
 
-#card {
-    display: flex;
-    backface-visibility: black;
-}
-
 
 /* Pie de pagina */
 
@@ -79,6 +75,10 @@ footer {
     color: white;
 }
 
+.contenfooter {
+    margin: 0.5em;
+}
+
 
 /* .btns {} */
 
@@ -86,4 +86,13 @@ footer {
     width: 200px;
     height: 200px;
     margin: 3px;
+}
+
+
+/*Main tarjetas*/
+
+.container-cards {
+    display: flex;
+    display: row;
+    background-color: aquamarine;
 }

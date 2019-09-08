@@ -11,6 +11,8 @@
  const characUnknown = window.filter.filterUnknown(ricks);
 
 
+
+
  //Asignando botones a al id del html
  const btnmale = document.getElementById("male");
  const btnfemale = document.getElementById("female");
@@ -43,6 +45,7 @@
          console.log(dataSelected);
      }
 
+     const containerr = document.getElementById("element");
      for (let i = 0; i < dataSelected.length; i++) {
          //Creo elementos
          let parraf = document.createElement("p");
@@ -60,7 +63,7 @@
 
          //Mostrar tarjeta en el contenedor especifico
 
-         container.appendChild(parraf);
-         container.appendChild(img);
+         containerr.appendChild(parraf);
+         containerr.appendChild(img);
      }
  }
