@@ -4,7 +4,8 @@ body {
     display: flex;
     font-family: 'PT Serif', serif;
     margin: 0;
-    background: rgb(32, 35, 41);
+    background: white;
+    /* rgb(32, 35, 41); */
 }
 
 
@@ -111,4 +112,10 @@ h2 {
 
 #unknown {
     background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
+}
+
+#container-cardss {
+    background-color: aqua;
+    display: inline;
+
 }
