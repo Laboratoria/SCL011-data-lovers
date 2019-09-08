@@ -15,16 +15,15 @@ header {
     background-color: rgb(32, 35, 41);
     position: fixed; 
     width: 100%;
-    height: 
-  
+   
 }
 
 a {
-    display: left;
+    display: block;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 1.5em;
-  
+    padding: 1.5em;   
+    
 
   
 
@@ -133,9 +132,4 @@ h2 {
 {
     background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
     
-}
-
-
-#container {
-    display: inline;
 }
