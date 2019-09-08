@@ -65,6 +65,23 @@ a:hover {
 }
 
 
+/*Tarjetas*/
+
+
+/*Padre*/
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/*Hijo*/
+
+.card {}
+
+
 /* Pie de pagina */
 
 footer {
