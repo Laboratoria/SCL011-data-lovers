@@ -84,8 +84,6 @@ a:hover {
     flex-wrap: wrap;
     background-color: rgb(32, 34, 38);
     color: white;
-    
-  
 }
 
 
@@ -159,3 +157,11 @@ h2 {
     background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
 }
 
+/* Responsive */
+
+@media screen and (max-width:479px){
+    
+    .cards{
+                padding: 16px;
+}
+}
