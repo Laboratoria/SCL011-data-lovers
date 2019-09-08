@@ -4,6 +4,7 @@ body {
     display: flex;
     font-family: 'PT Serif', serif;
     margin: 0;
+    background: rgb(32, 35, 41);
 }
 
 
@@ -13,27 +14,21 @@ header {
     display: flex;
     flex-direction: row;
     background-color: rgb(32, 35, 41);
-    position: fixed; 
+    position: fixed;
     width: 100%;
-   
 }
 
 a {
     display: block;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 1.5em;   
-    
-
-  
-
+    padding: 1.5em;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     font-weight: bold;
-   
 }
 
 a:hover {
@@ -42,7 +37,6 @@ a:hover {
 
 .logo {
     width: 13em;
- 
 }
 
 
@@ -70,11 +64,6 @@ a:hover {
     color: rgb(32, 34, 38);
 }
 
-#card {
-    display: flex;
-    backface-visibility: black;
-}
-
 
 /* Pie de pagina */
 
@@ -86,14 +75,13 @@ footer {
     height: 10%;
     text-align: center;
     color: transparent;
-
- 
 }
 
-footer:hover{
+footer:hover {
     background-color: black;
     color: white;
 }
+
 
 /* .btns {} */
 
@@ -101,35 +89,26 @@ footer:hover{
     width: 200px;
     height: 200px;
     margin: 20px;
-
     background-color: transparent;
     display: inline-flex;
 }
 
-
-.btn:hover{
-      background-color: pink;
-    
+.btn:hover {
+    background-color: pink;
 }
 
-
 h2 {
-    text-align: center;  
+    text-align: center;
 }
 
 #male {
     background-image: url(https://i.ibb.co/X3X1QCb/hombres.png);
-    
 }
 
-#female 
-{
+#female {
     background-image: url(https://i.ibb.co/Gc2pGyk/mujeres.png);
-    
 }
 
-#unknown 
-{
+#unknown {
     background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
-    
 }
