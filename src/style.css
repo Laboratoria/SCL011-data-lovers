@@ -2,7 +2,8 @@
 
 body {
     display: flex;
-    font-family: 'PT Serif', serif;
+    
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background: white;
     /* rgb(32, 35, 41); */
@@ -27,9 +28,11 @@ a {
 }
 
 nav {
-    display: flex;
+  
     flex-direction: row;
     font-weight: bold;
+    float: right;
+   
 }
 
 a:hover {
@@ -75,12 +78,28 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgb(32, 34, 38);
+    color: white;
+    
+  
 }
 
 
 /*Hijo*/
 
-.card {}
+.card {
+   margin: 3em;
+   text-align: center;
+   background-color: transparent;
+ 
+}
+
+.card:hover {
+      text-align: center;
+    background-color: white;
+    color: black;
+  
+ }
 
 
 /* Pie de pagina */
@@ -131,8 +150,3 @@ h2 {
     background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
 }
 
-#container-cardss {
-    background-color: aqua;
-    display: inline;
-
-}
