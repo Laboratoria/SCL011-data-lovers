@@ -4,17 +4,87 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximus-scale=1, minimun-scale=1">
+    <link rel="stylesheet" href="fontello.css">
+    
   </head>
+  
+  <!-----PAGE1----->
   <body>
+   
+    <header>
+        <div class="container">
+        <h1  class="logo"><img src="./images/LogoData.png" >El rol de la mujer  en Latinoamerica</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+          <a href="">Inicio</a>
+          <a href="">¿Quiénes Somos?</a>
+          <a href="">Contacto</a>
+        </nav>
+     </div>
+  </header>
+
+  <main>
+    <section id="banner">
+      <img src="images/imgWomanMobile.jpg">
+      <div class="container"> 
+      <h2>Data Femme</h2>
+      <p>Esta página es para acceder con rapidez y seguridad a la base de datos del Banco Mundial , 
+        con respecto al Rol de la Mujer en Latinoamerica.</p>
+        <a href="https://www.bancomundial.org/">Banco Mundial</a>
+    </div>
+    </section>
+  </main>
+
+     <section id="ButtonPais" class="hide">
+       <div class="container">
+              <h2>Paises</h2>
+              <p>Elige el país del cual desea cosultar información</p>
+              <button  class="botones" id="per"   value="PER">Peru</button>
+              <button  class="botones"  id="chl"  value="CHL">Chile</button>
+              <button  class="botones"  id="mex"  value="MEX">México</button>
+              <button  class="botones"  id="bra"  value="BRA">Brasil</button>
+            </div>
+            </section>
+
+           
+           
+           
+           
+           
+           
+           <section id= "article">
+             <div class="container">
+              <h2>Noticias</h2>
+              <article>
+                  <p>El sistema hace agua: la adversa ruta de las 197 mujeres asesinadas, que sí habían denunciado a sus parejas.
+                      Con gran convocatoria se lleva a cabo seminario sobre el rol de las mujeres</p>
+              </article>
+            </div>
+            </section>
+
+           
+
+            
+             
+                
+
+
+
+ 
+            
+        <!--FOOTER-->
+   <footer id="footer"></footer>
+    
+
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
+    
+    <script src="./data/worldbank/worldbank.js"></script> 
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
+
 </html>
