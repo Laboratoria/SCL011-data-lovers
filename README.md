@@ -3,15 +3,10 @@
 ## **Índice**
 
 * [Contexto](#contexto)
-* [Descripción](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
+* [Descripción de usuario](#descripcion-de-usuario)
+* [UI](#ui)
+
+
 
 ***
 
@@ -23,25 +18,27 @@
 
 Descripción en Steam:
 ```
-Nueve clases diferentes ofrecen una amplia variedad de habilidades tácticas y personalidades. Constantemente actualizado con nuevos modos de juego, mapas, equipamiento y, lo que es más importante, ¡sombreros!
+Nueve clases diferentes ofrecen una amplia variedad de habilidades tácticas y personalidades.
+Constantemente actualizado con nuevos modos de juego, mapas, equipamiento y, lo que es más importante, ¡sombreros!
 ```
 Según estadísticas de Steam, en la actualidad existen más de 43.000 jugadores de TF2 y se encuentra en el lugar número 11 de clasificación por número de jugadores.
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+![logo-steam](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/1200px-Steam_icon_logo.svg.png) ![logo-tf2](https://logonoid.com/images/team-fortress-2-logo.png)
 
-\* Puedes ver el datalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
+## **2. Descripción de usuario**
 
+### **Usuario Objetivo**
 
-## **Usuario Objetivo**
-Al ser _Steam_ una plataforma de video juegos, la cantidad de usuarios que la utilizan y leerian sus noticias, son enormes, pero, la _data_ disponible a trabajar contiene noticias de un mismo video Juego; _Team Fortress 2_. Debido a lo anterior, fuimos capaces de definir rapidamente un usuario Objetivo.
-Nuestros Usuarios son:
-Personas que juegen o hayan jugado el video juego _"Team Fortress 2"_ en su versión para computador, con una rango etario entre los 20 y 30 años.
+_Steam_, al ser una plataforma tan conocida en el mundo de los videojuegos, tiene una cantidad enorme de usuarios que la utilizan a diario y nos fijamos que la _data_ que teníamos disponible para trabajar, contenía noticias de un mismo videojuego: _Team Fortress 2_. Debido a lo anterior y al hecho de que ambas conocíamos la plataforma por ser jugadoras, fuimos capaces de definir rápidamente un usuario objetivo.
 
-## Primeras Entrevistas:
+Nuestros usuarios son:
+Personas que juegen o hayan jugado el videojuego _"Team Fortress 2"_ en su versión para computador, con una rango etario entre los 20 y 30 años.
+
+#### **Primeras Entrevistas**
+
 En una primera instancia, decidimos hacer una pequeña entrevista, para definir los intereses de nuestros usuarios con respecto al proyecto.
 *_Algunas Preguntas fueron modificadas según lo que respondía el usuario_*
-* 1er usuario; Hombre, 23 años.
+\* 1er usuario; Hombre, 23 años.
     ¿cómo llegaste a jugar 'TF2'?
     - Me lo Recomendó un amigo hace años, en el colegio.
     ¿Por qué lo dejaste de Jugar?
@@ -52,7 +49,7 @@ En una primera instancia, decidimos hacer una pequeña entrevista, para definir 
     - No, porque no sabía que había noticias sobre ese juego. Pero, me informo arto sobre otros juegos de rockstar games, cómo el GTA...
     Si entras a una pagina que informa sobre un juego, ¿que te gustaría leer?
     - Bueno, a mí al menos, lo que más me gusta es saber sobre el contenido que se irá añadiendo, o que podrá mejorar el juego con alguna actuaización.
-* 2do Usuario; mujer 26 años.
+\* 2do Usuario; mujer 26 años.
     ¿cómo llegaste a jugar 'TF2'?
     - Una amiga lo jugaba
     ¿Que te llama la atención del juego?
@@ -65,7 +62,7 @@ En una primera instancia, decidimos hacer una pequeña entrevista, para definir 
     - Innecesarias
     Si entras a una pagina que informa sobre un juego, ¿que te gustaría leer?
     - Noticias sobre eventos, porque me gusta participar de ellos.
-* 3er Usuario: mujer, 20 años.
+\* 3er Usuario: mujer, 20 años.
     ¿Hace cuanto juegas 'TF2'?
     - A pesar de todos los años que tiene, nunca me enteré de que existía el juego, así que empece a jugarlo como hace un año.
     ¿Cómo llegaste a jugar 'TF2'?
@@ -76,7 +73,7 @@ En una primera instancia, decidimos hacer una pequeña entrevista, para definir 
     - Sí la uso habitualmente.
     ¿Lees noticias sobre el TF2?
     - Sí me gusta mantenerme al tanto de lo que pasa en el juego. O también las actualizaciones, aunque sean pocas.
-* 4to Usuario: Hombre, 28 años
+\* 4to Usuario: Hombre, 28 años
     ¿Cuanto tiempo jugaste TF2?
     - como 100 - 120 horas.
     ¿como llegaste a jugar TF2?
@@ -89,7 +86,7 @@ En una primera instancia, decidimos hacer una pequeña entrevista, para definir 
     - Sí, leí la ultima, sobre el aniversario 12 del juego y que aún se seguía actualizando.
     ¿Cúales son las que más te interesan?
     - Las de actualización. Yo que estoy estudiando algo ligado al medio te puedo decir queme sorprende un juego que tenga mas de 10 años y no lo dejen tirado. Es el compromiso de _valve_ como desarrollador...
-* 5to usuario: Hombre, 30 años.
+\* 5to usuario: Hombre, 30 años.
     ¿Hace cuanto juegas el TF2?
     - 10 años
     ¿Cómo llegaste a jugar el TF2?
@@ -100,53 +97,62 @@ En una primera instancia, decidimos hacer una pequeña entrevista, para definir 
     - sí, se inicia con el pc.
     ¿Lees noticias sobre el TF2?
     - solo las que aparecen en el inicio o si sale algun modo nuevo. Cosas como mantenimiento o mejoras en actualizaciones no, esas me las pillo en el juego solamente.
--------------------------------
 
-## **2. Resumen del proyecto**
+## **3. UI**
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+### **3.1 Diagrama de flujo y prototipo de baja fidelidad**
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+El diagrama de flujo fue lo primero que hicimos ya que queríamos tener una idea sobre qué preguntar y nos ayudó a guiar las entrevistas.
 
-Una vez que definas tu área de interés, entiende quién es tu usuario y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que le
-ayude a interactuar y entender mejor esos datos.
+![Diagrama-flujos](INSERTAR FOTO DIAGRAMA)
 
-Estos son datos que te proponemos:
+Posterior a las entrevistas, hicimos un prototipo de baja fidelidad para ordenar un poco las vistas y la estructura de nuestra página. Este prototipo fue simple:
 
-* [Banco Mundial](src/data/worldbank/worldbank.json) Indicadores de desarrollo del Banco Mundial de algunos países (Brasil, Chile, 
-  México y Perú). Estos datos incluyen indicadores demográficos, económicos y 
-  comerciales.
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](https://pokemongolive.com).
-* [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-* [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicileta, ...).
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json): Este set nos proporciona la lista de los personajes de la serie Rick and Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com/)
-* [Pacientes en EEUU](src/data/patient/patient.json): Este set nos proporciona una lista de pacientes de EEUU. Puedes revisar la documentación de su API en este [link](https://r2.smarthealthit.org/Patient)
+![Prototipo-baja-fidelidad](INSERTAR FOTO PROTOTIPO BAJA FIDELIDAD)
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún calculo agregado**. Como aclaración,
-con cálculo agregado nos referimos a distintos cálculos que puedes hacer con
-la data que tienes para mostrar información aún más relevante a los usuarios.
-Una opción serían cálculos estadísticos como el promedio, el máximo o el mínimo,
-por ejemplo, si tenemos una colección que representa a un grupo de personas,
-y cada persona está representada como un _objeto_ con una _propiedad_ `altura`,
-podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
+### **3.2 Prototipo de alta fidelidad: Inicial**
+
+El primer prototipo tenía la información que habíamos recabado de nuestras entrevistas iniciales. Al ser un prototipo más básico en cuando a funcionalidad, necesitábamos los testeos de usuario para poder mejorar la propuesta.
+
+Este primer prototipo se puede ver en el siguiente enlace de [Figma](https://www.figma.com/file/GrrxmIWLWE2uAhYsJAEtbM/Untitled?node-id=0%3A1)
+
+### **3.3 Paleta de colores, tipografía y diseño**
+
+La paleta de colores que quisimos utilizar, contiene parte de la paleta de colores tanto de _Steam_ como de _TF2_. Nuestra idea era hacer una paleta reconocible por los usuarios, para que se pudiera entender que las noticias que están viendo son de _Steam_ pero pertenecen a un juego en específico.
+
+![Paleta-Steam](INSERTAR IMG CON PALETA DE COLOR STEAM) ![Paleta-TF2](INSERTAR IMG PALETA TF2)
+
+Con respecto a la tipografía, preferimos usar sólo 2 fuentes, para no sobrecargar el diseño. Ambas **Sans Serif** de _Google Fonts_ y que van bien juntas:
+ - **Poller One:** Más lúdica, sólo para el título.
+ - **Roboto (Regular y Bold):** Legible, con 2 pesos, _Regular_ para contenido general y _Bold_ para dar énfasis en títulos de noticias y botones.
+
+ Desde el primer prototipo, estuvo pensado su diseño responsive, pero por un tema de tiempo, hicimos el diseño en el siguiente prototipo con feedback incluido.
+
+### **3.4 Historias de usuario**
+
+En base a nuestras entrevistas y primeros testeos de usuario, hicimos 3 historias de usuario que irían en función de responder sus requerimientos.
+
+#### **Historia 1**
+```
+Yo como persona apasionada a los videojuegos quiero acceder de una manera más sencilla a la información dependiendo de mis intereses en el juego.
+```
+Esta historia responde a la necesidad de filtros
+
+#### **Historia 2**
+```
+Yo como persona apasionada a los videojuegos quiero saber cada cuánto hay actualizaciones y mejoras del TF2 para poder darme cuenta si el juego aún está vigente.
+```
+Esta historia responde a Cálculo
+
+#### **Historia 3**
+```
+Yo como persona preocupada de los videojuegos quiero ver primero si hay eventos o actualizaciones nuevas para poder participar activamente tanto del juego como de la comunidad.
+```
+Esta es para orden
+
+### **3.5 Prototipo de alta fidelidad: Feedback**
+
+Luego del feedback recibido por los testeos, rediseñamos nuestro primer prototipo. En esta parte del proceso, tuvimos en consideración el diseño mobile, que pueden ver en este enlace de [Figma](https://www.figma.com/file/GrrxmIWLWE2uAhYsJAEtbM/Untitled?node-id=84%3A0). Como siempre tuvimos en mente el diseño mobile, no hubo problemas al ordenar la información en su versión responsive.
 
 ## **3. Objetivos de aprendizaje**
 
@@ -196,28 +202,7 @@ Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
 contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
 el problema (o problemas) que tiene tu usuario.
 
-### **5.2 Historias de usuario**
 
-En base a nuestras entrevistas y primer testeo de usuario, hicimos 3 historias de usuario que irían en función de responder los requerimientos del usuario.
-
-#### **Historia 1**
-```
-Yo como persona apasionada a los videojuegos quiero acceder de una manera más sencilla a la información dependiendo de mis intereses en el juego.
-```
-Esta historia responde a la necesidad de filtros
-
-
-#### **Historia 2**
-```
-Yo como persona apasionada a los videojuegos quiero saber cada cuánto hay actualizaciones y mejoras del TF2 para poder darme cuenta si el juego aún está vigente.
-```
-Esta historia responde a Cálculo
-
-#### **Historia 3**
-```
-Yo como persona preocupada de los videojuegos quiero ver primero si hay eventos o actualizaciones nuevas para poder participar activamente tanto del juego como de la comunidad.
-```
-Esta es para orden
 
 
 ### **5.3 Diseño de la Interfaz de Usuario**

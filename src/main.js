@@ -39,11 +39,9 @@ let renderNews =(data)=>{
 for (let i = 0; i < buttonFilters.length; i++){
     buttonFilters[i].addEventListener ('click',()=>{
         valueButton = buttonFilters[i].value
-        let current =""
        if(valueButton==="feedlabel"){
         let btnAll = window.filterData.filter(takeData, valueButton).result;
         renderNews(btnAll)
-
        }
         if (valueButton==="TF2 Blog"){
             let tf2Btn= window.filterData.filter(takeData, valueButton).result;
