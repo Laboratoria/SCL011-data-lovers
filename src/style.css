@@ -28,6 +28,7 @@ padding: 1%;
    margin-left: 5pt;
    height: 30px;
    font-size: 15px;
+   margin-top: 5pt;
    
 }
 .btnActive{
@@ -43,4 +44,22 @@ padding: 1%;
    background-color: #2A475E;
    text-align: center;
    color: white;
+   width: 350px;
+   height: 350px;
+   margin-left: 10pt;
+   padding: 1em;
+   margin-top: 5pt;
+   float: left;
+   
+}
+#content{
+   text-align: center
+}
+.date{
+   font-size: 10px;
+   color: lightgrey;
+   text-align: right;
+}
+.url{
+   color: blue;
 }
