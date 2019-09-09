@@ -1,7 +1,7 @@
 
 //funcion orden alfabetico ESTA AUN NO ME FUNCIONA
 function sortAlphabetic(){
-  const abcOrder = allPokemonData.sort((a,b)=>{
+  const abcOrder = allPokemonOnData.sort((a,b)=>{
     if(a.name>b.name){
       return 1;
     } return -1;
@@ -13,10 +13,10 @@ function sortAlphabetic(){
   //funcion ordenar por tipo
   function filterPokemonType(type){
     let empty =[]
-    for(let i=0; i < allPokemonData.length; i++){
-      for(let j=0; j < allPokemonData[i].type.length; j++){
-        if(allPokemonData[i].type[j]===type){
-          empty.push(allPokemonData[i]);
+    for(let i=0; i < allPokemonOnData.length; i++){
+      for(let j=0; j < allPokemonOnData[i].type.length; j++){
+        if(allPokemonOnData[i].type[j]===type){
+          empty.push(allPokemonOnData[i]);
         }
       } 
     }
@@ -38,9 +38,9 @@ function sortAlphabetic(){
   
   function filterEggs(egg){
     let empty =[]
-    for(let i=0; i < allPokemonData.length; i++){
-        if(allPokemonData[i].egg===egg){
-          empty.push(allPokemonData[i]);
+    for(let i=0; i < allPokemonOnData.length; i++){
+        if(allPokemonOnData[i].egg===egg){
+          empty.push(allPokemonOnData[i]);
         }
       }
       let showCardsComplete = document.getElementById("results");
