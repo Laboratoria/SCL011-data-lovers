@@ -1,3 +1,4 @@
+
   
 //funcion orden alfabetico ESTA AUN NO ME FUNCIONA
 function sortAlphabetic(){
@@ -58,3 +59,4 @@ function filterEggs(egg){
     showCardsComplete.innerHTML= pokemonCards;
   })) 
     };
+
