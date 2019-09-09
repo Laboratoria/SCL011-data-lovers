@@ -13,41 +13,31 @@
       <nav>
             <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png">
       <ul>
-          <li><a href="#">Personajes</a></li>
-          <li><a href="#">Lugares</a></li>
-          <li><a href="#">Datos</a></li>
+          <li><button id="showCharacters">Personajes</button></li>
+          <li><button id="showLocation">Lugares</button></li>
+          <li><button id="showCuriosities">Datos</button></li>>
       </ul>
     </nav>
   </header>
   <section>
-      <div class= "portals">
-       <button class="buttoncito"><img class=portal src="Imagenes/portal1.png"></button>
+      <div id= "portals"class = "portals">
+       <button class="buttoncito" id="characters"><img class=portal src="Imagenes/portal1.png"></button>
        <button class="buttoncito"><img class=portal src="Imagenes/portal2.png"></button>
       </div>
   </section>
 
       <ul id="ulItem"></ul>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-<<<<<<< HEAD
 
-    <select class="orden" name="orden">
+    <select class="orden" name="orden" id="orderSelector">
         <option value="">Ordenar de la …</option>
         <option value="ABC">A a la Z</option>
         <option value="CBA">Z a la A</option>
     </select>
 
 
-=======
     <div class="buttons" >
 
-    <button id= "ABC">De la A a la Z</button>
-    <button id= "CBA">De la Z a la A</button>
->>>>>>> a816eeb8c484137f2ffe5067e6840e9fe557a490
+    
     <button id= "filterStatusAlive">Vivo</button>
     <button id= "filterStatusDead">Muerto</button>
     <button id= "filterStatusUnknown">Indefinido</button>

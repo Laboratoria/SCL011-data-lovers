@@ -16,8 +16,54 @@ const unknown = listOfCharacters.filter((e) => {
 
 });
 
+//Mostrar personajes
+const buttonShowCharacters= document.getElementById('characters');
+buttonShowCharacters.addEventListener('click', ()=>{
+    document.getElementById('portals').style.display = 'none';
+    document.getElementById('orderSelector').style.display = 'block';
+    const showListOfCharacters=listOfCharacters
+    const ele = document.getElementById('ulItem');
+    ele.innerHTML =
+    showListOfCharacters.map(x => {
+        
+        return `
+        <li class="liItem">
+        <img src="${x.image}">
+        <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status} 
+        Origen: ${x.location.name}
+        </div>    
+        </li>
+        `;
+    }).join('');
+})
 
-//sacar y mostarar datos
+const listShowCharacters= document.getElementById('showCharacters');
+listShowCharacters.addEventListener('click', ()=>{
+    document.getElementById('portals').style.display = 'none';
+    document.getElementById('orderSelector').style.display = 'block';
+    const showListOfCharacters=listOfCharacters
+    const ele = document.getElementById('ulItem');
+    ele.innerHTML =
+    showListOfCharacters.map(x => {
+        
+        return `
+        <li class="liItem">
+        <img src="${x.image}">
+        <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status} 
+        Origen: ${x.location.name}
+        </div>    
+        </li>
+        `;
+    }).join('');
+})
+
+//Ordenar Datos
 const selectOrderABC = document.querySelector('.orden');
 selectOrderABC.addEventListener('change', () => {
 
