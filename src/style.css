@@ -2,3 +2,30 @@ body{
     font-family: sans-serif;
     font-size: 20px;
 }
+
+#results{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    left: 15%;
+}
+.cardStyle{
+    text-align: center;
+}
+
+/* Para tablets */
+@media only screen and (max-width: 768px){
+    #results{width:90%};
+}
+
+/*Para celular*/
+@media only screen and (max-width: 600px){
+    #results{width:90%}
+}
+
+/*Para desktop
+@media only screen and (min-width: 900px){
+    #
+}*/
