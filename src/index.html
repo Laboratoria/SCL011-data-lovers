@@ -2,18 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximus-scale=1, minimun-scale=1">
   </head>
   <body>
+  <header>
+      
+  
+  </header>
+  <main class="contain">
+    
+
+    <section class="secciones" id="ButtonPais">
+        
+      <nav class="buttonPais">
+         <h2>Paises</h2>
+          <p>Elige el país del cual desea cosultar información</p>
+        <button  class="botones" id="per"   value="PER">Peru</button>
+        <button  class="botones"  id="chl"  value="CHL">Chile</button>
+        <button  class="botones"  id="mex"  value="MEX">México</button>
+        <button  class="botones"  id="bra"  value="BRA">Brasil</button>
+        <button class="elements" id="clickWomens" value="womens"> clic Aquí</button>
+       
+      </nav>
+      
+     
+    </section>
+   
+    <section class="secciones" >
+       
+      <nav> <h3>Selecciona el indicador:</h3>
+        <select class="indicatorsSelect" id="indicator">
+        </select></nav>
+       
+        <h2 id="indicator-name"></h2>
+        <canvas  width="150px" height="100px">Grafico</canvas>
+       <div> <canvas width="50" height="50"> graficoProm</canvas> <canvas width="50" height="50" >graficoMax</canvas> <canvas width="50" height="50">graficoMin</canvas></div>
+      
+
+        
+        
+    
+    </section>
+  <section>
+ 
+      <table>
+          <thead>
+            <tr>
+              <td><strong>Año</strong> </td>
+              <td><strong>Dato</strong></td>
+            </tr>
+          </thead>
+          <tbody id="indicator-table">
+          </tbody>
+        </table>
+  </section>
+    
+
+
+  </main>
+  <footer></footer>
+
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
+    
+   <script src="./data/worldbank/worldbank.js"></script> 
+    
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
