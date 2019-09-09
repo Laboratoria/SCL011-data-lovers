@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,12 +17,12 @@
     </header>
     <main>
         <section id="filters">
-            <button class="btnActive">Mostrar Todo</button>
-            <button class="btnfilters" id="steam">Steam Updates</button>
-            <button class="btnfilters" id="blogtf2" value="TF2 Blog">TF2 Blog</button>
-            <button class="btnfilters" id="euro">Eurogamer</button>
-            <button class="btnfilters" id="PC">PC Gamer</button>
-            <button class="btnfilters" id="rps">RPS</button>
+            <button class="btnActive btnfilters" value="feedlabel">Mostrar Todo</button>
+            <button class="btnfilters" value="Product Update">Steam Updates</button>
+            <button class="btnfilters" value="TF2 Blog">TF2 Blog</button>
+            <button class="btnfilters" value="Eurogamer">Eurogamer</button>
+            <button class="btnfilters" value="PC Gamer">PC Gamer</button>
+            <button class="btnfilters" value="Rock, Paper, Shotgun">RPS</button>
         </section>
         <section id="orderDate">
             <label id="textSelect"><strong>Ordenar por Fecha:</strong></label>
@@ -35,10 +35,9 @@
         <section>
             <div id="content"></div>
         </section>
-        <div id="conte">
-
-        </div>
+   
     </main>
+  <!--<footer></footer> -->  
   <!--<footer></footer> -->  
   <script src="data/steam/steam.js"></script>
 <script src="data.js"></script>
