@@ -2,17 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximus-scale=1, minimun-scale=1">
-    <link rel="stylesheet" href="fontello.css">
-    
+
   </head>
   
   <!-----PAGE1----->
   <body>
+
    
     <header>
         <div class="container">
@@ -58,7 +59,34 @@
            
            <section id= "article">
              <div class="container">
-              <h2>Noticias</h2>
+ <section class="secciones" >
+       
+      <nav> <h3>Selecciona el indicador:</h3>
+        <select class="indicatorsSelect" id="indicator">
+        </select></nav>
+       
+        <h2 id="indicator-name"></h2>
+        <canvas  width="150px" height="100px">Grafico</canvas>
+       <div> <canvas width="50" height="50"> graficoProm</canvas> <canvas width="50" height="50" >graficoMax</canvas> <canvas width="50" height="50">graficoMin</canvas></div>
+      
+
+        
+        
+    
+    </section>
+  <section>
+ 
+      <table>
+          <thead>
+            <tr>
+              <td><strong>Año</strong> </td>
+              <td><strong>Dato</strong></td>
+            </tr>
+          </thead>
+          <tbody id="indicator-table">
+          </tbody>
+        </table>
+  </section>              <h2>Noticias</h2>
               <article>
                   <p>El sistema hace agua: la adversa ruta de las 197 mujeres asesinadas, que sí habían denunciado a sus parejas.
                       Con gran convocatoria se lleva a cabo seminario sobre el rol de las mujeres</p>
@@ -88,3 +116,5 @@
   </body>
 
 </html>
+
+
