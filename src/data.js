@@ -1,18 +1,18 @@
 
   
 //funcion orden alfabetico ESTA AUN NO ME FUNCIONA
-function sortAlphabetic(name){
- console.log('Recibi: '+name)
- let pokemonNames= allPokemonData.name;
- pokemonNames.sort((first, second)=>{
-   return first.name - second.name;
-  })
-  console.log(pokemonNames);
-}
+function sortAlphabetic(){
+const abcOrder = allPokemonData.sort((a,b)=>{
+  if(a.name>b.name){
+    return 1;
+  } return -1;
+})
+console.log(abcOrder);
+};
+
 
 //funcion ordenar por tipo
 function filterPokemonType(type){
-  console.log('Recibi: '+type)
   let empty =[]
   for(let i=0; i < allPokemonData.length; i++){
     for(let j=0; j < allPokemonData[i].type.length; j++){
@@ -38,7 +38,6 @@ function filterPokemonType(type){
 };
 
 function filterEggs(egg){
-  console.log('Recibi: '+egg)
   let empty =[]
   for(let i=0; i < allPokemonData.length; i++){
       if(allPokemonData[i].egg===egg){
