@@ -1,74 +1,85 @@
 /* Manejo del DOM */
 let listOfCharacters = RICKANDMORTY.results;
-
-//sacar y mostarar datos
-const botoncitoABC = document.getElementById('ABC');
-botoncitoABC.addEventListener('click', () => {
-    const listOfCharactersOrderABC = listOfCharacters.sort((a, b) => {
-        return (a.name < b.name) ? -1 : 1
-      })
-
-    
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-        listOfCharactersOrderABC.map(x => {
-            
-            return `
-                <li class="liItem">
-                    <img src="${x.image}">
-                    <div class="charData">
-                        Nombre: ${x.name}
-                        Genero: ${x.gender}
-                        Estado: ${x.status} 
-                        Origen: ${x.location.name}
-                    </div>    
-                </li>
-            `;
-        }).join('');
+//Variable de filtros Estado
+const alive = listOfCharacters.filter((e) => {
+    return (e.status === 'Alive');
 
 });
 
-const botoncitoCBA = document.getElementById('CBA');
-botoncitoCBA.addEventListener('click', () => {
-    const listOfCharactersOrderCBA = listOfCharacters.sort((a, b) => {
-        return (b.name < a.name)? -1 : 1
+const dead = listOfCharacters.filter((e) => {
+    return (e.status === 'Dead');
+
+});
+
+const unknown = listOfCharacters.filter((e) => {
+    return (e.status === 'unknown');
+
+});
+
+
+//sacar y mostarar datos
+const selectOrderABC = document.querySelector('.orden');
+selectOrderABC.addEventListener('change', () => {
+
+    if( selectOrderABC.value === 'ABC'){
+
+        const listOfCharactersOrderABC = listOfCharacters.sort((a, b) => {
+            return (a.name < b.name) ? -1 : 1
+        })
+        
+        
+        const ele = document.getElementById('ulItem');
+        ele.innerHTML =
+        listOfCharactersOrderABC.map(x => {
+            
+            return `
+            <li class="liItem">
+            <img src="${x.image}">
+            <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status} 
+            Origen: ${x.location.name}
+            </div>    
+            </li>
+            `;
+        }).join('');
+    } else {
+
+    const listOfCharactersOrderCBA = listOfCharacters.sort((a,b) => {
+        return (b.name < a.name) ? -1 : 1
     })
     const el = document.getElementById('ulItem');
     el.innerHTML =
         listOfCharactersOrderCBA.map(x => {
-            
-            return `
-                <li class="liItem">
-                    <img src="${x.image}">
-                    <div class="charData">
-                        Nombre: ${x.name}
-                        Genero: ${x.gender}
-                        Estado: ${x.status} 
-                        Origen: ${x.location.name}
-                        Capítulo de aparición: ${x.episode}
-                    </div>    
-                </li>
-            `;
-        }).join('');
-})
 
+            return `
+                    <li class="liItem">
+                        <img src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status} 
+                            Origen: ${x.location.name}
+                        </div>    
+                    </li>
+                `;
+        }).join('');
+    }
+
+});
 
 
 // filtar datos
 
 // filtro Estado (vivo)
-const botonStatusAlive= document.getElementById('filterStatusAlive');
-botonStatusAlive.addEventListener('click', ()=>{
-    const alive = listOfCharacters.filter( (e) => {
-        return (e.status === 'Alive');
-    
-      })
-      console.log(alive.length);  
+const botonStatusAlive = document.getElementById('filterStatusAlive');
+botonStatusAlive.addEventListener('click', () => {
     const el = document.getElementById('ulItem');
-        el.innerHTML =
-            alive.map(x => {
-                
-                return `
+    el.innerHTML =
+        alive.map(x => {
+
+            return `
                     <li class="liItem">
                         <img src="${x.image}">
                         <div class="charData">
@@ -80,25 +91,18 @@ botonStatusAlive.addEventListener('click', ()=>{
                     </li>
                     
                 `;
-            }).join('');
-
-          
-
+        }).join('');
 })
 
+
 // filtro Estado (muerto)
-const botonStatusDead= document.getElementById('filterStatusDead');
-botonStatusDead.addEventListener('click', ()=>{
-    const dead = listOfCharacters.filter( (e) => {
-        return (e.status === 'Dead');
-    
-      })
-      console.log(dead.length);
+const botonStatusDead = document.getElementById('filterStatusDead');
+botonStatusDead.addEventListener('click', () => {
     const el = document.getElementById('ulItem');
-        el.innerHTML =
-            dead.map(x => {
-                
-                return `
+    el.innerHTML =
+        dead.map(x => {
+
+            return `
                     <li class="liItem">
                         <img src="${x.image}">
                         <div class="charData">
@@ -111,22 +115,19 @@ botonStatusDead.addEventListener('click', ()=>{
                     </li>
                     
                 `;
-            }).join('');
+        }).join('');
 
 })
 // filtro Estado (indefinido)
-const botonStatusUnknown= document.getElementById('filterStatusUnknown');
-botonStatusUnknown.addEventListener('click', ()=>{
-    const unknown = listOfCharacters.filter( (e) => {
-        return (e.status === 'unknown');
-    
-      })
-      console.log(unknown.length)
-      const el = document.getElementById('ulItem');
-        el.innerHTML =
-            unknown.map(x => {
-                
-                return `
+const botonStatusUnknown = document.getElementById('filterStatusUnknown');
+botonStatusUnknown.addEventListener('click', () => {
+
+    console.log(unknown.length)
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+        unknown.map(x => {
+
+            return `
                     <li class="liItem">
                         <img src="${x.image}">
                         <div class="charData">
@@ -139,23 +140,23 @@ botonStatusUnknown.addEventListener('click', ()=>{
                     </li>
                     
                 `;
-            }).join('');
+        }).join('');
 
 })
 //Filtrar por Genero
 //Femenino
-const botonGenderFemale= document.getElementById('filterGenderFemale');
-botonGenderFemale.addEventListener('click', ()=>{
-    const female = listOfCharacters.filter( (e) => {
+const botonGenderFemale = document.getElementById('filterGenderFemale');
+botonGenderFemale.addEventListener('click', () => {
+    const female = listOfCharacters.filter((e) => {
         return (e.gender === 'Female');
-    
-      })
-      console.log(female.length);
+
+    })
+    console.log(female.length);
     const el = document.getElementById('ulItem');
-        el.innerHTML =
-            female.map(x => {
-                
-                return `
+    el.innerHTML =
+        female.map(x => {
+
+            return `
                     <li class="liItem">
                         <img src="${x.image}">
                         <div class="charData">
@@ -168,22 +169,22 @@ botonGenderFemale.addEventListener('click', ()=>{
                     </li>
                     
                 `;
-            }).join('');
+        }).join('');
 
 })
 // Masculino
-const botonGenderMale= document.getElementById('filterGenderMale');
-botonGenderMale.addEventListener('click', ()=>{
-    const male = listOfCharacters.filter( (e) => {
+const botonGenderMale = document.getElementById('filterGenderMale');
+botonGenderMale.addEventListener('click', () => {
+    const male = listOfCharacters.filter((e) => {
         return (e.gender === 'Male');
-    
-      })
+
+    })
     console.log(male.length);
     const el = document.getElementById('ulItem');
-        el.innerHTML =
-            male.map(x => {
-                 
-                return `
+    el.innerHTML =
+        male.map(x => {
+
+            return `
                     <li class="liItem">
                         <img src="${x.image}">
                         <div class="charData">
@@ -196,23 +197,23 @@ botonGenderMale.addEventListener('click', ()=>{
                     </li>
                     
                 `;
-            }).join('');
+        }).join('');
 
 })
 
 // Indefinido
-const botonGenderUnknown= document.getElementById('filterGenderUnknown');
-botonGenderUnknown.addEventListener('click', ()=>{
-    const unknown = listOfCharacters.filter( (e) => {
+const botonGenderUnknown = document.getElementById('filterGenderUnknown');
+botonGenderUnknown.addEventListener('click', () => {
+    const unknown = listOfCharacters.filter((e) => {
         return (e.gender === 'unknown');
-    
-      })
-     console.log(unknown.lenght);
+
+    })
+    console.log(totalEstados);
     const el = document.getElementById('ulItem');
-        el.innerHTML =
-            unknown.map(x => {
-                 
-                return `
+    el.innerHTML =
+        unknown.map(x => {
+
+            return `
                     <li class="liItem">
                         <img src="${x.image}">
                         <div class="charData">
@@ -225,7 +226,7 @@ botonGenderUnknown.addEventListener('click', ()=>{
                     </li>
                     
                 `;
-            }).join('');
+        }).join('');
 
 })
 
@@ -233,4 +234,11 @@ botonGenderUnknown.addEventListener('click', ()=>{
 //Calculos
 
 //Conteo numerico por especies y con porcentaje
+const numberAlive = alive.length;
+const numberDead = dead.length;
+const numberUnknown = unknown.length;
+const totalStatus= parseInt(numberAlive+numberDead+numberUnknown);
+const porcentAlive = parseInt((numberAlive/totalStatus)*100);
 
+const porcentDead = parseInt((numberDead/totalStatus)*100);
+const porcentUnkown = parseInt((numberUnknown/totalStatus)*100);
