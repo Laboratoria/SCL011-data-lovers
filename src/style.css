@@ -52,7 +52,7 @@ header nav ul li a {
     color:#fff;
 	display:block;
     text-decoration:none;
-    font-family: sans-serif;
+    font-family: Bangers;
 	padding: 20px;
     justify-content: center safe;
 
@@ -160,4 +160,6 @@ header nav ul li a:hover {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    font-family: Bangers;
+    color: white;
 }
