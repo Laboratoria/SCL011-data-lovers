@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 body{
@@ -9,25 +10,26 @@ body{
     background-color: black;
     background-position-x: center;
 }
+.buttons{
+    display: none;
+}
 header{
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 20%;
-    flex-direction: row;
 }
 
 header nav{
     width: 97%;
     margin: 1% auto;
-    max-width: 1200px;
+    max-width: 1100px;
     height: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
 .imagenRaM{
+    width: 35%;
     max-width: 65%;
     height: 65%;
     margin: 1%;
@@ -39,20 +41,21 @@ header nav ul{
     display: flex;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
 }
 header nav ul li {
-    justify-content: center safe;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    width: 30%;
+    display:inline-block;
+	position: relative;  
 }
 header nav ul li a {
-    color: #FBFCFC;    
-    justify-content: center;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    text-decoration: none;
+
+    color:#fff;
+	display:block;
+    text-decoration:none;
+    font-family: sans-serif;
+	padding: 20px;
+    justify-content: center safe;
+
 }
 header nav ul li a:hover {
     background: #02297b;
@@ -71,6 +74,34 @@ header nav ul li a:hover {
 .portal{
     width: 50%;
 }
+@media screen and (max-width:800px ){
+    .imagenRaM{
+        width: 40%;
+        height: 90%;
+    }
+    .portals{
+        display: none;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        margin: 2% auto;
+        padding: 2% auto;
+        background:#02297b;
+    
+    }
+    header nav ul{
+        flex-direction: row;
+        width: 90%;
+        color: white;
+    }
+    header nav ul li a:hover {
+        background: #5bb040;
+    }
+
+}
+
 
 @media screen and (max-width:500px ){
     .imagenRaM{
@@ -83,8 +114,8 @@ header nav ul li a:hover {
         display: flex;
         width: 100%;
         height: auto;
-        margin: 2% 2%;
-        padding: 2% 2%;
+        margin: 2% auto;
+        padding: 2% auto;
         background:#02297b;
     }
     header nav{
