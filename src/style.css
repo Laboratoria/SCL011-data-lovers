@@ -136,14 +136,22 @@ header nav ul li a:hover {
         width: 100%;  
     }
 }
-/*
+
+.ulItem {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
 .charData {
     font-family: Bangers;
     display: flex;
     flex-flow: column nowrap;
     width: 30%;
     list-style: none;
-}*/
+}
+
+
 
 .liItem {
     width: 100%;
