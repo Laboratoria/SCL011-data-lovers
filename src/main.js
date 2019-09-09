@@ -1,11 +1,11 @@
 /* Manejo del DOM */
 
-document.getElementById("btnActive").addEventListener("click", 
+/*document.getElementById("btnActive").addEventListener("click", 
 function timeConverter(){
-    let date = new Date(1540494720 * 1000);
+    let date = new Date(1540494720 * 1000); //takeData.date - hay que tirarlo a la lógica
     console.log(date);
 
-  })
+  })*/
   
 const takeData = STEAM.appnews.newsitems;
 
@@ -30,4 +30,3 @@ const rpsbtn = document.getElementById("rps")
 rpsbtn.addEventListener ('click',()=>{
     document.getElementById("content").innerHTML = window.filterData.filter(takeData).concatenarRps;
 })
->>>>>>> 665d3506b1bf082509fae504521a8f7fe4c064c2
