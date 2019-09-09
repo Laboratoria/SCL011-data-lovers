@@ -2,56 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Data Lovers</title>
+    <title>Maestro Pokemon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <br>
-    <div id="home">
-      <select id="alphabeticOrder" onchange=alphabeticSort()>
-        <option id="ABC" value="name">A - Z</option>
-        <option id="XYZ" value="name">Z - A</option>
-      </select>
-    <div id="root"></div>
-    </div>
-    <div id="pokedex">
-      <select id="filterType" onchange=filtrarPorTipo()>
-        <option value="select">Selecciona un tipo</option>
-        <option value="Normal">Normal</option>
-        <option value="Fire">Fuego</option>
-        <option value="Water">Agua</option>
-        <option value="Grass">Planta</option>
-        <option value="Electric">Electrico</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fight">Lucha</option>
-        <option value="Poison">Veneno</option>
-        <option value="Ground">Tierra</option>
-        <option value="Flying">Volador</option>
-        <option value="Psychic">Psiquico</option>
-        <option value="Bug">Bicho</option>
-        <option value="Rock">Roca</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Dragon">Dragon</option>
-      </select> <br/>
-      <div id="root"></div>
-    </div>
-    
-    <div id="estadisticas">
-        <select id="eggFilter" onchange=filterOfEggs()>
-          <option value="select"> Selecciona un huevo</option>
-          <option value="2 km">2 kilometros</option>
-          <option value="5 km">5 kilometros</option>
+  <body>      
+    <img id= titulo src="https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/titulo.png?raw=true" class= center >
+
+    <header>
+      <br>
+         <div id="home">
+        <select id="alphabeticOrder" onchange=alphabeticSort()>
+          <option value="select">Ordena Alfabeticamente</option>
+          <option value="name">A - Z</option>
+          <option value="name">Z - A</option>
+        </select>
+      </div>
+      <div id="pokedex">
+        <select id="filterType" onchange=filtrarPorTipo()>
+          <option value="select">Selecciona un tipo</option>
+          <option value="Normal">Normal</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Electrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fight">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psiquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragon</option>
+        </select> 
+      </div>
+      
+      <div id="estadisticas">
+          <select id="eggFilter" onchange=filterOfEggs()>
+            <option value="select"> Selecciona un huevo</option>
+            <option value="2 km">2 kilometros</option>
+            <option value="5 km">5 kilometros</option>
             <option value="10 km">10 kilometros</option>
             <option value="Not in Eggs">No aparece en huevos</option>
-    </select>
-      <div id="root"></div>
-    </div>
+          </select>
+      </div>
+    </header>
+    
     <div id="results"></div>
 
     <script src="./data/pokemon/pokemon.js"></script> 
-    <script src="data.js">
-    </script>
+    <script src="data.js"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 

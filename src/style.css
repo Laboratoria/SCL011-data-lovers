@@ -1,19 +1,58 @@
 body{
-    font-family: sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    background-image: url("https://image.freepik.com/vector-gratis/fondo-cielo-rayos-sol_1048-2215.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#results{
+#titulo {
+    left: 50%;
+    image-orientation: flip;
+}
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(96, 96, 236);
     display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    width: 100%;
-    justify-content: space-evenly;
-    left: 15%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 30px;
+    }
+.center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+ }
+
+    
+
+
+#results {
+    width: 1200px;
+    height: 700px;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+
 }
-.cardStyle{
-    text-align: center;
-}
+ .cardStyle {
+     background: rgb(94, 166, 224);
+     width: 150px;
+     height: 200px;
+     margin: 15px;
+     border-radius: 10px;
+     justify-items: center;
+     align-self: inherit;
+     text-align: center;
+    }
+
+
 
 /* Para tablets */
 @media only screen and (max-width: 768px){
