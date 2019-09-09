@@ -2,12 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bangers" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
+  <header>
+      <nav>
+            <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png">
+      <ul>
+          <li><a href="#">Personajes</a></li>
+          <li><a href="#">Lugares</a></li>
+          <li><a href="#">Datos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+      <div class= "portals">
+       <button class="buttoncito"><img class=portal src="Imagenes/portal1.png"></button>
+       <button class="buttoncito"><img class=portal src="Imagenes/portal2.png"></button>
+      </div>
+  </section>
+
       <ul id="ulItem"></ul>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <!-- <script src="./data/pokemon/pokemon.js"></script> -->
@@ -15,6 +33,7 @@
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <!-- <script src="./data/lol/lol.js"></script> -->
     <!-- <script src="./data/patient/patient.js"></script> -->
+<<<<<<< HEAD
 
     <select class="orden" name="orden">
         <option value="">Ordenar de la …</option>
@@ -23,6 +42,12 @@
     </select>
 
 
+=======
+    <div class="buttons" >
+
+    <button id= "ABC">De la A a la Z</button>
+    <button id= "CBA">De la Z a la A</button>
+>>>>>>> a816eeb8c484137f2ffe5067e6840e9fe557a490
     <button id= "filterStatusAlive">Vivo</button>
     <button id= "filterStatusDead">Muerto</button>
     <button id= "filterStatusUnknown">Indefinido</button>
@@ -31,7 +56,7 @@
     <button id= "filterGenderMale">Masculino</button>
     <button id= "filterGenderUnknown">Sexo Indefinido</button>
     
-
+  </div>
   </div>
     <script src="./data/rickandmorty/rickandmorty.js"></script> 
     <script src="data.js"></script>
