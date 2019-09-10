@@ -1,15 +1,16 @@
 window.filterData={
-  filter: (takeData, buttonFilter)=>{
+  filter: (takeData, buttonFilters)=>{
       let result= []; 
       for (let i=0; i<takeData.length;i++){
-          if (buttonFilter === takeData[i].feedlabel){
+          if (buttonFilters === takeData[i].feedlabel){
               result.push(takeData[i])
           }
-          if(buttonFilter === 'feedlabel'){
+          if(buttonFilters === 'feedlabel'){
             result.push(takeData[i])
           }
       }
       return result
+
   }, 
   sortByDate: (takeData)=>{
       let dates = [] ;

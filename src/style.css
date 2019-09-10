@@ -1,34 +1,45 @@
 body{
+   font-family: Roboto;
    margin: 0px;
    background-color: #1B2838;
 }
 
-#linksNav, #orderDate{
-   text-align: right;
+#orderDate{
+   text-align: left;
+   padding: 1%;
+   margin-bottom: 1%;
 }
 #linksNav{
 background-color: #2A475E;
 padding: 1%;
+text-align: right;
 }
 #textSelect, .links{
    color: white;
+}
+#textSelect{
+   font-weight: 700;
 }
 .links{
    font-size: 20px;
    padding: 2em;
 }
 #filters{
-   text-align: center;
-   padding: 2em 3em;
+   text-align: left;
+   padding: 1%;
 }
 
 .btnActive, .btnfilters{
    border: none;
    border-radius: 20px;
    margin-left: 5pt;
-   height: 30px;
-   font-size: 15px;
-   margin-top: 5pt;
+   height: 40px;
+   font-size: 12px;
+   font-weight: bold;
+   color: white;
+   text-transform: uppercase;
+   margin-top: 14pt;
+   padding: 1%;
    
 }
 .btnActive{
@@ -52,6 +63,26 @@ padding: 1%;
    float: left;
    
 }
+a:link {
+   color: #FB8637;
+   text-decoration: none;
+ }
+ 
+a:visited {
+   color: #ffffff;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ 
+a:hover {
+   color: #C36C2D;
+   text-decoration: underline;
+ }
+ 
+a:active {
+   color: #B55123;
+   text-decoration: none;
+ }
 #content{
    text-align: center
 }
@@ -63,3 +94,4 @@ padding: 1%;
 .url{
    color: blue;
 }
+

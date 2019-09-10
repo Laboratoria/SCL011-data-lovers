@@ -125,3 +125,4 @@ const STEAM = {
     "count": 2587
   }
 };;
+ window.STEAM = STEAM;
