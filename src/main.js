@@ -62,7 +62,17 @@ for (let i = 0; i < buttonFilters.length; i++){
         if (valueButton==="Rock, Paper, Shotgun"){
            let rspBtn =  window.filterData.filter(takeData, valueButton);
            renderNews(rspBtn);
-           
-        }
+          }
     })
-}
+};
+
+let selectSort = document.getElementById("orderSelect");
+selectSort.addEventListener ('change', ()=>{
+    let selectValue = selectSort.options[selectSort.selectedIndex].value;
+    if (selectValue=== "ascendente") {
+        
+        let ascendente= window.filterData.sortByDate(takeData)
+        console.log(ascendente)
+        
+    }
+})
