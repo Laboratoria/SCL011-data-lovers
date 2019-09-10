@@ -1,5 +1,5 @@
 /* Manejo del DOM */
-const listOfCharacters = RICKANDMORTY.results;
+const listOfCharacters = window.RICKANDMORTY.results;
 //Variable de filtros Estado
 const alive = window.data.filterStatusAlive(listOfCharacters);
 const dead = window.data.filterStatusDead(listOfCharacters);
@@ -85,7 +85,7 @@ selectOrderABC.addEventListener('change', () => {
     
     const el = document.getElementById('ulItem');
     el.innerHTML =
-        listOfCharactersOrderCBA.map(x => {
+        orderCBA.map(x => {
 
             return `
                     <li class="liItem">
@@ -156,7 +156,7 @@ botonStatusDead.addEventListener('click', () => {
 const botonStatusUnknown = document.getElementById('filterStatusUnknown');
 botonStatusUnknown.addEventListener('click', () => {
 
-    console.log(unknown.length)
+    
     const el = document.getElementById('ulItem');
     el.innerHTML =
         unknown.map(x => {
@@ -182,7 +182,6 @@ botonStatusUnknown.addEventListener('click', () => {
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
     
-    console.log(female.length);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         female.map(x => {
@@ -207,7 +206,6 @@ botonGenderFemale.addEventListener('click', () => {
 const botonGenderMale = document.getElementById('filterGenderMale');
 botonGenderMale.addEventListener('click', () => {
     
-    console.log(male.length);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         male.map(x => {
