@@ -62,7 +62,7 @@ window.sorterRicks = {
     });
   }
   return filterOrder;
-};
+},}
 
 
 

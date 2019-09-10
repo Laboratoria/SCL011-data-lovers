@@ -75,10 +75,12 @@
          containerr.appendChild(card);
          //containerr.appendChild(img);
 
-     }
+     }}
 
 
-     
+ 
+ 
+    
 
 
 
