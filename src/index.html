@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Rick & Morty</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
@@ -38,6 +38,19 @@
             </div>
 
         </section>
+      
+        <select id="orderRicks" onchange="myFunction()">
+                <option value="aZ">Ordenar de la A la Z</option>
+                <option value="zA">Ordenar de la Z a la A</option>
+                </select>
+
+                <script>
+                        function myFunction() {
+                          var x = document.getElementById("mySelect").value;
+                          document.getElementById("container-cardss").innerHTML = "You selected: " + x;
+                        }
+                        </script>
+
         <section id="container-cardss" class="container-cards">
 
 

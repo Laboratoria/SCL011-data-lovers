@@ -133,13 +133,13 @@ footer:hover {
     width: 200px;
     height: 200px;
     margin: 20px;
-    background-color: transparent;
+    background-color: pink;
     display: inline-flex;
     
 }
 
 .btn:hover {
-    background-color: pink;
+    background-color: white;
 }
 
 h2 {
