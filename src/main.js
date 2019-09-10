@@ -1,20 +1,16 @@
 /* Manejo del DOM */
-let listOfCharacters = RICKANDMORTY.results;
+const listOfCharacters = RICKANDMORTY.results;
 //Variable de filtros Estado
-const alive = listOfCharacters.filter((e) => {
-    return (e.status === 'Alive');
-
-});
-
-const dead = listOfCharacters.filter((e) => {
-    return (e.status === 'Dead');
-
-});
-
-const unknown = listOfCharacters.filter((e) => {
-    return (e.status === 'unknown');
-
-});
+const alive = window.data.filterStatusAlive(listOfCharacters);
+const dead = window.data.filterStatusDead(listOfCharacters);
+const unknown = window.data.filterStatusUnknown(listOfCharacters);
+//Variables de filtro de Genero
+const female = window.data.filterGenderFemale(listOfCharacters);
+const male = window.data.filterGenderFemale(listOfCharacters);
+const genderUnknown = window.data.filterGenderUnknown(listOfCharacters);
+//Variables de Orden
+const orderABC = window.data.orderABC(listOfCharacters);
+const orderCBA = window.data.orderCBA(listOfCharacters);
 
 //Mostrar personajes
 const buttonShowCharacters= document.getElementById('characters');
@@ -43,7 +39,6 @@ buttonShowCharacters.addEventListener('click', ()=>{
 const listShowCharacters= document.getElementById('showCharacters');
 listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
-    document.getElementById('orderSelector').style.display = 'block';
     const showListOfCharacters=listOfCharacters
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -69,14 +64,9 @@ selectOrderABC.addEventListener('change', () => {
 
     if( selectOrderABC.value === 'ABC'){
 
-        const listOfCharactersOrderABC = listOfCharacters.sort((a, b) => {
-            return (a.name < b.name) ? -1 : 1
-        })
-        
-        
         const ele = document.getElementById('ulItem');
         ele.innerHTML =
-        listOfCharactersOrderABC.map(x => {
+        orderABC.map(x => {
             
             return `
             <li class="liItem">
@@ -92,9 +82,7 @@ selectOrderABC.addEventListener('change', () => {
         }).join('');
     } else {
 
-    const listOfCharactersOrderCBA = listOfCharacters.sort((a,b) => {
-        return (b.name < a.name) ? -1 : 1
-    })
+    
     const el = document.getElementById('ulItem');
     el.innerHTML =
         listOfCharactersOrderCBA.map(x => {
@@ -193,10 +181,7 @@ botonStatusUnknown.addEventListener('click', () => {
 //Femenino
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
-    const female = listOfCharacters.filter((e) => {
-        return (e.gender === 'Female');
-
-    })
+    
     console.log(female.length);
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -221,10 +206,7 @@ botonGenderFemale.addEventListener('click', () => {
 // Masculino
 const botonGenderMale = document.getElementById('filterGenderMale');
 botonGenderMale.addEventListener('click', () => {
-    const male = listOfCharacters.filter((e) => {
-        return (e.gender === 'Male');
-
-    })
+    
     console.log(male.length);
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -250,15 +232,11 @@ botonGenderMale.addEventListener('click', () => {
 // Indefinido
 const botonGenderUnknown = document.getElementById('filterGenderUnknown');
 botonGenderUnknown.addEventListener('click', () => {
-    const unknown = listOfCharacters.filter((e) => {
-        return (e.gender === 'unknown');
-
-    })
-    console.log(totalEstados);
+    
+    
     const el = document.getElementById('ulItem');
     el.innerHTML =
-        unknown.map(x => {
-
+        genderUnknown.map(x => {
             return `
                     <li class="liItem">
                         <img src="${x.image}">
@@ -280,11 +258,11 @@ botonGenderUnknown.addEventListener('click', () => {
 //Calculos
 
 //Conteo numerico por especies y con porcentaje
-const numberAlive = alive.length;
-const numberDead = dead.length;
-const numberUnknown = unknown.length;
-const totalStatus= parseInt(numberAlive+numberDead+numberUnknown);
-const porcentAlive = parseInt((numberAlive/totalStatus)*100);
+// const numberAlive = alive.length;
+// const numberDead = dead.length;
+// const numberUnknown = unknown.length;
+// const totalStatus= parseInt(numberAlive+numberDead+numberUnknown);
+// const porcentAlive = parseInt((numberAlive/totalStatus)*100);
 
-const porcentDead = parseInt((numberDead/totalStatus)*100);
-const porcentUnkown = parseInt((numberUnknown/totalStatus)*100);
+// const porcentDead = parseInt((numberDead/totalStatus)*100);
+// const porcentUnkown = parseInt((numberUnknown/totalStatus)*100);
