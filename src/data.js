@@ -19,14 +19,14 @@ function sortAlphabetic(){
           empty.push(allPokemonOnData[i]);
         }
       } 
-    }
-    let showCardsComplete = document.getElementById("results");
+  }
+  let showCardsComplete = document.getElementById("results");
         //limpia el html y empieza a imprimir segun el filtro
-    showCardsComplete.innerHTML="";
-    let pokemonCards="";
+  showCardsComplete.innerHTML="";
+  let pokemonCards="";
   
   
-    empty.forEach((element=>{
+  empty.forEach((element=>{
       pokemonCards +=
       `<div class="cardStyle">
       <img src="${element.img}" alt="imagenPokemon">
@@ -42,14 +42,14 @@ function sortAlphabetic(){
         if(allPokemonOnData[i].egg===egg){
           empty.push(allPokemonOnData[i]);
         }
-      }
-      let showCardsComplete = document.getElementById("results");
+     }
+  let showCardsComplete = document.getElementById("results");
       //limpia el html y empieza a imprimir segun el filtro
-    showCardsComplete.innerHTML="";
-    let pokemonCards="";
+  showCardsComplete.innerHTML="";
+  let pokemonCards="";
   
   
-    empty.forEach((element=>{
+  empty.forEach((element=>{
       pokemonCards +=
       `<div class="cardStyle">
       <img src="${element.img}" alt="imagenPokemon">
@@ -57,5 +57,5 @@ function sortAlphabetic(){
       </div>`
       showCardsComplete.innerHTML= pokemonCards;
     })) 
-      };
+  };
   
