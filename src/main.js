@@ -1,49 +1,43 @@
-/* Manejo del DOM */
-const lolData = Object.values(LOL.data);
-window.lolData = lolData
-
+//boton champion
 const btnchampion = document.getElementById("btnchampion");
 //funcion click
 btnchampion.addEventListener("click",() =>{
     for (let i = 0; i < lolData.length; i++) {
-    root.innerHTML += `
-<div>
-<div class="flip-card">
-<div class="flip-card-front">
-<div id="img${[i]}">
-        <img src="${lolData[i].img}">
-        </div>
-        <div id="name${[i]}">
-        <p>${lolData[i].id}</p>
-        </div>
+        root.innerHTML += `
+       <div>
+            <div id="img${[i]}">
+                <img src="${lolData[i].img}">
+            </div>
+            <div id="name${[i]}">
+                <p>${lolData[i].id}</p>
+            </div> 
         </div>`;
-        
-    }
-    })
+       //console.log(lolData[i].id);
+     
+   
+   
 
+const btnMostPower = document.getElementById("btnMostPower");
+btnMostPower.addEventListener("click",() =>{
+    mostPower(lolData, "attack");
+});
+
+const btnFighter = document.getElementById("btnFighter");
+btnFighter.addEventListener("click",() =>{
+    tags(lolData, "Fighter");
+});
+
+const btnStats =document.getElementById("stats");
+btnStats.addEventListener("click",()=>{
+    stats(lolData, "stats");
+});
+
+
+const sortDataLol = document.getElementById("a-z");
+sortDataLol.addEventListener("onchange",()=>{
+    sortData(lolData, "z-a");
+});
   
     
     
 
-
-  /* const selectlegends = document.getElementByI("lolselect")
-    //funcion change
-    selectlegends.addEventListener("change",() =>{
-        const condition = selectlegends.value 
-        let results = window.filterT(lolData, condition);
-        document.getElementById("container").innerHTML=''; 
-        
-        createCards(results);  
-
-
-
-    })
-
-      /*  for (let i = 0; i < lolData.length; i++) {
-            container.innerHTML += `
-
-            <div class="flip-card">*/
-  
-
-
-  

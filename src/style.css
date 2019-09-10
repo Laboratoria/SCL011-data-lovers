@@ -1,4 +1,9 @@
 
+html{
+    background-color: #D4AF37;
+}
+
+
 *{
     margin:0;
     padding: 0;
@@ -10,8 +15,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-background-attachment: fixed;
+    background-attachment: fixed;
 }
+
+
 #btnchampion{
     display: flex;
     justify-content: center;
@@ -44,7 +51,4 @@ padding: 10px;
     
 
   }
-
-
-
 
