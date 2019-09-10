@@ -1,140 +1,104 @@
-# **Data Lovers**
-
+# Nombre proyecto Data Lovers
+  
 ## **Índice**
 
-* [Preámbulo](#preámbulo)
-* [Descripción](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
+-   Preámbulo
+-   Definición de usuario
+    -   Encuestas
+    -   Usuario: "User persona"
+    -   Historias de Usuario
+-   Definición UX
+    -   Experiencia
+    -   Planificación
+    -   Mapa de flujo
+    -   Wireframes
+-   Definición de usuario
+    -   Encuestas
+    -   Usuario (User persona)
+    -   Historias de Usuario y Definition of Done
+-   Iteración del producto
+    -   Mapa de flujo
+    -   Referente
+    -   Prototipo de baja Fidelidad
+    -   Prototipo de mediana Fidelidad
+-   Desarrollo de Interfaz UI 
+    -   Flujo de Usabilidad
+    -   Evaluación Heurística
+    -   Prototipo de escritorio
 
-***
 
 ## **1. Preámbulo**
 
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
+Desde el año 2013 que la serie **Rick and Morty** ha sido un éxito con sus tres temporadas y sus millones de seguidores alrededor del mundo. Ganadora de un premio Emmy y con proyección para dos temporadas más como indica el sitio web de [Fotogramas] https://www.fotogramas.es/revista-fotogramas/
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+Es por ello que se ha creado una plataforma llamada **Blablabla** que almacena datos de todos sus personajes y algunas curiosidades para sus fans.
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
+## Usuario:
+ 
+Para definir el usuario se realizó un form de google a 12 personas con preguntas generales y así poder identificar al usuario inexperto, experto y medio.
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/tpkPWTc/Screenshot-15.png" alt="Screenshot-15" border="0"></a>
 
-\* Puedes ver el datalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
+Para comenzar se agradece al encuestado por su tiempo y se hacen un par de preguntas personales para la identificación de los usuarios.
 
-## **2. Resumen del proyecto**
+<hr>
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+<a href="https://ibb.co/9Y7RjgY"><img src="https://i.ibb.co/tC9y5KC/Screenshot-3.png" alt="Screenshot-3" border="0"></a>
+<a href="https://ibb.co/x6Ds8Lm"><img src="https://i.ibb.co/njb08m3/Screenshot-4.png" alt="Screenshot-4" border="0"></a>
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+Gran parte de los participantes de esta encuesta tienen disciplinas relacionadas con el diseño y tecnología.
 
-Una vez que definas tu área de interés, entiende quién es tu usuario y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que le
-ayude a interactuar y entender mejor esos datos.
+Sin embargo, en tiempos libres sus preferencias son relacionadas con el deporte y ver series. 
+<hr>
 
-Estos son datos que te proponemos:
+<a href="https://ibb.co/nMv32MF"><img src="https://i.ibb.co/QvR8Bv4/Screenshot-5.png" alt="Screenshot-5" border="0"></a>
 
-* [Banco Mundial](src/data/worldbank/worldbank.json) Indicadores de desarrollo del Banco Mundial de algunos países (Brasil, Chile, 
-  México y Perú). Estos datos incluyen indicadores demográficos, económicos y 
-  comerciales.
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](https://pokemongolive.com).
-* [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-* [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicileta, ...).
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json): Este set nos proporciona la lista de los personajes de la serie Rick and Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com/)
-* [Pacientes en EEUU](src/data/patient/patient.json): Este set nos proporciona una lista de pacientes de EEUU. Puedes revisar la documentación de su API en este [link](https://r2.smarthealthit.org/Patient)
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún calculo agregado**. Como aclaración,
-con cálculo agregado nos referimos a distintos cálculos que puedes hacer con
-la data que tienes para mostrar información aún más relevante a los usuarios.
-Una opción serían cálculos estadísticos como el promedio, el máximo o el mínimo,
-por ejemplo, si tenemos una colección que representa a un grupo de personas,
-y cada persona está representada como un _objeto_ con una _propiedad_ `altura`,
-podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
+<a href="https://ibb.co/m8TZ7Yp"><img src="https://i.ibb.co/0t243W5/Screenshot-6.png" alt="Screenshot-6" border="0"></a><br />
 
-## **3. Objetivos de aprendizaje**
+Más del 60% de los participantes ve televisión, pero prefiere ver películas o series por plataformas de streaming. 
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
+<hr>
 
-Dicho en palabras sencillas, aprenderás a:
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/Nm081h5/Screenshot-7.png" alt="Screenshot-7" border="0"></a>
 
-* Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
-* Pensar en las **necesidades de los usuarios** para crear historias de usuario.
-* Escribir y trabajar con **historias de usuario**, sus definiciones de
-  terminado (_definition of done_) en la organización y planificación de tu
-  trabajo.
-* Definir qué data y de qué forma mostrarla en el producto, basándote en
-  tu **entendimiento del usuario**.
-* Crear productos que sigan los **principios básicos de diseño visual** y
-  las **heurísticas de usabilidad**.
-* Iterar el diseño del producto, basándote en los resultados de los
-  **tests de usabilidad**.
-* Manipular **_arreglos_ (_arrays_) y _objetos_ (_objects_)**.
-* **Manipular el DOM** (agregar elementos dinámicamente basados en la data).
-* **Manejar eventos del DOM** para permitir interacción con el usuario
-  (filtrado, ordenado, ...).
-* Entender los beneficios y complejidades de **trabajar en equipo** en un
-  ambiente de incertidumbre.
+El 75% asegura ver caricaturas o series, lo que nos demuestra popularidad de estas en la actualidad.
+<hr>
 
-## **4. Consideraciones generales**
+<a href="https://ibb.co/zmKwfn4"><img src="https://i.ibb.co/3TtHhrC/Screenshot-8.png" alt="Screenshot-8" border="0"></a>
 
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: El proyecto dura 2.5
- semanas, trabaja con sprints 
-y planificando tus tareas.
-* La división y organización del trabajo debe permitir, sin excepciones, que **cada integrante** del equipo practique el aprendizaje de todo lo involucrado en **cada historia**. No se dividan el trabajo como en una fábrica.
-* Antes de comenzar, conversen sobre cómo le fue a cada una en el proyecto anterior para que puedan entender mejor cómo organizarse. No caigan en el error de cada una hacer lo que ya sabe bien cómo hacer. Aprovechen la oportunidad de hacer lo que no saben bien. Acá estás para aprender, no para "entregar" proyectos solamente.
-* Una vez que hayan definido y priorizado sus Historias de Usuario, solamente podrán trabajar en una por vez, no pueden avanzar a la siguiente sin haber completado la anterior. La historia se completa cuando se cumplen **todos** sus Criterios de Aceptación + **toda** su Definición de Terminado.
+La serie más popular entre los encuestados fue Rick and Morty, siendo 7 personas quienes ven esta serie y la segunda más popular es Padre de familia,  serie que se asemeja en el humor negro.
+<hr>
+La siguiente fase fue opcional, ya que las preguntas están enfocadas en personas que vieron la serie:
 
-## **5. Criterios de Aceptación Mínimos del Proyecto**
+<a href="https://ibb.co/m5hL6kQ"><img src="https://i.ibb.co/60D3gz6/Screenshot-9.png" alt="Screenshot-9" border="0"></a><br />
 
-Los criterios para considerar que has completado este proyecto son:
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/VVtMgYh/Screenshot-10.png" alt="Screenshot-10" border="0"></a>
 
-### **5.1 Definición del producto**
+<a href="https://ibb.co/T8V8KD1"><img src="https://i.ibb.co/DCxCGPY/Screenshot-11.png" alt="Screenshot-11" border="0"></a><br />
 
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
+ Las 7 personas que vieron la serie, vieron la primera temporada, 6 de ellos, la segunda y 4 vieron las 3 temporadas, las mismas 4 personas, aseguran que han visto más de una vez alguna de las temporadas. Aquí podemos definir que tenemos usuarios inexpertos (quienes han visto sólo 1 temporada), usuarios medios**(quienes vieron 2 temporadas) y los expertos (quienes vieron las 3 temporadas y han repetido alguna de estas).
+ <hr>
+<a href="https://ibb.co/NTW5zqv"><img src="https://i.ibb.co/3RS2Hb3/Screenshot-12.png" alt="Screenshot-12" border="0"></a>
 
-### **5.2 Historias de usuario**
+Para la obtención y construcción de los elementos de la página se hizo una pregunta más abierta para conocer los gustos de los seguidores de Rick and Morty,
 
-Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition o done_) para cada una.
+<hr>
+A continuación a todos los entrevistados se les realizó un par de preguntas sobre el uso de internet.
 
+<a href="https://ibb.co/CK45T50"><img src="https://i.ibb.co/v4fxKxz/Screenshot-13.png" alt="Screenshot-13" border="0"></a>
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/2vM33Lm/Screenshot-14.png" alt="Screenshot-14" border="0"></a>
+
+Esta pregunta fue con fines de analizar la composición y estructura de los distintos sitios web que frecuentan los entrevistados.
+ <hr>
+
+### Conclusión de encuesta:
+
+La conclusión que sacamos de esta encuesta general que a pesar de sus actividades que se dedican, muchos de ellos son **personas dinámicas, que se adaptan a la tecnología**, que ven series animadas o caricaturas. Este perfil de personas es al cual nos vamos a dirigir e indagar más sobre ellos, sobre sus reacciones e interacciones con la app.
+ 
+  A raíz de esta información, contactamos a 2 encuestados para entrevistar presencialmente con un prototipo de media fidelidad de la app.
+  
 ### **5.3 Diseño de la Interfaz de Usuario**
 
 #### Prototipo de baja fidelidad

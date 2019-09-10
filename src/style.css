@@ -10,9 +10,7 @@ body{
     background-color: black;
     background-position-x: center;
 }
-.buttons{
-    display: none;
-}
+
 header{
     display: flex;
     width: 100%;
@@ -20,8 +18,8 @@ header{
 
 header nav{
     width: 97%;
-    margin: 1% auto;
-    max-width: 1100px;
+    margin: 3% auto;
+    max-width: 1000px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -31,34 +29,32 @@ header nav{
 .imagenRaM{
     width: 35%;
     max-width: 65%;
-    height: 65%;
+    height: auto;
     margin: 1%;
     justify-content: center;
 }
 
 header nav ul{
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     list-style: none;
     align-items: center;
 }
-header nav ul li {
-    display:inline-block;
-	position: relative;  
-}
-header nav ul li a {
 
-    color:#fff;
-	display:block;
-    text-decoration:none;
-    font-family: Bangers;
-	padding: 20px;
-    justify-content: center safe;
-
+.buttonPrincipal{
+    background-color: #02297b;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
 }
-header nav ul li a:hover {
-    background: #02297b;
+.buttonPrincipal:hover {
+    background-color: #5bb040;
 }
 
 .portals{
@@ -68,16 +64,45 @@ header nav ul li a:hover {
 }
 .buttoncito{
     background: transparent;
-    justify-content: safe;
     border: none;
 }
 .portal{
     width: 50%;
 }
+.ulItem {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2%;
+    align-items: baseline;
+    background:#02297b;
+
+}
+img{
+    width: 90%;
+}
+.charData {
+    font-family: Bangers;
+    width: 80%;
+    justify-content: center;
+    list-style: none;
+    background: #5bb040;
+    margin: 2% 2%;
+}
+
+.liItem {
+    width: 80%;
+    height: 50%;
+    padding: 2% 2%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
 @media screen and (max-width:800px ){
     .imagenRaM{
         width: 40%;
-        height: 90%;
+        height: 60%;
     }
     .portals{
         display: none;
@@ -99,9 +124,12 @@ header nav ul li a:hover {
     header nav ul li a:hover {
         background: #5bb040;
     }
+    .ulItem {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 5%;
 
 }
-
 
 @media screen and (max-width:500px ){
     .imagenRaM{
@@ -117,6 +145,7 @@ header nav ul li a:hover {
         margin: 2% auto;
         padding: 2% auto;
         background:#02297b;
+
     }
     header nav{
         margin: 2% 2%;
@@ -127,7 +156,11 @@ header nav ul li a:hover {
         flex-direction: column;
         width: 90%;
     }
-
+    .ulItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     header nav ul li {
         width: 100%;   
     }
@@ -135,31 +168,4 @@ header nav ul li a:hover {
         background:#5bb040;
         width: 100%;  
     }
-}
-
-.ulItem {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-}
-
-.charData {
-    font-family: Bangers;
-    display: flex;
-    flex-flow: column nowrap;
-    width: 30%;
-    list-style: none;
-}
-
-
-
-.liItem {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    font-family: Bangers;
-    color: white;
 }
