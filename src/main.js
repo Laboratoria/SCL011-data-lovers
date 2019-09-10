@@ -1,5 +1,5 @@
 /* Manejo del DOM */
-const listOfCharacters = window.RICKANDMORTY.results;
+const listOfCharacters = RICKANDMORTY.results;
 //Variable de filtros Estado
 const alive = window.data.filterStatusAlive(listOfCharacters);
 const dead = window.data.filterStatusDead(listOfCharacters);
