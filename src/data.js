@@ -1,3 +1,4 @@
+ 
 const lolData= Object.values(LOL.data);
 window.lolData = lolData;
 
@@ -105,22 +106,9 @@ window.lolData = lolData;
       return lolOrder;
     };
     
-    //const li = document.createElement(li);
-    //let textLi = document.createTextNode(data[i]);
-    //li.appendChild(textLi);
-    //container.appendChild(li);
+  
 
 
 
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-// const nombrex = () => {
-
-  // return ;
-// };
-window.mostPower = mostPower;
-
-window.LOL = LOL;
 

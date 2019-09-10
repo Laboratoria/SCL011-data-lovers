@@ -13,9 +13,9 @@ btnchampion.addEventListener("click",() =>{
             </div> 
         </div>`;
        //console.log(lolData[i].id);
-       
-    }
-});
+     
+   
+   
 
 const btnMostPower = document.getElementById("btnMostPower");
 btnMostPower.addEventListener("click",() =>{
@@ -32,7 +32,12 @@ btnStats.addEventListener("click",()=>{
     stats(lolData, "stats");
 });
 
+
 const sortDataLol = document.getElementById("a-z");
 sortDataLol.addEventListener("onchange",()=>{
     sortData(lolData, "z-a");
 });
+  
+    
+    
+
