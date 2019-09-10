@@ -74,10 +74,26 @@
 
          containerr.appendChild(card);
          //containerr.appendChild(img);
+
      }
 
+     const sorter = (data, sortBy, sortOrder) => {
+        let sortedData = [""]; // arreglo vacio donde enviaremos el nuevo orden de la data
+        if (sortOrder == "asc") {
+          sortedData = data.sort((a, b) => a[sortBy].localeCompare(b[sortBy])); //a-z 
+        } else {
+          sortedData = data.sort((a, b) => a[sortBy].localeCompare(b[sortBy])).reverse(); //a-z pero invertido (Z-A)
+        }
+        return sortedData;
+      }
+      window.sorter = sorter;
 
     }
-    
+
+
+
+
+
+
 
 

@@ -43,23 +43,11 @@ window.filter = {
 
         //Retorno el resultado para recogerlo en el main.js
         return unknown;
-
-    },
-
-    filterOrderAz: (ricks) => {
-
-        let orderAz = ricks.sort(function(a, b){return a.name - b.name})
-
-        return orderAz; 
         
+
     },
 
-    filterOrderZa: (ricks) => {
-
-        let orderZa = ricks.sort(function(b, a){return b.name - a.name})
-
-        return orderZa;
-    }
+ 
 }
 
 
