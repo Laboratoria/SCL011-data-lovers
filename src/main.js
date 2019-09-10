@@ -40,7 +40,7 @@ for (let i = 0; i < buttonFilters.length; i++){
     buttonFilters[i].addEventListener ('click',()=>{
         valueButton = buttonFilters[i].value
        if(valueButton==="feedlabel"){
-        let btnAll = window.filterData.filter(takeData, valueButton).result;
+        let btnAll = window.filterData.filter(takeData, valueButton)
         renderNews(btnAll)
        }
         if (valueButton==="TF2 Blog"){
@@ -48,21 +48,32 @@ for (let i = 0; i < buttonFilters.length; i++){
            renderNews(tf2Btn)
         }
         if (valueButton ==="Product Update"){
-            let updateBtn =  window.filterData.filter(takeData, valueButton).result;
+            let updateBtn =  window.filterData.filter(takeData, valueButton)
             renderNews(updateBtn)
         }
         if(valueButton=== "PC Gamer"){
-            let pcBtn = window.filterData.filter(takeData, valueButton).result;
+            let pcBtn = window.filterData.filter(takeData, valueButton)
             renderNews(pcBtn);
         }
         if (valueButton==="Eurogamer"){
-            let euroBtn = window.filterData.filter(takeData, valueButton).result
+            let euroBtn = window.filterData.filter(takeData, valueButton)
             renderNews (euroBtn);
         }
         if (valueButton==="Rock, Paper, Shotgun"){
-           let rspBtn =  window.filterData.filter(takeData, valueButton).result
+           let rspBtn =  window.filterData.filter(takeData, valueButton)
            renderNews(rspBtn);
            
         }
     })
 };
+
+let selectSort = document.getElementById("orderSelect");
+selectSort.addEventListener ('change', ()=>{
+    let selectValue = selectSort.options[selectSort.selectedIndex].value;
+    if (selectValue=== "ascendente") {
+        
+        let ascendente= window.filterData.sortByDate(takeData)
+        console.log(ascendente)
+        
+    }
+})
