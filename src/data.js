@@ -50,7 +50,7 @@ window.filter = {
 
         let orderAz = ricks.sort(function(a, b){return a.name - b.name})
 
-        return orderAz;
+        return orderAz; 
         
     },
 
