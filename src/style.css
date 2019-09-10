@@ -54,15 +54,18 @@ header{
 
 /* Para tablets */
 @media only screen and (max-width: 768px){
-    #results{width:90%};
+    #results{
+    width:100%;
+    justify-content: center;
+}
 }
 
 /*Para celular*/
 @media only screen and (max-width: 600px){
-    #results{width:90%}
+    #results{
+        width:100%;
+        justify-content: center;
+
+}
 }
 
-/*Para desktop
-@media only screen and (min-width: 900px){
-    #
-}*/

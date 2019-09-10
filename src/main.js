@@ -24,6 +24,8 @@ function alphabeticSort(){
     sortAlphabetic(valor);
   } 
 
+
+
  function filtrarPorTipo(){
     let valor = document.getElementById("filterType").value;
     filterPokemonType(valor);

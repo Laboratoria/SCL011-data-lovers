@@ -1,14 +1,22 @@
-
 //funcion orden alfabetico ESTA AUN NO ME FUNCIONA
 function sortAlphabetic(){
+  if (alphabeticSort() === "ABC"){
   const abcOrder = allPokemonOnData.sort((a,b)=>{
     if(a.name>b.name){
       return 1;
     } return -1;
-  })
+    })
   console.log(abcOrder);
   };
-  
+  if (alphabeticSort() === "XYZ"){
+    const abcOrder = allPokemonOnData.sort((a,b)=>{
+      if(a.name<b.name){
+        return 1;
+      } return -1;
+      })
+    console.log(abcOrder);
+    };
+  }
   
   //funcion ordenar por tipo
   function filterPokemonType(type){
@@ -35,6 +43,7 @@ function sortAlphabetic(){
       showCardsComplete.innerHTML= pokemonCards;
     }))
   };
+  
   
   function filterEggs(egg){
     let empty =[]
