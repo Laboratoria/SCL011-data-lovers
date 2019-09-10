@@ -19,6 +19,7 @@
  const btnfemale = document.getElementById("female");
  const btnunknown = document.getElementById("unknown");
 
+
  //Asignando eventos y funcion con argumento segun el tipo de genero a los botones. 
  btnmale.addEventListener("click", () => {
      showData('male');
@@ -74,5 +75,19 @@
 
          containerr.appendChild(card);
          //containerr.appendChild(img);
-     }
- }
+
+     }}
+
+
+ 
+ 
+    
+
+
+
+
+
+
+
+
+

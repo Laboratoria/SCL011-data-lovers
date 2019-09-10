@@ -215,6 +215,18 @@ h2 {
 } */
 
 
+/* Video */
+
+#video {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+
 /* Responsive */
 
 @media screen and (max-width:800px) {
