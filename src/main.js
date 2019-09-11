@@ -1,7 +1,6 @@
  //Data completa
  const ricks = RICKANDMORTY.results;
 
-
  //Data de Masculinos
  const characMale = window.filter.filterMale(ricks);
 
@@ -21,6 +20,7 @@
  const btnfemale = document.getElementById("female");
  const btnunknown = document.getElementById("unknown");
  const btnorder = document.getElementById("btnOrdenar");
+
 
 
 

@@ -122,12 +122,14 @@ a:hover {
 .btn {
     width: 20%;
     /* para tlf esto el heigth seria de 170% */
-    height: 450%;
+    height: 2500%;
     justify-content: center;
     /* margin: 20px; */
     background-color: transparent;
-    display: inline-flex;
+    display: flex;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 1% 0;
+    margin-top: 0 2%;
 }
 
 .btn:hover {
@@ -152,6 +154,16 @@ a:hover {
 
 .container-cards>div {
     margin-top: 1em;
+    width: 25%;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(68, 141, 72, 0.8);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -201,6 +213,8 @@ h2 {
     background-size: 100%;
 }
 
+
+/* 
 #female {
     background-image: url(https://i.ibb.co/Gc2pGyk/mujeres.png);
     background-size: 100%;
@@ -228,19 +242,33 @@ h1 {
 
 /* Responsive */
 
-@media screen and (max-width:800px) {
+
+/* @media screen and (max-width:800px) {
     nav {
-        width: 50%;
+        width: 100%;
     }
     .logo {
         width: 30%;
     }
-    .container-welcome {
-        background-size: auto;
-    }
-}
+ 
 
-@media screen and (max-width:400px) {
+    .btn {
+        width: 20%;
+        /* para tlf esto el heigth seria de 170% */
+
+
+/* height: 2500%;
+    }
+   
+    .menu_bar {
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px auto;
+         font-size: 35px;
+    }
+} */
+
+@media screen and (max-width:800px) {
     header {
         justify-content: space-between;
         margin: 0;
@@ -265,5 +293,10 @@ h1 {
     }
     .container-welcome {
         background-size: auto;
+    }
+    .btn {
+        width: 20%;
+        /* para tlf esto el heigth seria de 170% */
+        height: 2500%;
     }
 }
