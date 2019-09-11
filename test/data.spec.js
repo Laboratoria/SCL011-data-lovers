@@ -1,11 +1,11 @@
 global.window = global;
 global.assert = require('chai').assert;
-require('../src/data/rickandmorty.js')
-require('../src/data.js');
+//require('../src/data/rickandmorty.js')
+require('../src/data');
 require('./data.spec.js');
 
 
-describe('filterGender', () => {
+describe('filterMale', () => {
   
   const muestra = [
     {
@@ -34,10 +34,10 @@ describe('filterGender', () => {
   ]
 
   it('debería ser una función', () => {
-    assert.equal('filterGender', 'function');
+    assert.equal('filterMale', 'function');
   });
 
   it('debería retornar el genero del personaje', () => {
-    assert.deepEqual(window.filterGender(muestra, "Male"), [{"name": "Morty Smith", "gender": "Male"}])
+    assert.deepEqual(window.filter.filterMale(muestra, "Male"), [{"name": "Rick Sanchez", "gender": "Male"}])
   });
 })

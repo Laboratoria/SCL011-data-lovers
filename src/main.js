@@ -1,9 +1,10 @@
  //Data completa
 
  
- const ricks = RICKANDMORTY.results;
+const ricks = RICKANDMORTY.results;
 
- console.log(ricks);
+
+//  console.log(ricks);
  //Data de Masculinos
  const characMale = window.filter.filterMale(ricks);
 
@@ -81,13 +82,22 @@
 
      }}
 
+        //    let orderSort = [ricks.name];
+        //    orderSort.sort((a,b)=> a - b);
+        // //    console.log(orderSort);
 
+
+
+    //     let orderSort = ricks.name;
+    //  orderSort.sort(function (a, b) {
+    //      console.log(a.localeCompare(b));
+    //       return a.localeCompare(b);
+       
+          
+    //     });
  
  
     
-
-
-
 
 
 
