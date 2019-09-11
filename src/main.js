@@ -13,7 +13,7 @@ buttonShowCharacters.addEventListener('click', () => {
     listOfCharacters.map(x => {
         return `
         <li class="liItem">
-        <img src="${x.image}">
+        <img class="imgRaM" src="${x.image}">
         <div class="charData">
         Nombre: ${x.name}
         Genero: ${x.gender}
@@ -35,7 +35,7 @@ listShowCharacters.addEventListener('click', ()=>{
     showListOfCharacters.map(x => {
         return `
         <li class="liItem">
-        <img src="${x.image}">
+        <img class="imgRaM" src="${x.image}">
         <div class="charData">
         Nombre: ${x.name}
         Genero: ${x.gender}
@@ -60,7 +60,7 @@ selectOrderABC.addEventListener('change', () => {
             
             return `
             <li class="liItem">
-            <img src="${x.image}">
+            <img class="imgRaM" src="${x.image}">
             <div class="charData">
             Nombre: ${x.name}
             Genero: ${x.gender}
@@ -78,7 +78,7 @@ selectOrderABC.addEventListener('change', () => {
 
             return `
                     <li class="liItem">
-                        <img src="${x.image}">
+                        <img class="imgRaM" src="${x.image}">
                         <div class="charData">
                             Nombre: ${x.name}
                             Genero: ${x.gender}
@@ -131,7 +131,7 @@ botonStatusAlive.addEventListener('click', () => {
         alive.map(x => {
             return `
                     <li class="liItem">
-                        <img src="${x.image}">
+                        <img class="imgRaM" src="${x.image}">
                         <div class="charData">
                             Nombre: ${x.name}
                             Genero: ${x.gender}
@@ -155,7 +155,7 @@ botonStatusDead.addEventListener('click', () => {
 
             return `
                     <li class="liItem">
-                        <img src="${x.image}">
+                        <img class="imgRaM" src="${x.image}">
                         <div class="charData">
                             Nombre: ${x.name}
                             Genero: ${x.gender}
@@ -179,7 +179,7 @@ botonStatusUnknown.addEventListener('click', () => {
 
             return `
                     <li class="liItem">
-                        <img src="${x.image}">
+                        <img class="imgRaM" src="${x.image}">
                         <div class="charData">
                             Nombre: ${x.name}
                             Genero: ${x.gender}
@@ -230,7 +230,7 @@ botonGenderFemale.addEventListener('click', () => {
 
             return `
                     <li class="liItem">
-                        <img src="${x.image}">
+                        <img class="imgRaM" src="${x.image}">
                         <div class="charData">
                             Nombre: ${x.name}
                             Genero: ${x.gender}
@@ -254,7 +254,7 @@ botonGenderMale.addEventListener('click', () => {
 
             return `
                     <li class="liItem">
-                        <img src="${x.image}">
+                        <img class="imgRaM" src="${x.image}">
                         <div class="charData">
                             Nombre: ${x.name}
                             Genero: ${x.gender}
@@ -278,14 +278,14 @@ botonGenderUnknown.addEventListener('click', () => {
         genderUnknown.map(x => {
             return `
                     <li class="liItem">
-                        <img src="${x.image}">
+                        <img class="imgRaM" src="${x.image}">
                         <div class="charData">
                             Nombre: ${x.name}
                             Genero: ${x.gender}
-                            Estado: ${x.status} 
+                            Estado: ${x.status}
                             Origen: ${x.location.name}
                             
-                        </div>    
+                        </div>
                     </li>
                     
                 `;
