@@ -25,29 +25,30 @@
   </div>
 </header>
 
-<section>
+<section id="botons">
 
   <button value="champion" id="btnchampion">Campeones </button>
   <button value="fighter"  id="btnFighter">Tipos</button>
   <button value="MostPower" id="btnMostPower">Mas Poderosos</button>
   <button value="additional" id="stats">Mas información</button>
+  <button value="clean" id="clean">Nueva búsqueda</button>
   
   <div id="select">
-        
-    <select id="lolOrder">
+    <form  name="formulario" action="#">
+    <select name="lolOrder" id="order">
       <option value="" >selecciona orden</option>
-      <option value="a-z" id="a-z">A-Z</option>
-      <option value="z-a" id="z-a">Z-A</option>
+      <option value="a-z" >A-Z</option>
+      <option value="z-a" >Z-A</option>
     </select>
- 
+    </form>
 
   </section>
 
   
-    <div id="root"></div>
+    <div value="root" id="root" ></div>
 
-
-
+  <br>
+  <br>
   <footer>
       © 2019 Riot Games Inc. Todos los derechos reservados. Riot Games, League of Legends y PvP.net son marcas comerciales, marcas de servicios o marcas registradas de Riot Games, Inc.
   </footer>

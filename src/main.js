@@ -13,12 +13,13 @@ btnchampion.addEventListener("click",() =>{
             </div> 
         </div>`;
        //console.log(lolData[i].id);
-     
-   
+    }
+    });
    
 
 const btnMostPower = document.getElementById("btnMostPower");
 btnMostPower.addEventListener("click",() =>{
+    document.getElementById("root").innerHTML="";
     mostPower(lolData, "attack");
 });
 
@@ -29,15 +30,10 @@ btnFighter.addEventListener("click",() =>{
 
 const btnStats =document.getElementById("stats");
 btnStats.addEventListener("click",()=>{
+    document.getElementById("root").innerHTML="";
     stats(lolData, "stats");
 });
 
 
-const sortDataLol = document.getElementById("a-z");
-sortDataLol.addEventListener("onchange",()=>{
-    sortData(lolData, "z-a");
-});
-  
-    
-    
+
 
