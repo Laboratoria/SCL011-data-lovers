@@ -13,6 +13,7 @@ header{
     display: flex;
     width: 100%;
 }
+
 header nav{
     width: 97%;
     margin: 3% auto;
@@ -172,4 +173,3 @@ img{
         background:#5bb040;
         width: 100%;  
     }
-}
