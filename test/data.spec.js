@@ -32,10 +32,3 @@ describe('bla', () => {
   //   assert.equal(typeof window.data.filterStatusAlive, 'function')
   // });
 
-  // it('debería retornar Morty Smith al filtrar por Alive', () => {
-  //   assert.deepEqual(window.data.filterStatusAlive(muestra, "Alive"), [{
-  //     "name": "Morty Smith",
-  //     "status": "Alive"
-  //   }])
-  // });
-})
