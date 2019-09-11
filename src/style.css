@@ -2,6 +2,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
     background-image: url("https://image.freepik.com/vector-gratis/fondo-cielo-rayos-sol_1048-2215.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -35,9 +36,6 @@ header{
      width: 50%;
  }
 
-    
-
-
 #results {
     width: 1200px;
     height: 700px;
@@ -64,15 +62,18 @@ header{
 
 /* Para tablets */
 @media only screen and (max-width: 768px){
-    #results{width:90%};
+    #results{
+    width:100%;
+    justify-content: center;
+}
 }
 
 /*Para celular*/
 @media only screen and (max-width: 600px){
-    #results{width:90%}
+    #results{
+        width:100%;
+        justify-content: center;
+
+}
 }
 
-/*Para desktop
-@media only screen and (min-width: 900px){
-    #
-}*/
