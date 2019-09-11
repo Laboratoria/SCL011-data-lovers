@@ -70,7 +70,12 @@ header nav ul{
     width: 90%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
 
+.buttons{
+    display: flex;
+    flex-direction: row;
 }
 .ulItem {
     display: grid;
@@ -78,15 +83,18 @@ header nav ul{
     grid-column-gap: 4%;
     align-items: baseline;
     margin: 5%;
+
 }
-img{
-    width: 99%;
+.imgRaM{
     border-radius: 50%;
+    width: 180px;
+    overflow: hidden;
 }
 .charData {
     font-family: Bangers;
-    width: 80%;
+    width: 95%;
     justify-content: center;
+    align-items: center;
     list-style: none;
     background: #5bb040;
     margin: 2% 2%;
@@ -94,22 +102,26 @@ img{
 
 .liItem {
     width: 80%;
-    height: 50%;
+    height: auto;
     padding: 2% 2%;
     justify-content: center;
     align-items: center;
     list-style: none; 
+
+}
+@media screen and (max-width: 1000px){
+   .ulItem {
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 6%;
+    }
 }
 
 @media screen and (max-width:800px ){
-<<<<<<< HEAD
     .imagenRaM{
         width: 40%;
         height: 60%;
         overflow: hidden;
     }
-=======
->>>>>>> 1879e83c15a8bbbabd47174dcd340a318936cbd3
     .portals{
         display: none;
     }
@@ -173,3 +185,4 @@ img{
         background:#5bb040;
         width: 100%;  
     }
+}
