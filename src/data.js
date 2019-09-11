@@ -14,6 +14,7 @@ window.lolData = lolData;
 
   for (let i = 0; i < data.length; i++) {
     if (data[i]["info"][getAttack] == 10) {
+
      newPowered.push(
        [
           [data[i].img],
@@ -26,9 +27,24 @@ window.lolData = lolData;
 
   
   let element= document.getElementById("order").value
-  console.log(element);
   if (element == "z-a"){
     newPowered.reverse();
+      root.innerHTML += `
+        <div>
+        <div class="flip-card">
+        <div class="flip-card-front>
+            <div id="img${[i]}">
+            <img class="imagen" src="${lolData[i].splash}">
+            </div>
+            <div id="name${[i]}">
+                <p>nombre:${data[i].id}</p>
+            </div> 
+            <div id="attack${[i]}">
+          
+        </div> 
+        </div>`;
+    };
+
   }
 
 
@@ -58,8 +74,10 @@ for (let i = 0; i < newPowered.length; i++) {
       if (data[i]["tags"][getFighter]= "Fighter"){
         root.innerHTML += `
         <div>
+        <div class="flip-card">
+        <div class="flip-card-front>
           <div id="img${[i]}">
-            <img src="${data[i].img}">
+          <img class="imagen" src="${lolData[i].splash}">
           </div>
           <div id="name${[i]}">
             <p>nombre:${data[i].id}</p>
@@ -71,6 +89,7 @@ for (let i = 0; i < newPowered.length; i++) {
       };
     };
     return fighter;
+  
   };
 
   const stats=(data,)=>{
@@ -79,8 +98,10 @@ for (let i = 0; i < newPowered.length; i++) {
       
         root.innerHTML +=`
         <div>
+        <div class="flip-card">
+        <div class="flip-card-front>
           <div id="img${[i]}">
-            <img src="${data[i].img}">
+          <img class="imagen" src="${lolData[i].splash}">
           </div>
           <div id="name${[i]}">
           <p>${data[i].id}</p>
