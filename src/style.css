@@ -52,13 +52,16 @@ justify-content:space-between;
     margin-top: 50px;
     border-radius: 30px;
 
-    
-  
   }
+
+
+#root {
+    background-color: goldenrod;
+}
 .imagen{
   width: 180px;
   height: 180px;
   border-radius: 10px;
   justify-content:space-between;
-  
 }
+
