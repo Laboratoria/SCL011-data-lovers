@@ -1,6 +1,6 @@
 window.data={
   filterStatusAlive:(listOfCharacters)=>{
-    console.log(1)
+    
     const alive = listOfCharacters.filter((e) => {
       return (e.status === 'Alive');
     })
@@ -9,7 +9,7 @@ window.data={
   },
   
   filterStatusDead:(listOfCharacters)=>{
-    console.log(2)
+    
     const dead = listOfCharacters.filter((e) => {
       return (e.status === 'Dead');
     })
@@ -17,7 +17,7 @@ window.data={
   },
   
   filterStatusUnknown:(listOfCharacters)=>{
-    console.log(3)
+    
     const unknown = listOfCharacters.filter((e) => {
         return (e.status === 'unknown');
     })

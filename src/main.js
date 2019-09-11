@@ -1,5 +1,6 @@
 /* Manejo del DOM */
-const listOfCharacters = RICKANDMORTY.results;
+const listOfCharacters = window.RICKANDMORTY.results;
+
 
 
 //Mostrar personajes imagen portal
@@ -124,7 +125,7 @@ buttonStatus.addEventListener('click', () => {
 const botonStatusAlive = document.getElementById('filterStatusAlive');
 botonStatusAlive.addEventListener('click', () => {
     // asignando a alive el resultado de la fnc filterStatusAlive
-    const alive = data.filterStatusAlive(listOfCharacters); 
+    const alive = window.data.filterStatusAlive(listOfCharacters); 
     const el = document.getElementById('ulItem');
     el.innerHTML =
         alive.map(x => {
@@ -147,7 +148,7 @@ botonStatusAlive.addEventListener('click', () => {
 // filtro Estado (muerto)
 const botonStatusDead = document.getElementById('filterStatusDead');
 botonStatusDead.addEventListener('click', () => {
-    const dead = data.filterStatusDead(listOfCharacters);
+    const dead = window.data.filterStatusDead(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         dead.map(x => {
@@ -171,7 +172,7 @@ botonStatusDead.addEventListener('click', () => {
 // filtro Estado (indefinido)
 const botonStatusUnknown = document.getElementById('filterStatusUnknown');
 botonStatusUnknown.addEventListener('click', () => {
-    const unknown = data.filterStatusUnknown(listOfCharacters);
+    const unknown = window.data.filterStatusUnknown(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         unknown.map(x => {
@@ -222,7 +223,7 @@ buttonGender.addEventListener('click', () => {
 //Femenino
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
-    const female = data.filterGenderFemale(listOfCharacters);
+    const female = window.data.filterGenderFemale(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         female.map(x => {
@@ -246,7 +247,7 @@ botonGenderFemale.addEventListener('click', () => {
 // Masculino
 const botonGenderMale = document.getElementById('filterGenderMale');
 botonGenderMale.addEventListener('click', () => {
-    const male = data.filterGenderMale(listOfCharacters);
+    const male = window.data.filterGenderMale(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         male.map(x => {
@@ -271,7 +272,7 @@ botonGenderMale.addEventListener('click', () => {
 // Indefinido
 const botonGenderUnknown = document.getElementById('filterGenderUnknown');
 botonGenderUnknown.addEventListener('click', () => {
-    const genderUnknown = data.filterGenderUnknown(listOfCharacters);
+    const genderUnknown = window.data.filterGenderUnknown(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         genderUnknown.map(x => {
