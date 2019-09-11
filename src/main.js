@@ -1,27 +1,15 @@
 /* Manejo del DOM */
 const listOfCharacters = RICKANDMORTY.results;
-//Variable de filtros Estado
-const alive = window.data.filterStatusAlive(listOfCharacters);
-const dead = window.data.filterStatusDead(listOfCharacters);
-const unknown = window.data.filterStatusUnknown(listOfCharacters);
-//Variables de filtro de Genero
-const female = window.data.filterGenderFemale(listOfCharacters);
-const male = window.data.filterGenderFemale(listOfCharacters);
-const genderUnknown = window.data.filterGenderUnknown(listOfCharacters);
-//Variables de Orden
-const orderABC = window.data.orderABC(listOfCharacters);
-const orderCBA = window.data.orderCBA(listOfCharacters);
 
-//Mostrar personajes
+
+//Mostrar personajes imagen portal
 const buttonShowCharacters= document.getElementById('characters');
-buttonShowCharacters.addEventListener('click', ()=>{
+buttonShowCharacters.addEventListener('click', () => {
     document.getElementById('portals').style.display = 'none';
     document.getElementById('orderSelector').style.display = 'block';
-    const showListOfCharacters=listOfCharacters
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
-    showListOfCharacters.map(x => {
-        
+    listOfCharacters.map(x => {
         return `
         <li class="liItem">
         <img src="${x.image}">
@@ -36,14 +24,14 @@ buttonShowCharacters.addEventListener('click', ()=>{
     }).join('');
 })
 
+//boton Personajes
 const listShowCharacters= document.getElementById('showCharacters');
 listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
-    const showListOfCharacters=listOfCharacters
+    const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
     showListOfCharacters.map(x => {
-        
         return `
         <li class="liItem">
         <img src="${x.image}">
@@ -59,11 +47,12 @@ listShowCharacters.addEventListener('click', ()=>{
 })
 
 //Ordenar Datos
-const selectOrderABC = document.querySelector('.orden');
+const selectOrderABC = document.getElementById('orderSelector');
 selectOrderABC.addEventListener('change', () => {
 
     if( selectOrderABC.value === 'ABC'){
 
+        const orderABC = window.data.orderABC(listOfCharacters);
         const ele = document.getElementById('ulItem');
         ele.innerHTML =
         orderABC.map(x => {
@@ -81,7 +70,7 @@ selectOrderABC.addEventListener('change', () => {
             `;
         }).join('');
     } else {
-
+    const orderCBA = window.data.orderCBA(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         orderCBA.map(x => {
@@ -108,10 +97,11 @@ selectOrderABC.addEventListener('change', () => {
 // filtro Estado (vivo)
 const botonStatusAlive = document.getElementById('filterStatusAlive');
 botonStatusAlive.addEventListener('click', () => {
+    // asignando a alive el resultado de la fnc filterStatusAlive
+    const alive = data.filterStatusAlive(listOfCharacters); 
     const el = document.getElementById('ulItem');
     el.innerHTML =
         alive.map(x => {
-
             return `
                     <li class="liItem">
                         <img src="${x.image}">
@@ -131,6 +121,7 @@ botonStatusAlive.addEventListener('click', () => {
 // filtro Estado (muerto)
 const botonStatusDead = document.getElementById('filterStatusDead');
 botonStatusDead.addEventListener('click', () => {
+    const dead = data.filterStatusDead(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         dead.map(x => {
@@ -154,7 +145,7 @@ botonStatusDead.addEventListener('click', () => {
 // filtro Estado (indefinido)
 const botonStatusUnknown = document.getElementById('filterStatusUnknown');
 botonStatusUnknown.addEventListener('click', () => {
-
+    const unknown = data.filterStatusUnknown(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         unknown.map(x => {
@@ -179,7 +170,7 @@ botonStatusUnknown.addEventListener('click', () => {
 //Femenino
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
- 
+    const female = data.filterGenderFemale(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         female.map(x => {
@@ -203,7 +194,7 @@ botonGenderFemale.addEventListener('click', () => {
 // Masculino
 const botonGenderMale = document.getElementById('filterGenderMale');
 botonGenderMale.addEventListener('click', () => {
-    
+    const male = data.filterGenderMale(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         male.map(x => {
@@ -228,7 +219,7 @@ botonGenderMale.addEventListener('click', () => {
 // Indefinido
 const botonGenderUnknown = document.getElementById('filterGenderUnknown');
 botonGenderUnknown.addEventListener('click', () => {
-    
+    const genderUnknown = data.filterGenderUnknown(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
         genderUnknown.map(x => {

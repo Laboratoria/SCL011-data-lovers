@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bangers" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-  <header>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bangers" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root">
+    <header>
       <nav>
-            <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png">
-      <ul>
+        <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png">
+        <ul>
 
           <li><button id="showCharacters" class="buttonPrincipal">Personajes</button></li>
           <li><button id="showLocation" class="buttonPrincipal">Lugares</button></li>
           <li><button id="showCuriosities" class="buttonPrincipal">Datos</button></li>
-      </ul>
-    </nav>
-  </header>
-  <section>
-      <div id= "portals" class = "portals">
-       <button class="buttoncito" id="characters"><img class="portal" src="Imagenes/portal1.png"></button>
-       <button class="buttoncito"><img class="portal" src="Imagenes/portal2.png"></button>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="portals" class="portals">
+        <button class="buttoncito" id="characters"><img class="portal" src="Imagenes/portal1.png"></button>
+        <button class="buttoncito"><img class="portal" src="Imagenes/portal2.png"></button>
       </div>
-  </section>
+    </section>
 
-      
+
 
 
     <select class="orden" name="orden" id="orderSelector">
-        <option value="">Ordenar de la …</option>
-        <option value="ABC">A a la Z</option>
-        <option value="CBA">Z a la A</option>
+      <option value="">Ordenar de la …</option>
+      <option value="ABC">A a la Z</option>
+      <option value="CBA">Z a la A</option>
     </select>
 
 
     <div class="buttons">
-    
-    <button id= "Status"></button>
 
-    <button id= "filterStatusAlive">Vivo</button>
-    <button id= "filterStatusDead">Muerto</button>
-    <button id= "filterStatusUnknown">Indefinido</button>
-    
-    <button id= "filterGenderFemale">Femenino</button>
-    <button id= "filterGenderMale">Masculino</button>
-    <button id= "filterGenderUnknown">Sexo Indefinido</button>
-    
+      <button id="Status"></button>
+
+      <button id="filterStatusAlive">Vivo</button>
+      <button id="filterStatusDead">Muerto</button>
+      <button id="filterStatusUnknown">Indefinido</button>
+
+      <button id="filterGenderFemale">Femenino</button>
+      <button id="filterGenderMale">Masculino</button>
+      <button id="filterGenderUnknown">Sexo Indefinido</button>
+
     </div>
 
-  <ul id="ulItem" class= "ulItem"></ul>
+    <ul id="ulItem" class="ulItem"></ul>
 
-    <script src="./data/rickandmorty/rickandmorty.js"></script> 
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </div>
-  </body>
+</body>
 
 </html>

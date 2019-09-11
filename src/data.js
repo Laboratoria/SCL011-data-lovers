@@ -1,21 +1,23 @@
 window.data={
-
   filterStatusAlive:(listOfCharacters)=>{
+    console.log(1)
     const alive = listOfCharacters.filter((e) => {
-        return (e.status === 'Alive');
+      return (e.status === 'Alive');
     })
-      return alive;
+    return alive;
     
   },
-
+  
   filterStatusDead:(listOfCharacters)=>{
+    console.log(2)
     const dead = listOfCharacters.filter((e) => {
-        return (e.status === 'Dead');
+      return (e.status === 'Dead');
     })
-      return dead;
+    return dead;
   },
-
+  
   filterStatusUnknown:(listOfCharacters)=>{
+    console.log(3)
     const unknown = listOfCharacters.filter((e) => {
         return (e.status === 'unknown');
     })
