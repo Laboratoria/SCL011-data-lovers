@@ -101,15 +101,17 @@ img{
     list-style: none; 
 }
 
+.buttonGender, .buttonStatus{
+    display: none;
+}
+
+
 @media screen and (max-width:800px ){
-<<<<<<< HEAD
     .imagenRaM{
         width: 40%;
         height: 60%;
         overflow: hidden;
     }
-=======
->>>>>>> 1879e83c15a8bbbabd47174dcd340a318936cbd3
     .portals{
         display: none;
     }

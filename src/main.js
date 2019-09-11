@@ -90,10 +90,36 @@ selectOrderABC.addEventListener('change', () => {
     }
 
 });
+//boton genero
 
 
 // filtar datos
 
+const buttonStatus= document.getElementById('status');
+buttonStatus.addEventListener('click', () => {
+    document.getElementById('filterStatusAlive').style.display= "block";
+    document.getElementById('filterStatusDead').style.display= "block";
+    document.getElementById('filterStatusUnknown').style.display= "block";
+    document.getElementById('gender').style.display= "none";
+    buttonStatus.style.display= "none";
+    const showListOfCharacters=listOfCharacters;
+    const ele = document.getElementById('ulItem');
+    ele.innerHTML =
+    showListOfCharacters.map(x => {
+        return `
+        <li class="liItem">
+        <img src="${x.image}">
+        <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status} 
+        Origen: ${x.location.name}
+        </div>    
+        </li>
+        `;
+    }).join('');
+
+})
 // filtro Estado (vivo)
 const botonStatusAlive = document.getElementById('filterStatusAlive');
 botonStatusAlive.addEventListener('click', () => {
@@ -167,6 +193,32 @@ botonStatusUnknown.addEventListener('click', () => {
 
 })
 //Filtrar por Genero
+
+const buttonGender= document.getElementById('gender');
+buttonGender.addEventListener('click', () => {
+    document.getElementById('filterGenderFemale').style.display= "block";
+    document.getElementById('filterGenderMale').style.display= "block";
+    document.getElementById('filterGenderUnknown').style.display= "block";
+    document.getElementById('status').style.display= "none";
+    buttonGender.style.display= "none";
+    const showListOfCharacters=listOfCharacters;
+    const ele = document.getElementById('ulItem');
+    ele.innerHTML =
+    showListOfCharacters.map(x => {
+        return `
+        <li class="liItem">
+        <img src="${x.image}">
+        <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status} 
+        Origen: ${x.location.name}
+        </div>    
+        </li>
+        `;
+    }).join('');
+
+})
 //Femenino
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
