@@ -1,7 +1,7 @@
  //Data completa
  const ricks = RICKANDMORTY.results;
 
- console.log(ricks);
+
  //Data de Masculinos
  const characMale = window.filter.filterMale(ricks);
 
@@ -18,6 +18,27 @@
  const btnmale = document.getElementById("male");
  const btnfemale = document.getElementById("female");
  const btnunknown = document.getElementById("unknown");
+ const btnorder = document.getElementById("btnOrdenar");
+
+ //asignando boton de ordenar
+
+ const btnselect = document.getElementById("order");
+
+ //Escucho el evento change, que activara mi funcion
+ //  btnselect.addEventListener("change", () => {
+ //      for (i = 0; i < ricks.length; i++) {
+ //          let orderdata = ricks[i];
+ //          let prueba = orderdata.sort();
+ //          console.log(prueba);
+ //      }
+ //  });
+
+
+
+
+
+
+
 
 
  //Asignando eventos y funcion con argumento segun el tipo de genero a los botones. 
@@ -49,8 +70,6 @@
      }
 
 
-     //<div id="element" class="card"></div>
-
      const containerr = document.getElementById("container-cardss");
      for (let i = 0; i < dataSelected.length; i++) {
          //Creo elementos
@@ -76,18 +95,5 @@
          containerr.appendChild(card);
          //containerr.appendChild(img);
 
-     }}
-
-
- 
- 
-    
-
-
-
-
-
-
-
-
-
+     }
+ }
