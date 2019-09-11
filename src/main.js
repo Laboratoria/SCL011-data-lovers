@@ -14,10 +14,19 @@ allPokemonOnData.forEach((element=>{
 //concatenamos para que vaya sumando una tarjeta tras otra
 pokemonCards +=
   //creamos divs uno muestra la imagen y otro un espacio de texto para el nombre
- `<div class="cardStyle">
-    <img src="${element.img}" alt="imagenPokemon">
- <h4>${element.name}</h4>
-  </div>`
+ `<div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+     <img src="${element.img}" alt="imagenPokemon">
+     <h4>${element.name}</h4>
+ </div>
+   <div class="flip-card-back">
+         <h5>Spawn: ${element.spawn_chance}</h5>
+         <h5>Debilidad: ${element.weaknesses}</h5>
+         <h5>Caramelos para evolución: ${element.candy_count}</h5>
+   </div>
+ </div>
+</div>`
   //imprimimos en el espacio results lo que le añadimos a pokemonCards
 showCardsComplete.innerHTML= pokemonCards;
 }))
