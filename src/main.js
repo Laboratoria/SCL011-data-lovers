@@ -11,6 +11,8 @@
  //Data de Desconocido
  const characUnknown = window.filter.filterUnknown(ricks);
 
+ //Data ordenada
+ const ordenada = window.filter.orderdata(ricks);
 
 
 
@@ -19,24 +21,6 @@
  const btnfemale = document.getElementById("female");
  const btnunknown = document.getElementById("unknown");
  const btnorder = document.getElementById("btnOrdenar");
-
- //asignando boton de ordenar
-
- const btnselect = document.getElementById("order");
-
- //Escucho el evento change, que activara mi funcion
- //  btnselect.addEventListener("change", () => {
- //      for (i = 0; i < ricks.length; i++) {
- //          let orderdata = ricks[i];
- //          let prueba = orderdata.sort();
- //          console.log(prueba);
- //      }
- //  });
-
-
-
-
-
 
 
 
@@ -50,6 +34,10 @@
  });
  btnunknown.addEventListener("click", () => {
      showData('unknown');
+ });
+
+ btnorder.addEventListener("click", () => {
+     showData("btnorder");
  });
 
 
@@ -67,6 +55,8 @@
          dataSelected = characUnknown.slice();
          //console.log("seleccionaste unknown");
 
+     } else if (type === "btnorder") {
+         dataSelected = ordenada.slice();
      }
 
 

@@ -46,25 +46,14 @@ window.filter = {
 
     },
 
+    orderdata: (ricks) => {
+        ricks.sort((nameone, nametwo) => nameone.name.localeCompare(nametwo.name));
 
-    //Ordenando la data
+        return ricks;
+
+    }
 
 
-}
 
-window.sorterRicks = {
 
-    // se llama a la opcion y al data
-    orrderData: (ricks, option) => {
-        let filterOrder = "hola"
-        console.log(filterOrder);
-        localeCompare: ordena
-        if (option == 'az') {
-            filterOrder = ricks.sort((a, b) => {
-                console.log("ok");
-                return a.name.localeCompare(b.name);
-            });
-        }
-        return filterOrder;
-    },
 }
