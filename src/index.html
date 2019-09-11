@@ -6,6 +6,7 @@
     <title>Rick & Morty</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
@@ -16,13 +17,18 @@
     <section id="container">
         <!-- Encabezado -->
         <header class="menu-main" id="main-header">
-            <!-- Menu -->
 
+            <!-- Menu -->
+            <img class="logo" id="logo" src="../img/RickandMorty.png" alt="Logo-png">
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+            </div>
             <nav class="menu">
-                <img class="logo" id="logo" src="../img/RickandMorty.png" alt="Logo-png">
+                <a href="index.html">Personajes </a>
+                <a href="videos.html">Videos</a>
             </nav>
-            <a href="index.html">Personajes </a>
-            <a href="videos.html">Videos</a>
+
+
         </header>
 
         <!-- Bienvenido -->
@@ -31,29 +37,26 @@
                 <h1>Encuentra a todos los personajes de Rick And Morty </h1>
             </div>
             <div class="btns" id="buttons">
-
+                <!-- <img src="https://i.ibb.co/X3X1QCb/hombres.png" alt="Snow" style="width:20%"> -->
                 <button class="btnmale btn" id="male" type="button"></button>
+                <!-- <img src="img_lights.jpg" alt="Snow" style="width:100%"> -->
                 <button class="btnfemale btn" id="female" type="button "></button>
+                <!-- <img src="img_lights.jpg" alt="Snow" style="width:100%"> -->
                 <button class="btnunknown btn" id="unknown" type="button "></button>
-              
             </div>
-            <select class="filter_label" id="order">
+            <!-- <select class="filter_label" id="order">
                     <option value="">Selecciona</option>
                     <option value="az">A-Z</option>
-                    </select>
-                    
-        </section>
-      
-         
-
-                    
-        <section id="container-cardss" class="container-cards">
-
-
-              
+             </select> -->
 
         </section>
 
+        <section class="container-container-cardss">
+            <!-- <button id="btnOrdenar">Ordenar alfabeticamente</button> -->
+            <section id="container-cardss" class="container-cards">
+
+            </section>
+        </section>
 
         <footer>
             <h4> © Copyright 2019 Crusiris Nuñez y Constanza Zarate - Todos los Derechos Reservados </h4>
