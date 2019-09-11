@@ -50,19 +50,19 @@ window.filter = {
  
 }
 
-window.sorterRicks = {
+// window.sorterRicks = {
 
- // se llama a la opcion y al data
-  orrderData: (ricks, option) => {
-    let filterOrder;
-  //localeCompare: ordena
-  if(option == 'az'){
-    filterOrder = ricks.sort((a, b) => {
-      return a.name.localeCompare(b.name);
-    });
-  }
-  return filterOrder;
-},}
+//  // se llama a la opcion y al data
+//   orrderData: (ricks, option) => {
+//     let filterOrder;
+//   //localeCompare: ordena
+//   if(option == 'az'){
+//     filterOrder = ricks.sort((a, b) => {
+//       return a.name.localeCompare(b.name);
+//     });
+//   }
+//   return filterOrder;
+// },}
 
 
 
