@@ -1,18 +1,24 @@
+
 //boton champion
+
 const btnchampion = document.getElementById("btnchampion");
 //funcion click
 btnchampion.addEventListener("click",() =>{
     for (let i = 0; i < lolData.length; i++) {
         root.innerHTML += `
        <div>
+       <div class="flip-card">
+       <div class="flip-card-front>
             <div id="img${[i]}">
-                <img src="${lolData[i].img}">
+                <img class="imagen" src="${lolData[i].splash}">
             </div>
             <div id="name${[i]}">
                 <p>${lolData[i].id}</p>
             </div> 
         </div>`;
-       //console.log(lolData[i].id);
+    }
+});
+       
      
    
    
@@ -36,8 +42,9 @@ btnStats.addEventListener("click",()=>{
 const sortDataLol = document.getElementById("a-z");
 sortDataLol.addEventListener("onchange",()=>{
     sortData(lolData, "z-a");
-});
-  
-    
-    
 
+
+
+  
+});
+    

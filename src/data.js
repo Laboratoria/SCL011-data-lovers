@@ -11,14 +11,16 @@ window.lolData = lolData;
     if (data[i]["info"][getAttack] == 10) {
       root.innerHTML += `
         <div>
+        <div class="flip-card">
+        <div class="flip-card-front>
             <div id="img${[i]}">
-                <img src="${data[i].img}">
+            <img class="imagen" src="${lolData[i].splash}">
             </div>
             <div id="name${[i]}">
                 <p>nombre:${data[i].id}</p>
             </div> 
             <div id="attack${[i]}">
-            <p>Nivel Ataque:${data[i]["info"].attack}</p>
+          
         </div> 
         </div>`;
     };
@@ -31,8 +33,10 @@ window.lolData = lolData;
       if (data[i]["tags"][getFighter]= "Fighter"){
         root.innerHTML += `
         <div>
+        <div class="flip-card">
+        <div class="flip-card-front>
           <div id="img${[i]}">
-            <img src="${data[i].img}">
+          <img class="imagen" src="${lolData[i].splash}">
           </div>
           <div id="name${[i]}">
             <p>nombre:${data[i].id}</p>
@@ -44,6 +48,7 @@ window.lolData = lolData;
       };
     };
     return fighter;
+  
   };
 
   const stats=(data,getStats)=>{
@@ -52,8 +57,10 @@ window.lolData = lolData;
       
         root.innerHTML +=`
         <div>
+        <div class="flip-card">
+        <div class="flip-card-front>
           <div id="img${[i]}">
-            <img src="${data[i].img}">
+          <img class="imagen" src="${lolData[i].splash}">
           </div>
           <div id="name${[i]}">
           <p>${data[i].id}</p>
