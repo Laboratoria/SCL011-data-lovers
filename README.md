@@ -57,3 +57,30 @@ Para poder llegar a este prototipo de baja fidelidad tuvimos que antes entender 
 El prototipo de alta fidelidad lo realizamos en [FIGMA](https://www.figma.com/proto/G22hspxxOK9fE89ZIo0Stp/Untitled?node-id=3:0&scaling=contain&hotspot-hints=0), si haces click en el texto azul podrás ver como funciona nuestro proyecto.
 
 ![enter image description here](https://i.ibb.co/60LHcyk/figma.jpg)
+
+## Decisiones de Diseño
+
+* **Paleta de colores**
+> ![paletadecolores](https://i.ibb.co/HK9R0Tg/paletadecolores.jpg)
+> Esta paleta de colores salió de la abstracción de una de las fotos más emblematicas de Rick & Morty y sentimos que representa 100% lo que queremos dar a conocer sobre la serie.
+* **Posiciones de botones y distribución web**
+> La página web tendrá lo más simple en cuanto a los botones y distribución web para que así el usuario pueda solo buscar lo que necesita y no se sobrealimente con información innecesaria.
+
+## Developer Edition
+Entendemos lo importante que es el poder explicar sobre nuestro código para que así otras personas puedan experimentar al igual que nosotras. 
+
+Es por eso que les enseñaremos un poco sobre lo que quisimos hacer y como lo realizamos.
+
+> Filtrado para género
+
+    if (type  ===  "male") {
+    
+    dataSelected  =  characMale.slice();
+    
+  Para poder seleccionar solo una selección al data utilizamos "if" y que se igualará a solo un tipo de género dentro del código
+
+> Ordenando la Data
+
+
+> Estadisticas de información
+
