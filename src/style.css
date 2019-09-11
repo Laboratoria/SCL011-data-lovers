@@ -39,27 +39,72 @@ header{
 
 
 #results {
-    width: 1200px;
-    height: 700px;
+   
     margin: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
 
 
 }
- .cardStyle {
+ /*.cardStyle {
      background: rgb(94, 166, 224);
      width: 150px;
      height: 200px;
      margin: 15px;
      border-radius: 10px;
      justify-items: center;
-     align-self: inherit;
      text-align: center;
-    }
+    } */
+    .flip-card {
+        background-color: transparent;
+        width: 150px;
+     height: 200px;
+     margin: 25px;
+     border-radius: 20px;
 
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: rgb(90, 90, 226);
+        width: 150px;
+     height: 200px;
+     margin: 15px;
+     border-radius: 20px;
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: rgb(90, 90, 226);
+        width: 150px;
+     height: 200px;
+     margin: 15px;
+     border-radius: 20px;        color: white;
+        transform: rotateY(180deg);
+      }
 
 
 /* Para tablets */

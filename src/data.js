@@ -7,7 +7,7 @@ function sortAlphabetic(){
     } return -1;
   })
   console.log(abcOrder);
-  };
+  }
   
   
   //funcion ordenar por tipo
@@ -28,13 +28,24 @@ function sortAlphabetic(){
   
   empty.forEach((element=>{
       pokemonCards +=
-      `<div class="cardStyle">
-      <img src="${element.img}" alt="imagenPokemon">
-      <h4>${element.name}</h4>
-      </div>`
+     // `<div class="cardStyle">
+      `<div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="${element.img}" alt="imagenPokemon">
+                    <h4>${element.name}</h4>
+                </div>
+                  <div class="flip-card-back">
+                        <h5>Spawn ${element.spawn_chance}</h5>
+                        <h5>Debilidad ${element.weaknesses}</h5>
+                        <h5>Caramelos para evolución ${element.candy_count}</h5>
+                  </div>
+                </div>
+              </div>`
+      //</div>
       showCardsComplete.innerHTML= pokemonCards;
     }))
-  };
+  }
   
   function filterEggs(egg){
     let empty =[]

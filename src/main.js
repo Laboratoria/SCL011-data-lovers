@@ -1,5 +1,7 @@
 const allPokemonOnData= POKEMON.pokemon;
+
 window.allPokemonOnData= allPokemonOnData;
+
 //Llama al espacio del html para mostrar los resultados
  let showCardsComplete = document.getElementById("results");
  //Donde se creará la tarjeta
