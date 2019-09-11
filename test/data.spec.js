@@ -3,6 +3,7 @@ global.assert = require('chai').assert;
 require('../src/data/rickandmorty/rickandmorty.js');
 require('../src/data.js')
 
+
 const muestra = {
   "results": [{
     "id": 1,
