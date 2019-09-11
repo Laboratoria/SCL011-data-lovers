@@ -6,7 +6,7 @@
 * [Usuario](#Usuario)
 * [Test de Usabilidad](#Test-de-Usabilidad)
 * [Historias de Usuario](#Historias-de-Usuario)
-* [Parte obligatoria](#parte-obligatoria)
+* [Funciones de la página](#Funciones-de-la-Pagina)
 * [Parte opcional](#parte-opcional-hacker-edition)
 * [Consideraciones técnicas](#consideraciones-técnicas)
 * [Primeros pasos](#primeros-pasos)
@@ -88,7 +88,13 @@ En uno de los talleres de UX presentamos nuestro prototipo de alta fidelidad al 
 
 
 
-### **5.1 Definición del producto**
+### **6. Funciones de la página**
+
+Dentro de la página planteamos tres funciones principales.
+Se puede seleccionar el filtro por tipo, que despliega todos los tipos de Pokemon que existen en la región Kanto, que son 15 en total.
+Se puede filtrar por aparición en huevos, en esta se encuentran cuatro parámetros que son 2,5 y 10 kilometros y que no aparece en huevos.
+Y la última función es para ordenar alfabéticamente el nombre de los Pokemon.
+
 
 
 ### **5.2 Historias de usuario**

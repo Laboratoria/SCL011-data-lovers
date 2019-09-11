@@ -1,72 +1,40 @@
+const orderABC=(allPokemonOnData, valorAbc) =>{
+  let pokeNames= allPokemonOnData;
+  if(valorAbc == "ABC"){
+    pokeNames.sort((a,b)=>{
+      if(a.name>b.name){
+        return 1
+      } return -1
+    })
+  }
+  if(valorAbc == "XYZ"){
+      pokeNames.sort((a,b)=>{
+        if(a.name<b.name){
+          return 1
+        } return -1
+      })
+    }
+  return pokeNames;
+}
 
-//funcion orden alfabetico ESTA AUN NO ME FUNCIONA
-function sortAlphabetic(){
-  const abcOrder = allPokemonOnData.sort((a,b)=>{
-    if(a.name>b.name){
-      return 1;
-    } return -1;
+window.orderABC= orderABC;
+
+
+const filterByType= (allPokemonOnData, valorType) =>{
+  let typeFilter= allPokemonOnData.filter(element=>{
+    return element.type.includes(valorType);
   })
-  console.log(abcOrder);
-  }
-  
-  
-  //funcion ordenar por tipo
-  function filterPokemonType(type){
-    let empty =[]
-    for(let i=0; i < allPokemonOnData.length; i++){
-      for(let j=0; j < allPokemonOnData[i].type.length; j++){
-        if(allPokemonOnData[i].type[j]===type){
-          empty.push(allPokemonOnData[i]);
-        }
-      } 
-  }
-  let showCardsComplete = document.getElementById("results");
-        //limpia el html y empieza a imprimir segun el filtro
-  showCardsComplete.innerHTML="";
-  let pokemonCards="";
-  
-  
-  empty.forEach((element=>{
-      pokemonCards +=
-     // `<div class="cardStyle">
-      `<div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="${element.img}" alt="imagenPokemon">
-                    <h4>${element.name}</h4>
-                </div>
-                  <div class="flip-card-back">
-                        <h5>Spawn ${element.spawn_chance}</h5>
-                        <h5>Debilidad ${element.weaknesses}</h5>
-                        <h5>Caramelos para evolución ${element.candy_count}</h5>
-                  </div>
-                </div>
-              </div>`
-      //</div>
-      showCardsComplete.innerHTML= pokemonCards;
-    }))
-  }
-  
-  function filterEggs(egg){
-    let empty =[]
-    for(let i=0; i < allPokemonOnData.length; i++){
-        if(allPokemonOnData[i].egg===egg){
-          empty.push(allPokemonOnData[i]);
-        }
-     }
-  let showCardsComplete = document.getElementById("results");
-      //limpia el html y empieza a imprimir segun el filtro
-  showCardsComplete.innerHTML="";
-  let pokemonCards="";
-  
-  
-  empty.forEach((element=>{
-      pokemonCards +=
-      `<div class="cardStyle">
-      <img src="${element.img}" alt="imagenPokemon">
-      <h4>${element.name}</h4>
-      </div>`
-      showCardsComplete.innerHTML= pokemonCards;
-    })) 
-  };
-  
+  return typeFilter;
+}
+
+window.filterByType= filterByType;
+
+
+const filterByEgg= (allPokemonOnData, valorEgg) =>{
+  let eggFilter= allPokemonOnData.filter(element=>{
+    return element.egg.includes(valorEgg);
+  })
+  return eggFilter;
+}
+
+window.filterByEgg= filterByEgg;
