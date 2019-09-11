@@ -83,9 +83,9 @@ Es por eso que les enseñaremos un poco sobre lo que quisimos hacer y como lo re
 
 
 > Estadisticas de información
-
 ## Planificando
 
-Dentro de nuestro Trello se puede ver el avance que tuvimos con el proyecto, hay algunos puntos que no se alcanzaron a finalizar por tema de tiempos pero siempre estamos dispuestas a finalizarlo.
+  
 
-<h4>[LINK A TRELLO GRUPAL](https://trello.com/b/dWlsbAB7/rick-and-morty-app)</h4>
+Dentro de nuestro Trello se puede ver el avance que tuvimos con el proyecto, hay algunos puntos que no se alcanzaron a finalizar por tema de tiempos pero siempre estamos dispuestas a finalizarlo.
+[LINK TRELLO GRUPAL](https://trello.com/b/dWlsbAB7/rick-and-morty-app)
