@@ -205,7 +205,7 @@ describe('data.filterStatusAlive', () => {
   });
 
   it('debería retornar Morty Smith al filtrar por Alive', () => {
-    assert.deepEqual(window.data.filterStatusAlive(muestra, "Alive"),[{"name": "Morty Smith",
+    assert.deepEqual(window.data.filterStatusAlive(muestra),[{"name": "Morty Smith",
     "status": "Alive"}])
   });
 })
