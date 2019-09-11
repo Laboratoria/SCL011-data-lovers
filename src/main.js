@@ -82,7 +82,6 @@ selectOrderABC.addEventListener('change', () => {
         }).join('');
     } else {
 
-    
     const el = document.getElementById('ulItem');
     el.innerHTML =
         orderCBA.map(x => {
@@ -156,7 +155,6 @@ botonStatusDead.addEventListener('click', () => {
 const botonStatusUnknown = document.getElementById('filterStatusUnknown');
 botonStatusUnknown.addEventListener('click', () => {
 
-    
     const el = document.getElementById('ulItem');
     el.innerHTML =
         unknown.map(x => {
@@ -181,7 +179,7 @@ botonStatusUnknown.addEventListener('click', () => {
 //Femenino
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
-    
+ 
     const el = document.getElementById('ulItem');
     el.innerHTML =
         female.map(x => {
@@ -230,7 +228,6 @@ botonGenderMale.addEventListener('click', () => {
 // Indefinido
 const botonGenderUnknown = document.getElementById('filterGenderUnknown');
 botonGenderUnknown.addEventListener('click', () => {
-    
     
     const el = document.getElementById('ulItem');
     el.innerHTML =
