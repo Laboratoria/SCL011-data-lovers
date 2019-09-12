@@ -12,8 +12,31 @@ body{
     background-position: center center;
     background-attachment: fixed;
 }
+.menu{
+  display: flex;
+  color: white;
+  background:  linear-gradient(50deg,#cfe940,#f5a031);
+  width: 100%;
+  height: 80px;
+  margin: -20;
+
+}
+#current{
+  align-content: space-around;
+}
+#menu{
+  display: flex;
+  flex-direction: column;
+}
+.menuNavegation{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around
+
+}
 #selectOrder{
   display: flex;
+
   justify-content: center;
 }
 
@@ -23,6 +46,11 @@ body{
   flex-direction: row;
   flex-flow: wrap;
   margin: 50px;
+  column-count: 4;
+  margin-top: 3%;
+
+
+
 }
 
 .btn{
@@ -31,6 +59,9 @@ body{
   margin-top: 30px;
   padding: 10px;
   margin: 10px;
+}
+.select{
+  text-align: center;
 }
 .btn button{
 margin-top: 30px;
@@ -44,24 +75,53 @@ background: linear-gradient(50deg,#cfe940,#f5a031);
 }
 
 .flip-card {
-flex-direction: column-reverse;
-justify-content:space-between; 
-    width: 100px;
-    height: 150px;
-    perspective: 100px;
-    margin-top: 50px;
-    border-radius: 30px;
-
+  background-color:rgb(247, 232, 35);
+  width: 200px;
+  height: 250px;
+  margin-bottom: 10px;
+  perspective: 1000px;
+  margin:30px;
+justify-content: center;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
   }
 
+   .flip-card-back.flip-card-back{
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    width: 190px;
+    height: 205px;
+    border-radius: 40px;
+  
+  }
 
-#root {
-    background-color: goldenrod;
+.flip-card-back {
+  transform: rotateY(180deg);
+  width: 190px;
+  height: 205px;
+  border-radius: 40px;
 }
 .imagen{
   width: 180px;
   height: 180px;
   border-radius: 10px;
   justify-content:space-between;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 15%
 }
 

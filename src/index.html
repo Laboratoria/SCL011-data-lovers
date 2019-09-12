@@ -8,6 +8,7 @@
   <body>
     <nav id="menu" class="menu">
       <ul class="menuNavegation">
+   
           <li class="current"><a href="https://las.leagueoflegends.com/es/news/">Noticias</a></li>
           <li class="current"><a href="https://signup.las.leagueoflegends.com/es/signup/index#/">Jugar</a></li>
           <li class="current"><a href="https://las.leagueoflegends.com/es/page/unete-la-comunidad-de-league-legends">Comunidad</a></li>
@@ -16,7 +17,9 @@
   </nav>
     <div class="row" id="leagueoflegends"> 
     </div>
-<div id="menu" class="header"></div>
+<div id="menu" class="header">
+  
+</div>
 <header>
     
   <div class="container-img">
@@ -34,15 +37,24 @@
   <button value="additional" id="stats">Mas información</button>
 
   <button value="clean" id="clean">Nueva búsqueda</button>
-  
+</div>
+  <div class="select">
   <div id="select">
-    <form  name="formulario" action="#">
-    <select name="lolOrder" id="order">
-      <option value="" >selecciona orden</option>
-      <option value="a-z" >A-Z</option>
-      <option value="z-a" >Z-A</option>
-    </select>
-    </form>
+
+      <form  name="formulario" action="#">
+          <select id="lolOrder">
+          <select name="lolOrder" id="order">
+            <option value="" >selecciona orden</option>
+            <option value="" >selecciona orden</option>
+            <option value="a-z" id="a-z">A-Z</option>
+            <option value="a-z" >A-Z</option>
+            <option value="z-a" id="z-a">Z-A</option>
+            <option value="z-a" >Z-A</option>
+          </select>
+          </select>
+      
+          </form>
+
 
   </div>
 

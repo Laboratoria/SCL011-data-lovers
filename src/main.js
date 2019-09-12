@@ -8,25 +8,23 @@ btnchampion.addEventListener("click",() =>{
         root.innerHTML += `
        <div>
        <div class="flip-card">
+       <div class="flip-card-inner">
        <div class="flip-card-front>
             <div id="img${[i]}">
-                <img class="imagen" src="${lolData[i].splash}">
+            <img class="imagen" src="${lolData[i].splash}">
+            <div id="name${[i]}1">
             </div>
-            <div id="name${[i]}">
                 <p>${lolData[i].id}</p>
+                
             </div> 
         </div>`;
-
-      
-
-    }
-});
-       
+    } 
+    });
    
+
 
 const btnMostPower = document.getElementById("btnMostPower");
 btnMostPower.addEventListener("click",() =>{
-    document.getElementById("root").innerHTML="";
     mostPower(lolData, "attack");
 });
 
@@ -37,18 +35,17 @@ btnFighter.addEventListener("click",() =>{
 
 const btnStats =document.getElementById("stats");
 btnStats.addEventListener("click",()=>{
-    document.getElementById("root").innerHTML="";
     stats(lolData, "stats");
 });
 
-
-
-
-const sortDataLol = document.getElementById("a-z");
-sortDataLol.addEventListener("onchange",()=>{
-    sortData(lolData, "z-a");
-
+const selet = document.getElementById("order");
+selet.addEventListener('change',()=>{
+    const valuselet = selet.value;
+    let resultselet = window.sortData(LOL,valuselet);
+    root.innerHTML
+})
 
 
   
-});
+
+

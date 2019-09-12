@@ -7,28 +7,8 @@ window.lolData = lolData;
 
   const mostPower= (data, getAttack)=>{
   let powered=[];
-
-  data.reverse();
-
-  let newPowered=[];
-
   for (let i = 0; i < data.length; i++) {
     if (data[i]["info"][getAttack] == 10) {
-
-     newPowered.push(
-       [
-          [data[i].img],
-          [data[i].id],
-          [data[i]["info"].attack]
-       ]
-     );
-    }
-  }
-
-  
-  let element= document.getElementById("order").value
-  if (element == "z-a"){
-    newPowered.reverse();
       root.innerHTML += `
         <div>
         <div class="flip-card">
@@ -44,28 +24,7 @@ window.lolData = lolData;
         </div> 
         </div>`;
     };
-
   }
-
-
-for (let i = 0; i < newPowered.length; i++) {
-  
-  root.innerHTML += `
-  <div>
-      <div id="img${[i]}">
-          <img src="${newPowered[i][0]}">
-      </div
-      <div id="name${[i]}">
-          <p>nombre:${newPowered[i][1]}</p>
-      </div> 
-      <div id="attack${[i]}">
-      <p>Nivel Ataque:${newPowered[i][2]}</p>
-  </div> 
-  </div>`;
-
-
-}
-
   return powered;
 };
   const tags= (data, getFighter)=>{
@@ -133,27 +92,65 @@ for (let i = 0; i < newPowered.length; i++) {
       return information;
     }
 
-    
-    const sortData = (lolData, sortBy, sortOrder) => {
 
-      let lolOrder = lolData;
-      if (sortOrder == "a-z"){
+    const sortData = (LOL,valuselet) => {
+
+      let lolOrder = LOL;
+      if (valuselet == "a-z"){
         lolOrder.sort((a,b)=> {
-          if (a[sortBy] < b[sortBy]) {return -1;}
-          if (a[sortBy] > b[sortBy]) {return  1;}
-          return 0;
-        })
-      }
-    
-      if (sortOrder == "z-a"){
-        lolOrder.sort((a,b)=>{
-          if (a[sortBy] > b[sortBy]) {return -1;}
-          if (a[sortBy] < b[sortBy]) {return  1;}
-          return 0;
+        if(a.id>b.id){
+          return 1
+        }
+        return -1
         })
       
       }
-      return lolOrder;
-    };
     
-  console.log(lolData.sort());
+      if (valuselet == "a-z"){
+        lolOrder.sort((a,b)=> {
+        if(a.id<b.id){
+          return 1
+        }
+        return -1
+        })
+      
+      }
+        
+    
+      console.log(lolOrder);
+    };
+    window.sortData=sortData;
+  
+ /* const container = document.getElementById('root');
+    const selectname = document.getElementById('name');
+    let sortlol = (LOLData,sortBy,sortOrder)=> {
+     let orderaLol = LOLData;
+     if (sortOrder == "a-z"){
+    orderaLol.sort((a,b)=> {
+     if (a[sortBy] < b[sortBy]) {return -1;}
+     if (a[sortBy] > b[sortBy]) {return  1;}
+     return 0;
+    })
+    }
+    if (sortOrder == "z-a"){
+      orderaLol.sort((a,b)=> {
+       if (a[sortBy] > b[sortBy]) {return -1;}
+       if (a[sortBy] < b[sortBy]) {return  1;}
+       return 0;
+      })
+    }
+    return orderaLol;
+    }
+
+
+const computeStats = (LOLData,type) => {
+  let calculateResult = filterLOL(LOLData,type).length;  
+  return calculateResult;
+
+ }
+
+ window.computeStats = computeStats;*/
+
+
+
+

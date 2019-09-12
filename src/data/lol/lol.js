@@ -4171,7 +4171,7 @@ const LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Orianna.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Oriana_0.jpg",
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg",
       blurb:
         "There once was a Piltovian man named Corin Reveck who had a daughter named Orianna, whom he loved more than anything else in the world. Though Orianna had incredible talent for dancing, she was deeply fascinated by the champions of the League of ...",
       info: {
@@ -5367,7 +5367,7 @@ const LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/TahmKench.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tahmkench_0.jpg",
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg",
       blurb:
         "''The whole world's a river, and I'm its king.''<br>Tahm Kench travels Runeterra's waterways, feeding his insatiable appetite with the misery of the unsuspecting. The singularly charming gourmand savors every moment of his victims' suffering.  A deal ...",
       info: {
@@ -5627,7 +5627,7 @@ const LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Thresh.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tresh_0.jpg",
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg",
       blurb:
         "''The mind is a wondrous thing to tear apart.''<br><br>Sadistic and cunning, Thresh is a restless spirit who prides himself on tormenting mortals and breaking them with slow, excruciating inventiveness. His victims suffer far beyond the point of death,...",
       info: {
