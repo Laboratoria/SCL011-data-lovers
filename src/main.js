@@ -72,7 +72,7 @@ for (let i = 0; i < buttonFilters.length; i++){
            resultadoFor=rspBtn
           }
     })
-};
+}
 
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{

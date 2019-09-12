@@ -18,9 +18,11 @@ window.filterData={
         return new Date(b.date) - new Date(a.date)
         
       }
-      else if (selectSort ==="older"){
+      else {
         return new Date(a.date) - new Date(b.date)
       }
     });
   }
+
+
 };
