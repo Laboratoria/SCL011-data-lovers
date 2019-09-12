@@ -120,5 +120,9 @@ header{
         justify-content: center;
 
 }
+#intro{
+  text-align: start;
+  width: 90%;
+}
 }
 

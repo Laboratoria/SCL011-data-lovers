@@ -7,7 +7,7 @@
 * [Test de Usabilidad](#Test-de-Usabilidad)
 * [Historias de Usuario](#Historias-de-Usuario)
 * [Funciones de la página](#Funciones-de-la-Pagina)
-* [Parte opcional](#parte-opcional-hacker-edition)
+* [Pruebas unitarias](#Pruebas-Unitarias)
 * [Consideraciones técnicas](#consideraciones-técnicas)
 * [Primeros pasos](#primeros-pasos)
 * [Contenido de referencia](#contenido-de-referencia)
@@ -90,14 +90,16 @@ En uno de los talleres de UX presentamos nuestro prototipo de alta fidelidad al 
 
 ### **6. Funciones de la página**
 
-Dentro de la página planteamos tres funciones principales.
+Dentro de la página planteamos tres funciones principales cada una dentro de un "select".
 Se puede seleccionar el filtro por tipo, que despliega todos los tipos de Pokemon que existen en la región Kanto, que son 15 en total.
 Se puede filtrar por aparición en huevos, en esta se encuentran cuatro parámetros que son 2,5 y 10 kilometros y que no aparece en huevos.
-Y la última función es para ordenar alfabéticamente el nombre de los Pokemon.
+Y la última función es para ordenar de manera alfabética ascendente y descendente los nombres de los Pokemon.
 
 
 
-### **5.2 Historias de usuario**
+### **7. Pruebas unitarias**
+
+Realizamos pruebas unitarias para las tres funciones que creamos, en las cuales se declaró una constantes de muestra para poder realizar las pruebas por función en las cuales debían retornar si eran funciones (typeof) y realizar su función específica.
 
 
 

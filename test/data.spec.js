@@ -6,17 +6,7 @@ require('./data.spec.js');
 
 
 describe('orderABC', () => {
-  const muestra =[
-    {
-    "name":"Charizard"
-    },
-    {
-    "name":"Psyduck"
-    },
-    {
-     "name":"Bulbasaur"
-    }
-  ]
+  const muestra ="Charizard";"Psyduck";"Bulbasaur";
   
   it('debería ser una función', () => {
     assert.equal(typeof orderABC, 'function');
@@ -24,7 +14,7 @@ describe('orderABC', () => {
 
   
   it('debería retornar "Bulbasaur","Charizard","Psyduck" al ordenar de la "A-Z"', () => {
-    assert.deepEqual(window.orderABC(muestra,"Charizard","Psyduck","Bulbasaur"),"Bulbasaur","Charizard","Psyduck");
+    assert.deepEqual(window.orderABC(muestra,"ABC"),"Bulbasaur","Charizard","Psyduck");
   });
 })
 

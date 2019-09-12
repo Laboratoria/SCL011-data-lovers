@@ -20,8 +20,9 @@ pokemonCards +=
      <h4>${element.name}</h4>
  </div>
    <div class="flip-card-back">
+   <h2>${element.name}</h2>
          <h5>Spawn: ${element.spawn_chance}</h5>
-         <h5>Debilidad: ${element.weaknesses}</h5>
+         <h6>Debilidad: ${element.weaknesses}</h6>
          <h5>Caramelos para evolución: ${element.candy_count}</h5>
    </div>
  </div>
