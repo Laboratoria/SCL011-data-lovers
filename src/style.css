@@ -11,7 +11,8 @@ body{
 
 #titulo{
   position: absolute;
-  height: 150px;
+  height: 100px;
+  width: 150px;
   left:2%;
 
 }
@@ -19,7 +20,6 @@ body{
 #intro{
 text-align: center;
   left: 50%;
-  background-color: brown;
 }
 #select{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
