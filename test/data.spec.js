@@ -57,7 +57,11 @@ describe('window.filterData.filter', () => {
   })
   
 })
-
+describe('window.filterData.sortByDate', () => {
+  it('debería ser una función', () => {
+    assert.equal(typeof window.filterData.sortByDate, 'function');
+  })
+})
 
 //describe(la función q yo hice)
 //variable nombrevariable = [
