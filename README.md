@@ -46,19 +46,19 @@ Despues de validar este diseño con nuestras compañeras y creamos un wireframe 
  Éste fue testeado con 5 usuarios con distintos niveles de conocimiento, tanto del tema en cuestión como conocimientos digitales. Durante la prueba les entregamos a los usuarios tareas a realizar dentro de la página y con ayuda de la herramienta Loom grabamos sus comentarios.
 
 - El primer usuario que testeo el prototipo no tenia conocimientos sobre el juego Pokemon Go ni los personajes.
-With[Test 1](https://www.loom.com/share/e5c4d6ea84f14ac1ac56659e2e25755b)
+[Test 1](https://www.loom.com/share/e5c4d6ea84f14ac1ac56659e2e25755b)
 
 - El segundo usuario había utilizado la aplicación Pokemon Go hace un par de años y conocía la serie animada.
-With[Test 2](https://www.loom.com/share/90413eaa1d55433da5dc0befa9516c69)
+[Test 2](https://www.loom.com/share/90413eaa1d55433da5dc0befa9516c69)
 
 - El tercer usuario era un experto en el tema, juega actualmente Pokemon Go y ubica características específicas de los Pokemon.
-With[Test 3](https://www.loom.com/share/ead6862678d742a0806fc9fe24e99da6)
+[Test 3](https://www.loom.com/share/ead6862678d742a0806fc9fe24e99da6)
 
 - El cuarto usuario no utilizó la aplicación de juego, pero conocía la serie animada y sus personajes.
-With[Test 4](https://www.loom.com/share/5d39d52734d2421d87de7c96611ebd5c)
+[Test 4](https://www.loom.com/share/5d39d52734d2421d87de7c96611ebd5c)
 
 - El quinto usuario jugó Pokemon Go por un período de tiempo y conocía la serie y personajes.
-With[Test 5](https://www.loom.com/share/5d39d52734d2421d87de7c96611ebd5c)
+[Test 5](https://www.loom.com/share/5d39d52734d2421d87de7c96611ebd5c)
 
 La mayoría opinó que la página era fácil de usar y no era confusa, que tenía un diseño llamativo, pero pidieron mejorar algunos aspectos:
 
