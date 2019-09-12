@@ -12,14 +12,15 @@ window.filterData={
       return result
 
   }, 
-  sortByDate: (takeData)=>{
-      let dates = [] ;
-       for (let j = 0; j< takeData.length; j++) {
-           dates.push(new Date(parseInt(takeData[j].date) * 1000))
-           dates.sort(function(a,b){return b-a})
-          
-           
-       }
-       return dates
-   }
+   sortByDate: (array, selectSort)=>{
+    return array.sort(function(a,b){
+      if (selectSort ==="recent"){
+        return new Date(b.date) - new Date(a.date)
+        
+      }
+      else if (selectSort ==="older"){
+        return new Date(a.date) - new Date(b.date)
+      }
+    });
+  }
 };

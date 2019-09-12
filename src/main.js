@@ -2,6 +2,8 @@
 const takeData = window.STEAM.appnews.newsitems;
 let buttonFilters = document.getElementsByClassName("btnfilters");
 let valueButton = "";
+let resultadoFor = "";
+
 
 for (let j = 0; j<takeData.length;j++){
     let newsCards = document.createElement("div");
@@ -42,37 +44,38 @@ for (let i = 0; i < buttonFilters.length; i++){
        if(valueButton==="feedlabel"){
         let btnAll = window.filterData.filter(takeData, valueButton);
         renderNews(btnAll)
+        resultadoFor=btnAll;
        }
         if (valueButton==="TF2 Blog"){
             let tf2Btn= window.filterData.filter(takeData, valueButton);
            renderNews(tf2Btn)
+           resultadoFor=tf2Btn
         }
         if (valueButton ==="Product Update"){
             let updateBtn =  window.filterData.filter(takeData, valueButton);
             renderNews(updateBtn)
+            resultadoFor=updateBtn
         }
         if(valueButton=== "PC Gamer"){
             let pcBtn = window.filterData.filter(takeData, valueButton);
             renderNews(pcBtn);
+            resultadoFor=pcBtn
         }
         if (valueButton==="Eurogamer"){
             let euroBtn = window.filterData.filter(takeData, valueButton);
             renderNews (euroBtn);
+            resultadoFor=euroBtn
         }
         if (valueButton==="Rock, Paper, Shotgun"){
            let rspBtn =  window.filterData.filter(takeData, valueButton);
            renderNews(rspBtn);
+           resultadoFor=rspBtn
           }
     })
-};
+}
 
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{
-    let selectValue = selectSort.options[selectSort.selectedIndex].value;
-    if (selectValue=== "ascendente") {
-        
-        let ascendente= window.filterData.sortByDate(takeData)
-        console.log(ascendente)
-        
-    }
-})
+    let ascendente = window.filterData.sortByDate(resultadoFor,  document.getElementById("orderSelect").value)
+    renderNews(ascendente);
+});
