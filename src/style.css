@@ -137,6 +137,29 @@ a:hover {
     cursor: pointer;
 }
 
+#btnOrdenar {
+    justify-content: center;
+    display: flex;
+    margin: 10% 0 0 42%   ;
+    text-decoration: none;
+    padding: 20px;
+    font-family:  'Poppins', sans-serif;;
+    text-transform: uppercase;
+    /* padding-left: px;
+    padding-right: 10px; */
+    font-weight: 800;
+    font-size: 12px;
+    color:  #80ca1c;
+    border-radius: 15px;
+    background-color:  #274d43;
+  }
+  #btnOrdenar:hover{
+    color: #80ca1c;
+    background-color: #c8d7cd;
+    text-decoration: none;
+  }
+    }
+    
 
 /*Tarjetas*/
 
