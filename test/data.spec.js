@@ -33,7 +33,7 @@ describe('filterStatusAlive', () => {
     assert.equal(typeof window.data.filterStatusAlive, 'function')
   });
 
-  it('Debería entregar nombre de Rick por filtro de Estado vivo ',() => {
+  it('Debería entregar nombre de Rick por filtro de Estado vivo ', () => {
     assert.deepEqual(window.data.filterStatusAlive(muestra),[{"name": "Rick Sanchez",
     "status": "Alive",}])
   })

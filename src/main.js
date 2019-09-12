@@ -97,7 +97,7 @@ selectOrderABC.addEventListener('change', () => {
 
 // filtar datos
 
-const buttonStatus= document.getElementById('Status');
+const buttonStatus= document.getElementById('status');
 buttonStatus.addEventListener('click', () => {
     document.getElementById('filterStatusAlive').style.display= "block";
     document.getElementById('filterStatusDead').style.display= "block";
@@ -196,7 +196,7 @@ botonStatusUnknown.addEventListener('click', () => {
 })
 //Filtrar por Genero
 
-const buttonGender= document.getElementById('Gender');
+const buttonGender= document.getElementById('gender');
 buttonGender.addEventListener('click', () => {
     document.getElementById('filterGenderFemale').style.display= "block";
     document.getElementById('filterGenderMale').style.display= "block";
@@ -302,8 +302,6 @@ buttonDatos.addEventListener("click", ()=> {
    document.getElementById('container').style.display= 'none';
    document.getElementById('datos').style.display= 'block';
    document.getElementById('ulItem').style.display= 'none';
-
-
 
 })
 
