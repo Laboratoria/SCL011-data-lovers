@@ -1,5 +1,10 @@
 
-
+//     const apparitionPercent = (episodes) => {
+//       let percentajeTotal = Math.round((episodes * 100) / 31);
+//       return percentajeTotal;
+//     };
+//     window.apparitionPercent = apparitionPercent;
+// }
 window.filter = {
 
 
@@ -47,8 +52,7 @@ window.filter = {
 
     },
 
- 
-}
+
 
 // window.sorterRicks = {
 
@@ -65,4 +69,4 @@ window.filter = {
 // },}
 
 
-
+  }

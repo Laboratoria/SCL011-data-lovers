@@ -61,12 +61,14 @@ const ricks = RICKANDMORTY.results;
          let card = document.createElement("div");
          let parraf = document.createElement("p");
          let img = document.createElement("img");
-
+         let text = document.createElement("h2");
+        
          // Asigno el valor de las etiquetas img y p
          // al usar i recorre todos 
 
          let name = document.createTextNode(dataSelected[i].name);
          let photo = (dataSelected[i].image);
+  
 
          //Asigno un atributo de tipo clase para darle estilo
          card.setAttribute("class", "card");
@@ -75,6 +77,7 @@ const ricks = RICKANDMORTY.results;
          img.setAttribute("src", photo);
          card.appendChild(parraf);
          card.appendChild(img);
+        
          //Mostrar tarjeta en el contenedor especifico
 
          containerr.appendChild(card);
@@ -82,20 +85,7 @@ const ricks = RICKANDMORTY.results;
 
      }}
 
-        //    let orderSort = [ricks.name];
-        //    orderSort.sort((a,b)=> a - b);
-        // //    console.log(orderSort);
-
-
-
-    //     let orderSort = ricks.name;
-    //  orderSort.sort(function (a, b) {
-    //      console.log(a.localeCompare(b));
-    //       return a.localeCompare(b);
        
-          
-    //     });
- 
  
     
 
