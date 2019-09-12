@@ -149,7 +149,7 @@ header nav ul{
     font-family: Bangers;
 }
 .container{
-    display: none;
+    display: "block";
 }
 @media screen and (max-width: 1000px){
    .ulItem {

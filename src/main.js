@@ -29,7 +29,6 @@ buttonShowCharacters.addEventListener('click', () => {
 const listShowCharacters= document.getElementById('showCharacters');
 listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
-    document.getElementById('container').style.display= 'block';
     const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -294,19 +293,8 @@ botonGenderUnknown.addEventListener('click', () => {
 
 })
 
-//Botón datos
-
-const buttonDatos = document.getElementById("showCuriosities");
-buttonDatos.addEventListener("click", ()=> {
-   document.getElementById('portals').style.display = 'none';
-   document.getElementById('container').style.display= 'none';
-   document.getElementById('datos').style.display= 'block';
-   document.getElementById('ulItem').style.display= 'none';
-
-})
 
 
-//Calculos
 
 //Conteo numerico por especies y con porcentaje
 // const numberAlive = alive.length;
