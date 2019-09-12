@@ -5,32 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximus-scale=1, minimun-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
 
   </head>
   
+  
   <!-----PAGE1----->
+  
   <body>
-
-   
-    <header>
-        <div class="container">
-        <h1  class="logo"><img src="./images/LogoData.png" >El rol de la mujer  en Latinoamerica</h1>
-        <input type="checkbox" id="menu-bar">
-        <label class="icon-menu" for="menu-bar"></label>
-        <nav class="menu">
-          <a href="">Inicio</a>
-          <a href="">¿Quiénes Somos?</a>
-          <a href="">Contacto</a>
-        </nav>
-     </div>
+    <div class="contenedor">
+  <header> 
+    <h1 class="logo"><img src="./images/LogoData.png" ></h1>
+    
   </header>
 
-  <main>
-    <section id="banner">
-      <img src="images/imgWomanMobile.jpg">
+
+<!-----banner----->
+
+<main>
+    <section  id="banner">
+      <img src="images/imgWomanMobile.jpg" alt="imgWomanMobile"> 
       <div class="container"> 
       <h2>Data Femme</h2>
       <p>Esta página es para acceder con rapidez y seguridad a la base de datos del Banco Mundial , 
@@ -40,81 +34,103 @@
     </section>
   </main>
 
-     <section id="ButtonPais" class="hide">
-       <div class="container">
-              <h2>Paises</h2>
-              <p>Elige el país del cual desea cosultar información</p>
-              <button  class="botones" id="per"   value="PER">Peru</button>
-              <button  class="botones"  id="chl"  value="CHL">Chile</button>
-              <button  class="botones"  id="mex"  value="MEX">México</button>
-              <button  class="botones"  id="bra"  value="BRA">Brasil</button>
-            </div>
-            </section>
+<!-----PAGE1 seccion botones----->
 
-           
-           
-           
-           
-           
-           
-           <section id= "article">
-             <div class="container">
- <section class="secciones" >
+  <main class="contain">
+    <section class="secciones" id="inicio">
+        
+      <nav class="buttonPais" >
+        <button  class="botones" id="per"   value="PER">Peru</button>
+        <button  class="botones"  id="chl"  value="CHL">Chile</button>
+        <button  class="botones"  id="mex"  value="MEX">México</button>
+        <button  class="botones"  id="bra"  value="BRA">Brasil</button>
+
        
-      <nav> <h3>Selecciona el indicador:</h3>
+      </nav>
+      </section>
+
+
+
+      <!-----PAGE1 secccion articulos----->           
+           
+<section id="article">
+    <div >              
+    <h3>Noticias</h3>
+    <br>
+    <article>
+        <p>El sistema hace agua: la adversa ruta de las 197 mujeres asesinadas, que sí habían denunciado a sus parejas.
+            Con gran convocatoria se lleva a cabo seminario sobre el rol de las mujeres</p>
+    </article>
+  </div>
+  </section>
+  
+  
+  
+  <section  id="instituciones">
+  <div >              
+    <h3>Instituciones Relacionadas</h3>
+    <br>
+    <article>
+        <p> <a href="https://www.sernameg.gob.cl/">Sernagem</a><br>
+            <a href="http://cem.cl/">Centro de estudios de la Mujer</a><br>
+            <a href="https://www.unwomen.org/es/"> ONU Mujeres </a><br>
+            <a href="http://www.comunidadmujer.cl/">Comunidad Mujer </a><br>
+          
+        </p>
+    </article>
+  </div>
+  </section>
+
+    
+    
+    
+  <!-----PAGE2 seccion indicador----->  
+
+
+    <section class="secciones" id="datos" >
+        <h2 id="countrySelected"></h2>
+      <h3>Selecciona el indicador:</h3>
         <select class="indicatorsSelect" id="indicator">
-        </select></nav>
-       
+        </select>
         <h2 id="indicator-name"></h2>
-        <canvas  width="150px" height="100px">Grafico</canvas>
-       <div> <canvas width="50" height="50"> graficoProm</canvas> <canvas width="50" height="50" >graficoMax</canvas> <canvas width="50" height="50">graficoMin</canvas></div>
       
+     
+     
+     <div id="tableBox">
+      
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <td ><strong>Año</strong> </td>
+                <td ><strong>Dato</strong></td>
+              </tr>
+            </thead>
+            <tbody id="indicator-table">
+            </tbody>
+          </table>
+        </div>
+      </div>
+     
+      <button id="volver">Nueva Busqueda</button> 
+     
 
-        
-        
-    
     </section>
-  <section>
- 
-      <table>
-          <thead>
-            <tr>
-              <td><strong>Año</strong> </td>
-              <td><strong>Dato</strong></td>
-            </tr>
-          </thead>
-          <tbody id="indicator-table">
-          </tbody>
-        </table>
-  </section>              <h2>Noticias</h2>
-              <article>
-                  <p>El sistema hace agua: la adversa ruta de las 197 mujeres asesinadas, que sí habían denunciado a sus parejas.
-                      Con gran convocatoria se lleva a cabo seminario sobre el rol de las mujeres</p>
-              </article>
-            </div>
-            </section>
-
-           
-
-            
-             
-                
-
-
-
- 
-            
-        <!--FOOTER-->
-   <footer id="footer"></footer>
+     
+  </main>
+  <footer>
     
+      
+    
+  </footer>
 
+
+</div>
     <div id="root"></div>
     
-    <script src="./data/worldbank/worldbank.js"></script> 
+   <script src="./data/worldbank/worldbank.js"></script> 
+    
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
-
 </html>
-
-

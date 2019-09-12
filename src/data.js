@@ -18,8 +18,35 @@ window.worldBank = {
         filteredIndicators.push(element);
       }
     });
+    // console.log(filteredIndicators);
     return filteredIndicators;
  },
 
- 
+ sort: (data, sortOrder) => {
+  let indicatorData = [];
+  for (let i in data)
+    indicatorData.push([i, data[i]]);
+  if (sortOrder === 'ascendente') {
+    indicatorData.sort((a, b) => {
+      return a- b
+    })
+  } else if (sortOrder === 'descendente') {
+    indicatorData.sort((a, b) => {
+      return b - a
+    })
+  }
+  return indicatorData[0];
+  
+},
+/* meanOfValues: (justData) => {
+  let sum = arrayOfValues.reduce((a, b) => {
+    return a+b
+  })
+  let totalValues = arrayOfValues.length
+  return sum/totalValues
+}  */
+
+
+
+
 }

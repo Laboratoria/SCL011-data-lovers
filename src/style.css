@@ -1,4 +1,4 @@
-
+ 
 
 * {
   margin: 0;
@@ -8,29 +8,55 @@
   }
   body{
   
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
+    background: #E9E9E9;
   }
   
+.cotainerglobal{
+
+  width: 30%;
+  max-width: 1000px;
+  margin:0;
+  overflow: hidden;
+}
+
+
+
   header{
   
     width: 100%;
     height: 100px;
     background: #94618E;
     color:#49274A;
-  
+    text-align: left;
     position: fixed;
     top:0;
     left:0;
     z-index: 100;
+    font-size: 13px;
+    
   } 
+  
+
+  section#datos.secciones {
+    display: none;
+    height: auto;
+    float: auto;
+    position: absolute;
+    margin-top: 10%;
+  }
   
   .container{
     width: 98%;
     margin: auto;
   }
   h1{
+    top:30px;
     float:left;
   }
+  
+ 
+
   
   header .container{
     display: table;
@@ -120,7 +146,7 @@
   
   #banner img {
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
   
   #banner .container {
@@ -163,14 +189,14 @@
   .botones {
     background: linear-gradient(50deg,#94618E,#49274A);
     color: #ffffff; 
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
     border:2px;
     border-radius:5px;
-    text-transform: uppercase;
     width:80px;
     height: 30px;
     text-align: center;
+    margin-left: 3px;
   
   
   }
@@ -178,7 +204,85 @@
   button:hover{
     transform: translatey(5px);
     box-shadow: 0px, 30px, 5px, -15px rgba(0,0,0,0.3);
-  
+  }
+
     /*articulos*/
   
+    #article {
+      background:#e7d7e5;
+      color: #49274A;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 5px 5px 5px 5px;
+      text-align: left;
+      margin-top: 20px;
+      font-size: 13px;
+      margin-top: 30px;
+      position: relative;
+      margin-left: 10px;
+      float: left;
+      top: 70%;
+      display: table;
+      }
+      
+      select#indicator.indicatorsSelect {
+        text-justify: auto;
+        box-shadow: -2px 1px 5px 3px;
+        color: #2b1f40;
+        font-size: medium;
+        margin-top: 2%;
+      }
+      
+      
+      /*tabla*/
+div#tableBox {
+  box-align: center;
+  width: 100%;
 
+}
+#tableBox {
+  
+
+  text-align: center;
+  border-collapse: collapse;
+  align-items: center;
+  margin-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+}
+h2#indicator-name {
+  margin-top: 2%;
+}
+th,
+td {
+  border: solid 1px #49274a;
+  padding: 2%;
+  text-align: center;
+  width: 10%;
+}
+
+thead {
+  background-color: #7e327586;
+}
+
+      
+      
+button#volver {   
+  float: left;
+  margin-right:0px;
+  top: 100px;
+  background: linear-gradient(50deg,#94618E,#49274A);
+  color: #ffffff; 
+  border-radius:5px;
+  padding: 1%;
+  display: none;
+
+ 
+}
+  
+  
+  @media (min-width:1000px){
+    .information{
+      width: 1000px;
+    }
+  }
