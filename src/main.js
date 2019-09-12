@@ -1,6 +1,7 @@
  //Data completa
- const ricks = RICKANDMORTY.results;
 
+ const ricks = window.RICKANDMORTY.results;
+ console.log(ricks);
  //Data de Masculinos
  const characMale = window.filter.filterMale(ricks);
 
@@ -28,6 +29,7 @@
  //Asignando eventos y funcion con argumento segun el tipo de genero a los botones. 
  btnmale.addEventListener("click", () => {
      showData('male');
+
  });
  btnfemale.addEventListener("click", () => {
      showData('female');
@@ -59,8 +61,8 @@
          dataSelected = ordenada.slice();
      }
 
-
      const containerr = document.getElementById("container-cardss");
+
      for (let i = 0; i < dataSelected.length; i++) {
          //Creo elementos
          let card = document.createElement("div");
