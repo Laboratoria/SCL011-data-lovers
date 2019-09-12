@@ -4086,4 +4086,4 @@ const POKEMON = {
 }
 ;;
 
-window.pokemon = POKEMON.pokemon
+window.POKEMON = POKEMON.pokemon;

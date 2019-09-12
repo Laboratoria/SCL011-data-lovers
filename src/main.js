@@ -1,4 +1,4 @@
-const allPokemonOnData= POKEMON.pokemon;
+const allPokemonOnData= window.POKEMON;
 window.allPokemonOnData= allPokemonOnData;
 
 //Cartas
