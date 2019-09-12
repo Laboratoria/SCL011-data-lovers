@@ -102,7 +102,7 @@ En uno de los talleres de UX presentamos nuestro prototipo de alta fidelidad al 
 
 
 
-### **6. Funciones de la página**
+## **6. Funciones de la página**
 
 Dentro de la página planteamos tres funciones principales cada una dentro de un "select".
 Se puede seleccionar el filtro por tipo, que despliega todos los tipos de Pokemon que existen en la región Kanto, que son 15 en total.
@@ -117,32 +117,8 @@ Realizamos pruebas unitarias para las tres funciones que creamos, en las cuales 
 
 
 
-### **5.3 Diseño de la Interfaz de Usuario**
 
-#### Prototipo de baja fidelidad
-
-
-
-#### Prototipo de alta fidelidad
-
-
-
-#### Testeos de usabilidad
-
-
-
-### **5.4 Implementación de la Interfaz de Usuario (HTML/CSS/JS)**
-
-
-
-### **5.5 Pruebas unitarias**
-
-
-## **6. Parte Opcional (Hacker edition)**
-
-
-
-## **7. Consideraciones técnicas**
+## **5. Diagrama de flujo de la página**
 
 
 
@@ -157,20 +133,27 @@ Realizamos pruebas unitarias para las tres funciones que creamos, en las cuales 
 │   ├── Filtro por Tipo
 │   │   ├── Normal
 │   │   ├── Fuego
-│   │   ├── pokemon
-│   │   ├── pokemon
-│   │   ├── pokemon
-│   │   ├── pokemon
-│   ├── Filtro por Huevos
+│   │   ├── Agua
+│   │   ├── Planta
+│   │   ├── Eléctrico
+│   │   ├── Hielo
+│   │   ├── Lucha
+│   │   ├── Veneno
+│   │   ├── Volador
+│   │   ├── tierra
+│   │   ├── Psíquico
+│   │   ├── Bicho
+│   │   ├── Roca
+│   │   ├── Fantasma
+│   │   ├── Dragón
+│   │ 
+│   ├─ Filtro por Huevos
 │   │       ├── 2km
-│   │       ├── worldbank.js
+│   │       ├── 5km
+│   │       ├── 10km
+│   │       ├── No aparece en huevos
 
-│   ├── main.js
-│   └── style.css
-└── test
-    └── data.spec.js
 
-8 directories, 17 files
 ```
 .
 
