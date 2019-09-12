@@ -9,6 +9,7 @@ body{
     background-color: black;
     background-position-x: center;
 }
+/*Header*/
 header{
     display: flex;
     width: 100%;
@@ -53,6 +54,7 @@ header nav ul{
 .buttonPrincipal:hover {
     background-color: #5bb040;
 }
+/*Botones de imagen de página principal*/
 .portals{
     display: flex;
     flex-direction: row;
@@ -65,25 +67,40 @@ header nav ul{
 .portal{
     width: 50%;
 }
-
+/*Contenedor de funciones*/
 .container{
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
+    background: #5bb040;
+    overflow: hidden;
+    padding: 2% 2%;
 }
 
 .buttons{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
+/*Personajes con datos e imágenes*/
+
 .ulItem {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 4%;
     align-items: baseline;
     margin: 5%;
-
+}
+.liItem {
+    width: 80%;
+    height: auto;
+    padding: 2% 2%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    list-style: none; 
 }
 .imgRaM{
     border-radius: 50%;
@@ -99,16 +116,33 @@ header nav ul{
     background: #5bb040;
     margin: 2% 2%;
 }
+/*Página de datos curiosos*/
 
-.liItem {
-    width: 80%;
-    height: auto;
-    padding: 2% 2%;
-    justify-content: center;
-    align-items: center;
-    list-style: none; 
+.datos{
+    color: lightgray;
+    font-size: 1em;
+    font-family: sans-serif;
+    background: #02297b;
+    padding: 5% 5%;
+    display: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-
+.link{
+    color: #5bb040;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: Bangers;
+}
+.tittleDatos{
+    font-size: 2em;
+    font-family: Bangers;
+}
+.container{
+    display: "block";
+}
 @media screen and (max-width: 1000px){
    .ulItem {
         grid-template-columns: auto auto auto;
@@ -132,8 +166,7 @@ header nav ul{
         height: 20%;
         margin: 2% auto;
         padding: 2% auto;
-        background:#02297b;
-    
+        background:#02297b;    
     }
     header nav ul{
         flex-direction: row;

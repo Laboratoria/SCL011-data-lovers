@@ -299,7 +299,8 @@ botonGenderUnknown.addEventListener('click', () => {
 const buttonCuriosities = document.getElementById('showCuriosities');
 buttonCuriosities.addEventListener('click', () => {
     const totalCharacter= listOfCharacters.length;
-    console.log(totalCharacter)
+    console.log(totalCharacter);
+    
 })
 
 //Conteo numerico por especies y con porcentaje
