@@ -14,15 +14,38 @@ background-color: #2A475E;
 padding: 1%;
 text-align: right;
 }
-#textSelect, .links{
+.bannerTitle{
    color: white;
+   font-family: Poller One;
+   font-size: 28px;
+   text-align: left;
+   padding-left: 1%;
+   position: top;
+   top: 150px;
+   overflow: hidden;
+}
+#bannerImg{
+   max-width: 100%;
+   margin: 0 auto;
+   height: auto;
+   position: relative;
+   overflow: hidden;
+   background-size: cover;
 }
 #textSelect{
-   font-weight: 700;
+   color: white;
+   font-size: 14px;
 }
 .links{
-   font-size: 20px;
+   color: white;
+   font-size: 16px;
    padding: 2em;
+   text-decoration: none;
+}
+.links:hover{
+   color: #B55123;
+   text-decoration: none;
+   font-weight: bold;
 }
 #filters{
    text-align: left;
@@ -53,7 +76,7 @@ text-align: right;
 }
 .cards{
    background-color: #2A475E;
-   text-align: center;
+   text-align: left;
    color: white;
    width: 350px;
    height: 350px;
@@ -61,37 +84,41 @@ text-align: right;
    padding: 1em;
    margin-top: 5pt;
    float: left;
-   
+   font-size: 14px;
 }
-a:link {
+.cards a:link {
    color: #FB8637;
-   text-decoration: none;
- }
- 
-a:visited {
-   color: #ffffff;
    font-weight: bold;
    text-decoration: none;
  }
  
-a:hover {
-   color: #C36C2D;
-   text-decoration: underline;
+.cards a:visited {
+   color: #FB8637;
+   font-weight: bold;
+   text-decoration: none;
  }
  
-a:active {
+.cards a:hover {
    color: #B55123;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ 
+.cards a:active {
+   color: #B55123;
+   font-weight: bold;
    text-decoration: none;
  }
 #content{
-   text-align: center
+   text-align: center;
 }
 .date{
-   font-size: 10px;
-   color: lightgrey;
-   text-align: right;
+   font-size: 12px;
+   font-style: italic;
+   color: white;
+   text-align: left;
 }
 .url{
-   color: blue;
+   font-weight: 700;
 }
 
