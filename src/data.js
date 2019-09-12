@@ -1,4 +1,5 @@
 window.filterData={
+  
   filter: (takeData, buttonFilters)=>{
       let result= []; 
       for (let i=0; i<takeData.length;i++){
@@ -9,8 +10,7 @@ window.filterData={
             result.push(takeData[i])
           }
       }
-      return result
-
+    return result
   }, 
    sortByDate: (array, selectSort)=>{
     return array.sort(function(a,b){

@@ -4,7 +4,6 @@ let buttonFilters = document.getElementsByClassName("btnfilters");
 let valueButton = "";
 let resultadoFor = "";
 
-
 for (let j = 0; j<takeData.length;j++){
     let newsCards = document.createElement("div");
     newsCards.className =  "cards";
@@ -14,7 +13,7 @@ for (let j = 0; j<takeData.length;j++){
     let urlNews = takeData[j].url
     newsCards.innerHTML += `<h2>${titleNews}</h2>`
     newsCards.innerHTML += `<p>${contentNews}</p>`
-    newsCards.innerHTML += `<a class="url" href=${urlNews}>Leer Mas...</a>`
+    newsCards.innerHTML += `<a class="url" href=${urlNews}>Leer más...</a>`
      newsCards.innerHTML += `<p class="date">${dateNews}</p>`
 
     document.getElementById("content").appendChild(newsCards).innerHTML;
@@ -35,7 +34,8 @@ let renderNews =(data)=>{
         newsCards.innerHTML += `<p class="date">${dateNews}</p>`
         document.getElementById("content").appendChild(newsCards).innerHTML;
     }
-}
+};
+
 
 
 for (let i = 0; i < buttonFilters.length; i++){
@@ -44,7 +44,7 @@ for (let i = 0; i < buttonFilters.length; i++){
        if(valueButton==="feedlabel"){
         let btnAll = window.filterData.filter(takeData, valueButton);
         renderNews(btnAll)
-        resultadoFor=btnAll;
+        resultadoFor = btnAll;
        }
         if (valueButton==="TF2 Blog"){
             let tf2Btn= window.filterData.filter(takeData, valueButton);
@@ -72,7 +72,7 @@ for (let i = 0; i < buttonFilters.length; i++){
            resultadoFor=rspBtn
           }
     })
-}
+};
 
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{
