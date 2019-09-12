@@ -1,10 +1,3 @@
-
-//     const apparitionPercent = (episodes) => {
-//       let percentajeTotal = Math.round((episodes * 100) / 31);
-//       return percentajeTotal;
-//     };
-//     window.apparitionPercent = apparitionPercent;
-// }
 window.filter = {
 
 
@@ -21,7 +14,7 @@ window.filter = {
         //Retorno el resultado para recogerlo en el main.js
         return male;
 
-       
+
 
     },
 
@@ -48,25 +41,19 @@ window.filter = {
 
         //Retorno el resultado para recogerlo en el main.js
         return unknown;
-        
+
+
 
     },
 
+    orderdata: (ricks) => {
+        ricks.sort((nameone, nametwo) => nameone.name.localeCompare(nametwo.name));
+
+        return ricks;
+
+    }
 
 
-// window.sorterRicks = {
-
-//  // se llama a la opcion y al data
-//   orrderData: (ricks, option) => {
-//     let filterOrder;
-//   //localeCompare: ordena
-//   if(option == 'az'){
-//     filterOrder = ricks.sort((a, b) => {
-//       return a.name.localeCompare(b.name);
-//     });
-//   }
-//   return filterOrder;
-// },}
 
 
-  }
+}
