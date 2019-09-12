@@ -29,6 +29,7 @@ buttonShowCharacters.addEventListener('click', () => {
 const listShowCharacters= document.getElementById('showCharacters');
 listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
+    document.getElementById('container').style.display= 'block';
     const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -96,7 +97,7 @@ selectOrderABC.addEventListener('change', () => {
 
 // filtar datos
 
-const buttonStatus= document.getElementById('status');
+const buttonStatus= document.getElementById('Status');
 buttonStatus.addEventListener('click', () => {
     document.getElementById('filterStatusAlive').style.display= "block";
     document.getElementById('filterStatusDead').style.display= "block";
@@ -195,7 +196,7 @@ botonStatusUnknown.addEventListener('click', () => {
 })
 //Filtrar por Genero
 
-const buttonGender= document.getElementById('gender');
+const buttonGender= document.getElementById('Gender');
 buttonGender.addEventListener('click', () => {
     document.getElementById('filterGenderFemale').style.display= "block";
     document.getElementById('filterGenderMale').style.display= "block";
@@ -290,6 +291,19 @@ botonGenderUnknown.addEventListener('click', () => {
                     
                 `;
         }).join('');
+
+})
+
+//Botón datos
+
+const buttonDatos = document.getElementById("showCuriosities");
+buttonDatos.addEventListener("click", ()=> {
+   document.getElementById('portals').style.display = 'none';
+   document.getElementById('container').style.display= 'none';
+   document.getElementById('datos').style.display= 'block';
+   document.getElementById('ulItem').style.display= 'none';
+
+
 
 })
 
