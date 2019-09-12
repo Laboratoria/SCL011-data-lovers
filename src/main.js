@@ -1,10 +1,6 @@
  //Data completa
+ const ricks = RICKANDMORTY.results;
 
- 
-const ricks = RICKANDMORTY.results;
-
-
-//  console.log(ricks);
  //Data de Masculinos
  const characMale = window.filter.filterMale(ricks);
 
@@ -14,6 +10,8 @@ const ricks = RICKANDMORTY.results;
  //Data de Desconocido
  const characUnknown = window.filter.filterUnknown(ricks);
 
+ //Data ordenada
+ const ordenada = window.filter.orderdata(ricks);
 
 
 
@@ -21,8 +19,11 @@ const ricks = RICKANDMORTY.results;
  const btnmale = document.getElementById("male");
  const btnfemale = document.getElementById("female");
  const btnunknown = document.getElementById("unknown");
+ const btnorder = document.getElementById("btnOrdenar");
 
- 
+
+
+
 
  //Asignando eventos y funcion con argumento segun el tipo de genero a los botones. 
  btnmale.addEventListener("click", () => {
@@ -33,6 +34,10 @@ const ricks = RICKANDMORTY.results;
  });
  btnunknown.addEventListener("click", () => {
      showData('unknown');
+ });
+
+ btnorder.addEventListener("click", () => {
+     showData("btnorder");
  });
 
 
@@ -50,10 +55,10 @@ const ricks = RICKANDMORTY.results;
          dataSelected = characUnknown.slice();
          //console.log("seleccionaste unknown");
 
+     } else if (type === "btnorder") {
+         dataSelected = ordenada.slice();
      }
 
-
-     //<div id="element" class="card"></div>
 
      const containerr = document.getElementById("container-cardss");
      for (let i = 0; i < dataSelected.length; i++) {
@@ -80,27 +85,5 @@ const ricks = RICKANDMORTY.results;
          containerr.appendChild(card);
          //containerr.appendChild(img);
 
-     }}
-
-        //    let orderSort = [ricks.name];
-        //    orderSort.sort((a,b)=> a - b);
-        // //    console.log(orderSort);
-
-
-
-    //     let orderSort = ricks.name;
-    //  orderSort.sort(function (a, b) {
-    //      console.log(a.localeCompare(b));
-    //       return a.localeCompare(b);
-       
-          
-    //     });
- 
- 
-    
-
-
-
-
-
-
+     }
+ }
