@@ -44,12 +44,13 @@ header nav ul{
     background-color: #02297b;
     border: none;
     color: white;
+    border-radius: 8px;
     padding: 20px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 8px;
+    
 }
 .buttonPrincipal:hover {
     background-color: #5bb040;
@@ -83,6 +84,13 @@ header nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.orden, .styleButton {
+    background-color: #02297b;
+    border: none;
+    color: white;
+    border-radius: 8px; 
+    padding: 20px 32px;   
 }
 /*Personajes con datos e imágenes*/
 

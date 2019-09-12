@@ -298,8 +298,9 @@ botonGenderUnknown.addEventListener('click', () => {
 
 const buttonCuriosities = document.getElementById('showCuriosities');
 buttonCuriosities.addEventListener('click', () => {
-    const totalCharacter= listOfCharacters.length;
-    console.log(totalCharacter);
+    const porcentFemale= window.data.curiosities;
+    console.log(porcentFemale)
+
     
 })
 

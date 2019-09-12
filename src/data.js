@@ -1,6 +1,6 @@
 window.data={
   filterStatusAlive:(listOfCharacters)=>{
-    
+  
     const alive = listOfCharacters.filter((e) => {
       return (e.status === 'Alive');
     })
@@ -60,6 +60,10 @@ window.data={
     })
     return orderCBA;
   
+  },
+
+  curiosities:(listOfCharacters)=>{
+    
   }
   
 };
