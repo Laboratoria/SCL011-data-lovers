@@ -1,240 +1,127 @@
- 
-
-* {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
-  }
-  body{
-  
-    font-family: sans-serif;
-    background: #E9E9E9;
-  }
-  
-.cotainerglobal{
-
-  width: 30%;
-  max-width: 1000px;
-  margin:0;
-  overflow: hidden;
 }
 
+.container {
+  width: 100%;
+}
 
+body {
+  font-family: sans-serif;
+  background: #e9e9e9;
+}
 
-  header{
-  
-    width: 100%;
-    height: 100px;
-    background: #94618E;
-    color:#49274A;
-    text-align: left;
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 100;
-    font-size: 13px;
-    
-  } 
-  
+header {
+  width: 100%;
+  height: 100px;
+  background: #94618e;
+  color: #49274a;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-size: 13px;
+}
+section#datos.secciones {
+  display: none;
+  height: auto;
+  float: auto;
+  position: absolute;
+  margin-top: 10%;
+}
 
-  section#datos.secciones {
-    display: none;
-    height: auto;
-    float: auto;
-    position: absolute;
-    margin-top: 10%;
-  }
-  
-  .container{
-    width: 98%;
-    margin: auto;
-  }
-  h1{
-    top:30px;
-    float:left;
-  }
-  
- 
+/*diseño banner*/
+#banner {
+  margin-top: 100px;
+  position: relative;
+}
 
-  
-  header .container{
-    display: table;
-  }
-  
-  section{
-     width: 100%;
-     margin-bottom: 25px;
-  
-  }
-  
-  @media (min-width:1024px){
-    .container{
-      width: 1000px;
-    }
-  }
-  
-  
-  /*diseño del menu*/
-  #menu-bar {
-    display: none;
-  }
-  
-  header label {
-    float: right;
-    font-size: 28px;
-    margin: 6px 0;
-    cursor: pointer;
-  }
-   .menu {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background:rgba(73, 39, 74, 0.7);
-    transition: all 0.5s;
-    transform: translateX(-100%);
-    
-  
-   }
-  
-   .menu a {
-     display: block;
-     color:#fff;
-     height: 50px;
-     text-decoration: none;
-     padding: 15px;
-     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-   }
-  
-  .menu a:hover {
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  #menu-bar:checked ~ .menu {
-    transform: translateX(0%);
-  }
-  
-  
-  @media (min-width:1024px) {
-  
-   .menu {
-     position: static;
-     width: auto;
-     height: auto;
-     transform: translateX(0%);
-     float: right;
-     display: flex;
-     }
-  
-  .menu a {
-    border: none;
-  }
-  
-  header label {
-    display: none;
-    }
-  }
-  
-  /*diseño banner*/
-  #banner {
-     margin-top: 100px;
-     position: relative;
-  
-  }
-  
-  #banner img {
-    width: 100%;
-    height: 80%;
-  }
-  
-  #banner .container {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translateX(-58%) translateY(-50%);
-    color: #fff;
-  
-  }
-   
-  #banner h2 {
-    font-size: 20px;
-  }
-   
-  #banner a {
-    display: block;
-    width: 130px;
-    color: #fff;
-    text-decoration: none;
-    padding: 7px;
-    margin-top: 10px;
-    border: 3px solid  #fff;
-  }
-  
-  #banner a:hover { 
-  
-   background:  rgba(255, 255, 255, 0.3);
-  
-  }
-  
-  /*diseño seccion botones*/
-  
-  #ButtonPais{
-    margin-top: 30px;
-    position: relative;
-  
-  }
-  
-  .botones {
-    background: linear-gradient(50deg,#94618E,#49274A);
-    color: #ffffff; 
-    padding: 10px;
-    margin: 20px;
-    border:2px;
-    border-radius:5px;
-    width:80px;
-    height: 30px;
-    text-align: center;
-    margin-left: 3px;
-  
-  
-  }
-  
-  button:hover{
-    transform: translatey(5px);
-    box-shadow: 0px, 30px, 5px, -15px rgba(0,0,0,0.3);
-  }
+#banner img {
+  width: 100%;
+  height: 80%;
+}
 
-    /*articulos*/
-  
-    #article {
-      background:#e7d7e5;
-      color: #49274A;
-      padding: 20px;
-      margin-bottom: 15px;
-      border-radius: 5px 5px 5px 5px;
-      text-align: left;
-      margin-top: 20px;
-      font-size: 13px;
-      margin-top: 30px;
-      position: relative;
-      margin-left: 10px;
-      float: left;
-      top: 70%;
-      display: table;
-      }
-      
-      select#indicator.indicatorsSelect {
-        text-justify: auto;
-        box-shadow: -2px 1px 5px 3px;
-        color: #2b1f40;
-        font-size: medium;
-        margin-top: 2%;
-      }
-      
-      
-      /*tabla*/
+#banner .container {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateX(-58%) translateY(-50%);
+  color: #fff;
+}
+
+#banner h2 {
+  font-size: 20px;
+}
+
+#banner a {
+  display: block;
+  width: 130px;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px;
+  margin-top: 10px;
+  border: 3px solid #fff;
+}
+
+#banner a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*diseño seccion botones*/
+
+#ButtonPais {
+  margin-top: 30px;
+  position: relative;
+}
+
+.botones {
+  background: linear-gradient(50deg, #94618e, #49274a);
+  color: #ffffff;
+  padding: 10px;
+  margin: 20px;
+  border: 2px;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  margin-left: 3px;
+}
+
+button:hover {
+  transform: translatey(5px);
+  box-shadow: 0px, 30px, 5px, -15px rgba(0, 0, 0, 0.3);
+}
+
+/*articulos*/
+
+#article {
+  width: 50%;
+  background: #e7d7e5;
+  color: #49274a;
+  padding: 20px;
+  border-radius: 5px 5px 5px 5px;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 13px;
+  margin-top: 30px;
+  position: relative;
+  margin-left: 10px;
+  float: left;
+  top: 70%;
+  line-height: 15px;
+}
+
+select#indicator.indicatorsSelect {
+  text-justify: auto;
+  box-shadow: -2px 1px 5px 3px;
+  color: #2b1f40;
+  font-size: medium;
+  margin-top: 2%;
+}
+
+/*tabla*/
 div#tableBox {
   box-align: center;
   width: 100%;
@@ -265,8 +152,10 @@ thead {
   background-color: #7e327586;
 }
 
-      
-      
+@media only screen and (min-width: 768) {
+}
+
+ 
 button#volver {   
   float: left;
   margin-right:0px;
@@ -276,13 +165,4 @@ button#volver {
   border-radius:5px;
   padding: 1%;
   display: none;
-
- 
 }
-  
-  
-  @media (min-width:1000px){
-    .information{
-      width: 1000px;
-    }
-  }

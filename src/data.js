@@ -5,7 +5,7 @@ window.worldBank = {
       for (let dataCountry in data) {
         if (buttonCountry === dataCountry) {
         countryName = (dataCountry, data[dataCountry].indicators)
-        return countryName
+        return countryName;
       }
     }
   },
@@ -18,7 +18,6 @@ window.worldBank = {
         filteredIndicators.push(element);
       }
     });
-    // console.log(filteredIndicators);
     return filteredIndicators;
  },
 
@@ -45,8 +44,4 @@ window.worldBank = {
   let totalValues = arrayOfValues.length
   return sum/totalValues
 }  */
-
-
-
-
 }
