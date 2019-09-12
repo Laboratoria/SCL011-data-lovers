@@ -11,33 +11,44 @@ describe('filterMale', () => {
     {
       "name" : "Rick Sanchez",
       "gender" : "Male"
+      
     },
-    {
-       "name": "Morty Smith",
-       "gender": "Male"
-    },
-
-    {
-       "name": "Morty Smith",
-       "gender": "Male"
-    },
-
    {
-     "name": "Summer Smith",
-     "gender": "Female"
+    "name": "P-Coat Rick",
+    "gender": "Unknown"
+    
     },
+  
    {
      "name": "Beth Smith",
      "gender": "Female"
-     }
+    }
 
-  ]
+  ];
 
   it('debería ser una función', () => {
-    assert.equal('filterMale', 'function');
+    assert.equal(typeof window.filter.filterMale, 'function');
   });
 
   it('debería retornar el genero del personaje', () => {
     assert.deepEqual(window.filter.filterMale(muestra, "Male"), [{"name": "Rick Sanchez", "gender": "Male"}])
   });
+
+  it('debería ser una función', () => {
+    assert.equal(typeof window.filter.filterFemale, 'function');
+  });
+
+  it('debería retornar el genero del personaje', () => {
+    assert.deepEqual(window.filter.filterFemale(muestra, "Female"), [{"name": "Beth Smith" , "gender": "Female"}])
+  });
+
+ 
+  it('debería ser una función', () => {
+    assert.equal(typeof window.filter.filterUnknown, 'function');
+  });
+
+  it('debería retornar el genero del personaje', () => {
+    assert.deepEqual(window.filter.filterUnknown(muestra, "Unknown"), [{"name": "P-Coat Rick" , "gender": "Unknown"}])
+  });
+  
 })

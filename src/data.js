@@ -23,7 +23,7 @@ window.filter = {
     filterFemale: (ricks) => {
 
         //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
-        let female = ricks.filter(obj => (obj.gender === "Female"));
+        let female = ricks.filter(element => (element.gender === "Female"));
 
 
         //Retorno el resultado para recogerlo en el main.js
@@ -36,7 +36,7 @@ window.filter = {
     filterUnknown: (ricks) => {
 
         //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
-        let unknown = ricks.filter(obj => (obj.gender === "unknown"));
+        let unknown = ricks.filter(element => (element.gender === "unknown"));
 
 
         //Retorno el resultado para recogerlo en el main.js

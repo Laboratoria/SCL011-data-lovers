@@ -139,7 +139,6 @@ a:hover {
 
 #btnOrdenar {
     justify-content: center;
-    display: flex;
     margin: 10% 0 0 42%   ;
     text-decoration: none;
     padding: 20px;
@@ -149,13 +148,13 @@ a:hover {
     padding-right: 10px; */
     font-weight: 800;
     font-size: 12px;
-    color:  #80ca1c;
+    color: black;
     border-radius: 15px;
-    background-color:  #274d43;
+    background-color: #9b0e0e;
   }
   #btnOrdenar:hover{
-    color: #80ca1c;
-    background-color: #c8d7cd;
+    color: #9b0e0e;
+    background-color: #bc6355;
     text-decoration: none;
   }
     }

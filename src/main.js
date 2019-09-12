@@ -1,5 +1,7 @@
  //Data completa
- const ricks = RICKANDMORTY.results;
+
+ const ricks = window.RICKANDMORTY.results;
+// window.ricks = ricks;
 
  //Data de Masculinos
  const characMale = window.filter.filterMale(ricks);
