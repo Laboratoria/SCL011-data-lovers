@@ -1,5 +1,4 @@
-const allPokemonOnData= POKEMON.pokemon;
-
+const allPokemonOnData= window.POKEMON;
 window.allPokemonOnData= allPokemonOnData;
 
 //Cartas
@@ -21,6 +20,7 @@ pokemonCards +=
      <h4>${element.name}</h4>
  </div>
    <div class="flip-card-back">
+
          <h5>Spawn: ${((element.spawn_chance)*100)}%</h5>
          <h5>Debilidad: ${element.weaknesses}</h5>
          <h5>Caramelos para evolución: ${element.candy_count}</h5>
