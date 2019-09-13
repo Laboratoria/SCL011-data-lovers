@@ -44,7 +44,7 @@ Según estadísticas de Steam, en la actualidad existen más de 43.000 jugadores
 
   
 
-![logo-steam](../images/steam_logo.png) ![logo-tf2](../images/tf2_logo.png)
+![logo-steam](/SCL011-data-lovers/images/steam_logo.png) ![logo-tf2](/SCL011-data-lovers/images/tf2_logo.png)
 
   
   
