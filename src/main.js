@@ -30,6 +30,7 @@ const listShowCharacters= document.getElementById('showCharacters');
 listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
     document.getElementById('container').style.display= 'block';
+    document.getElementById('datos').style.display='none';
     const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -307,7 +308,7 @@ buttonDatos.addEventListener("click", ()=> {
   const porcentMale=((numberMale/listOfCharacters.length)*100).toFixed(2);
   const numberUnknown=window.data.curiositiesGenderUnknown(listOfCharacters);
   const porcentUnknown=((numberUnknown/listOfCharacters.length)*100).toFixed(2);
-  const parrafo=document.getElementById('datos');
+  const parrafo=document.getElementById('calculos');
   parrafo.innerHTML = 
  ` <p>
       En la serie el ${porcentFemale} % esta compuesto por Mujeres, el  ${porcentMale} % corresponde a Hombres y el  ${porcentUnknown}% tienen un genero desconocido

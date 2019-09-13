@@ -81,7 +81,7 @@ header nav{
     flex-direction: row;
     justify-content: center;
  }
- .orden, .styleButton {
+ .orden, .stylesButton {
     background-color: #02297b;
     border: none;
     color: lightgray;

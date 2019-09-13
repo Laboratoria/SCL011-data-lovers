@@ -31,6 +31,7 @@
      </section>
 
     <div id= "container" class= "container">
+
        <select class="orden" name="orden" id="orderSelector">
            <option value="">Ordenar de la …</option>
            <option value="ABC">A a la Z</option>
@@ -38,19 +39,26 @@
        </select>
 
       <div class="buttons">
+
          <button id= "status" class="styleButton">Estado</button>
-         <button id= "filterStatusAlive" class="styleButton">Vivo</button>
-         <button id= "filterStatusDead" class="styleButton">Muerto</button>
-         <button id= "filterStatusUnknown" class="styleButton">Indefinido</button>
+        <section>
+            <button id= "filterStatusAlive" class="styleButton">Vivo</button>
+            <button id= "filterStatusDead" class="styleButton">Muerto</button>
+            <button id= "filterStatusUnknown" class="styleButton">Indefinido</button>
+        </section>
         
          <button id="gender" class="styleButton">Género</button>
-         <button id= "filterGenderFemale" class="styleButton">Femenino</button>
-         <button id= "filterGenderMale" class="styleButton">Masculino</button>
-         <button id= "filterGenderUnknown" class="styleButton">Sexo Indefinido</button>
+        <section>
+            <button id= "filterGenderFemale" class="styleButton">Femenino</button>
+            <button id= "filterGenderMale" class="styleButton">Masculino</button>
+            <button id= "filterGenderUnknown" class="styleButton">Sexo Indefinido</button>
+        </section> 
+         
       </div>
     </div>
 
     <div id="datos" class= "datos">
+
       <p id="calculos"></p>
       <p class="tittleDatos">No te pierdas los datos curiosos de la serie <b>Rick and Morty</b>!</p><br/>
       <p>Conoce los 17 datos curiosos de la serie</p>
@@ -58,6 +66,7 @@
    </div>
 
    <ul id="ulItem" class= "ulItem"></ul>
+   
    <script src="./data/rickandmorty/rickandmorty.js"></script>
    <script src="data.js"></script>
    <script src="main.js"></script>
