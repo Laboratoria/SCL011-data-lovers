@@ -29,6 +29,7 @@ buttonShowCharacters.addEventListener('click', () => {
 const listShowCharacters= document.getElementById('showCharacters');
 listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
+    document.getElementById('container').style.display= 'block';
     const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -293,15 +294,22 @@ botonGenderUnknown.addEventListener('click', () => {
 
 })
 
-
-
-
-//Conteo numerico por especies y con porcentaje
-// const numberAlive = alive.length;
-// const numberDead = dead.length;
-// const numberUnknown = unknown.length;
-// const totalStatus= parseInt(numberAlive+numberDead+numberUnknown);
-// const porcentAlive = parseInt((numberAlive/totalStatus)*100);
-
-// const porcentDead = parseInt((numberDead/totalStatus)*100);
-// const porcentUnkown = parseInt((numberUnknown/totalStatus)*100);
+//Botón datos
+const buttonDatos = document.getElementById("showCuriosities");
+buttonDatos.addEventListener("click", ()=> {
+  document.getElementById('portals').style.display = 'none';
+  document.getElementById('container').style.display= 'none';
+  document.getElementById('datos').style.display= 'block';
+  document.getElementById('ulItem').style.display= 'none';
+  const numberFemale=window.data.curiositiesGenderFemale(listOfCharacters);
+  const porcentFemale =((numberFemale/listOfCharacters.length)*100).toFixed(2);
+  const numberMale=window.data.curiositiesGenderMale(listOfCharacters);
+  const porcentMale=((numberMale/listOfCharacters.length)*100).toFixed(2);
+  const numberUnknown=window.data.curiositiesGenderUnknown(listOfCharacters);
+  const porcentUnknown=((numberUnknown/listOfCharacters.length)*100).toFixed(2);
+  const parrafo=document.getElementById('datos');
+  parrafo.innerHTML = 
+ ` <p>
+      En la serie el ${porcentFemale} % esta compuesto por Mujeres, el  ${porcentMale} % corresponde a Hombres y el  ${porcentUnknown}% tienen un genero desconocido
+  </p>`
+});

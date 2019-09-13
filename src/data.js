@@ -62,8 +62,30 @@ window.data={
   
   },
 
-  curiosities:(listOfCharacters)=>{
-    
-  }
+  curiositiesGenderFemale:(listOfCharacters)=>{
+    const female = listOfCharacters.filter((e) => {
+      return (e.gender === 'Female');
   
+    })
+      return female.length;
+
+  },
+
+  curiositiesGenderMale:(listOfCharacters)=>{
+    const male = listOfCharacters.filter((e) => {
+      return (e.gender === 'Male');
+  
+    })
+      return male.length;
+
+  },
+
+  curiositiesGenderUnknown:(listOfCharacters)=>{
+    const unknown = listOfCharacters.filter((e) => {
+      return (e.gender === 'unknown');
+  
+    })
+      return unknown.length;
+
+  },
 };
