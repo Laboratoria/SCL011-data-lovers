@@ -3,6 +3,7 @@ const takeData = window.STEAM.appnews.newsitems;
 let buttonFilters = document.getElementsByClassName("btnfilters");
 let valueButton = "";
 let resultadoFor = "";
+let statisticsNews = "";
 
 for (let j = 0; j<takeData.length;j++){
     let newsCards = document.createElement("div");
@@ -13,7 +14,7 @@ for (let j = 0; j<takeData.length;j++){
     let urlNews = takeData[j].url
     newsCards.innerHTML += `<h2>${titleNews}</h2>`
     newsCards.innerHTML += `<p>${contentNews}</p>`
-    newsCards.innerHTML += `<a class="url" href=${urlNews}>Leer más...</a>`
+    newsCards.innerHTML += `<a target="_blank" class="url" href=${urlNews}>Leer Mas...</a>`
      newsCards.innerHTML += `<p class="date">${dateNews}</p>`
 
     document.getElementById("content").appendChild(newsCards).innerHTML;
@@ -21,8 +22,8 @@ for (let j = 0; j<takeData.length;j++){
 
 let renderNews =(data)=>{
   document.getElementById("content").innerHTML = ""
-    for (let j = 0; j<data.length;j++){
-        let newsCards = document.createElement("div");
+    for (let j = 0; j<data.length;j++){    
+         let newsCards = document.createElement("div");
         newsCards.className =  "cards";
         let titleNews= data[j].title;
         let contentNews = data[j].contents;
@@ -34,17 +35,14 @@ let renderNews =(data)=>{
         newsCards.innerHTML += `<p class="date">${dateNews}</p>`
         document.getElementById("content").appendChild(newsCards).innerHTML;
     }
-};
-
-
-
+}
 for (let i = 0; i < buttonFilters.length; i++){
     buttonFilters[i].addEventListener ('click',()=>{
         valueButton = buttonFilters[i].value
        if(valueButton==="feedlabel"){
         let btnAll = window.filterData.filter(takeData, valueButton);
         renderNews(btnAll)
-        resultadoFor = btnAll;
+        resultadoFor=btnAll;
        }
         if (valueButton==="TF2 Blog"){
             let tf2Btn= window.filterData.filter(takeData, valueButton);
@@ -71,11 +69,13 @@ for (let i = 0; i < buttonFilters.length; i++){
            renderNews(rspBtn);
            resultadoFor=rspBtn
           }
+        statisticsNews =window.filterData.statistics(resultadoFor, takeData);
+        document.getElementById("statisticsContent").innerHTML = `<p id="percentNews">${statisticsNews}% de las Noticias</p>`
     })
-};
+}
 
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{
     let ascendente = window.filterData.sortByDate(resultadoFor,  document.getElementById("orderSelect").value)
     renderNews(ascendente);
-});
+})

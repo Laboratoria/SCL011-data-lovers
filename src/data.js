@@ -22,5 +22,9 @@ window.filterData={
         return new Date(a.date) - new Date(b.date)
       }
     });
+  },
+  statistics:(data, takeData)=>{
+   let statisticsEquation= data.length*100/takeData.length
+  return statisticsEquation;
   }
 };
