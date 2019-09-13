@@ -209,7 +209,7 @@ Si entras a una pagina que informa sobre un juego, ¿que te gustaría leer?
 
 - solo las que aparecen en el inicio o si sale algun modo nuevo. Cosas como mantenimiento o mejoras en actualizaciones no, esas me las pillo en el juego solamente.
 
-### **2.3 Test de usuario
+### **2.3 Test de usuario**
 
 Hicimos 2 testeos con prototipos de alta fidelidad, para poder analizar y rediseñar nuestra página con respecto al feedback entregado.
 
