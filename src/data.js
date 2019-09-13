@@ -12,19 +12,20 @@ window.filterData={
       }
     return result
   }, 
-   sortByDate: (array, selectSort)=>{
+  sortByDate: (array, selectSort)=>{
     return array.sort(function(a,b){
       if (selectSort ==="recent"){
         return new Date(b.date) - new Date(a.date)
         
       }
-      else if (selectSort ==="older"){
+      else {
         return new Date(a.date) - new Date(b.date)
       }
     });
   },
-  statistics:(data, takeData)=>{
-   let statisticsEquation= data.length*100/takeData.length
-  return statisticsEquation;
-  }
+  statistics: (filteredData, takeData, buttonFilters)=>{
+    filteredData = window.filterData.filter(takeData, buttonFilters);
+    let statisticsEquation= filteredData.length*100/takeData.length
+    return statisticsEquation;
+   }
 };

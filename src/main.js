@@ -69,10 +69,11 @@ for (let i = 0; i < buttonFilters.length; i++){
            renderNews(rspBtn);
            resultadoFor=rspBtn
           }
-        statisticsNews =window.filterData.statistics(resultadoFor, takeData);
-        document.getElementById("statisticsContent").innerHTML = `<p id="percentNews">${statisticsNews}% de las Noticias</p>`
+    statisticsNews =window.filterData.statistics(resultadoFor, takeData, valueButton);
+    document.getElementById("statisticsContent").innerHTML = `<p id="percentNews">${statisticsNews}% de las Noticias</p>`
     })
-}
+ }
+
 
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{

@@ -44,7 +44,7 @@ Según estadísticas de Steam, en la actualidad existen más de 43.000 jugadores
 
   
 
-![logo-steam](steam_logo.png) ![logo-tf2](tf2_logo.png)
+![logo-steam](../images/steam_logo.png) ![logo-tf2](../images/tf2_logo.png)
 
   
   
@@ -324,46 +324,3 @@ Este primer prototipo se puede ver en el siguiente enlace de [Figma](https://www
   
 
 Luego del feedback recibido por los testeos, rediseñamos nuestro primer prototipo. En esta parte del proceso, tuvimos en consideración el diseño mobile, que pueden ver en este enlace de [Figma](https://www.figma.com/file/GrrxmIWLWE2uAhYsJAEtbM/Untitled?node-id=84%3A0). Como siempre tuvimos en mente el diseño mobile, no hubo problemas al ordenar la información en su versión responsive.
-
-  
-  
-
-## **Checklist**
-
-  
-
-* [ ] Usa VanillaJS.
-
-* [ ] No hace uso de `this`.
-
-* [ ] Pasa linter (`npm pretest`)
-
-* [ ] Pasa tests (`npm test`)
-
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-
-lines y branches.
-
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-
-* [ ] Incluye historias de usuario en `README.md`.
-
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-
-`README.md`.
-
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-
-en `README.md`.
-
-* [ ] Incluye link a Zeplin en `README.md`.
-
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-
-usabilidad en el `README.md`.
-
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-
-* [ ] UI: Permite filtrar data en base a una condición.

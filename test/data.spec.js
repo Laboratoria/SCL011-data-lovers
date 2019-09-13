@@ -58,8 +58,65 @@ describe('window.filterData.filter', () => {
   
 })
 describe('window.filterData.sortByDate', () => {
+  const sortDate = [{
+    "title": "Operation Canteen Crasher!",
+    "date": 1542738000
+  },
+  {
+    "title": "Team Fortress 2 Update Released",
+    "date": 1540923360
+  },
+  {
+    "title": "Team Fortress 2 Update Released",
+    "date": 1540494720
+  }]
   it('debería ser una función', () => {
     assert.equal(typeof window.filterData.sortByDate, 'function');
+  })
+  it('debería ordenar por valor del objeto "recent"', () => {
+    assert.deepEqual(window.filterData.sortByDate(sortDate, "recent"), [{
+      "title": "Operation Canteen Crasher!",
+      "date": 1542738000
+    },
+    {
+      "title": "Team Fortress 2 Update Released",
+      "date": 1540923360
+    },
+    {
+      "title": "Team Fortress 2 Update Released",
+      "date": 1540494720
+    }])
+  })
+  it('debería ordenar por valor del objeto "older"', () => {
+    assert.deepEqual(window.filterData.sortByDate(sortDate, "older"), [{
+      "title": "Team Fortress 2 Update Released",
+      "date": 1540494720
+    },
+    {
+      "title": "Team Fortress 2 Update Released",
+      "date": 1540923360
+    },
+    {
+      "title": "Operation Canteen Crasher!",
+      "date": 1542738000
+    }])
+  })
+})
+
+describe('window.filterData.statistics', () => {
+  let statisticsResult = [{
+    "title": "Operation Canteen Crasher!",
+    "feedlabel": "TF2 Blog"
+  },
+  {
+    "title": "Team Fortress 2 Update Released",
+    "feedlabel": "Product Update",
+  }]
+  it('debería ser una función', () => {
+    assert.equal(typeof window.filterData.statistics, 'function');
+  })
+  it('debería retornar resultado fórmula de "statistics"', () => {
+    assert.deepEqual(window.filterData.statistics("TF2 Blog", statisticsResult, "TF2 Blog"), 50)
   })
 })
 
