@@ -2,13 +2,12 @@ body {
     background-image: url("https://github.com/marcelalopeznanco/imagenes/blob/master/ws_Blue_Nebulae_1920x1200.jpg?raw=true");
     display: flex;
     margin: 0%;
+    flex-direction: center;
 }
 
 section {
     display: flex;
-    flex-direction: ;
     width: 100%;
-    justify-content: center;
 }
 
 
@@ -19,19 +18,18 @@ section {
 
 .pantalla1 {
     display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
 
 /* div class=tituloinicio que esta dentro del div class=pantalla1 y contiene la imagen pokemon*/
 
 .tituloinicio {
-    */
     /* background-image: url("/img/International_Pokémon_logo.svg.png"); */
     display: flex;
-    justify-content: center;
-    /* background-size: cover; */
     background-repeat: no-repeat;
+    width: 100%;
+    /* background-size: cover; */
 }
 
 
@@ -40,8 +38,8 @@ section {
 .pokebolainicio {
     /* background-image: url("/img/pokeball-logo-DC23868CA1-seeklogo.com.png"); */
     display: flex;
-    justify-content: center;
     background-repeat: no-repeat;
+    width: 50%;
 }
 
 
