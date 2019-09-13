@@ -28,5 +28,4 @@ window.filterData={
     let statisticsEquation= filteredData.length*100/takeData.length
     return statisticsEquation;
    }
-
 };
