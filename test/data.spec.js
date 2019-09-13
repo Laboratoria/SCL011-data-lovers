@@ -6,7 +6,23 @@ require('./data.spec.js');
 
 
 describe('orderABC', () => {
-  const muestra ="Charizard";"Psyduck";"Bulbasaur";
+  const muestra =[
+    {
+    "name":"Charizard",
+    "type":"Fire",
+    "egg":"Not in Eggs"
+    },
+    {
+    "name":"Psyduck",
+    "type":"Water",
+    "egg":"5 km"
+    },
+    {
+      "name":"Bulbasaur",
+      "type": "Grass",
+      "egg" :"2 km"
+     }
+  ]
   
   it('debería ser una función', () => {
     assert.equal(typeof orderABC, 'function');
@@ -14,7 +30,44 @@ describe('orderABC', () => {
 
   
   it('debería retornar "Bulbasaur","Charizard","Psyduck" al ordenar de la "A-Z"', () => {
-    assert.deepEqual(window.orderABC(muestra,"ABC"),"Bulbasaur","Charizard","Psyduck");
+    assert.deepEqual(window.orderABC(muestra,"ABC"),[
+      {
+       "name":"Bulbasaur",
+       "type": "Grass",
+       "egg" :"2 km"
+      },
+      {
+      "name":"Charizard",
+      "type":"Fire",
+      "egg":"Not in Eggs"
+      },
+      {
+      "name":"Psyduck",
+      "type":"Water",
+      "egg":"5 km"
+      }
+    ]
+    );
+  });
+  it('debería retornar "Psyduck","Charizard,"Bulbasaur" al ordenar de la "Z-A"', () => {
+    assert.deepEqual(window.orderABC(muestra,"XYZ"),[
+      {
+      "name":"Psyduck",
+      "type":"Water",
+      "egg":"5 km"
+      },
+      {
+      "name":"Charizard",
+      "type":"Fire",
+      "egg":"Not in Eggs"
+      },
+      {
+       "name":"Bulbasaur",
+       "type": "Grass",
+       "egg" :"2 km"
+      }   
+    ]
+    );
   });
 })
 

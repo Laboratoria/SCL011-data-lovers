@@ -4,8 +4,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-
 }
 
 
@@ -105,31 +103,47 @@ text-align: center;
   }
 
 /* Para tablets */
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 641px) and (max-width: 1007px){
     #results{
     width:100%;
-    justify-content: justify;
+    margin: 0px;
 }
 #intro{
-  text-align: justify;
-  width: 90%;
+   width: 70%;
+margin-left:20%;
+}
+#titulo{
+  margin: 0px; 
+}
+#select{
+  height: 20px;
 }
 }
 
 /*Para celular*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 640px){
     #results{
+      margin: 0px;
         width:100%;
-        justify-content: space-around;
-        
-
 }
 #intro{
-  text-align: justify;
+  text-align: center;
+  width: 100%;
+  margin-left: 5%
+}
+header{
   width: 90%;
 }
-/* header{
-  width: 90%;
-} */
+#titulo{
+  display:none;
+}
+#select{
+  margin:0px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 20px; 
+  
+}
 }
 
