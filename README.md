@@ -5,6 +5,7 @@
 -   Preámbulo
 -   Definición de usuario
     -   Encuestas
+    -   Entrevistas
     -   Usuario: "User persona"
     -   Historias de Usuario
 -   Definición UX
@@ -21,20 +22,27 @@
     -   Referente
     -   Prototipo de baja Fidelidad
     -   Prototipo de mediana Fidelidad
--   Desarrollo de Interfaz UI 
+-   Desarrollo de Interfaz UI
+  
     -   Flujo de Usabilidad
     -   Evaluación Heurística
     -   Prototipo de escritorio
 
 
+
+
 ## **1. Preámbulo**
+
+  
 
 Desde el año 2013 que la serie **Rick and Morty** ha sido un éxito con sus tres temporadas y sus millones de seguidores alrededor del mundo. Ganadora de un premio Emmy y con proyección para dos temporadas más como indica el sitio web de [Fotogramas] https://www.fotogramas.es/revista-fotogramas/
 
-Es por ello que se ha creado una plataforma llamada **Blablabla** que almacena datos de todos sus personajes y algunas curiosidades para sus fans.
+Es por ello que se ha creado una plataforma que almacena datos de todos sus personajes y algunas curiosidades para sus fans.
 
-## Usuario:
- 
+
+
+## 2. Usuario:
+  
 Para definir el usuario se realizó un form de google a 12 personas con preguntas generales y así poder identificar al usuario inexperto, experto y medio.
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/tpkPWTc/Screenshot-15.png" alt="Screenshot-15" border="0"></a>
@@ -77,11 +85,11 @@ La siguiente fase fue opcional, ya que las preguntas están enfocadas en persona
 
 <a href="https://ibb.co/T8V8KD1"><img src="https://i.ibb.co/DCxCGPY/Screenshot-11.png" alt="Screenshot-11" border="0"></a><br />
 
- Las 7 personas que vieron la serie, vieron la primera temporada, 6 de ellos, la segunda y 4 vieron las 3 temporadas, las mismas 4 personas, aseguran que han visto más de una vez alguna de las temporadas. Aquí podemos definir que tenemos usuarios inexpertos (quienes han visto sólo 1 temporada), usuarios medios**(quienes vieron 2 temporadas) y los expertos (quienes vieron las 3 temporadas y han repetido alguna de estas).
+ Las siete personas que vieron la serie, vieron la primera temporada, seis de ellos, la segunda y cuatro vieron las 3 temporadas, las mismas cuatro personas, aseguran que han visto más de una vez alguna de las temporadas. Aquí podemos definir que tenemos **usuarios inexpertos** (quienes han visto sólo 1 temporada), **usuarios medios** (quienes vieron 2 temporadas) y los **usuarios expertos** (quienes vieron las 3 temporadas y han repetido alguna de estas).
  <hr>
 <a href="https://ibb.co/NTW5zqv"><img src="https://i.ibb.co/3RS2Hb3/Screenshot-12.png" alt="Screenshot-12" border="0"></a>
 
-Para la obtención y construcción de los elementos de la página se hizo una pregunta más abierta para conocer los gustos de los seguidores de Rick and Morty,
+Para la obtención y construcción de los elementos de la página se hizo una pregunta más abierta para conocer los gustos de los seguidores de Rick and Morty, de esto se deduce que a los usuarios les interesa el tipo de humor y que es una serie con una trama interesante.
 
 <hr>
 A continuación a todos los entrevistados se les realizó un par de preguntas sobre el uso de internet.
@@ -92,405 +100,97 @@ A continuación a todos los entrevistados se les realizó un par de preguntas so
 
 Esta pregunta fue con fines de analizar la composición y estructura de los distintos sitios web que frecuentan los entrevistados.
  <hr>
-
+ 
 ### Conclusión de encuesta:
 
-La conclusión que sacamos de esta encuesta general que a pesar de sus actividades que se dedican, muchos de ellos son **personas dinámicas, que se adaptan a la tecnología**, que ven series animadas o caricaturas. Este perfil de personas es al cual nos vamos a dirigir e indagar más sobre ellos, sobre sus reacciones e interacciones con la app.
+La conclusión que sacamos de esta encuesta general que a pesar de sus actividades que se dedican, muchos de ellos son **personas dinámicas, que se adaptan a la tecnología**, que ven series animadas o caricaturas. Este perfil de personas es al cual se va a dirigir la investigación, sobre sus reacciones e interacciones con la app.
  
-  A raíz de esta información, contactamos a 2 encuestados para entrevistar presencialmente con un prototipo de media fidelidad de la app.
-  
-### **5.3 Diseño de la Interfaz de Usuario**
-
-#### Prototipo de baja fidelidad
-
-Durante tu trabajo deberás haber hecho e iterado sketches (boceto) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que realices, y las subas a tu repositorio, y las menciones en tu
-`README.md`.
-
-#### Prototipo de alta fidelidad
-
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc. Recuerda utilizar la identidad
-gráfica correspondiente a cada set de datos que elijas.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para hackear. Además, tu
-diseño debe seguir los fundamentos de _visual design_. También, deberás exportar
-tu diseño a [Zeplin](https://zeplin.io/) y utilizar las especificaciones de
-estilo que te dé Zeplin al momento de implementar tus diseños en código.
-
-#### Testeos de usabilidad
-
-Durante el reto deberás realizar tests de usabilidad con distintos usuarios, y
-en base a los resultados de esos tests, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los tests y cómo los
-mejoraste en tu propuesta final.
-
-### **5.4 Implementación de la Interfaz de Usuario (HTML/CSS/JS)**
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-Como mencionamos, **no** es necesario que construyas la interfaz tal como la
-diseñaste. Tendrás un tiempo limitado para hackear, así es que deberás
-priorizar.
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario filtrar y ordenar la data.
-3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
-   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
-   un determinado valor, por ejemplo.
-4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
-
-Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
-siga los fundamentos de _visual design_.
-
-### **5.5 Pruebas unitarias**
-
-El _boilerplate_ de este proyecto no incluye pruebas unitarias, pero esperamos
-que escribas tu propias pruebas unitarias para las funciones encargadas de
-_procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-Para ello te recomendamos implementar las siguientes funciones en el archivo
-`src/data.js`:
-
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
-
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
-
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
-
-Estas son ideas de funciones que podrías implementar, pero esto depende de tu
-propia implementación.
-
-El archivo `src/data.js` tiene que tener una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_).
-
-Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
-
-## **6. Parte Opcional (Hacker edition)**
-
-Features/características extra sugeridas:
-
-* En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json` de
-  de cada set datos.
-* Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
-  ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
-* 100% Coverage
-
-## **7. Consideraciones técnicas**
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#parte-opcional-hacker-edition) más arriba.
-
-No se debe utilizar la _pseudo-variable_ `this`.
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias:
-
-```text
-.
-├── package.json
-├── README.md
-├── src
-│   ├── data
-│   │   ├── injuries
-│   │   │   ├── injuries.js
-│   │   │   └── injuries.json
-│   │   ├── lol
-│   │   │   ├── lol.js
-│   │   │   └── lol.json
-│   │   ├── pokemon
-│   │   │   ├── pokemon.js
-│   │   │   └── pokemon.json
-│   │   ├── steam
-│   │   │   ├── steam.js
-│   │   │   └── steam.json
-│   │   └── worldbank
-│   │       ├── worldbank.js
-│   │       └── worldbank.json
-│   ├── data.js
-│   ├── index.html
-│   ├── main.js
-│   └── style.css
-└── test
-    └── data.spec.js
-
-8 directories, 17 files
-```
-
-### `src/index.html`
-
-Al igual que en el proyecto anterior, existe un archivo `index.html`. Como ya
-sabrás, acá va la página que se mostrará al usuario. También nos sirve para
-indicar qué scripts se usarán y unir todo lo que hemos hecho.
-
-En este archivo encontrarás una serie de _etiquetas_ (_tags_) `<script>`
-_comentadas_. Para _cargar_ las diferentes fuentes de datos tendrás que
-_descomentar_ estas _etiquetas_. Cada uno estos scripts asignará una variable
-global con la data correspondiente a esa fuente de datos.
-
-Por ejemplo, si descomentamos la siguiente línea:
-
-```html
-<!-- <script src="./data/worldbank/worldbank.js"></script> -->
-```
-
-La línea quedaría así:
-
-```html
-<script src="./data/worldbank/worldbank.js"></script>
-```
-
-Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
-scripts (como `src/data.js` o `src/main.js`).
-
-### `src/main.js`
-
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
-interacción con el DOM. Operaciones como creación de nodos, registro de
-manejadores de eventos (_event listeners_ o _event handlers_), ....
-
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
-
-### `src/data.js`
-
-El corazón de este proyecto es la manipulación de datos a través de arreglos y
-objetos. La idea de este archivo es contener toda la funcionalidad
-que corresponda a obtener, procesar y manipular datos.
-
-En este archivo esperamos que implementes las funciones detalladas en la sección
-de [_Pruebas Unitarias_](#pruebas-unitarias).
-
-### `src/data`
-
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
-carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
-extensión `.js` y otro `.json`. Ambos archivos contienen la misma data; la
-diferencia es que el `.js` lo usaremos a través de una etiqueta `<script>`,
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-(ver sección de [_Parte Opcional_](#parte-opcional-hacker-edition)).
-
-### `test/data.spec.js`
-
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
-
-## **8. Evaluación**
-Recuerda revisar la [rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada habilidad y cada nivel. Esta es una
-lista de todas las habilidades involucradas en este proyecto y que evaluaremos
-cuando lo completes:
-
-### **General**
-
-| Característica/Habilidad |
-|--------------------------|
-| Completitud |
-
-### **Tech**
-
-| Habilidad |
-|-----------|
-| **JavaScript** |
-| Estilo |
-| Nomenclatura/semántica |
-| Funciones/modularidad |
-| Estructuras de datos |
-| Tests |
-| **HTML** |
-| Validación |
-| Estilo |
-| Semántica |
-| **CSS** |
-| DRY |
-| Responsive |
-| **SCM** |
-| Git |
-| GitHub |
-| **CS** |
-| Lógica |
-| Arquitectura |
-
-### **UX**
-
-| Habilidad |
-|-----------|
-| User Centricity |
-| Visual Design |
-
-### **Habilidades Blandas**
-
-| Habilidad |
-|-----------|
-| Planificación y organización |
-| Autoaprendizaje |
-| Solución de problemas |
-| Dar y recibir feedback |
-| Adaptabilidad |
-| Trabajo en equipo |
-| Responsabilidad |
-| Comunicación eficaz |
-| Presentaciones |
-
-***
-
-## **Pistas sobre cómo empezar a trabajar en el proyecto**
-
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
-
-* ¿Quiénes son los principales usuarios de producto?
-* ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-* ¿Cuándo utilizan o utilizarían el producto?
-
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
-
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1)
-   un `remote` hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu _fork_ a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. A codear se ha dicho! :rocket:
-
-<!--
-En este proyecto deberás trabajar colaborativamente. Para ello, una de las
-integrantes del equipo deberá forkear el repositorio del cohort y la otra
-integrante **deberá hacer un fork del repositorio de su compañera**. Luego de
-esto, deberás
-[configurar](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-un `remote` hacia el repositorio del cual hiciste el fork.
-
-Para mandar cambios desde un repositorio forkeado al original debes crear un
-[pull request](https://goo.gl/4bYnuh)
-y el propietario del repositorio original recibirá una notificación para
-[revisar el pull request](https://goo.gl/XSFcT5)
-y [aceptar los cambios](https://goo.gl/HLJtqN).
-
-Aquí algunas recomendaciones para que organices mejor el trabajo con tu
-compañera:
-
-* En lugar de trabajar en una sola rama o _branch_, puedes organizar el flujo de
-  trabajo con dos ramas principales:
-  - `master`: rama que contiene las funcionalidades terminadas y sin errores.
-  - `develop`: rama dónde integrarás las funcionalidades conforme las vayas
-    desarrollando.
-
-* Además de tener las dos ramas anteriores, puedes trabajar cada nueva
-  funcionalidad en una rama individual (_feature branches_), estas ramas en
-  lugar de crearse a partir de `master`, tienen a `develop` como su rama de
-  origen. Cuando una funcionalidad es terminada se integra de nuevo a `develop`.
-  Las _feature branches_ no se deben integrar directamente a `master`.
-
-* Por último, te sugerimos codear usando la técnica de
-  [pair programming](https://goo.gl/uAMBX2).
-
-¿Quieres saber más forks y pull requests?
-
-* Un [fork](https://help.github.com/articles/fork-a-repo/) es una copia de un
-  repositorio en el que puedes experimentar sin afectar al repositorio original.
-  Generalmente se usa para proponer cambios al proyecto de alguien más o para
-  usar el proyecto de otra persona como punto de partida para una idea que
-  quieras realizar.
-
-* Un [pull request](https://help.github.com/articles/about-pull-requests/) (PR)
-  te permite solicitar la inclusión de cambios al repositorio original (tu punto
-  de partida) en GitHub. Cuando un PR es abierto, este permite solicitar,
-  discutir y revisar los cambios realizados con todos los colaboradores y
-  agregar otros commits antes de que los cambios sean incluidos al repositorio
-  original.
--->
-
-***
-
-## **10. Contenido de referencia**
-
-### **Diseño de experiencia de usuario (User Experience Design)**
-
-* Investigación con usuario
-* [Principios de diseño visual](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/diseno-visual)
-
-
-### **Desarrollo Front-end**
-
-* [Unidad de testing en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/11-testing/00-opening)
-* [Unidad de arreglos en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/04-arrays/01-arrays)
-* [Unidad de objetos en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/05-objects/01-objects)
-* [Unidad de funciones en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/javascript/03-functions/00-opening)
-* [Unidad de DOM en curso de Browser JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-08-bc-core-scl011/courses/browser/02-dom/00-opening)
-* [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-* [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-* [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-* [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-* [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-* [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-* [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-* [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [json.org](https://json.org/json-es.html)
-
-### **Herramientas**
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-
-***
-
-## **Checklist**
-
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
-* [ ] Pasa linter (`npm pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
+  A raíz de esta información, contactamos a 2 encuestados para entrevistar presencialmente con un prototipo de mediana fidelidad de la app.
+
+## Entrevista:
+Para realizar la entrevista se realizó un guión para el entrevistador, donde este agradece el tiempo y disposición de la persona, explica dinámica, hace un par de preguntas y asigna pequeñas tareas de usabilidad. 
+
+### Guión:
+
+**Guion entrevista usuario**
+
+Te agradezco tu tiempo y disposición de participar en esta “Prueba de Usabilidad” que nos ayudará a definir el diseño de nuestra web.
+
+Antes de comenzar con las preguntas, debes saber que probablemente no entiendas o te cueste realizar algunas acciones que te solicitaré, eso está bien, ya que así nos ayudas a detectar los posibles problemas de diseño.
+
+Es necesario que vayas relatando en voz alta lo que estás pensando mientras realizas el test. Y si te surgen preguntas al final puedes hacerlas.
+
+La duración de la prueba es de máximo 15 minutos.
+
+Agradecemos tu ayuda.
+
+**Presentación del usuario**
+
+Vamos a comenzar con algunas preguntas que permitirán saber más de ti y sobre que es interesante para ti saber de la serie Rick and Morty.
+
+*Datos personales*
+
+1.- ¿Cuál es tu nombre?
+
+2.- Edad
+
+*Datos generales sobre preferencias*
+
+3.- ¿Prefieres ver televisión por cable o por alguna plataforma de streaming?
+
+4.- Si ve plataforma… ¿Cuál ves?(Netflix, hbo, etc)
+
+5.- ¿Cuánto tiempo le dedicas a ver televisión o alguna plataforma de streaming?
+
+6.- ¿Cuando terminas de ver una serie o película te interesa conocer e investigar más de la trama?
+
+7.- Si la respuesta es sí. ¿Qué te interesa saber?
+
+Cómo sabemos, viste Rick&Morty…
+
+9.- ¿Cuántas temporadas has visto?
+
+10.- ¿Repetiste alguna temporada?
+
+Ahora te voy a mostrar un prototipo de una página web de Rick and Morty que estamos diseñando. Cuando veas la primera pantalla quiero que observes, relates que ves y me cuentes tus impresiones. (Recuerda que tu opinión debe ser sincera para que podamos mejorar el diseño).
+
+**Definir tareas para usuarios**
+
+_(Una vez que el entrevistado de su opinión)_
+
+Te voy a dar unas pequeñas tarea para que realices.
+
+- Quiero que entres a la página, vayas a los datos porcentuales y busques por género.
+
+- Ahora debes ingresar a la página, busca un personaje de especie animal, de género indefinido y ordenes la vista por detalle.
+
+_(Finalizada la tarea, pedir al entrevistado que responda las últimas preguntas y ponga notas al sitio web.)_
+
+Ahora necesito que respondas una breves preguntas y finalmente que evalúes el sitio web del 0 al 9 (siendo cero la nota más baja y nueve la más alta)
+
+11.- ¿Cuál de las dos opciones te gustó más? ¿Por qué?
+
+12.- ¿Que te pareció el sitio web? ¿Fue intuitivo o te costó entender?
+
+13.- ¿Qué crees que es lo más importante de ver en la página web de Rick and Morty?
+
+Ponga nota al sitio web:
+
+**_1. Estética y diseño_**_0 1 2 3 4 5 6 7 8 9_
+
+**_2. Facilidad de uso_**_0 1 2 3 4 5 6 7 8 9_
+
+**_3. Contenidos e información_**_0 1 2 3 4 5 6 7 8 9_
+
+**_4. Utilidad_**_0 1 2 3 4 5 6 7 8 9_
+
+Muchas gracias por tu tiempo.
+
+## **User Persona**:
+
+Se seleccionó a una usuaria de la serie Rick and Morty, para analizarla e identificar sus mayores necesidades.
+
+-   Nombre:  **Javiera**
+-   Trabajo:  **Diseñadora**
+-   Localización:  **Santiago**
+-   Tipo de usuario:  **Regular**

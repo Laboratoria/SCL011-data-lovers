@@ -30,6 +30,7 @@ const listShowCharacters= document.getElementById('showCharacters');
 listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
     document.getElementById('container').style.display= 'block';
+    document.getElementById('datos').style.display= 'none';
     const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -304,6 +305,26 @@ buttonDatos.addEventListener("click", ()=> {
    document.getElementById('ulItem').style.display= 'none';
 
 })
+
+//Jerarquía de botones
+
+//Estado
+const buttonsHierarchy = document.getElementById('status');
+    buttonsHierarchy.addEventListener("click", ()=> {
+        document.getElementById("filterStatusAlive").style.display = 'block';
+        document.getElementById("filterStatusDead").style.display = 'block';
+        document.getElementById("filterStatusUnknown").style.display = 'block';
+    })
+
+//Genero
+
+const buttonsHierarchy1 = document.getElementById('gender');
+    buttonsHierarchy1.addEventListener("click", ()=> {
+        document.getElementById("filterGenderFemale").style.display = 'block';
+        document.getElementById("filterGenderMale").style.display = 'block';
+        document.getElementById("filterGenderUnknown").style.display = 'block';
+    })
+
 
 
 //Calculos
