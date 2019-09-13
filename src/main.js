@@ -31,6 +31,7 @@ listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
     document.getElementById('container').style.display= 'block';
     document.getElementById('datos').style.display= 'none';
+    
     const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -296,45 +297,47 @@ botonGenderUnknown.addEventListener('click', () => {
 })
 
 //Botón datos
-
 const buttonDatos = document.getElementById("showCuriosities");
 buttonDatos.addEventListener("click", ()=> {
    document.getElementById('portals').style.display = 'none';
    document.getElementById('container').style.display= 'none';
    document.getElementById('datos').style.display= 'block';
    document.getElementById('ulItem').style.display= 'none';
-
-})
+   const numberFemale=window.data.curiositiesGenderFemale(listOfCharacters);
+   const porcentFemale =((numberFemale/listOfCharacters.length)*100).toFixed(2);
+   const numberMale=window.data.curiositiesGenderMale(listOfCharacters);
+   const porcentMale=((numberMale/listOfCharacters.length)*100).toFixed(2);
+   const numberUnknown=window.data.curiositiesGenderUnknown(listOfCharacters);
+   const porcentUnknown=((numberUnknown/listOfCharacters.length)*100).toFixed(2);
+   const parrafo=document.getElementById('calculos');
+   parrafo.innerHTML = 
+  ` <p>
+       En la serie el ${porcentFemale} % está compuesto por <b>mujeres</b>, el  ${porcentMale} % corresponde a <b>hombres</b> y el  ${porcentUnknown}% tienen un <b>género desconocido</b>
+   </p>`
+ });
+ 
 
 //Jerarquía de botones
 
 //Estado
 const buttonsHierarchy = document.getElementById('status');
     buttonsHierarchy.addEventListener("click", ()=> {
-        document.getElementById("filterStatusAlive").style.display = 'block';
-        document.getElementById("filterStatusDead").style.display = 'block';
-        document.getElementById("filterStatusUnknown").style.display = 'block';
+        document.getElementById("filterStatus").style.display = 'block';
+        document.getElementById("gender").style.display = 'block';
+        document.getElementById("filterGender").style.display = 'none';
+        
     })
 
 //Genero
 
 const buttonsHierarchy1 = document.getElementById('gender');
     buttonsHierarchy1.addEventListener("click", ()=> {
-        document.getElementById("filterGenderFemale").style.display = 'block';
-        document.getElementById("filterGenderMale").style.display = 'block';
-        document.getElementById("filterGenderUnknown").style.display = 'block';
+        document.getElementById("filterGender").style.display = 'block';
+        document.getElementById("status").style.display = 'block';
+        document.getElementById("filterStatus").style.display = 'none';
     })
 
 
 
-//Calculos
 
-//Conteo numerico por especies y con porcentaje
-// const numberAlive = alive.length;
-// const numberDead = dead.length;
-// const numberUnknown = unknown.length;
-// const totalStatus= parseInt(numberAlive+numberDead+numberUnknown);
-// const porcentAlive = parseInt((numberAlive/totalStatus)*100);
-
-// const porcentDead = parseInt((numberDead/totalStatus)*100);
-// const porcentUnkown = parseInt((numberUnknown/totalStatus)*100);
+ 

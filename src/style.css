@@ -99,7 +99,7 @@ header nav ul{
     color: lightgray;
     border-radius: 8px; 
     padding: 20px 32px;
-    margin-left: 2em;
+     margin-left: 2em;
     display: none;
 }
 /*Personajes con datos e imágenes*/
@@ -147,6 +147,7 @@ header nav ul{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    flex-direction: column;
 }
 .link{
     color: #5bb040;

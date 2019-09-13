@@ -4,6 +4,7 @@ require('../src/data/rickandmorty/rickandmorty.js');
 require('../src/data.js')
 
 
+
 const muestra = {
   "results": [{
     "id": 1,
@@ -30,10 +31,11 @@ const muestra = {
 describe('filterStatusAlive', () => {
   
   it('debería ser una función', () => {
-    assert.equal(typeof window.data.filterStatusAlive, 'function')
+    assert.equal(typeof filterStatusAlive, 'function')
   });
 
-  it('Debería entregar nombre de Rick por filtro de Estado vivo ', () => {
+
+  it('Debería retornar el objeto Rick Sanchez por filtro de Estado vivo ',() => {
     assert.deepEqual(window.data.filterStatusAlive(muestra),[{"name": "Rick Sanchez",
     "status": "Alive",}])
   })

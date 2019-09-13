@@ -2,26 +2,25 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bangers" />
-  <link rel="stylesheet" href="style.css" />
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Data Lovers</title>
+ <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bangers" />
+ <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div id="root">
+ <div id="root">
     <header>
-      <nav>
-            <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png">
-      
+     <nav>
+           <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png">
       <ul>
-          <li><button id="showCharacters" class="buttonPrincipal">Personajes</button></li>
-          <li><button id="showLocation" class="buttonPrincipal">Lugares</button></li>
-          <li><button id="showCuriosities" class="buttonPrincipal">Datos</button></li>
+         <li><button id="showCharacters" class="buttonPrincipal">Personajes</button></li>
+         <li><button id="showLocation" class="buttonPrincipal">Lugares</button></li>
+         <li><button id="showCuriosities" class="buttonPrincipal">Datos</button></li>
       </ul>
-    </nav>
-  </header>
+      </nav>
+    </header> 
 
       <section>
           <div id= "portals" class = "portals">
@@ -42,7 +41,7 @@
     
     <button id= "status" class="stylesButton">Estado</button>
           
-    <section>
+    <section id= filterStatus>
           <button id= "filterStatusAlive" class="styleButton">Vivo</button>
           <button id= "filterStatusDead" class="styleButton">Muerto</button>
           <button id= "filterStatusUnknown" class="styleButton">Indefinido</button>
@@ -50,7 +49,7 @@
           
     <button id="gender" class="stylesButton">Género</button>
 
-    <section>
+    <section id= filterGender>
           <button id= "filterGenderFemale" class="styleButton">Femenino</button>
           <button id= "filterGenderMale" class="styleButton">Masculino</button>
           <button id= "filterGenderUnknown" class="styleButton">Sexo Indefinido</button>
@@ -60,21 +59,22 @@
   </div>
 
   <div id="datos" class= "datos">
-
-    <p class="tittleDatos">No te pierdas los datos curiosos de la serie <b>Rick and Morty</b>!</p><br/>
-    <p>Conoce los 17 datos curiosos de la serie</p>
+    
+    
+    <p class="tittleDatos">No te pierdas los datos curiosos de la serie <b>Rick and Morty</b>!</p>
+    <h3>Sabías que ...</h3>
+    <p id="calculos"></p><hr>
+    <p>Conoce los 17 datos curiosos de la serie</p> 
     <a class="link" target="_blank" href="https://culturacolectiva.com/cine/datos-curiosos-de-rick-y-morty-que-no-conocias">Pincha aquí</a>
 
-
   </div>
 
-    <ul id="ulItem" class= "ulItem"></ul>
+   <ul id="ulItem" class= "ulItem"></ul>
 
+   <script src="./data/rickandmorty/rickandmorty.js"></script>
+   <script src="data.js"></script>
+   <script src="main.js"></script>
 
-    <script src="./data/rickandmorty/rickandmorty.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </div>
+ </div>
 </body>
-
 </html>
