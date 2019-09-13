@@ -9,11 +9,12 @@ body{
     background-color: black;
     background-position-x: center;
 }
- /*Header*/
- header{
+/*Header*/
+header{
     display: flex;
     width: 100%;
 }
+
 header nav{
     width: 97%;
     margin: 3% auto;
@@ -30,15 +31,16 @@ header nav{
     margin: 2% auto;
     justify-content: center;
     overflow: hidden;
- }
- header nav ul{
+}
+header nav ul{
     width: 80%;
     display: flex;
     justify-content: space-around;
     list-style: none;
     align-items: center;
- }
- .buttonPrincipal{
+}
+
+.buttonPrincipal{
     background-color: #02297b;
     border: none;
     color: lightgray;
@@ -48,25 +50,27 @@ header nav{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
- }
- .buttonPrincipal:hover {
+    
+}
+.buttonPrincipal:hover {
     background-color: #5bb040;
- }
- /*Botones de imagen de página principal*/
- .portals{
+}
+/*Botones de imagen de página principal*/
+.portals{
     display: flex;
     flex-direction: row;
     justify-content: center;
- }
- .buttoncito{
+}
+.buttoncito{
     background: transparent;
     border: none;
- }
- .portal{
+}
+.portal{
     width: 50%;
- }
- /*Contenedor de funciones*/
- .container{
+}
+/*Contenedor de funciones*/
+
+.container{
     width: 100%;
     display: flex;
     margin-left: auto;
@@ -75,42 +79,53 @@ header nav{
     background: #5bb040;
     overflow: hidden;
     padding: 2% 2%;
- }
- .buttons{
+}
+
+.buttons{
     display: flex;
     flex-direction: row;
     justify-content: center;
- }
- .orden, .styleButton {
+}
+.orden, .stylesButton {
     background-color: #02297b;
     border: none;
     color: lightgray;
-    border-radius: 8px;
+    border-radius: 8px; 
+    padding: 20px 32px;   
+}
+.styleButton {
+    background-color: #02297b;
+    border: none;
+    color: lightgray;
+    border-radius: 8px; 
     padding: 20px 32px;
- }
- /*Personajes con datos e imágenes*/
- .ulItem {
+     margin-left: 2em;
+    display: none;
+}
+/*Personajes con datos e imágenes*/
+
+.ulItem {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 4%;
     align-items: baseline;
     margin: 5%;
- }
- .liItem {
+}
+.liItem {
     width: 80%;
     height: auto;
     padding: 2% 2%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    list-style: none;
- }
- .imgRaM{
+    list-style: none; 
+}
+.imgRaM{
     border-radius: 50%;
     width: 180px;
     overflow: hidden;
- }
- .charData {
+}
+.charData {
     font-family: sans-serif;
     width: 95%;
     justify-content: center;
@@ -118,9 +133,10 @@ header nav{
     list-style: none;
     background: #5bb040;
     margin: 2% 2%;
- }
- /*Página de datos curiosos*/
- .datos{
+}
+/*Página de datos curiosos*/
+
+.datos{
     color: lightgray;
     font-size: 1em;
     font-family: sans-serif;
@@ -131,66 +147,74 @@ header nav{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
- }
- .link{
+    flex-direction: column;
+}
+.link{
     color: #5bb040;
     font-size: 1.5em;
     text-align: center;
     font-family: Bangers;
- }
- .tittleDatos{
+}
+.tittleDatos{
     font-size: 2em;
     font-family: Bangers;
- }
- .container{
+}
+.container{
     display: none;
- }
+}
+@media screen and (max-width: 1000px){
+   .ulItem {
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 6%;
+    }
+}
 
- @media screen and (max-width: 1000px){
+.buttonGender, .buttonStatus{
+    display: none;
+}
+
+
+@media screen and (max-width:800px ){
+
+    .portals{
+        display: none;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        margin: 2% auto;
+        padding: 2% auto;
+        background:#02297b;    
+    }
+    header nav ul{
+        flex-direction: row;
+        width: 90%;
+        color: white;
+    }
+    header nav ul li a:hover {
+        background: #5bb040;
+    }
     .ulItem {
-         grid-template-columns: auto auto auto;
-         grid-column-gap: 6%;
-     }
-  }
-  .buttonGender, .buttonStatus{
-     display: none;
-  }
-  @media screen and (max-width:800px ){
-     .portals{
-         display: none;
-     }
-     header{
-         display: flex;
-         width: 100%;
-         height: 20%;
-         margin: 2% auto;
-         padding: 2% auto;
-         background:#02297b;
-     }
-     header nav ul{
-         flex-direction: row;
-         width: 90%;
-         color: white;
-     }
-     header nav ul li a:hover {
-         background: #5bb040;
-     }
-     .ulItem {
-         display: grid;
-         grid-template-columns: auto auto;
-         grid-column-gap: 5%;
-  }
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 5%;
+}
+
 @media screen and (max-width:600px ){
     .imagenRaM, .portals{
         display: none;
     }
+    
     header{
         display: flex;
         width: 100%;
         height: auto;
         margin: 2% auto;
         background:#02297b;
+
     }
+
     header nav ul{
         flex-direction: column;
         width: 100%;
@@ -201,10 +225,10 @@ header nav{
         justify-content: center;
     }
     header nav ul li {
-        width: 100%;
+        width: 100%;   
     }
     header nav ul li a:hover {
         background:#5bb040;
-        width: 100%;
+        width: 100%;  
     }
 }
