@@ -103,6 +103,23 @@ describe('window.filterData.sortByDate', () => {
   })
 })
 
+describe('window.filterData.statistics', () => {
+  let statisticsResult = [{
+    "title": "Operation Canteen Crasher!",
+    "feedlabel": "TF2 Blog"
+  },
+  {
+    "title": "Team Fortress 2 Update Released",
+    "feedlabel": "Product Update",
+  }]
+  it('debería ser una función', () => {
+    assert.equal(typeof window.filterData.statistics, 'function');
+  })
+  it('debería retornar resultado fórmula de "statistics"', () => {
+    assert.deepEqual(window.filterData.statistics("TF2 Blog", statisticsResult, "TF2 Blog"), 50)
+  })
+})
+
 //describe(la función q yo hice)
 //variable nombrevariable = [
 //  {crear mini takeData de filtros}

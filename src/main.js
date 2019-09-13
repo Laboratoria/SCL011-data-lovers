@@ -3,6 +3,7 @@ const takeData = window.STEAM.appnews.newsitems;
 let buttonFilters = document.getElementsByClassName("btnfilters");
 let valueButton = "";
 let resultadoFor = "";
+let statisticsNews = "";
 
 for (let j = 0; j<takeData.length;j++){
     let newsCards = document.createElement("div");
@@ -44,7 +45,7 @@ for (let i = 0; i < buttonFilters.length; i++){
        if(valueButton==="feedlabel"){
         let btnAll = window.filterData.filter(takeData, valueButton);
         renderNews(btnAll)
-        resultadoFor = btnAll;
+        resultadoFor=btnAll;
        }
         if (valueButton==="TF2 Blog"){
             let tf2Btn= window.filterData.filter(takeData, valueButton);
@@ -71,8 +72,12 @@ for (let i = 0; i < buttonFilters.length; i++){
            renderNews(rspBtn);
            resultadoFor=rspBtn
           }
+    statisticsNews =window.filterData.statistics(resultadoFor, takeData, valueButton);
+    document.getElementById("statisticsContent").innerHTML = `<p id="percentNews">${statisticsNews}% de las Noticias</p>`
     })
-}
+ }
+ 
+ 
 
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{
