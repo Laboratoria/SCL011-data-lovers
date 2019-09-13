@@ -1,23 +1,41 @@
 /* Manejo del DOM */
-
-//const listPokemon = POKEMON.results;
-//for (let i = 0; i < listPokemon.length; i++) {
-
-// let tipo = listPokemon[i].type;
-//console.log(tipo)
-//}
-
-
-// crear una costante para todo(que es all) que sea igual a POKEMON (por la constante de la data que nos entregaron)
-// es .pokemon porque dentro de ("pokemon") se alojan todos los demas datos. Es un arreglo con muchos elementos adentro.
+/* Manejo del DOM */
 const data = POKEMON.pokemon;
-//se usa console log para revisar el todo (all) en la consola.
-//console.log(data);
+
+const containerRoot = document.getElementById("root");
+const selectType = document.getElementById("type");
 
 //Mostrar toda la data en CARDS
 const showData = (data) => {
     //Va ir guardado los datos entregados
     let result = "";
-    console.log(data);
-};
+    //console.log(data);
+    data.forEach(element => {
+        //element -->DATA[i]
+        //console.log(element.name);
+        result = containerRoot.innerHTML += `
+        <div>
+        <div class="card">
+        <div class="card-header">
+            <div class="img">
+                <img src="${element.img}">
+            </div>
+            <div class="card-body"
+            <h3>${element.num}</h3>
+            <h2>${element.name}</h2>
+            <p>${element.type}</p>
+            </div>
+        </div>
+        </div>
+        </div> `
+
+    });
+    return result;
+}
+
+
+
+
+
+//Que se cargue solo esto en un principio
 window.onload = showData(data);
