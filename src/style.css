@@ -1,0 +1,162 @@
+/* papa de todos */
+
+body {
+    background-image: url("../img/ws_Blue_Nebulae_1920x1200.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* row papa de row img */
+
+.barra {
+    background-color: #ffcb05;
+    height: 60px;
+}
+
+.introduccion {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: ;
+    width: 100%;
+    margin-left: 0%
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 40%;
+    margin-bottom: 10%;
+    margin-block-start: 10%;
+}
+
+.texto img {
+    width: 170%;
+}
+
+p {
+    color: #fff;
+    margin: 0%;
+    margin-left: 40px;
+    margin-top: 10%;
+    width: 40px%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0%
+}
+
+
+/* hijo de row */
+
+.row img {
+    vertical-align: middle;
+    border-style: none;
+    width: 50%;
+}
+
+
+/* barra de menu */
+
+#menu2 {
+    background-color: #ffcb05;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+#type {
+    width: 25%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+#sort {
+    width: 25%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+#table {
+    width: 25%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+
+/* Estilos tarjetas */
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    width: 280px;
+    height: 300px;
+    margin: 1em;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    text-align: center;
+    align-content: flex-start;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    color: #fdfd99;
+}
+
+.card-body h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 15px;
+    background: #c7a500;
+    color: white;
+    display: inline-block;
+    padding: 3px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+}
