@@ -8,10 +8,12 @@ let statisticsNews = "";
 for (let j = 0; j<takeData.length;j++){
     let newsCards = document.createElement("div");
     newsCards.className =  "cards";
+    let imgNews = takeData[j].img;
     let titleNews= takeData[j].title;
     let contentNews = takeData[j].contents;
     let dateNews = new Date(parseInt(takeData[j].date) * 1000);
     let urlNews = takeData[j].url
+    newsCards.innerHTML += `<img class="imgCards" src=${imgNews}></img>`
     newsCards.innerHTML += `<h2>${titleNews}</h2>`
     newsCards.innerHTML += `<p>${contentNews}</p>`
     newsCards.innerHTML += `<a target="_blank" class="url" href=${urlNews}>Leer Mas...</a>`
@@ -25,10 +27,12 @@ let renderNews =(data)=>{
     for (let j = 0; j<data.length;j++){    
          let newsCards = document.createElement("div");
         newsCards.className =  "cards";
+        let imgNews = data[j].img;
         let titleNews= data[j].title;
         let contentNews = data[j].contents;
         let dateNews = new Date(parseInt(data[j].date) * 1000);
         let urlNews = data[j].url
+        newsCards.innerHTML += `<img class="imgCards" src=${imgNews}></img>`
         newsCards.innerHTML += `<h2>${titleNews}</h2>`
         newsCards.innerHTML += `<p>${contentNews}</p>`
         newsCards.innerHTML += `<a class="url" href=${urlNews}>Leer Mas...</a>`
