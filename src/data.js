@@ -5,7 +5,6 @@ window.dataLOL = dataLOL;
 const mostPower= (dataLOL)=>{
   let powered=[];
   
-  //const getAttack= data["info"].attack === 10;
   for(let i =0; i<dataLOL.length; i++){
       
       let getAttack = dataLOL[i]["info"];

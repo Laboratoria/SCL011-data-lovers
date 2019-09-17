@@ -40,8 +40,8 @@ btnMostPower.addEventListener("click",() =>{
         <img class="imagen" src="${poderosos[i].splash}">
         <div id="name${[i]}1">
         </div>
-            <p>${poderosos[i].id}</p>
-            <p>${poderosos[i].info.attack}</p>
+            <p>nombre: ${poderosos[i].id}</p>
+            <p>ataque: ${poderosos[i].info.attack}</p>
         </div> 
       
     </div>`;
