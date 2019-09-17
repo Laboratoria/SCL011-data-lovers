@@ -50,6 +50,7 @@ header nav ul{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: Bangers;
     
 }
 .buttonPrincipal:hover {
@@ -85,6 +86,7 @@ header nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 .orden, .stylesButton {
     background-color: #02297b;
