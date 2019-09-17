@@ -14,8 +14,7 @@ body{
 }
 .menu{
   display: flex;
-  color: white;
-  background:  linear-gradient(50deg,#cfe940,#f5a031);
+  background:  linear-gradient(50deg,#daf739,#cfe940,#ebc033);
   width: 100%;
   height: 80px;
   margin: -20;

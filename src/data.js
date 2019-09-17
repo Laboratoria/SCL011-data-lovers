@@ -106,7 +106,7 @@ window.lolData = lolData;
       
       }
     
-      if (valuselet == "a-z"){
+      if (valuselet == "z-a"){
         lolOrder.sort((a,b)=> {
         if(a.id<b.id){
           return 1
@@ -115,11 +115,14 @@ window.lolData = lolData;
         })
       
       }
+
         
     
       console.log(lolOrder);
     };
     window.sortData=sortData;
+    //en el main 
+    //let ordenados = window.sortData(dataMain, valorSelect)
   
  /* const container = document.getElementById('root');
     const selectname = document.getElementById('name');
