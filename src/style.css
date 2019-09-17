@@ -1,4 +1,3 @@
-
 *{
     margin:0;
     padding: 0;
@@ -21,11 +20,17 @@ body{
 
 }
 #current{
-  align-content: space-around;
-}
-#menu{
   display: flex;
   flex-direction: column;
+}
+#mimenu{
+  
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: space-around;
+  justify-content: flex-end;
 }
 .menuNavegation{
   display: flex;
@@ -43,7 +48,7 @@ body{
   margin: auto;
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
+  flex-flow: wrap; 
   margin: 50px;
   column-count: 4;
   margin-top: 3%;
