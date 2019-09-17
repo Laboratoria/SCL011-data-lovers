@@ -13,7 +13,7 @@ body{
 }
 .menu{
   display: flex;
-  color: white;
+  color: orange;
   background:  linear-gradient(50deg,#cfe940,#f5a031);
   width: 100%;
   height: 80px;

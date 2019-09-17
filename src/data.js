@@ -45,6 +45,5 @@ const sortAZ= (dataLOL,selectSort) =>{
 }
 window.sortAZ= sortAZ;
 
-er;
     window.sortData=sortData;
   

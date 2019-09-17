@@ -29,7 +29,7 @@ const btnMostPower = document.getElementById("btnMostPower");
 btnMostPower.addEventListener("click",() =>{
     document.getElementById("root").innerHTML= "";
     const poderosos = mostPower(lolData);
-   console.log(poderosos);
+   
    for (let i = 0; i < poderosos.length; i++) {
     root.innerHTML += `
    <div>
@@ -131,5 +131,5 @@ btnStats.addEventListener("click",()=>{
           </div>
           
         </div>`;
-      };
+      }
 });
