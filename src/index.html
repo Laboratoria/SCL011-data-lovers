@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="menu" class="menu">
+    <nav id="mimenu" class="menu">
       <ul class="menuNavegation">
    
           <li class="current"><a href="https://las.leagueoflegends.com/es/news/">Noticias</a></li>
@@ -19,54 +19,61 @@
   </nav>
     <div class="row" id="leagueoflegends"> 
     </div>
-<div id="menu" class="header">
+  <div id="menu" class="header">
   
-</div>
-<header>
-    
-  <div class="container-img">
-      <div id="leagueOfLegends">
-   <img id = "league" src="https://i.ibb.co/ZYnfsrY/lol-logo.png"> 
   </div>
-</header>
-
-<section>
-  <div class="btn">
-
-  <button value="champion" id="btnchampion">Campeones </button>
-  <button value="fighter"  id="btnFighter">Tipos</button>
-  <button value="MostPower" id="btnMostPower">Mas Poderosos</button>
-  <button value="additional" id="stats">Mas información</button>
-
-</div>
-  <div class="select">
-  <div id="select">
-
-      <form  name="formulario" action="#">
-    
-          <select name="lolOrder" id="order">
-            <option value="" >selecciona orden</option>
-            <option value="a-z" id="a-z">A-Z</option>
-            <option value="z-a" id="z-a">Z-A</option>
-          </select>
+  <header>
       
-          </form>
+    <div class="container-img">
+        <div id="leagueOfLegends">
+    <img id = "league" src="https://i.ibb.co/ZYnfsrY/lol-logo.png"> 
+    </div>
+  </header>
 
+  <section>
+    <div class="btn">
+
+    <button value="champion" id="btnchampion">Campeones </button>
+    <button value="MostPower" id="btnMostPower">Mas Poderosos</button>
+    <button value="additional" id="stats">Mas información</button>
 
   </div>
+    <div class="select">
+    <div id="select">
+      
+            <select name="lolOrder" id="order">
+              <option value="" >selecciona orden</option>
+              <option value="az" >A-Z</option>
+              <option value="za" >Z-A</option>
 
-  </section>
-  <div id="select-order">
+            </select>
+            <select name="tags" id="tags">
+              <option value="" >selecciona Tipos</option>
+              <option value="Fighter">Fighter</option>
+              <option value="Tank">Tank</option>
+              <option value="Assassin" >Assasin</option>
+              <option value="Support">Support</option>
+              <option value="Mage">Mage</option>
+              <option value="Marksman">Marksman</option>
+              <option value="Melee">Melee</option>
+            </select>
+        
 
-  
-    <div value="root" id="root" ></div>
+
+    </div>
+
+    </section>
+    <div id="select-order">
+
+    
+      <div value="root" id="root" ></div>
 
 
 
-  <footer> </footer>
+    <footer> </footer>
 
-    <script src="./data/lol/lol.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+      <script src="./data/lol/lol.js"></script>
+      <script src="data.js"></script>
+      <script src="main.js"></script>
+    </body>
 </html>
