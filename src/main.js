@@ -8,6 +8,7 @@ const buttonShowCharacters= document.getElementById('characters');
 buttonShowCharacters.addEventListener('click', () => {
     document.getElementById('portals').style.display = 'none';
     document.getElementById('orderSelector').style.display = 'block';
+
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
     listOfCharacters.map(x => {
@@ -31,6 +32,8 @@ listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('portals').style.display = 'none';
     document.getElementById('container').style.display= 'block';
     document.getElementById('datos').style.display= 'none';
+    document.getElementById('containerplace').style.display= 'none';
+    
     const showListOfCharacters=listOfCharacters;
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -295,6 +298,60 @@ botonGenderUnknown.addEventListener('click', () => {
 
 })
 
+//Filtro lugares con select
+
+const listShowLocation= document.getElementById('showLocation');
+listShowLocation.addEventListener('click', ()=>{
+    document.getElementById('portals').style.display = 'none';
+    document.getElementById('containerplace').style.display= 'block';
+    document.getElementById('datos').style.display= 'none';
+    document.getElementById('orderSelector').style.display= 'none';
+    document.getElementById('buttons').style.display= 'none';
+
+
+const ele = document.getElementById('ulItem');
+    ele.innerHTML =
+    listOfCharacters.map(x => {
+        return `
+        <li class="liItem">
+        <img class="imgRaM" src="${x.image}">
+        <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status} 
+        Origen: ${x.location.name}
+        </div>    
+        </li>
+        `;
+    }).join('');
+})
+
+// const buttonfilterPlaces = document.getElementById('filterPlace');
+// buttonfilterPlaces.addEventListener('change', () => {
+
+  //  if( buttonfilterPlaces.value === 'earth'){
+
+    //const earth = window.data.filterPlace(listOfCharacters);
+    //const ele = document.getElementById('ulItem');
+    //ele.innerHTML =
+      //  earth.map(x => {
+        //    return `
+          //          <li class="liItem">
+            //            <img class="imgRaM" src="${x.image}">
+              //          <div class="charData">
+                //            Nombre: ${x.name}
+                  //          Genero: ${x.gender}
+                    //        Estado: ${x.status}
+                      //      Origen: ${x.location.name}
+                            
+                        //</div>
+                    //</li>
+                    
+                //`;
+        //}).join('');
+
+
+
 //Botón datos
 const buttonDatos = document.getElementById("showCuriosities");
 buttonDatos.addEventListener("click", ()=> {
@@ -302,6 +359,8 @@ buttonDatos.addEventListener("click", ()=> {
    document.getElementById('container').style.display= 'none';
    document.getElementById('datos').style.display= 'block';
    document.getElementById('ulItem').style.display= 'none';
+   document.getElementById('containerplace').style.display= 'none';
+
    const numberFemale=window.data.curiositiesGenderFemale(listOfCharacters);
    const porcentFemale =((numberFemale/listOfCharacters.length)*100).toFixed(2);
    const numberMale=window.data.curiositiesGenderMale(listOfCharacters);

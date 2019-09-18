@@ -50,6 +50,7 @@ header nav ul{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: Bangers;
     
 }
 .buttonPrincipal:hover {
@@ -86,6 +87,7 @@ header nav ul{
     flex-direction: row;
     justify-content: center;
 }
+
 .orden, .stylesButton {
     background-color: #02297b;
     border: none;
@@ -134,6 +136,14 @@ header nav ul{
     background: #5bb040;
     margin: 2% 2%;
 }
+/*Página lugares*/
+
+.containerplace{
+    display: none;
+}
+
+
+
 /*Página de datos curiosos*/
 
 .datos{
@@ -212,7 +222,6 @@ header nav ul{
         height: auto;
         margin: 2% auto;
         background:#02297b;
-
     }
 
     header nav ul{
