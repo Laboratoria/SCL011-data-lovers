@@ -22,54 +22,59 @@
       </nav>
     </header> 
 
+      <section>
+          <div id= "portals" class = "portals">
+           <button class="buttoncito" id="characters"><img class="portal" src="Imagenes/portal1.png"></button>
+           <button class="buttoncito" id="places"><img class="portal" src="Imagenes/portal2.png"></button>
+          </div>
+      </section>
+    
+<div id= "container" class= "container">
 
-     <section>
-         <div id= "portals" class = "portals">
-          <button class="buttoncito" id="characters"><img class="portal" src="Imagenes/portal1.png"></button>
-          <button class="buttoncito"><img class="portal" src="Imagenes/portal2.png"></button>
-         </div>
-     </section>
+        <select class="orden" name="orden" id="orderSelector">
+            <option value="">Ordenar de la …</option>
+            <option value="ABC">A a la Z</option>
+            <option value="CBA">Z a la A</option>
+        </select>
 
-    <div id= "container" class= "container">
+<div class="buttons">
+    
+    <button id= "status" class="stylesButton">Estado</button>
+          
+    <section id= filterStatus>
+          <button id= "filterStatusAlive" class="styleButton">Vivo</button>
+          <button id= "filterStatusDead" class="styleButton">Muerto</button>
+          <button id= "filterStatusUnknown" class="styleButton">Indefinido</button>
+    </section>
+          
+    <button id="gender" class="stylesButton">Género</button>
 
-       <select class="orden" name="orden" id="orderSelector">
-           <option value="">Ordenar de la …</option>
-           <option value="ABC">A a la Z</option>
-           <option value="CBA">Z a la A</option>
-       </select>
-
-      <div class="buttons">
-
-         <button id= "status" class="styleButton">Estado</button>
-        <section>
-            <button id= "filterStatusAlive" class="styleButton">Vivo</button>
-            <button id= "filterStatusDead" class="styleButton">Muerto</button>
-            <button id= "filterStatusUnknown" class="styleButton">Indefinido</button>
+    <section id= filterGender>
+          <button id= "filterGenderFemale" class="styleButton">Femenino</button>
+          <button id= "filterGenderMale" class="styleButton">Masculino</button>
+          <button id= "filterGenderUnknown" class="styleButton">Sexo Indefinido</button>
         </section>
-        
-         <button id="gender" class="styleButton">Género</button>
-        <section>
-            <button id= "filterGenderFemale" class="styleButton">Femenino</button>
-            <button id= "filterGenderMale" class="styleButton">Masculino</button>
-            <button id= "filterGenderUnknown" class="styleButton">Sexo Indefinido</button>
-        </section> 
-         
-      </div>
+
     </div>
+  </div>
 
-    <div id="datos" class= "datos">
+  <div id="datos" class= "datos">
+    
+    
+    <p class="tittleDatos">No te pierdas los datos curiosos de la serie <b>Rick and Morty</b>!</p>
+    <h3>Sabías que ...</h3>
+    <p id="calculos"></p><hr>
+    <p>Conoce los 17 datos curiosos de la serie</p> 
+    <a class="link" target="_blank" href="https://culturacolectiva.com/cine/datos-curiosos-de-rick-y-morty-que-no-conocias">Pincha aquí</a>
 
-      <p id="calculos"></p>
-      <p class="tittleDatos">No te pierdas los datos curiosos de la serie <b>Rick and Morty</b>!</p><br/>
-      <p>Conoce los 17 datos curiosos de la serie</p>
-      <a class="link" target="_blank" href="https://culturacolectiva.com/cine/datos-curiosos-de-rick-y-morty-que-no-conocias">Pincha aquí</a>
-   </div>
+  </div>
 
    <ul id="ulItem" class= "ulItem"></ul>
-   
+
    <script src="./data/rickandmorty/rickandmorty.js"></script>
    <script src="data.js"></script>
    <script src="main.js"></script>
+
  </div>
 </body>
 </html>
