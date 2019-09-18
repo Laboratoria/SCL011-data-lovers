@@ -14,7 +14,7 @@
  <div id="root">
     <header>
      <nav>
-           <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png">
+           <img class="imagenRaM" src="Imagenes/Rick_and_Morty_-_logo_(English).png" id="logo">
       <ul>
          <li><button id="showCharacters" class="buttonPrincipal">Personajes</button></li>
          <li><button id="showLocation" class="buttonPrincipal">Lugares</button></li>
@@ -57,15 +57,18 @@
     
     <button id= "status" class="stylesButton">Estado</button>
           
-    <section id= filterStatus>
-          <button id= "filterStatusAlive" class="styleButton">Vivo</button>
-          <button id= "filterStatusDead" class="styleButton">Muerto</button>
-          <button id= "filterStatusUnknown" class="styleButton">Indefinido</button>
+    <section id= "filterStatus" class="filterStatus">
+      
+        <button id= "filterStatusAlive" class="styleButton">Vivo</button>
+        <button id= "filterStatusDead" class="styleButton">Muerto</button>
+        <button id= "filterStatusUnknown" class="styleButton">Indefinido</button>
+ 
+          
     </section>
           
     <button id="gender" class="stylesButton">Género</button>
 
-    <section id= filterGender>
+    <section id= "filterGender">
           <button id= "filterGenderFemale" class="styleButton">Femenino</button>
           <button id= "filterGenderMale" class="styleButton">Masculino</button>
           <button id= "filterGenderUnknown" class="styleButton">Sexo Indefinido</button>

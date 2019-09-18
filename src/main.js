@@ -395,7 +395,10 @@ const buttonsHierarchy1 = document.getElementById('gender');
         document.getElementById("filterStatus").style.display = 'none';
     })
 
-
+const pushlogo= document.getElementById('logo');
+pushlogo.addEventListener('click',() => {
+    location.reload();
+})
 
 
  
