@@ -32,13 +32,28 @@
     
 <div id= "container" class= "container">
 
+    <div id="containerplace" class="containerplace">
+
+        <select class="filterPlace" name="Filtro" id="filterPlace">
+            <option value="">Filtrar por origen</option>  
+              <option value="earth">Tierra</option>
+              <option value="resortPlanet">Resort Planet</option>
+              <option value="purgePlanet">Purge Planet</option>
+              <option value="abadango">Abadango</option>
+              <option value="unknownFilter">Desconocido</option>
+              
+  
+        </select>
+  
+    </div>
+
         <select class="orden" name="orden" id="orderSelector">
             <option value="">Ordenar de la …</option>
             <option value="ABC">A a la Z</option>
             <option value="CBA">Z a la A</option>
         </select>
 
-<div class="buttons">
+<div class="buttons" id= "buttons">
     
     <button id= "status" class="stylesButton">Estado</button>
           
@@ -58,6 +73,8 @@
 
     </div>
   </div>
+
+ 
 
   <div id="datos" class= "datos">
     
