@@ -53,9 +53,18 @@ ___
 
 ## Sketch
 
-Partimos creando un sketch de lo que seria nuestra idea inicial de pagina web y los contenidos que queriamos abarcar, pensando vagamente en la necesidad de nuestro _Usuario Principiante_.
+Partimos creando un sketch de lo que seria nuestra idea inicial de pagina web y los contenidos que queriamos abarcar, pensando vagamente en la necesidad de nuestro _Usuario Principiante_ según lo que creiamos nosotras.
 
-![sketch]( insertar imagen sketch cuaderno)
+Este contaba con:
+ 
+ * Pagina de inicio.
+ * Bienvenida se hace una introduccion de lo que es pokemon.
+ * Lista de intrucciones.
+ * Filtrado por tipo donde tambien existe la opcion de buscar cada pokemon por su nombre.
+* Tipo de pokemon seleccionado anteriormente y una lista de ellos.
+* Tarjeta tipo pokedex al presionar en la imagen de cada pokemon, mostrado el detalle de cada uno de ellos.
+
+![sketch](https://github.com/marcelalopeznanco/imagenes/blob/master/NuevoDocumento%202019-09-20%2013.47.20_1.jpg?raw=true)
 
    
 ## Investigacion y Desarrollo
