@@ -6,8 +6,9 @@ const listOfCharacters = window.RICKANDMORTY.results;
 //Mostrar personajes imagen portal
 const buttonShowCharacters= document.getElementById('characters');
 buttonShowCharacters.addEventListener('click', () => {
+    document.getElementById('orderSelector').style.display ='block';
     document.getElementById('portals').style.display = 'none';
-    document.getElementById('orderSelector').style.display = 'block';
+    
 
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -33,10 +34,11 @@ listShowCharacters.addEventListener('click', ()=>{
     document.getElementById('container').style.display= 'block';
     document.getElementById('datos').style.display= 'none';
     document.getElementById('containerplace').style.display= 'none';
+    document.getElementById('orderSelector').style.display = 'none';
     
     const showListOfCharacters=listOfCharacters;
-    const ele = document.getElementById('ulItem');
-    ele.innerHTML =
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
     showListOfCharacters.map(x => {
         return `
         <li class="liItem">
@@ -59,8 +61,8 @@ selectOrderABC.addEventListener('change', () => {
     if( selectOrderABC.value === 'ABC'){
 
         const orderABC = window.data.orderABC(listOfCharacters);
-        const ele = document.getElementById('ulItem');
-        ele.innerHTML =
+        const el = document.getElementById('ulItem');
+        le.innerHTML =
         orderABC.map(x => {
             
             return `
@@ -109,12 +111,12 @@ buttonStatus.addEventListener('click', () => {
     document.getElementById('gender').style.display= "none";
     buttonStatus.style.display= "none";
     const showListOfCharacters=listOfCharacters;
-    const ele = document.getElementById('ulItem');
-    ele.innerHTML =
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
     showListOfCharacters.map(x => {
         return `
         <li class="liItem">
-        <img src="${x.image}">
+        <img class="imgRaM" src="${x.image}">
         <div class="charData">
         Nombre: ${x.name}
         Genero: ${x.gender}
@@ -213,7 +215,7 @@ buttonGender.addEventListener('click', () => {
     showListOfCharacters.map(x => {
         return `
         <li class="liItem">
-        <img src="${x.image}">
+        <img class="imgRaM" src="${x.image}">
         <div class="charData">
         Nombre: ${x.name}
         Genero: ${x.gender}
@@ -367,10 +369,19 @@ buttonDatos.addEventListener("click", ()=> {
    const porcentMale=((numberMale/listOfCharacters.length)*100).toFixed(2);
    const numberUnknown=window.data.curiositiesGenderUnknown(listOfCharacters);
    const porcentUnknown=((numberUnknown/listOfCharacters.length)*100).toFixed(2);
+   const numberAlive=window.data.curiositiesStatusAlive(listOfCharacters);
+   const porcentAlive =((numberAlive/listOfCharacters.length)*100).toFixed(2);
+   const numberDead=window.data.curiositiesStatusDead(listOfCharacters);
+   const porcentDead=((numberDead/listOfCharacters.length)*100).toFixed(2);
+   const numberStatusUnknown=window.data.curiositiesStatusUnknown(listOfCharacters);
+   const porcentStatusUnknown=((numberStatusUnknown/listOfCharacters.length)*100).toFixed(2);
    const parrafo=document.getElementById('calculos');
    parrafo.innerHTML = 
+
   ` <p>
        En la serie el ${porcentFemale} % está compuesto por <b>mujeres</b>, el  ${porcentMale} % corresponde a <b>hombres</b> y el  ${porcentUnknown}% tienen un <b>género desconocido</b>
+   </p> <p>
+       En la serie el ${porcentAlive} % está  <b>vivo</b>,  ${porcentDead} % está <b>muerto</b> y el  ${porcentStatusUnknown}% tiene un paradero <b>desconocido</b>
    </p>`
  });
  
