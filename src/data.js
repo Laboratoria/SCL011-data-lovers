@@ -1,5 +1,5 @@
  //data global
-const dataLOL= Object.values(LOL.data);
+const dataLOL= Object.values(window.LOL);
 window.dataLOL = dataLOL;
 //función para botón más poderosos
 const mostPower= (dataLOL)=>{
@@ -65,6 +65,5 @@ const sortAZ= (dataLOL,selectSort) =>{
 }
 // sortAZ global
 window.sortAZ= sortAZ;
-
 
   

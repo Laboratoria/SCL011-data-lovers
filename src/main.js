@@ -1,6 +1,6 @@
 //data convertida en arrays con este metodo lograremos
 //llegar a los objetos como array
-const lolData= Object.values(LOL.data);
+const lolData= Object.values(window.LOL);
 //aca la hacemos global
 window.lolData = lolData;
 //creando un const para botón champion 
