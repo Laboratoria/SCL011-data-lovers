@@ -64,7 +64,7 @@ Este contaba con:
 * Tipo de pokemon seleccionado anteriormente y una lista de ellos.
 * Tarjeta tipo pokedex al presionar en la imagen de cada pokemon, mostrado el detalle de cada uno de ellos.
 
-![sketch](https://github.com/marcelalopeznanco/imagenes/blob/master/NuevoDocumento%202019-09-20%2013.47.20_1.jpg?raw=true)
+![sketch](https://github.com/marcelalopeznanco/img-datalovers/blob/master/sketch.jpg?raw=true)
 
    
 ## Investigacion y Desarrollo
@@ -75,22 +75,22 @@ Una vez creado nuestro sketck, se creo una breve encuesta atravez de google, par
  Para visualizar encuesta haz click [aqui](https://trello.com/b/2WL9YcTT/datalovers)
 
 
-![encuesta-pokemon](https://github.com/marcelalopeznanco/imagenes/blob/master/encuesta%20google.jpg?raw=true)
+![encuesta-pokemon](https://github.com/marcelalopeznanco/img-datalovers/blob/master/encuesta%20google.jpg?raw=true)
 
 
 De las personas encuestadas fueron seleccionadas las que cumplieran con el perfil de  _Usuario Principiante_.
 
-![grafico 1](https://github.com/marcelalopeznanco/imagenes/blob/master/sabes%20algo%20de%20pokemon.jpg?raw=true)
+![grafico 1](https://github.com/marcelalopeznanco/img-datalovers/blob/master/sabes%20algo%20de%20pokemon.jpg?raw=true)
 
 Se designo en base a las respuestas dadas, lo que debiamos priorizar visualmente dentro de la informacion basica que desea ver el _Usuario Principiante_ en nuestra pagina.
 
 
-![grafico 2](https://github.com/marcelalopeznanco/imagenes/blob/master/porcentaje%20imagenes.jpg?raw=true)
+![grafico 2](https://github.com/marcelalopeznanco/img-datalovers/blob/master/porcentaje%20imagenes.jpg?raw=true)
 
 
 Y tambien descubrimos las expectativas basicas del _Usuario Principiante_ frente al funcionamiento de una _Pokedex_.
 
-![grafico 3](https://github.com/marcelalopeznanco/imagenes/blob/master/grafico.jpg?raw=true)
+![grafico 3](https://github.com/marcelalopeznanco/img-datalovers/blob/master/grafico.jpg?raw=true)
 
 ___
 
@@ -99,17 +99,20 @@ ___
 
 En base a los resultados obtenidos en nuestra encuesta diseñamos un wireframe de la aplicacion, tomando en cuenta las preferencias antes mencionadas.
 
-(imageeeeeeeeeeeen de balsamic)
+Para interacuar con nuestro wireframe haz click [aqui](
+https://balsamiq.cloud/slrrg9n/p13c6un/rF7AA)
+
+![grafico 3](https://github.com/marcelalopeznanco/img-datalovers/blob/master/balsamic.jpg?raw=true)
 
 A esto le aplicamos un breve test de usabilidad, para corroborar si la informacion agregada estaria funcionando correctamente.
 
-(perfil 1)
+(perfil 1 imagen test balsamic)
 
 Donde como resultado obtuvimos:
 
->"Aplicación muy extensa para llegar al resultado", 
->"Disminuir cantidad de paginas", 
->"No se entiende la seleccion de offset", etc.
+>"Pagina de bienvenida muy extensa, mucho texto que no se leera", 
+>"Botones poco claros", 
+>"Podria contar con un menu para asi no tener que retroceder para acceder a otro tipo de informacion", etc.
 
 
 ## Historias de Usuario
