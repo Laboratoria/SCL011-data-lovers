@@ -1,4 +1,3 @@
-
 //data convertida en arrays con este metodo lograremos
 //llegar a los objetos como array
 const lolData= Object.values(LOL.data);
@@ -36,7 +35,7 @@ const btnMostPower = document.getElementById("btnMostPower");
 btnMostPower.addEventListener("click",() =>{
     document.getElementById("root").innerHTML= "";
     //constante con los mas poderosos 
-    const poderosos = mostPower(lolData);
+    const poderosos = window.mostPower(lolData);
    //recorriendo los mas poderosos
    for (let i = 0; i < poderosos.length; i++) {
      //pedimos que nos muestre en root imagen nombre y nivel de ataque

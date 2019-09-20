@@ -25,7 +25,6 @@ const mostPower= (dataLOL)=>{
 };
 //mostpower global
 window.mostPower = mostPower;
-
 //función para filtrar por tipos en el select
 //se crea una constante con los parametros dataLOL y que trabajará 
 //con el valor seleccionado por el usuario
