@@ -1,13 +1,19 @@
-//data global
+
+//data convertida en arrays con este metodo lograremos
+//llegar a los objetos como array
 const lolData= Object.values(LOL.data);
+//aca la hacemos global
 window.lolData = lolData;
-//boton champion
+//creando un const para botón champion 
 const btnchampion = document.getElementById("btnchampion");
-//funcion click
+//funcion click para botón champion
 btnchampion.addEventListener("click",() =>{
+  //al click pediremos que vacie nuestro div root
     document.getElementById("root").innerHTML= "";
+    //recorremos la data
     for (let i = 0; i < lolData.length; i++) {
-        root.innerHTML += `
+      //decimos que muestre en root html la imagen y nombre
+        document.getElementById("root").innerHTML += `
        <div>
        <div class="flip-card">
        <div class="flip-card-inner">
@@ -24,14 +30,17 @@ btnchampion.addEventListener("click",() =>{
     });
    
 
-
+//creamos const para botón más poderosos
 const btnMostPower = document.getElementById("btnMostPower");
+//al click pediremos que vacie el root
 btnMostPower.addEventListener("click",() =>{
     document.getElementById("root").innerHTML= "";
+    //constante con los mas poderosos 
     const poderosos = mostPower(lolData);
-   
+   //recorriendo los mas poderosos
    for (let i = 0; i < poderosos.length; i++) {
-    root.innerHTML += `
+     //pedimos que nos muestre en root imagen nombre y nivel de ataque
+    document.getElementById("root").innerHTML += `
    <div>
    <div class="flip-card">
    <div class="flip-card-inner">
@@ -48,13 +57,19 @@ btnMostPower.addEventListener("click",() =>{
 } 
 });
 
+// variable para los tipos 
 let selectType= document.getElementById("tags");
+//pedimos ke vacie el root en html
 selectType.addEventListener("change",() =>{
     document.getElementById("root").innerHTML= "";
+    //variable para almacenar el valor seleccionado
     let selectValue= selectType.value;
+    // variable para almacenar resultado
     let selectResult= window.filterTags(lolData,selectValue);
+    //recorriendo con for el resultado
     for (let i = 0; i < selectResult.length; i++) {
-        root.innerHTML += `
+      //peidmos que muestre en root imagen foto nombre y tipo
+        document.getElementById("root").innerHTML += `
        <div>
        <div class="flip-card">
        <div class="flip-card-inner">
@@ -71,13 +86,18 @@ selectType.addEventListener("change",() =>{
     } 
 });
 
+// variable para guardar el select de ordenar
 let selectOrder= document.getElementById("order");
+//al oir el cambio que vacie root en html
 selectOrder.addEventListener("change",() =>{
     document.getElementById("root").innerHTML= "";
+    //variable que guarda el valor seleccionado en el select
     let selectValue= selectOrder.value;
+    //variable que guardara el resultado
     let selectResult= window.sortAZ(lolData,selectValue);
+    //recorra la variable result y mostrar en html imagen nombre y tipos
     for (let i = 0; i < selectResult.length; i++) {
-        root.innerHTML += `
+        document.getElementById("root").innerHTML += `
        <div>
        <div class="flip-card">
        <div class="flip-card-inner">
@@ -93,12 +113,16 @@ selectOrder.addEventListener("change",() =>{
         </div>`;
     } 
 });
-
+// constante para botón mas información
 const btnStats =document.getElementById("stats");
+//funcion para boton mas info
 btnStats.addEventListener("click",()=>{
+  //al click vaciará el root
+  document.getElementById("root").innerHTML="";
+  //recorremos la data
     for (let i = 0; i < lolData.length; i++) {
-      
-        root.innerHTML +=`
+      //pediremos que muestre en html nombre imagen y mas info
+        document.getElementById("root").innerHTML +=`
         <div>
         <div class="flip-card">
         <div class="flip-card-front>
