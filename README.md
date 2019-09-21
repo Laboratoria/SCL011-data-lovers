@@ -1,5 +1,5 @@
 
-![banner](https://github.com/marcelalopeznanco/img-datalovers/blob/master/banner.jpg?raw=true)
+![banner](https://github.com/marcelalopeznanco/img-datalovers/blob/master/banner2.jpg?raw=true)
 
 
 
