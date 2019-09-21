@@ -48,6 +48,42 @@ Para la organizacion del proyecto se utilizaron las siguientes herramientas de p
 
 ___
 
+# Historias de Usuario
+
+Nuestras historias de usuario están basadas en los requerimientos u objetivos que tendría el usuario de Pokedex al utilizar la webapp. Estos requerimientos son:
+
+#### Historia 1
+
+>"Yo como usuario quiero Filtrar por tipo, para asi conocer cual es la caracteristica principal de cada uno." 
+
+ 
+#### Historia 2
+
+>"Yo como usuario quiero ordenar la lista de pokemon en orden alfabetico , para conocer los nombres de todos." 
+ 
+
+#### Historia 3
+
+>"Yo como usuario quiero ver en una ficha, la imagen grande a cada Pokemon, para apreciar mejor sus caracteristicas fisicas."
+
+
+#### Historia 4
+
+>"Yo como usuario quiero ver una estadistica de los tipos de pokemon para asi poder saber cuales son los mas fuertes."
+
+
+Nuestros objetivos principales se resumirian en :
+
+
+* Buscar por Tipo.
+
+* Ordenar por orden alfabético.
+
+* En una ficha o tarjeta , ver imagen e informacion de cada Pokemon por separado.
+
+* Mostrar estadisticas.
+___
+
 # INICIO DE DISEÑO
 
 
@@ -110,47 +146,25 @@ A esto le aplicamos un breve test de usabilidad, para corroborar si la informaci
 
 Donde como resultado obtuvimos:
 
->"Pagina de bienvenida muy extensa, mucho texto que no se leera", 
->"Botones poco claros", 
+>"Pagina de bienvenida muy extensa, mucho texto que no se leera",
+>"Botones poco claros",
 >"Podria contar con un menu para asi no tener que retroceder para acceder a otro tipo de informacion", etc.
 
-
-## Historias de Usuario
-
-Nuestras historias de usuario están basadas en los requerimientos u objetivos que tendría el usuario de Pokedex al utilizar la webapp. Estos requerimientos son:
-
-
-### Historia 1
-
-Yo como usuario quiero Filtrar por tipo , para asi conocer cual es la caracteristica principal de cada uno.
-
- 
-### Historia 2
-
-Yo como usuario quiero ordenar la lista de pokemon en orden alfabetico , para conocer los nombres de todos.
- 
-
-### Historia 3
-
-Yo como usuario quiero ver en una ficha, la Imagen grande a cada Pokemon , para apreciar mejor sus caracteristicas fisicas.
-
-
-Nuestros objetivos principales se resumirian en :
-
-
-* Buscar por Tipo.
-
-* Ordenar por orden alfabético.
-
-* En una ficha o tarjeta , ver imagen e informacion de cada Pokemon por separado.
-
-
+___
 
 ## Prototipo de alta fidelidad
 
+Seguido de los resultados obtenidos en nuestro wirframe diseñamos nuestro prototipo de alta fidelidad de nuestra aplicacion, tomando nuevamente en cuenta las preferencias antes mencionadas. 
 
-Para diseñar se utilizo _Figma_ , y la paleta de colores fue escogida a traves de (insertar enlace) , para obtener los colores caracteristicos de _Pokemon_ .
+Para crear este prototipo se utilizo  _Figma_.
 
+![figma1](https://github.com/marcelalopeznanco/img-datalovers/blob/master/prot%20alta%201.jpg?raw=true)
+Puedes visualizar [ aqui ](https://www.figma.com/file/g3661oGoJbxnriR5RYByQg/pokemon?node-id=15%3A10)
+
+ Y una paleta de colores creada a traves de _Color tool_.
+
+![color-tool](https://github.com/marcelalopeznanco/img-datalovers/blob/master/color%20tool.jpg?raw=true)
+Puedes visualizar[ aqui ](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FFD600&secondary.color=D50000) 
 
 
 #### Versión Escritorio:
