@@ -154,50 +154,70 @@ ___
 
 ## Prototipo de alta fidelidad
 
-Seguido de los resultados obtenidos en nuestro wirframe diseñamos nuestro prototipo de alta fidelidad de nuestra aplicacion, tomando nuevamente en cuenta las preferencias antes mencionadas. 
+Seguido de los resultados obtenidos en nuestro wirframe diseñamos nuestro prototipo de alta fidelidad para nuestra aplicacion, tomando nuevamente en cuenta las preferencias antes mencionadas. 
 
  Inicialmente se creo una paleta de colores a traves de _Color tool_. Puedes visualizar[ aqui ](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FFD600&secondary.color=D50000) 
 
 ![color-tool](https://github.com/marcelalopeznanco/img-datalovers/blob/master/color%20tool.jpg?raw=true)
 
-Para crear este nuevo prototipo se utilizo  _Figma_. Donde agregamos y quitamos a su vez todo lo recaudado en nuestra encuesta y testeo anterior.
-en Donde puedes visualizar [ aqui ](https://www.figma.com/file/g3661oGoJbxnriR5RYByQg/pokemon?node-id=15%3A10)
+Para crear este nuevo prototipo se utilizo  _Figma_. 
+
+En este agregamos y quitamos a su vez todo lo recaudado en nuestra encuesta y testeo anterior.
+
+Puedes visualizar [ aqui ](https://www.figma.com/file/g3661oGoJbxnriR5RYByQg/pokemon?node-id=15%3A10)
+
 
 ![figma1](https://github.com/marcelalopeznanco/img-datalovers/blob/master/prot%20alta.jpg?raw=true)
 
-Se redujo el texto explicativo, para que el ingreso del usuario sea mas rapido.
+En este prototipo se redujo el texto explicativo, para que el ingreso del usuario sea mas rapido.
+
 ![texto](https://github.com/marcelalopeznanco/img-datalovers/blob/master/texto.jpg?raw=true)
 
- Se agrego un menu para que el usiario pueda acceder a toda la informacion desde cualquier pantalla.
+ Tambien se agrego un menu para que el usuario pueda acceder a toda la informacion desde cualquier pantalla.
+
+
  ![menu](https://github.com/marcelalopeznanco/img-datalovers/blob/master/menu%202.jpg?raw=true)
 
 
+Y se destaco la imagen de cada pokemon con su numero y nombre para facilitar el acceso del usuario a cada uno de ellos.
+
+ ![pokemones](https://github.com/marcelalopeznanco/img-datalovers/blob/master/pokemones.jpg?raw=true)
 
 
+___ 
 
-
-
-
-
+Se crearon 3 versiones:
+* Version  Escritorio
+* Version Movil
+* Version tablet
 
 #### Versión Escritorio:
 
+ ![desktop](https://github.com/marcelalopeznanco/img-datalovers/blob/master/desktop.jpg?raw=true)
 
-[](insertar imagen)
+ Puedes interactuar con nuestro prototipo haciendo click[ aqui ](  https://www.figma.com/proto/g3661oGoJbxnriR5RYByQg/pokemon?node-id=79%3A103&scaling=min-zoom)
 
-  (insertar enlace)
 
 
 #### Versión Móvil:
 
-[Figma](insertar imagen)
+ ![smartphone](https://github.com/marcelalopeznanco/img-datalovers/blob/master/smartphone.jpg?raw=true/img-datalovers/blob/master/desktop.jpg?raw=true)
 
-(insertar enlace)
+ Puedes interactuar con nuestro prototipo haciendo click[ aqui ](https://www.figma.com/proto/g3661oGoJbxnriR5RYByQg/pokemon?node-id=3%3A5&scaling=scale-down)
+
+ #### Versión Tablet:
+
+ ![tablet]()
+
+ Puedes interactuar con nuestro prototipo haciendo click[ aqui ]()
+
+ ___ 
 
 
 ## Testeo y Usabilidad
 
-Para ver la usabilidad del ultimo prototipo ,lo testeamos en 3 de nuestros usuarios en el prototipo version escritorio.
+Para ver la usabilidad de nuestro ultimo prototipo, se realizo un testeo a la version de escritorio.
+
 
 ### Objetivos de testeo
 
@@ -207,17 +227,10 @@ Para ver la usabilidad del ultimo prototipo ,lo testeamos en 3 de nuestros usuar
 * Probar el orden alfabetico.
 * Evaluar si el contenido de la imagen final , es lo que busca el usuario.
 
-
-
 (Insertar enlace de video en youtube) video de uno de los usuarios , probando prototipo de alta fidelidad.
 
 
-
-
-
 #### Test de usabilidad
-
-
 
 Usuario 1 :
 
@@ -228,8 +241,6 @@ Observacion: Consigue llegar al menu circular , pero al ver tantas imagenes , so
 
 Respuesta U1: Preferiria que solo apareciera el nombre del tipo , ya que es la informacion que el reconoce , y asi poder filtrar mas rapidamente.
     
-   
-
 
 Usuario 2:
 
@@ -239,11 +250,6 @@ Cuando despliega todas las imagenes de Pokemon ordenadas en filas y columnas, co
 ¿Como se deberia visualizar la lista de todos los Pokemon?
 
 Respuesta U2 : Igual en filas , pero quizas en menos columnas , asi la imagen se ve mas grande y puedo reconocer la imagen de el pokemon sin tener que abrir la ficha. 
-    
-
-
-
-
 
 Usuario 3 (video)
 
@@ -251,13 +257,7 @@ Usuario 3 (video)
 (insertar pregunta)
 (insertar respuestade usuario)
 
-
-
-
-
 #### Conclusiones del testeo y posibles Soluciones :
-
-
 
     El menu circular , es atractivo visualmente , pero en usuarios principiantes no se reconocen todos los logos de cada uno de los tipos de Pokemon.
 
