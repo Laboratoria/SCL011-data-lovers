@@ -1,1 +1,239 @@
-/* Estilos generales */
+            @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
+            /*Estilos Generales*/
+            
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            body {
+                background: rgb(255, 255, 255);
+                color: #000;
+                font-family: 'Schoolbell', cursive;
+            }
+            
+            .containerr {
+                width: 99%;
+                margin: 2px auto;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(4, auto);
+            }
+            /*HEADER*/
+            
+            .containerr .header {
+                display: grid;
+                margin: 5px;
+                grid-gap: 5px;
+                grid-template-columns: minmax(200px, 3fr) 1fr 1fr;
+                grid-column: -4/-1;
+                justify-items: end;
+                /*stretch, auto,center, start, end*/
+                align-items: center;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .10);
+            }
+            
+            .containerr .header .nav {
+                grid-column: 2/-1;
+            }
+            
+            .containerr .header .nav .nav-item-link {
+                text-decoration: none;
+                margin: 0.5em;
+                padding: 2em, 1.5em;
+                color: rgb(62, 129, 6);
+            }
+            
+            .containerr .header .nav .nav-item-link:hover {
+                text-decoration: line-through;
+            }
+            
+            .brand {
+                width: 200px;
+                height: auto;
+                justify-self: start;
+            }
+            /*WELCOME*/
+            
+            .containerr .container-welcome {
+                display: grid;
+                grid-template-columns: 1fr 300px 1fr;
+                grid-template-rows: 1fr minmax(450px, auto);
+                grid-column: 1/-1;
+                grid-row: auto;
+                background-image: url(../img/homepage.png);
+                background-repeat: no-repeat;
+                background-position: 60% 50%;
+                background-size: 40%;
+                justify-items: center;
+                /*stretch, auto,center, start, end*/
+                align-items: center;
+            }
+            
+            .containerr .container-welcome .item-Welcome {
+                grid-column: 1/-1;
+                font-family: 'Schoolbell', cursive;
+                font-size: 3em;
+                color: #02b1c8;
+                text-shadow: 0.02em 0.02em 0.02em #7ffa67, -0.02em -0.02em 0.02em
+            }
+            /*H1 PAGETWO*/
+            
+            .item-Welcome {
+                grid-column: 1/-1;
+                font-family: 'Schoolbell', cursive;
+                text-align: center;
+                font-size: 2em;
+                margin-bottom: 15px;
+                color: #02b1c8;
+                text-shadow: 0.02em 0.02em 0.02em #7ffa67, -0.02em -0.02em 0.02em
+            }
+            
+            .containerr .container-welcome .btns {
+                grid-column: 1/-1;
+                justify-self: center;
+                align-self: end;
+                justify-content: space-evenly;
+                align-content: center;
+            }
+            /*BOTONES*/
+            
+            .containerr .container-welcome .btns .btn {
+                cursor: pointer;
+                margin: 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 10px;
+                font-family: 'Schoolbell', cursive;
+                font-size: 100%;
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -o-transition: .3s;
+                display: inline-block;
+                color: #55acee;
+                border: 2px #55acee solid;
+            }
+            
+            .containerr .container-welcome .btns .btn:hover {
+                background-color: #55acee;
+                color: #fff;
+            }
+            /*CONTAINER CARDS*/
+            
+            .containerr .container-container-cardss .container-cards {
+                display: grid;
+                grid-template-columns: minmax(500px, 1fr);
+                grid-column: 1/-1;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            
+            .containerr .container-container-cardss .container-cards .card {
+                margin-top: 1em;
+                margin: 1%;
+                padding: 2%;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgb(68, 141, 72, 0.8);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            /*PAGE ABOUT*/
+            
+            .containerr .containerVideo {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px;
+                grid-column: 1/-1;
+            }
+            
+            .video {
+                display: grid;
+                grid-template-columns: minmax(600px, 1fr);
+                grid-column: 1/-1;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: end;
+                margin-bottom: 8px;
+            }
+            
+            .footerr {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-column: 1/-1;
+                height: 80px;
+                justify-items: center;
+                align-content: center;
+                box-shadow: 0 -1px 20px #c0c2c7;
+            }
+            
+            .containerr .footerr {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-column: 1/-1;
+                height: 80px;
+                justify-items: center;
+                align-content: center;
+                box-shadow: 0 -1px 20px #c0c2c7;
+            }
+            
+            .containerr .footerr .footer-container {}
+            /*RESPONSIVE*/
+            /*PHONE*/
+            
+            @media only screen and (max-width: 768px) {
+                /*Container*/
+                /*Container Welcome*/
+                .containerr .container-welcome {
+                    background-size: 80%;
+                    background-position: 90% 50%;
+                    grid-template-rows: 1fr minmax(500px, auto);
+                }
+                .containerr .container-welcome .item-Welcome {
+                    margin-top: 100px;
+                }
+                .containerr .container-welcome .btns {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /*Tablet*/
+            
+            @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                .containerr .header {
+                    grid-template-rows: 200px;
+                }
+                .containerr .header .nav {
+                    grid-template-rows: 180px;
+                    font-size: 2em;
+                }
+                .brand {
+                    width: 350px;
+                    height: auto;
+                }
+                .containerr .container-welcome {
+                    background-size: 90%;
+                    background-position: 110% 50%;
+                    grid-template-rows: 1fr minmax(800px, auto);
+                }
+                .containerr .container-welcome .item-Welcome {
+                    font-size: 5em;
+                    margin-top: 10px;
+                    grid-template-rows: 1fr minmax(1600px, auto);
+                }
+                .containerr .container-welcome .btns {
+                    font-size: 300%;
+                }
+            }
+            /* Video */
