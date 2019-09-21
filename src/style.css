@@ -1,322 +1,239 @@
-  
-/* Estilos generales */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    
-    /* rgb(32, 35, 41); */
-}
-
-/* Header */
-
-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: rgb(32, 35, 41);
-}
-
-.logo {
-    display: flex;
-    width: 15%;
-    justify-content: flex-start;
-    margin: 0.5em 0.5em;
-    /* margin-top: 10px;
-    margin-left: 30px; */
-}
-
-
-/*Icono del menu*/
-
-.menu_bar {
-    display: none;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 0.5em 0.5em;
-    font-weight: bold;
-    width: 70%;
-}
-
-nav>a {
-    display: flex;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 1.5em;
-}
-
-a:hover {
-    background-color: rgb(68, 141, 72, 0.8);
-}
-
-
-/* Pantalla de bienvenido */
-
-
-/* Padre de letras y botones*/
-
-.container-welcome {
-    background-image: url("../img/rickmortyfondo.jpeg");
-    background-repeat: no-repeat;
-    background-color: rgb(32, 34, 38);
-    /*hacer que se desactive cuando este en modo tlf*/
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    font-size: 1em;
-    height: 100vh;
-    width: 100vw;
-}
-
-
-/* Padre */
-
-.welcome {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    /* Para tlf este margen debe ser de 20% */
-    margin-top: 10%;
-    font-size: 1.5em;
-    color: rgb(32, 34, 38);
-}
-
-
-/* Hijo */
-
-.welcome>h1 {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-
-/* botones */
-
-
-/* Padre */
-
-/* .btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-/* Hijos */
-
-/* .btn {
-    width: 20%;
-   
-    height: 2500%;
-    justify-content: center;
- 
-    background-color: transparent;
-    display: flex;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0 1% 0;
-    margin-top: 0 2%;
-}
-
-.btn:hover {
-    background-color: pink;
-    cursor: pointer;
-}
-
-#btnOrdenar {
-    justify-content: center;
-    display: flex;
-    margin: 10% 0 0 42%   ;
-    text-decoration: none;
-    padding: 20px;
-    font-family:  'Poppins', sans-serif;;
-    text-transform: uppercase;
-    /* padding-left: px;
-    padding-right: 10px; */
-    /* font-weight: 800;
-    font-size: 12px;
-    color:  #80ca1c;
-    border-radius: 15px;
-    background-color:  #274d43;
-  }
-  #btnOrdenar:hover{
-    color: #80ca1c;
-    background-color: #c8d7cd;
-    text-decoration: none;
-  }
-    }
-    
-
-/*Tarjetas*/
-
-
-/*Padre*/
-
-.container-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: rgb(32, 34, 38);
-    color: white;
-}
-
-.container-cards>div {
-    margin-top: 1em;
-    width: 25%;
-    margin: 1%;
-    padding: 2%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgb(68, 141, 72, 0.8);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*Hijo*/
-
-.card {
-    background-color: transparent;
-    text-align: center;
-    border: 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-.card:hover {
-    background-color: white;
-    color: black;
-}
-
-
-/* Pie de pagina */
-
-footer {
-    background-color: transparent;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    color: transparent;
-}
-
-footer:hover {
-    background-color: black;
-    color: white;
-}
-
-
-/* Hijos */
-
-h2 {
-    text-align: center;
-}
-
-#male {
-    background-image: url(https://i.ibb.co/X3X1QCb/hombres.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-
-/* 
-#female {
-    background-image: url(https://i.ibb.co/Gc2pGyk/mujeres.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-#unknown {
-    background-image: url(https://i.ibb.co/CV37grD/INDEFINIDo.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-/* Video */
-
-#video {
-    display: inline-block;
-}
-
-h1 {
-    text-align: center;
-    width: 100%;
-}
-
-
-/* Responsive */
-
-
-/* @media screen and (max-width:800px) {
-    nav {
-        width: 100%;
-    }
-    .logo {
-        width: 30%;
-    }
- 
-    .btn {
-        width: 20%;
-        /* para tlf esto el heigth seria de 170% */
-
-
-/* height: 2500%;
-    }
-   
-    .menu_bar {
-        display: flex;
-        justify-content: flex-end;
-        margin: 15px auto;
-         font-size: 35px;
-    }
-} */
-
-@media screen and (max-width:800px) {
-    header {
-        justify-content: space-between;
-        margin: 0;
-    }
-    nav {
-        display: none;
-    }
-    .logo {
-        width: 50%;
-    }
-    .menu_bar {
-        display: flex;
-        justify-content: flex-end;
-        margin: 15px auto;
-        font-size: 35px;
-    }
-    h1 {
-        font-size: 1em;
-    }
-    .icon-menu {
-        color: rgb(255, 255, 255);
-    }
-    .container-welcome {
-        background-size: auto;
-    }
-    .btn {
-        width: 20%;
-        /* para tlf esto el heigth seria de 170% */
-        height: 2500%;
-    }
-}
+            @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
+            /*Estilos Generales*/
+            
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            body {
+                background: rgb(255, 255, 255);
+                color: #000;
+                font-family: 'Schoolbell', cursive;
+            }
+            
+            .containerr {
+                width: 99%;
+                margin: 2px auto;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(4, auto);
+            }
+            /*HEADER*/
+            
+            .containerr .header {
+                display: grid;
+                margin: 5px;
+                grid-gap: 5px;
+                grid-template-columns: minmax(200px, 3fr) 1fr 1fr;
+                grid-column: -4/-1;
+                justify-items: end;
+                /*stretch, auto,center, start, end*/
+                align-items: center;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .10);
+            }
+            
+            .containerr .header .nav {
+                grid-column: 2/-1;
+            }
+            
+            .containerr .header .nav .nav-item-link {
+                text-decoration: none;
+                margin: 0.5em;
+                padding: 2em, 1.5em;
+                color: rgb(62, 129, 6);
+            }
+            
+            .containerr .header .nav .nav-item-link:hover {
+                text-decoration: line-through;
+            }
+            
+            .brand {
+                width: 200px;
+                height: auto;
+                justify-self: start;
+            }
+            /*WELCOME*/
+            
+            .containerr .container-welcome {
+                display: grid;
+                grid-template-columns: 1fr 300px 1fr;
+                grid-template-rows: 1fr minmax(450px, auto);
+                grid-column: 1/-1;
+                grid-row: auto;
+                background-image: url(../img/homepage.png);
+                background-repeat: no-repeat;
+                background-position: 60% 50%;
+                background-size: 40%;
+                justify-items: center;
+                /*stretch, auto,center, start, end*/
+                align-items: center;
+            }
+            
+            .containerr .container-welcome .item-Welcome {
+                grid-column: 1/-1;
+                font-family: 'Schoolbell', cursive;
+                font-size: 3em;
+                color: #02b1c8;
+                text-shadow: 0.02em 0.02em 0.02em #7ffa67, -0.02em -0.02em 0.02em
+            }
+            /*H1 PAGETWO*/
+            
+            .item-Welcome {
+                grid-column: 1/-1;
+                font-family: 'Schoolbell', cursive;
+                text-align: center;
+                font-size: 2em;
+                margin-bottom: 15px;
+                color: #02b1c8;
+                text-shadow: 0.02em 0.02em 0.02em #7ffa67, -0.02em -0.02em 0.02em
+            }
+            
+            .containerr .container-welcome .btns {
+                grid-column: 1/-1;
+                justify-self: center;
+                align-self: end;
+                justify-content: space-evenly;
+                align-content: center;
+            }
+            /*BOTONES*/
+            
+            .containerr .container-welcome .btns .btn {
+                cursor: pointer;
+                margin: 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 10px;
+                font-family: 'Schoolbell', cursive;
+                font-size: 100%;
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -o-transition: .3s;
+                display: inline-block;
+                color: #55acee;
+                border: 2px #55acee solid;
+            }
+            
+            .containerr .container-welcome .btns .btn:hover {
+                background-color: #55acee;
+                color: #fff;
+            }
+            /*CONTAINER CARDS*/
+            
+            .containerr .container-container-cardss .container-cards {
+                display: grid;
+                grid-template-columns: minmax(500px, 1fr);
+                grid-column: 1/-1;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            
+            .containerr .container-container-cardss .container-cards .card {
+                margin-top: 1em;
+                margin: 1%;
+                padding: 2%;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgb(68, 141, 72, 0.8);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            /*PAGE ABOUT*/
+            
+            .containerr .containerVideo {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px;
+                grid-column: 1/-1;
+            }
+            
+            .video {
+                display: grid;
+                grid-template-columns: minmax(600px, 1fr);
+                grid-column: 1/-1;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: end;
+                margin-bottom: 8px;
+            }
+            
+            .footerr {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-column: 1/-1;
+                height: 80px;
+                justify-items: center;
+                align-content: center;
+                box-shadow: 0 -1px 20px #c0c2c7;
+            }
+            
+            .containerr .footerr {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-column: 1/-1;
+                height: 80px;
+                justify-items: center;
+                align-content: center;
+                box-shadow: 0 -1px 20px #c0c2c7;
+            }
+            
+            .containerr .footerr .footer-container {}
+            /*RESPONSIVE*/
+            /*PHONE*/
+            
+            @media only screen and (max-width: 768px) {
+                /*Container*/
+                /*Container Welcome*/
+                .containerr .container-welcome {
+                    background-size: 80%;
+                    background-position: 90% 50%;
+                    grid-template-rows: 1fr minmax(500px, auto);
+                }
+                .containerr .container-welcome .item-Welcome {
+                    margin-top: 100px;
+                }
+                .containerr .container-welcome .btns {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /*Tablet*/
+            
+            @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                .containerr .header {
+                    grid-template-rows: 200px;
+                }
+                .containerr .header .nav {
+                    grid-template-rows: 180px;
+                    font-size: 2em;
+                }
+                .brand {
+                    width: 350px;
+                    height: auto;
+                }
+                .containerr .container-welcome {
+                    background-size: 90%;
+                    background-position: 110% 50%;
+                    grid-template-rows: 1fr minmax(800px, auto);
+                }
+                .containerr .container-welcome .item-Welcome {
+                    font-size: 5em;
+                    margin-top: 10px;
+                    grid-template-rows: 1fr minmax(1600px, auto);
+                }
+                .containerr .container-welcome .btns {
+                    font-size: 300%;
+                }
+            }
+            /* Video */
