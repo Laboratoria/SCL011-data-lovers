@@ -48,7 +48,7 @@ nav {
     justify-content: flex-end;
     margin: 0.5em 0.5em;
     font-weight: bold;
-    width: 70%;
+    width: 100%;
 }
 
 nav>a {
@@ -111,16 +111,16 @@ a:hover {
 
 /* Padre */
 
-/* .btns {
+ .btns {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+} 
 
 
 /* Hijos */
-
-/* .btn {
+ 
+ .btn {
     width: 20%;
    
     height: 2500%;
@@ -131,14 +131,14 @@ a:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0 1% 0;
     margin-top: 0 2%;
-}
+} 
 
 .btn:hover {
     background-color: pink;
     cursor: pointer;
 }
 
-#btnOrdenar {
+/* #btnOrdenar {
     justify-content: center;
     display: flex;
     margin: 10% 0 0 42%   ;
@@ -148,7 +148,7 @@ a:hover {
     text-transform: uppercase;
     /* padding-left: px;
     padding-right: 10px; */
-    /* font-weight: 800;
+ /*    font-weight: 800;
     font-size: 12px;
     color:  #80ca1c;
     border-radius: 15px;
@@ -159,7 +159,7 @@ a:hover {
     background-color: #c8d7cd;
     text-decoration: none;
   }
-    }
+
     
 
 /*Tarjetas*/
@@ -238,7 +238,7 @@ h2 {
 }
 
 
-/* 
+ 
 #female {
     background-image: url(https://i.ibb.co/Gc2pGyk/mujeres.png);
     background-size: 100%;

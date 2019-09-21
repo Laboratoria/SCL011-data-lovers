@@ -50,5 +50,7 @@ describe('filterMale', () => {
   it('debería retornar el genero del personaje', () => {
     assert.deepEqual(window.filter.filterUnknown(muestra, "Unknown"), [{"name": "P-Coat Rick" , "gender": "Unknown"}])
   });
+
+
   
 })
