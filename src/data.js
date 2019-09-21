@@ -38,3 +38,12 @@ const filterByEgg= (allPokemonOnData, valorEgg) =>{
 }
 
 window.filterByEgg= filterByEgg;
+
+
+//calculo agregado. cuenta la cantidad de pokemones seleccionados en el filtro y te entrega el porcentaje del total de pokemones
+
+
+
+
+
+
