@@ -1,34 +1,42 @@
-# Pokedex
+
+![banner](https://github.com/marcelalopeznanco/img-datalovers/blob/master/banner.jpg?raw=true)
+
 
 
 ## Índice
 
 * [Introducción](#Introducción)
 * [Definición del Producto](#Definición-del-Producto)
-* [Planificacion](#Planificacion)
-* [Investigacion y Desarrollo](#Investigacion-y-Desarrollo)
+* [Tipo de usuario](#Tipo-de-usuario)
+* [Objetivo principal ](#Objetivo-principal)
+* [Planificación](#Planificación)
+* [Historias de usuario](#Historias-de-usuario)
+* [Inicio de diseño](#Inicio-de-diseño)
 * [Sketch](#Sketch)
-* [Historias de Usuario](#Historias-de-Usuario)
-* [Prototipo de baja fidelidad](#Prototipo-de-baja-fidelidad)
+* [Investigacion y Desarrollo](#Investigacion-y-Desarrollo)
+* [Wireframe](#wireframe)
 * [Prototipo de alta fidelidad](#Prototipo-de-alta-fidelidad)
+* [Versiones de prototipo](#Versiones-de-prototipo)
 * [Testeo y usabilidad](#Testeo-y-usabilidad)
+* [Test de usabilidad](#Test-de-usabilidad)
+* [Conclusiones y posibles soluciones](#Conclusiones-y-posibles-soluciones)
 
 
 ***
 ## Introducción
 
-En el mundo ficticio de Pokémon, _Pokedex_ es una enciclopedia portátil de alta tecnología que los Entrenadores Pokémon llevan consigo para registrar las fichas de todas las diversas especies Pokémon con las que se encuentran durante su viaje como entrenadores. 
+En el mundo ficticio de Pokémon, existe una _Pokedex_, este es un aparato que funciona como una enciclopedia portátil de alta tecnología que los entrenadores Pokémon llevan consigo para registrar las fichas de todas las diversas especies Pokémon con las que se encuentran durante su viaje como entrenadores. 
 
 
 
 ## Definición del Producto
 
-_Pokedex_ es una versión webapp,  que al igual que la maquina/enciclopedia Pokedex de la serie de anime, esta hecha para conocer informacion de los 151 Pokemon de la region de Kanto . En ella el usuario puede acceder a imagenes y datos de cada uno de los Pokemon, filtrar segun su tipo ( agua, fuego, planta, etc..) y ordenar segun su numero de identificacion en la Pokedex o segun el nombre, por orden alfabetico. 
+_Pokemon_ es una versión webapp,  que al igual que la maquina/enciclopedia Pokedex de la serie de anime, esta hecha para conocer informacion de los 151 Pokemon de la region de Kanto. En ella el usuario puede acceder a imagenes y datos de cada uno de los Pokemon, filtrar segun su tipo (agua, fuego, planta, etc..) y ordenar segun su numero de identificacion en la Pokedex o segun el nombre, por orden alfabetico y tambien podran encontrar algunas estadisticas.
 
 
  ##  Tipo de usuario
 
-Usuarios principiantes de Pokemon, con o sin conocimientos de la serie de anime, que requieran informacion basica sobre cada Pokemon.
+Esta creada para usuarios principiantes de Pokemon, con o sin conocimientos de la serie de anime, que requieran informacion basica sobre cada Pokemon.
 
 
 ## Objetivo principal 
@@ -38,7 +46,7 @@ Usuarios principiantes de Pokemon, con o sin conocimientos de la serie de anime,
  Nuestro producto entrega informacion de un forma simple, todos los datos basicos que el usuario requiere para aprender sobre las especies Pokemon.
 
 
-## Planificacion
+## Planificación
 
 Para la organizacion del proyecto se utilizaron las siguientes herramientas de planificacion:
 
@@ -50,7 +58,9 @@ ___
 
 # Historias de Usuario
 
-Nuestras historias de usuario están basadas en los requerimientos u objetivos que tendría el usuario de Pokedex al utilizar la webapp. Estos requerimientos son:
+Nuestras historias de usuario están basadas en los requerimientos u objetivos que tendría el usuario de Pokemon al utilizar la webapp.
+
+Estos requerimientos son:
 
 #### Historia 1
 
@@ -72,16 +82,15 @@ Nuestras historias de usuario están basadas en los requerimientos u objetivos q
 >"Yo como usuario quiero ver una estadistica de los tipos de pokemon para asi poder saber cuales son los mas fuertes."
 
 
-Nuestros objetivos principales se resumirian en :
+#### Nuestros objetivos principales se resumirian en :
 
 
 * Buscar por Tipo.
-
 * Ordenar por orden alfabético.
-
 * En una ficha o tarjeta , ver imagen e informacion de cada Pokemon por separado.
-
 * Mostrar estadisticas.
+
+
 ___
 
 # INICIO DE DISEÑO
@@ -93,10 +102,10 @@ Partimos creando un sketch de lo que seria nuestra idea inicial de pagina web y 
 
 Este contaba con:
  
- * Pagina de inicio.
- * Bienvenida se hace una introduccion de lo que es pokemon.
- * Lista de intrucciones.
- * Filtrado por tipo donde tambien existe la opcion de buscar cada pokemon por su nombre.
+* Pagina de inicio.
+* Bienvenida se hace una introduccion de lo que es pokemon.
+* Lista de intrucciones.
+* Filtrado por tipo donde tambien existe la opcion de buscar cada pokemon por su nombre.
 * Tipo de pokemon seleccionado anteriormente y una lista de ellos.
 * Tarjeta tipo pokedex al presionar en la imagen de cada pokemon, mostrado el detalle de cada uno de ellos.
 
@@ -131,25 +140,27 @@ Y tambien descubrimos las expectativas basicas del _Usuario Principiante_ frente
 ___
 
 ## Wireframe
-#### Prototipo de baja fidelidad
+
 
 En base a los resultados obtenidos en nuestra encuesta diseñamos un wireframe de la aplicacion, tomando en cuenta las preferencias antes mencionadas.
 
 Para interacuar con nuestro wireframe haz click [aqui](
 https://balsamiq.cloud/slrrg9n/p13c6un/rF7AA)
 
-![grafico 3](https://github.com/marcelalopeznanco/img-datalovers/blob/master/balsamic.jpg?raw=true)
+![grafico-3](https://github.com/marcelalopeznanco/img-datalovers/blob/master/balsamic.jpg?raw=true)
 
 A esto le aplicamos un breve test de usabilidad, para corroborar si la informacion agregada estaria funcionando correctamente.
 
-(perfil 1 imagen test balsamic)
+#### Usuario 1
 
-Donde como resultado obtuvimos:
+![usuario-1](https://github.com/marcelalopeznanco/img-datalovers/blob/master/ficha2.jpg?raw=true
+)
+
+#### Donde como resultado obtuvimos:
 
 >"Pagina de bienvenida muy extensa, mucho texto que no se leera",
 >"Botones poco claros",
 >"Podria contar con un menu para asi no tener que retroceder para acceder a otro tipo de informacion", etc.
-
 ___
 
 ## Prototipo de alta fidelidad
@@ -185,13 +196,14 @@ Y se destaco la imagen de cada pokemon con su numero y nombre para facilitar el 
 
 
 ___ 
+# Versiones de Prototipos
 
 Se crearon 3 versiones:
 * Version  Escritorio
 * Version Movil
 * Version tablet
 
-#### Versión Escritorio:
+## Versión Escritorio
 
  ![desktop](https://github.com/marcelalopeznanco/img-datalovers/blob/master/desktop.jpg?raw=true)
 
@@ -199,13 +211,13 @@ Se crearon 3 versiones:
 
 
 
-#### Versión Móvil:
+## Versión Móvil
 
  ![smartphone](https://github.com/marcelalopeznanco/img-datalovers/blob/master/smartphone.jpg?raw=true/img-datalovers/blob/master/desktop.jpg?raw=true)
 
  Puedes interactuar con nuestro prototipo haciendo click[ aqui ](https://www.figma.com/proto/g3661oGoJbxnriR5RYByQg/pokemon?node-id=3%3A5&scaling=scale-down)
 
- #### Versión Tablet:
+ ## Versión Tablet
 
  ![tablet]()
 
@@ -214,7 +226,8 @@ Se crearon 3 versiones:
  ___ 
 
 
-## Testeo y Usabilidad
+# Testeo y Usabilidad
+
 
 Para ver la usabilidad de nuestro ultimo prototipo, se realizo un testeo a la version de escritorio.
 
@@ -227,48 +240,47 @@ Para ver la usabilidad de nuestro ultimo prototipo, se realizo un testeo a la ve
 * Probar el orden alfabetico.
 * Evaluar si el contenido de la imagen final , es lo que busca el usuario.
 
-(Insertar enlace de video en youtube) video de uno de los usuarios , probando prototipo de alta fidelidad.
+
+## Test de usabilidad
+
+Se escogio a uno de nuestros _Usuarios Principiantes_ 
+que habiamos seleccionado segun nuestra primera encuesta.
+Y con este se le realizo un test de usabilidad para nuestro prototipo final de alta fidelidad creado en  _figma_.
+
+Para esto se utilizo la plataforma _loom_ y lo puedes viaualizar haciendo click[ aqui ](https://www.loom.com/share/1b29705ddea0442cb2750c2286177d65)
+
+#### Usuario 2
+
+ ![smartphone](https://github.com/marcelalopeznanco/img-datalovers/blob/master/ficha.jpg?raw=true)
+
+#### Observaciones del usuario
+
+>"Los botones funcionan y estan claros, el menu funciona y se que puedo acceder a la informacion desde ahi". 
+
+>"El texto inicial esta bien, quizas el ultimo parrafo este demas, el de la cantidad de pokemones ya que es informacion que desconozco"
+
+>"Me gustaria que al ampliar la imagen de cada pokemon la informacion fuera mas grande y menos extensa". 
+
+>"Podrian funcionaran algunos botones de la pokedex".
+
+>"Me gusta el menu circular, se entiende que ahi se puede seleccionar por tipo".
+
+ ___ 
 
 
-#### Test de usabilidad
+## Conclusiones y posibles Soluciones
 
-Usuario 1 :
+Las imagenes de cada uno de los Pokemon , no solo tienen importancia en la ficha final como creiamos, tambien es importante visualizarlas al desplegar la lista de Pokemon, filtradas por tipo u ordenadas en forma alfabetica. Porque para un usuario principiante, algunos Pokemon son muy parecidos en aspecto y/o color.
 
-Observacion: Consigue llegar al menu circular , pero al ver tantas imagenes , solo logra identificar _Fuego_ , los demas logos le parecen algo confusos.
+La Solucion seria , expandir un poco mas las imagenes al mostrar, para que de esta manera se aprecie mejor la imagen del Pokemon y no se preste para confusiones.
 
+Al seleccionar un pokemon y desplegar su tarjeta en forma de pokmedex con la informacion de cada uno, no es funcional. Se cree que cada boton tendra algun tipo de funcion y tienden a seleccionarlos.
 
-¿Como mejorarias el menu de filtrado segun tipo?
-
-Respuesta U1: Preferiria que solo apareciera el nombre del tipo , ya que es la informacion que el reconoce , y asi poder filtrar mas rapidamente.
-    
-
-Usuario 2:
-
-Observacion:
-Cuando despliega todas las imagenes de Pokemon ordenadas en filas y columnas, considera que son muy pequeñas para visualizar la imagen de cada  uno de ellos.
-
-¿Como se deberia visualizar la lista de todos los Pokemon?
-
-Respuesta U2 : Igual en filas , pero quizas en menos columnas , asi la imagen se ve mas grande y puedo reconocer la imagen de el pokemon sin tener que abrir la ficha. 
-
-Usuario 3 (video)
-
-(insertar problema)
-(insertar pregunta)
-(insertar respuestade usuario)
-
-#### Conclusiones del testeo y posibles Soluciones :
-
-    El menu circular , es atractivo visualmente , pero en usuarios principiantes no se reconocen todos los logos de cada uno de los tipos de Pokemon.
-
-La solucion seria buscar otra alternativa de filtro , que sea atractiva pero a la vez facil y rapida de usar .
-
-    Las imagenes de cada uno de los Pokemon , no solo tienen importancia en la ficha final como creiamos , tambien es importante visualizarlas al desplegar la lista de Pokemon , filtradas por tipo u ordenadas en forma alfabetica . Porque para un usuario principiante , algunos Pokemon son muy parecidos en aspecto y/o color.
-La Solucion seria , expandir un poco mas las imagenes al mostrarse en ordenados lista , para que de esta manera se aprecie mejor la imagen del Pokemon y no se preste para confusiones.
+Para esto la solucion seria, quitar la cantidad de botones sin funcion que esta dentro de la imagen de la pokedex y dejar solo los que funcionen, o cambiar la imagen de la tarjeta por una mas simple, donde solo se mostrara la informacion.
 
 
 
-( insertar conclusion y solucion para el usuario 3)
+
 
     
 
