@@ -156,15 +156,28 @@ ___
 
 Seguido de los resultados obtenidos en nuestro wirframe diseñamos nuestro prototipo de alta fidelidad de nuestra aplicacion, tomando nuevamente en cuenta las preferencias antes mencionadas. 
 
-Para crear este prototipo se utilizo  _Figma_.
-
-![figma1](https://github.com/marcelalopeznanco/img-datalovers/blob/master/prot%20alta%201.jpg?raw=true)
-Puedes visualizar [ aqui ](https://www.figma.com/file/g3661oGoJbxnriR5RYByQg/pokemon?node-id=15%3A10)
-
- Y una paleta de colores creada a traves de _Color tool_.
+ Inicialmente se creo una paleta de colores a traves de _Color tool_. Puedes visualizar[ aqui ](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FFD600&secondary.color=D50000) 
 
 ![color-tool](https://github.com/marcelalopeznanco/img-datalovers/blob/master/color%20tool.jpg?raw=true)
-Puedes visualizar[ aqui ](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FFD600&secondary.color=D50000) 
+
+Para crear este nuevo prototipo se utilizo  _Figma_. Donde agregamos y quitamos a su vez todo lo recaudado en nuestra encuesta y testeo anterior.
+en Donde puedes visualizar [ aqui ](https://www.figma.com/file/g3661oGoJbxnriR5RYByQg/pokemon?node-id=15%3A10)
+
+![figma1](https://github.com/marcelalopeznanco/img-datalovers/blob/master/prot%20alta.jpg?raw=true)
+
+Se redujo el texto explicativo, para que el ingreso del usuario sea mas rapido.
+![texto](https://github.com/marcelalopeznanco/img-datalovers/blob/master/texto.jpg?raw=true)
+
+ Se agrego un menu para que el usiario pueda acceder a toda la informacion desde cualquier pantalla.
+ ![menu](https://github.com/marcelalopeznanco/img-datalovers/blob/master/menu%202.jpg?raw=true)
+
+
+
+
+
+
+
+
 
 
 #### Versión Escritorio:
