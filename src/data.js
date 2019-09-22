@@ -113,4 +113,99 @@ window.data={
       return statusUnknown.length;
 
   },
+
+  //para select
+  
+  earth:(listOfCharacters) =>{
+    const earth = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Earth (Replacement Dimension)' );
+    })
+    return earth;
+  },
+
+  earthTwo:(listOfCharacters) =>{
+    const earthTwo = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Earth (C-137)');
+    })
+    return earthTwo;
+  },
+
+  resortPlanet:(listOfCharacters) =>{
+    const resortPlanet = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Resort Planet');
+    })
+    return resortPlanet;
+  },
+  purgePlanet:(listOfCharacters) =>{
+    const purgePlanet = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Purge Planet');
+    })
+    return purgePlanet;
+  },
+  abadango:(listOfCharacters) =>{
+    const abadango = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Abadango');
+    })
+    return abadango;
+  },
+
+  signusExpanse:(listOfCharacters) =>{
+    const signusExpanse = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Signus 5 Expanse');
+    })
+    return signusExpanse;
+  },
+
+  postApocalyptic:(listOfCharacters) =>{
+    const postApocalyptic = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Post-Apocalyptic Earth');
+    })
+    return postApocalyptic;
+  },
+
+  venzenulon:(listOfCharacters) =>{
+    const venzenulon = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Venzenulon 7');
+    })
+    return venzenulon;
+  },
+
+  bepis:(listOfCharacters) =>{
+    const bepis = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Bepis 9');
+    })
+    return bepis;
+  },
+
+  nuptia:(listOfCharacters) =>{
+    const nuptia = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Nuptia 4');
+    })
+    return nuptia;
+  },
+
+  fantasyWorld:(listOfCharacters) =>{
+    const fantasyWorld = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Fantasy World');
+    })
+    return fantasyWorld;
+  },
+
+  birdWorld:(listOfCharacters) =>{
+    const birdWorld = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'Bird World');
+    })
+    return birdWorld;
+  },
+
+  unknownFilter:(listOfCharacters) =>{
+    const unknownFilter = listOfCharacters.filter((e) => {
+      return (e.origin.name === 'unknown');
+    })
+    return unknownFilter;
+  },
+
+
 };
+
+

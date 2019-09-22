@@ -89,7 +89,7 @@ header nav ul{
     
 }
 
-.orden, .stylesButton {
+.orden, .stylesButton, .filterPlace {
     background-color: #02297b;
     border: none;
     color: lightgray;
@@ -179,6 +179,13 @@ header nav ul{
 .container{
     display: none;
 }
+
+/*Temporadas*/
+.containerSeasons{
+    display: none;
+    background: #5bb040;
+}
+
 @media screen and (max-width: 1000px){
    .ulItem {
         grid-template-columns: auto auto auto;
