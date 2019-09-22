@@ -86,6 +86,7 @@ header nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .orden, .stylesButton {
@@ -94,6 +95,11 @@ header nav ul{
     color: lightgray;
     border-radius: 8px; 
     padding: 20px 32px;   
+   
+}
+
+.orden, .list{
+    display: none;
 }
 .styleButton {
     background-color: #02297b;
@@ -121,6 +127,7 @@ header nav ul{
     margin-right: auto;
     align-items: center;
     list-style: none; 
+    
 }
 .imgRaM{
     border-radius: 50%;

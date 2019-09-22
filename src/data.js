@@ -88,4 +88,29 @@ window.data={
       return unknown.length;
 
   },
+
+  curiositiesStatusAlive:(listOfCharacters)=>{
+    const alive = listOfCharacters.filter((e) => {
+      return (e.status === 'Alive');
+  
+    })
+      return alive.length;
+
+  },
+  curiositiesStatusDead:(listOfCharacters)=>{
+    const dead = listOfCharacters.filter((e) => {
+      return (e.status === 'Dead');
+  
+    })
+      return dead.length;
+
+  },
+  curiositiesStatusUnknown:(listOfCharacters)=>{
+    const statusUnknown = listOfCharacters.filter((e) => {
+      return (e.status === 'unknown');
+  
+    })
+      return statusUnknown.length;
+
+  },
 };
