@@ -85,6 +85,47 @@ obteniendo informacion sobre campeones, cuál fuerza es más importante etc.
 
 ***
 
+Imagen del producto finla
+
+
+
+<a href="https://ibb.co/5Lnbf41"><img src="https://i.ibb.co/jDWn1f8/Captura-de-pantalla-de-2019-09-20-21-22-45.png" alt="Captura-de-pantalla-de-2019-09-20-21-22-45" border="0"></a>
+***
+
+<a href="https://ibb.co/FJYZs1h"><img src="https://i.ibb.co/ZKg4Hrf/Captura-de-pantalla-de-2019-09-20-21-23-40.png" alt="Captura-de-pantalla-de-2019-09-20-21-23-40" border="0"></a>
+***
+<a href="https://ibb.co/YpCsPMM"><img src="https://i.ibb.co/72fmj55/Captura-de-pantalla-de-2019-09-20-21-23-58.png" alt="Captura-de-pantalla-de-2019-09-20-21-23-58" border="0"></a>
+
+***
+
+<a href="https://ibb.co/xM2zKch"><img src="https://i.ibb.co/WcHBNdn/Captura-de-pantalla-de-2019-09-20-21-24-32.png" alt="Captura-de-pantalla-de-2019-09-20-21-24-32" border="0"></a>
+
+***
+
+En este link se muestra nuestra prueba de historia de usuarios :
+
+* quedan conforme con la información entregada sobre el producto
+* queda conforme con la info de las carta sobre los personajes del video juego (LOL)
+* nos sujere ir actualizando la info amedida que el juego se va actualizando .. 
+
+
+https://vimeo.com/user103150170/review/361632635/02b6cd912f
+
+***
+
+https://vimeo.com/user103150170/review/361634844/2d9c93ca4c
+
+***
+
+nuestro producto final esta nos deja conforme con aber cumplido con lo sujeridos con nuestras historias de usuarios y nos deja con mira de ir mejorando nuestro poducto final a escalas de mejoras.
+
+***
+
+* Creadoras del producto :
+
+Marcia Alegria , Macarena Sáez .
+
+
 
 
 
