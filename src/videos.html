@@ -12,36 +12,42 @@
 
 
 <body>
-       <!-- Html Semantico -->
-    <section id="container">
+
+    <!-- Html Semantico -->
+    <section class="containerr" id="container">
         <!-- Encabezado -->
-        <header class="menu-main" id="main-header">
+        <header class="header" id="main-header">
+
             <!-- Menu -->
+            <img class="brand" id="logo" src="../img/logo-2.png" alt="Logo-png">
+            <nav class="nav">
 
-            <nav class="menu">
-                <img class="logo" id="logo" src="../img/RickandMorty.png" alt="Logo-png">
+                <a class="nav-item-link" href="index.html">Personajes </a>
+                <a class="nav-item-link" href="videos.html">Pildoras</a>
+
             </nav>
-            <a href="index.html">Personajes </a>
-            <a href="videos.html">Videos</a>
+
+
         </header>
-        
-        <section class="container-welcome">
-                <div class="welcome">
-                    <h1>Encuentra los mejores videos de Rick&Morty </h1>
-                
-                </div>
-                <!-- Acá tiene que haber una galeria que se puede ir cambiando  -->
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/OkfkEjdvLRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-              
-            </section>
-        
-    
 
-       
+        <section class="containerVideo">
 
+            <h1 class="item-Welcome">Encuentra los mejores videos de Rick&Morty </h1>
 
-        <footer>
-            <h4> © Copyright 2019 Crusiris Nuñez y Constanza Zarate - Todos los Derechos Reservados </h4>
+            <!-- Acá tiene que haber una galeria que se puede ir cambiando  -->
+            <div class="video">
+                <iframe class="video" id="video" width="600" height="315" src="https://www.youtube.com/embed/OkfkEjdvLRI" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="600" height="315" src="https://www.youtube.com/embed/9hcYf_ddOdw" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="600" height="315" src="https://www.youtube.com/embed/Y46QZzC2388" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="600" height="315" src="https://www.youtube.com/embed/CRjGixfR-4k" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <footer class="footerr">
+            <div class="footer-container">
+                <h4> © Copyright 2019 Crusiris Nuñez y Constanza Zarate - Todos los Derechos Reservados </h4>
+            </div>
         </footer>
 
     </section>

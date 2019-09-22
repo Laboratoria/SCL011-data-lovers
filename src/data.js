@@ -51,9 +51,16 @@ window.filter = {
 
         return ricks;
 
-    }
+    },
+    
+    // apparitionPercent: (episodes) => {
+    //     let percentajeTotal = Math.round((episodes * 100) / 31);
+    //     return percentajeTotal;
+    //   }
+    
 
 
 
 
 }
+

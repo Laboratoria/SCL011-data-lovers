@@ -18,6 +18,9 @@
 
 
 
+
+
+
  //Asignando botones a al id del html
  const btnmale = document.getElementById("male");
  const btnfemale = document.getElementById("female");
@@ -70,25 +73,25 @@
          let card = document.createElement("div");
          let parraf = document.createElement("p");
          let img = document.createElement("img");
-         let especies = document.createElement("p");
+         let percent = document.createElement("p");
         
          // Asigno el valor de las etiquetas img y p
          // al usar i recorre todos 
 
          let name = document.createTextNode(dataSelected[i].name);
          let photo = (dataSelected[i].image);
-  let especimenes= document.createTextNode(dataSelected[i].status);
+  let percentTwo= document.createTextNode(dataSelected[i].status);
 
          //Asigno un atributo de tipo clase para darle estilo
          card.setAttribute("class", "card");
          // asignando padres e hijos
          parraf.appendChild(name);
-         especies.appendChild(especimenes);
+         percent.appendChild(percentTwo);
         //  text.appendChild(gender);
          img.setAttribute("src", photo);
          card.appendChild(parraf);
          card.appendChild(img);
-         card.appendChild(especies);
+         card.appendChild(percent);
         
          //Mostrar tarjeta en el contenedor especifico
 
@@ -96,4 +99,7 @@
          //containerr.appendChild(img);
 
      }
+
+     document.getElementById("clear").addEventListener('click', () => {
+        location.reload()});
  }
