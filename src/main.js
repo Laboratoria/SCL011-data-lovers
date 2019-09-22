@@ -39,6 +39,8 @@ listShowCharacters.addEventListener('click', () => {
     document.getElementById('list').style.display = 'block';
     document.getElementById('orderSelector').style.display = 'none';
     document.getElementById('containerSeasons').style.display = 'none';
+
+
     const showListOfCharacters = listOfCharacters;
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -68,8 +70,9 @@ selectOrderABC.addEventListener('change', () => {
     if (selectOrderABC.value === 'ABC') {
 
         const orderABC = window.data.orderABC(listOfCharacters);
-        const le = document.getElementById('ulItem');
-        le.innerHTML =
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+
             orderABC.map(x => {
 
                 return `
@@ -324,6 +327,7 @@ listShowLocation.addEventListener('click', () => {
     document.getElementById('list').style.display = 'block';
     document.getElementById('containerSeasons').style.display = 'none';
 
+
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
         listOfCharacters.map(x => {
@@ -441,7 +445,6 @@ el.innerHTML =
 
 </div>
 </li>
-
 `;
 }).join('');
 } else if ( buttonfilterPlaces.value === "signusExpanse" ){
@@ -641,7 +644,9 @@ buttonDatos.addEventListener("click", () => {
    </p>`
 });
 
+
 //botón portal temporadas
+
 
 const buttonSeasons = document.getElementById('seasons');
     buttonSeasons.addEventListener('click', () => {
@@ -655,25 +660,24 @@ const buttonSeasons = document.getElementById('seasons');
 
      });
 
-//Jerarquía de botones
 
 //Estado
-// const buttonsHierarchy = document.getElementById('status');
-// buttonsHierarchy.addEventListener("click", () => {
-//     document.getElementById("filterStatus").style.display = 'block';
-//     document.getElementById("gender").style.display = 'block';
-//     document.getElementById("filterGender").style.display = 'none';
+const buttonsHierarchy = document.getElementById('status');
+buttonsHierarchy.addEventListener("click", () => {
+    document.getElementById("filterStatus").style.display = 'block';
+    document.getElementById("gender").style.display = 'block';
+    document.getElementById("filterGender").style.display = 'none';
 
-// })
+})
 
-// //Genero
+//Genero
 
-// const buttonsHierarchy1 = document.getElementById('gender');
-// buttonsHierarchy1.addEventListener("click", () => {
-//     document.getElementById("filterGender").style.display = 'block';
-//     document.getElementById("status").style.display = 'block';
-//     document.getElementById("filterStatus").style.display = 'none';
-// })
+const buttonsHierarchy1 = document.getElementById('gender');
+buttonsHierarchy1.addEventListener("click", () => {
+    document.getElementById("filterGender").style.display = 'block';
+    document.getElementById("status").style.display = 'block';
+    document.getElementById("filterStatus").style.display = 'none';
+})
 
 const pushlogo = document.getElementById('logo');
 pushlogo.addEventListener('click', () => {
