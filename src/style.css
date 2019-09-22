@@ -85,6 +85,12 @@ header nav ul{
 
 .buttons{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.orden, .stylesButton, .filterPlace {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-content: center;
@@ -106,10 +112,14 @@ header nav ul{
     border: none;
     color: lightgray;
     border-radius: 8px; 
-    padding: 20px 32px;   
+    padding: 20px 32px; 
+   
+}
+
+.orden, .list{
+    display: none;
     font-family: Bangers;
     font-size: 16px;
-   
 }
 
 
@@ -195,6 +205,13 @@ header nav ul{
 .container{
     display: none;
 }
+
+/*Temporadas*/
+.containerSeasons{
+    display: none;
+    background: #5bb040;
+}
+
 @media screen and (max-width: 1000px){
    .ulItem {
         grid-template-columns: auto auto auto;

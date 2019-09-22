@@ -38,6 +38,9 @@ listShowCharacters.addEventListener('click', () => {
     document.getElementById('containerplace').style.display = 'none';
     document.getElementById('list').style.display = 'block';
     document.getElementById('orderSelector').style.display = 'none';
+    document.getElementById('containerSeasons').style.display = 'none';
+
+
     const showListOfCharacters = listOfCharacters;
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -69,6 +72,7 @@ selectOrderABC.addEventListener('change', () => {
         const orderABC = window.data.orderABC(listOfCharacters);
         const el = document.getElementById('ulItem');
         el.innerHTML =
+
             orderABC.map(x => {
 
                 return `
@@ -321,6 +325,8 @@ listShowLocation.addEventListener('click', () => {
     document.getElementById('datos').style.display = 'none';
     document.getElementById('container').style.display = 'none';
     document.getElementById('list').style.display = 'block';
+    document.getElementById('containerSeasons').style.display = 'none';
+
 
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
@@ -332,38 +338,278 @@ listShowLocation.addEventListener('click', () => {
         Nombre: ${x.name}
         Genero: ${x.gender}
         Estado: ${x.status} 
-        Origen: ${x.location.name}
+        Origen: ${x.origin.name}
         </div>    
         </li>
         `;
         }).join('');
 })
 
-// const buttonfilterPlaces = document.getElementById('filterPlace');
-// buttonfilterPlaces.addEventListener('change', () => {
+const buttonfilterPlaces = document.getElementById('filterPlace');
+ buttonfilterPlaces.addEventListener('change', () => {
 
-//  if( buttonfilterPlaces.value === 'earth'){
+  if ( buttonfilterPlaces.value === "earth") {
 
-//const earth = window.data.filterPlace(listOfCharacters);
-//const ele = document.getElementById('ulItem');
-//ele.innerHTML =
-//  earth.map(x => {
-//    return `
-//          <li class="liItem">
-//            <img class="imgRaM" src="${x.image}">
-//          <div class="charData">
-//            Nombre: ${x.name}
-//          Genero: ${x.gender}
-//        Estado: ${x.status}
-//      Origen: ${x.location.name}
+const earth = window.data.earth(listOfCharacters);
+const el = document.getElementById('ulItem');
+el.innerHTML =
+  earth.map(x => {
+    return `
+          <li class="liItem">
+            <img class="imgRaM" src="${x.image}">
+          <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status}
+      Origen: ${x.origin.name}
 
-//</div>
-//</li>
+</div>
+</li>
 
-//`;
-//}).join('');
+`;
+}).join('');
 
+} else if ( buttonfilterPlaces.value === "earthTwo" ){
+    const earthTwo = window.data.earthTwo(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    earthTwo.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "resortPlanet" ){
+const resortPlanet = window.data.resortPlanet(listOfCharacters);
+const el = document.getElementById('ulItem');
+el.innerHTML =
+  resortPlanet.map(x => {
+    return `
+          <li class="liItem">
+            <img class="imgRaM" src="${x.image}">
+          <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status}
+      Origen: ${x.origin.name}
 
+</div>
+</li>
+
+`;
+}).join('');
+
+} else if ( buttonfilterPlaces.value === "purgePlanet" ){
+    const purgePlanet = window.data.purgePlanet(listOfCharacters);
+    const el = document.getElementById('ulItem');
+el.innerHTML =
+  purgePlanet.map(x => {
+    return `
+          <li class="liItem">
+            <img class="imgRaM" src="${x.image}">
+          <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status}
+      Origen: ${x.origin.name}
+
+</div>
+</li>
+
+`;
+}).join('');
+
+} else if ( buttonfilterPlaces.value === "abadango" ){
+    const abadango = window.data.abadango(listOfCharacters);
+    const el = document.getElementById('ulItem');
+el.innerHTML =
+  abadango.map(x => {
+    return `
+          <li class="liItem">
+            <img class="imgRaM" src="${x.image}">
+          <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status}
+      Origen: ${x.origin.name}
+
+</div>
+</li>
+`;
+}).join('');
+} else if ( buttonfilterPlaces.value === "signusExpanse" ){
+    const signusExpanse = window.data.signusExpanse(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    signusExpanse.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "postApocalyptic" ){
+    const postApocalyptic = window.data.postApocalyptic(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    postApocalyptic.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "venzenulon" ){
+    const venzenulon = window.data.venzenulon(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    venzenulon.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "bepis" ){
+    const bepis = window.data.bepis(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    bepis.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "nuptia" ){
+    const nuptia = window.data.nuptia(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    nuptia.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "fantasyWorld" ){
+    const fantasyWorld = window.data.fantasyWorld(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    fantasyWorld.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "birdWorld" ){
+    const birdWorld = window.data.birdWorld(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    birdWorld.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+} else if ( buttonfilterPlaces.value === "unknownFilter" ){
+    const unknownFilter = window.data.unknownFilter(listOfCharacters);
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
+    unknownFilter.map(x => {
+        return `
+              <li class="liItem">
+                <img class="imgRaM" src="${x.image}">
+              <div class="charData">
+            Nombre: ${x.name}
+            Genero: ${x.gender}
+            Estado: ${x.status}
+          Origen: ${x.origin.name}
+    
+    </div>
+    </li>
+    
+    `;
+    }).join('');
+    
+}
+
+})
 
 //Botón datos
 
@@ -373,6 +619,7 @@ buttonDatos.addEventListener("click", () => {
     document.getElementById('container').style.display = 'none';
     document.getElementById('datos').style.display = 'block';
     document.getElementById('list').style.display = 'none';
+    document.getElementById('containerSeasons').style.display = 'none';
     document.getElementById('containerplace').style.display = 'none';
 
     const numberFemale = window.data.curiositiesGenderFemale(listOfCharacters);
@@ -398,8 +645,21 @@ buttonDatos.addEventListener("click", () => {
 });
 
 
+//botón portal temporadas
 
-//Jerarquía de botones
+
+const buttonSeasons = document.getElementById('seasons');
+    buttonSeasons.addEventListener('click', () => {
+        
+    document.getElementById('portals').style.display = 'none';
+    document.getElementById('container').style.display = 'none';
+    document.getElementById('datos').style.display = 'none';
+    document.getElementById('list').style.display = 'none';
+    document.getElementById('containerplace').style.display = 'none';
+    document.getElementById('containerSeasons').style.display = 'block';  
+
+     });
+
 
 //Estado
 const buttonsHierarchy = document.getElementById('status');
