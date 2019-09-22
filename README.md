@@ -44,7 +44,7 @@ Según estadísticas de Steam, en la actualidad existen más de 43.000 jugadores
 
   
 
-![logo-steam](../images/steam_logo.png) ![logo-tf2](../images/tf2_logo.png)
+![logo-steam](images/steam_logo.png) ![logo-tf2](images/tf2_logo.png)
 
   
   
@@ -209,14 +209,14 @@ Si entras a una pagina que informa sobre un juego, ¿que te gustaría leer?
 
 - solo las que aparecen en el inicio o si sale algun modo nuevo. Cosas como mantenimiento o mejoras en actualizaciones no, esas me las pillo en el juego solamente.
 
-### **2.3 Test de usuario
+### **2.3 Test de usuario**
 
 Hicimos 2 testeos con prototipos de alta fidelidad, para poder analizar y rediseñar nuestra página con respecto al feedback entregado.
 
 Se pueden ver los videos en estos enlaces:
 
-- [Video 1]()
-- [Video 2]()
+- [Test 1 pt.1](https://www.youtube.com/watch?v=PQNkgNL0xwI&feature=youtu.be) [Test 1 pt.2](https://www.youtube.com/watch?v=HptBLpfKM0w&feature=youtu.be)
+- [Test 2](https://www.youtube.com/watch?v=8hsDxmS49zI&feature=youtu.be)
 
 ### **2.4 Historias de usuario**
 
@@ -270,7 +270,7 @@ La paleta de colores que quisimos utilizar, contiene parte de la paleta de color
 
   
 
-![Paleta-Steam](INSERTAR IMG CON PALETA DE COLOR STEAM) ![Paleta-TF2](INSERTAR IMG PALETA TF2)
+![Paleta-Color](images/color-palette.jpg)
 
   
 
@@ -296,7 +296,7 @@ El diagrama de flujo fue lo primero que hicimos ya que queríamos tener una idea
 
   
 
-![Diagrama-flujos](INSERTAR FOTO DIAGRAMA)
+![Diagrama-flujos](images/diagrama-flujo.jpg)
 
   
 
@@ -304,7 +304,7 @@ Posterior a las entrevistas, hicimos un prototipo de baja fidelidad para ordenar
 
   
 
-![Prototipo-baja-fidelidad](INSERTAR FOTO PROTOTIPO BAJA FIDELIDAD)
+![Prototipo-baja-fidelidad](images/prototipo-baja.jpg)
 
   
 
