@@ -72,6 +72,7 @@ const STEAM = {
       "url": "https://steamstore-a.akamaihd.net/news/externalpost/pcgamer/2403127338429434053",
       "is_external_url": true,
       "img": "../images/img-not-3.jpg",
+      "img": "https://cdn.mos.cms.futurecdn.net/VH88CbrP5SqqiQNtVmZc5n-650-80.jpg",
       "author": "",
       "contents": "<strong>Update: </strong>The Steam page for XYK&apos;s Team Fortress 2008 mod has been pulled. As reported by <a href=\"https://www.eurogamer.net/articles/2018-10-25-team-fortress-2008-mod-transports-tf2-back-in-time-and-its-coming-to-steam\" target=\"_blank\">Eurogamer</a>, a <a href=\"https://twitter.com/folyqaa/status/1055710419413807105\" target=\"_blank\">screenshot from the project&apos;s Discord</a> (also now shuttered) suggests Valve could not be convinced at this stage that the TF-2008 team has created a mod for the original game, and is &quot;no...",
       "feedlabel": "PC Gamer",
