@@ -160,5 +160,5 @@ Realizamos pruebas unitarias para las tres funciones que creamos, en las cuales 
 
 ## **8. Organización del Equipo **
 
-master: Romina Garrido.
-developer: Paloma Zelada.
+Master: Romina Garrido.
+Developer: Paloma Zelada.
