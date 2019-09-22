@@ -215,8 +215,8 @@ Hicimos 2 testeos con prototipos de alta fidelidad, para poder analizar y redise
 
 Se pueden ver los videos en estos enlaces:
 
-- [Video 1]()
-- [Video 2]()
+- [Test 1 pt.1](https://www.youtube.com/watch?v=PQNkgNL0xwI&feature=youtu.be) [Test 1 pt.2](https://www.youtube.com/watch?v=HptBLpfKM0w&feature=youtu.be)
+- [Test 2](https://www.youtube.com/watch?v=8hsDxmS49zI&feature=youtu.be)
 
 ### **2.4 Historias de usuario**
 
@@ -270,7 +270,7 @@ La paleta de colores que quisimos utilizar, contiene parte de la paleta de color
 
   
 
-![Paleta-Steam](INSERTAR IMG CON PALETA DE COLOR STEAM) ![Paleta-TF2](INSERTAR IMG PALETA TF2)
+![Paleta-Color](images/color-palette.jpg)
 
   
 
@@ -296,7 +296,7 @@ El diagrama de flujo fue lo primero que hicimos ya que queríamos tener una idea
 
   
 
-![Diagrama-flujos](INSERTAR FOTO DIAGRAMA)
+![Diagrama-flujos](images/diagrama-flujo.jpg)
 
   
 
@@ -304,7 +304,7 @@ Posterior a las entrevistas, hicimos un prototipo de baja fidelidad para ordenar
 
   
 
-![Prototipo-baja-fidelidad](INSERTAR FOTO PROTOTIPO BAJA FIDELIDAD)
+![Prototipo-baja-fidelidad](images/prototipo-baja.jpg)
 
   
 

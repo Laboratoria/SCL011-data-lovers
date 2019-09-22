@@ -3,17 +3,24 @@ body{
    margin: 0px;
    background-color: #1B2838;
 }
+/* -- Header -- */
 
-#orderDate{
-   text-align: left;
-   padding: 1%;
-   margin-bottom: 1%;
+.links{
+   color: white;
+   font-size: 16px;
+   padding: 2em;
+   text-decoration: none;
+}
+.links:hover{
+   color: #B55123;
+   text-decoration: none;
+   font-weight: bold;
 }
 #linksNav{
-background-color: #2A475E;
-padding: 1%;
-text-align: right;
-}
+   background-color: #2A475E;
+   padding: 1%;
+   text-align: right;
+   }
 #banner .container{
    text-align: left;
    padding-left: 1%;
@@ -32,26 +39,13 @@ text-align: right;
    height: auto;
    position: relative;
 }
-#textSelect{
-   color: white;
-   font-size: 14px;
-}
-.links{
-   color: white;
-   font-size: 16px;
-   padding: 2em;
-   text-decoration: none;
-}
-.links:hover{
-   color: #B55123;
-   text-decoration: none;
-   font-weight: bold;
-}
+
+/* -- Filtros -- */
+
 #filters{
    text-align: left;
    padding: 1%;
 }
-
 .btnActive, .btnfilters{
    border: none;
    border-radius: 20px;
@@ -63,6 +57,8 @@ text-align: right;
    text-transform: uppercase;
    margin-top: 14pt;
    padding: 1%;
+   /*display: flex;
+   justify-content: flex-start;*/
    
 }
 .btnActive{
@@ -74,12 +70,42 @@ text-align: right;
 .btnfilters:hover{
    background-color: #C36C2D;
 }
+
+
+/* -- Combobox orden -- */
+
+#textSelect{
+   color: white;
+   font-size: 14px;
+}
+#orderDate{
+   text-align: left;
+   padding: 1%;
+   margin-bottom: 1%;
+}
+
+/* -- Porcentaje noticias -- */
+
+#percentNews{
+   color:#66C0F4;
+   font-style: italic;
+   font-size: 16px;
+   font-weight: 100;
+   text-align: left;
+   padding-left: 1%;
+}
+
+/* -- noticias -- */
+
+.imgCards{
+   width: 300px;
+}
 .cards{
    background-color: #2A475E;
-   text-align: left;
+   text-align: center;
    color: white;
    width: 350px;
-   height: 350px;
+   height: 400px;
    margin-left: 10pt;
    padding: 1em;
    margin-top: 5pt;
@@ -120,15 +146,4 @@ text-align: right;
 }
 .url{
    font-weight: 700;
-}
-#percentNews{
-   color:white;
-   font-style: italic;
-   font-size: 18px;
-   text-align: right;
-   padding: 1%;
-}
-
-#percentNews{
-   color: white;
 }
