@@ -80,14 +80,26 @@ header nav ul{
     background: #5bb040;
     overflow: hidden;
     padding: 2% 2%;
+    opacity: 0.9; 
 }
 
 .buttons{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 120%;
+
+    
     
 }
+
+.filterStatus, .filterGender{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
 
 .orden, .stylesButton {
     background-color: #02297b;
@@ -95,20 +107,23 @@ header nav ul{
     color: lightgray;
     border-radius: 8px; 
     padding: 20px 32px;   
+    font-family: Bangers;
+    font-size: 16px;
    
 }
 
-.orden, .list{
-    display: none;
-}
+
 .styleButton {
     background-color: #02297b;
     border: none;
     color: lightgray;
     border-radius: 8px; 
     padding: 20px 32px;
-     margin-left: 2em;
+    margin-left: 2em;
     display: none;
+    font-family: Bangers;
+    font-size: 16px;
+    
 }
 /*Personajes con datos e imágenes*/
 
@@ -145,9 +160,10 @@ header nav ul{
 }
 /*Página lugares*/
 
-.containerplace{
+.containerplace, .orden, .list{
     display: none;
 }
+
 
 
 
