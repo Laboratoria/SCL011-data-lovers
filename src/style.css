@@ -95,6 +95,11 @@ header nav ul{
     color: lightgray;
     border-radius: 8px; 
     padding: 20px 32px;   
+   
+}
+
+.orden, .list{
+    display: none;
 }
 .styleButton {
     background-color: #02297b;
