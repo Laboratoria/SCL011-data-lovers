@@ -126,6 +126,7 @@ buttonStatus.addEventListener('click', () => {
     }).join('');
 
 })
+
 // filtro Estado (vivo)
 const botonStatusAlive = document.getElementById('filterStatusAlive');
 botonStatusAlive.addEventListener('click', () => {
