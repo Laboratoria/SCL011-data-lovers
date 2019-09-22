@@ -65,6 +65,7 @@ Dentro del proyecto decidimos que la manera de poder ayudar a nuestro *público 
 
 ## #Historia1
 🗣 Yo cómo fan de la serie quiero poder buscar los personajes dentro de la página de manera amigable y que pueda escogerlo según el genero del personaje para poder buscar los personajes que aveces olvido.
+
 💡 Para esto creamos un landing page donde el usuario puede seleccionar a través de botones el género del personaje.
 
   
@@ -72,6 +73,7 @@ Dentro del proyecto decidimos que la manera de poder ayudar a nuestro *público 
 ## #Historia2
 
 🗣 Yo cómo usuario quiero encontrar dentro de la página información relevante sobre Rick&Morty, como videos y tips de secretos que se encuentran dentro de la página para poder saber cosas que no veo facilmente en la serie.
+
 💡 Para esto creamos una sección dentro de la página llamada "Pildoras" su objetivo es poder encontrar información adicional sobre la serie.
 
   
@@ -79,6 +81,7 @@ Dentro del proyecto decidimos que la manera de poder ayudar a nuestro *público 
 ## #Historia3
 
 🗣 Yo cómo usuario espero poder leer información sobre los personajes que aparecen dentro de la serie para poder recordar en que capitulo aparecen y otros temas que no recuerde.
+
 💡 Para esto creamos unas cartas donde aparecen la información del personaje adicional a su nombre.
 
   <h3>Respaldo de información. 
