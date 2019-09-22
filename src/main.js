@@ -68,7 +68,7 @@ selectOrderABC.addEventListener('change', () => {
 
         const orderABC = window.data.orderABC(listOfCharacters);
         const el = document.getElementById('ulItem');
-        le.innerHTML =
+        el.innerHTML =
             orderABC.map(x => {
 
                 return `
