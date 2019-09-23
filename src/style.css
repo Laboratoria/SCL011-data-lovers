@@ -58,6 +58,9 @@ width: 100%;
    margin-top: 14pt;
    padding: 1%;
 }
+.btnActive{
+   background-color: #B55123 !important;
+}
 
 .btnfilters{
    background-color: #FB8637;
