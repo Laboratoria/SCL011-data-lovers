@@ -8,7 +8,7 @@ const buttonShowCharacters = document.getElementById('characters');
 buttonShowCharacters.addEventListener('click', () => {
     document.getElementById('orderSelector').style.display = 'block';
     document.getElementById('portals').style.display = 'none';
-    document.getElementById('list').style.display = 'block';
+    document.getElementgitById('list').style.display = 'block';
 
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
