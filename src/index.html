@@ -13,41 +13,36 @@
 </head>
 
 <body>
+    <!-- Contenido pagina 1-->
     <header id="pantallaInicio">
         <nav class="pokebolainicio">
             <a href="#"><img id="next" src="../img/logo.png" alt="logo"></a>
         </nav>
     </header>
+    <!-- Contenido pagina 2-->
+    <header id="pantallaBienvenida">
+        <nav class="barra" id="menu1">
+            <a href="#"><img src="../img/logo3.png" alt="logo"></a>
+        </nav>
 
-    <section id="pagetwo">
-        <!-- header barra menu1+logo , texto e imagen logo pokemon-->
-        <header id="pantallaBienvenida">
-            <nav class="barra" id="menu1">
-                <a href="#"><img src="../img/logo3.png" alt="logo"></a>
-            </nav>
-
-            <nav class="introduccion">
-                <div class="texto">
-                    <img src="../img/pokemon.png" alt="logo"></img>
-                    <p>¡Bienvenidos! Los Pokemon son criaturas misteriosas que comparten el mundo con los seres humanos. Cada Pokemon tiene sus propias habilidades de lucha especiales. Aunque tienen muchas formas y tamaños, hasta el más pequeño puede lanzar
-                        un ataque feroz. Algunos Pokemon crecen, o evolucionan, transformandose en criaturas aun mas poderosas. En la región de Kanto existen 151 diferentes Pokemon y aquí esta toda la información que necesitas para convertirte en un experto
-                        Maestro Pokemon.¿ Te gustaría conocer más sobre ellos ?
-                    </p>
-                </div>
-                <div class="texto">
-                    <button id="ir">¡Vamos allá!</button>
-                </div>
-
-
-            </nav>
-        </header>
-
-        <section id="menu2">
-
-            <main class="row">
-
-                <!-- Select con opciones que se manejarán desde el DOM -->
-                <select id="type">
+        <nav class="introduccion">
+            <div class="texto">
+                <img src="../img/pokemon.png" alt="logo"></img>
+                <p>¡Bienvenidos! Los Pokemon son criaturas misteriosas que comparten el mundo con los seres humanos. Cada Pokemon tiene sus propias habilidades de lucha especiales. Aunque tienen muchas formas y tamaños, hasta el más pequeño puede lanzar
+                    un ataque feroz. Algunos Pokemon crecen, o evolucionan, transformandose en criaturas aun mas poderosas. En la región de Kanto existen 151 diferentes Pokemon y aquí esta toda la información que necesitas para convertirte en un experto
+                    Maestro Pokemon.¿ Te gustaría conocer más sobre ellos ?
+                </p>
+            </div>
+            <div class="texto">
+                <button id="ir">¡Vamos allá!</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Contenido pagina 3-->
+    <section id="menu2">
+        <main class="row">
+            <!-- Select para filtrar-->
+            <select id="type">
             <option value="0">SELECCIONA UN TIPO</option>
             <option value="Grass">Planta</option>
             <option value="Poison">Veneno</option>
@@ -65,29 +60,26 @@
             <option value="Ghost">Fantasma</option>
             <option value="Dragon">Dragón</option>
           </select>
-
-                <select id="sort">
+            <!-- Select para ordenar-->
+            <select id="sort">
             <option value="0">ORDENAR POR...</option>
             <option value="a-z">Ordenar A-Z</option>
             <option value="z-a">Ordenar Z-A</option>
             <option value="001-151">Ordenar 001-151</option>
             <option value="151-001">Ordenar 151-001</option>
           </select>
-
-                <select id="table">
+            <!-- Select para calculos-->
+            <select id="table">
             <option value="0">ESTADISTICAS</option>
           </select>
-            </main>
-        </section>
-
-
-        <section class="container">
-            <!-- Nuestro contenedor de la información jalada de la DATA -->
-            <div id="root" class="container-fluid">
-
-            </div>
-        </section>
+        </main>
     </section>
+
+    <!-- Contenedor con la informacion de las tarjetas -->
+    <section class="container">
+        <div id="root" class="container-fluid"> </div>
+    </section>
+    <!-- Pie de pagina -->
     <footer class="footer">
         <p>© Pokemon 2019 Marcela López y Andrea Vasquez - Todos los Derechos Reservados </p>
     </footer>

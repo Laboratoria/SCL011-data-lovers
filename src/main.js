@@ -26,9 +26,7 @@ const mostrarData = (data) => {
     });
 }
 
-
-/* obtener el elemento segun su id*/
-/* function mostrar() { */
+/* obtener el elemento y mostrar segun su id*/
 document.getElementById("pantallaInicio").style.display = "block";
 document.getElementById("pantallaBienvenida").style.display = "none";
 document.getElementById("menu2").style.display = "none";
@@ -47,18 +45,13 @@ document.getElementById("ir").addEventListener('click', (evento) => {
     mostrarData(data);
 });
 
-
+//Filtrar
 selectType.addEventListener("change", () => {
     let typeP = document.getElementById("type").value;
     let printTypeP = window.data.filterPokemons(data, typeP);
     document.getElementById("root").innerHTML = " ";
     mostrarData(printTypeP);
 });
-
-const sortData = document.getElementById("sortDataP");
-sortData.addEventListener("change");
-document.getElementById("root").innerHTML = "";
-mostrarData(sortDataP);
 
 
 
