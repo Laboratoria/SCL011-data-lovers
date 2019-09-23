@@ -15,7 +15,7 @@ describe('filterMale', () => {
     },
    {
     "name": "P-Coat Rick",
-    "gender": "Unknown"
+    "gender": "unknown"
     
     },
   
@@ -48,9 +48,10 @@ describe('filterMale', () => {
   });
 
   it('debería retornar el genero del personaje', () => {
-    assert.deepEqual(window.filter.filterUnknown(muestra, "Unknown"), [{"name": "P-Coat Rick" , "gender": "Unknown"}])
+    assert.deepEqual(window.filter.filterUnknown(muestra, "unknown"), [{"name": "P-Coat Rick" , "gender": "unknown"}])
   });
 
 
   
 })
+
