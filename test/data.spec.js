@@ -1,4 +1,6 @@
 global.window = global;
+
+
 global.assert = require("chai").assert;
 require("../src/data/worldbank/worldbank.js");
 require("../src/data.js");
@@ -16,15 +18,16 @@ describe("window.worldBank.filterCountry", () => {
     MEX: { indicators: "Array(139)" }
   };
 
-
   it("debería ser una función", () => {
     assert.equal(typeof window.worldBank.filterCountry, "function");
   });
-
+  
+  
   it('debería retornar el objeto "PER"', () => {
     assert.deepEqual(
       window.worldBank.filterCountry(muestra, {
-        PER: { indicators: "Array(139)" }
+
+            PER: { indicators: "Array(139)" }
       })
     );
   });
