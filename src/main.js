@@ -1,11 +1,15 @@
-
+//declaramos una variable con la que podremos acceder a la data
 const takeData = window.STEAM.appnews.newsitems;
+//declaramos una variable que contenga los botones
 let buttonFilters = document.getElementsByClassName("btnfilters");
+// declaramos una variable vacia a la cual luego le concatenaremos el valor de los botones de filtrado
 let valueButton = "";
+// declaramos una variable vacía a la que le sumamos los valores de cada filtrado para así conectar filtrado con el orden
 let resultadoFor = "";
+//declaramos variable vacía para luego usarla para conectar estadisticas, filtrado y tarjetas.
 let statisticsNews = "";
 
-// Llamar base de datos y dejar info en tarjetas nuevas
+// Llamar base de datos y dejar info en tarjetas nuevas... esta se despliega apenas el usuario ingrese a la Página
 for (let j = 0; j<takeData.length;j++){
     let newsCards = document.createElement("div");
     newsCards.className =  "cards";
@@ -23,7 +27,7 @@ for (let j = 0; j<takeData.length;j++){
     document.getElementById("content").appendChild(newsCards).innerHTML;
 }
 
-// 
+// Función que crea tarjetas para aplicarlas tanto en el filtro como en el orden
 let renderNews =(data)=>{
   document.getElementById("content").innerHTML = ""
     for (let j = 0; j<data.length;j++){    
@@ -42,8 +46,8 @@ let renderNews =(data)=>{
         document.getElementById("content").appendChild(newsCards).innerHTML;
     }
 }
-
-// Toma el valor de cada botón. 'resultadoFor' guarda valor para estadística y orden
+/* buttonFilters en la manera con la que el usuario filtra las noticias.
+ Además Toma el valor de cada botón. 'resultadoFor' guarda valor para estadística y orden*/
 for (let i = 0; i < buttonFilters.length; i++){
     buttonFilters[i].addEventListener ('click',()=>{
         valueButton = buttonFilters[i].value
@@ -77,12 +81,13 @@ for (let i = 0; i < buttonFilters.length; i++){
            renderNews(rspBtn);
            resultadoFor=rspBtn
           }
+          // aquí unimos las funciones de filtrado, tarjetas y estadisticas para que estas ultimas se muestren
     statisticsNews =window.filterData.statistics(resultadoFor, takeData, valueButton);
     document.getElementById("statisticsContent").innerHTML = `<p id="percentNews">${statisticsNews}% de las Noticias</p>`
     })
  }
 
-
+//le damos uso al select el cúal se conecta con la función de ordenar por fecha.
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{
     let ascendente = window.filterData.sortByDate(resultadoFor,  document.getElementById("orderSelect").value)

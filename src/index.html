@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,48 +10,47 @@
     <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="titleHeader">
-               <!-- <p class="bannerTitle">Novedades TF2</p> -->
-
-        <section id="banner">
-            <a href="index.html">
-                <img id="bannerImg" src="../images/banner_datalovers.jpg">
-            </a>
-            <div class="container">
-                    <h2>Novedades TF2</h2>
-                </div>
-        </section>
-        <nav id="linksNav">
-                <a target="_blank" class="links" href="https://steamcommunity.com/app/440">Steam Community</a>
-                <a target="_blank" class="links" href="https://help.steampowered.com/es-419/">Steam Support</a>
-                <a target="_blank" class="links" href="https://wiki.teamfortress.com/wiki/Main_Page">TF2 Wiki</a>
-        </nav>
-    </header>
-    <main>
-        <section id="filters">
-            <button class="btnActive btnfilters" value="feedlabel">Mostrar Todo</button>
-            <button class="btnfilters" value="Product Update">Steam Updates</button>
-            <button class="btnfilters" value="TF2 Blog">TF2 Blog</button>
-            <button class="btnfilters" value="Eurogamer">Eurogamer</button>
-            <button class="btnfilters" value="PC Gamer">PC Gamer</button>
-            <button class="btnfilters" value="Rock, Paper, Shotgun">RPS</button>
-        </section>
-        <section id="orderDate">
-            <label id="textSelect">Ordenar por Fecha:</label>
-            <select name="select" id="orderSelect">
-                <option value="">ordenar desde...</option>
-                <option value="recent">Más recientes</option>
-                <option value="older">Más antiguos</option>
-            </select>
-        </section>
-        <section>
-            <div id="statisticsContent"></div>
-            <div id="content"></div>
-        </section>
-   
-    </main>
-  <!--<footer></footer> -->  
-  <!--<footer></footer> -->  
+  <div id="dataLovers-contents">
+        <header id="titleHeader">
+                <!-- <p class="bannerTitle">Novedades TF2</p> -->
+ 
+         <section id="banner">
+             <a href="index.html">
+                 <img id="bannerImg" src="../images/banner_datalovers.jpg" alt="banner-TF2">
+             </a>
+             <div class="container">
+                     <h2>Novedades TF2</h2>
+                 </div>
+         </section>
+         <nav id="linksNav">
+                 <a target="_blank" class="links" href="https://steamcommunity.com/app/440">Steam Community</a>
+                 <a target="_blank" class="links" href="https://help.steampowered.com/es-419/">Steam Support</a>
+                 <a target="_blank" class="links" href="https://wiki.teamfortress.com/wiki/Main_Page">TF2 Wiki</a>
+         </nav>
+     </header>
+     <main>
+         <section id="filters">
+             <button class="btnfilters" value="feedlabel">Mostrar Todo</button>
+             <button class="btnfilters" value="Product Update">Steam Updates</button>
+             <button class="btnfilters" value="TF2 Blog">TF2 Blog</button>
+             <button class="btnfilters" value="Eurogamer">Eurogamer</button>
+             <button class="btnfilters" value="PC Gamer">PC Gamer</button>
+             <button class="btnfilters" value="Rock, Paper, Shotgun">RPS</button>
+         </section>
+         <section id="orderDate">
+             <label id="textSelect">Ordenar por Fecha:</label>
+             <select name="select" id="orderSelect">
+                 <option value="">ordenar desde...</option>
+                 <option value="recent">Más recientes</option>
+                 <option value="older">Más antiguos</option>
+             </select>
+         </section>
+         <section>
+             <div id="statisticsContent"></div>
+             <div id="content"></div>
+         </section>
+     </main>
+  </div>
   <script src="data/steam/steam.js"></script>
 <script src="data.js"></script>
 <script src="main.js"></script>
