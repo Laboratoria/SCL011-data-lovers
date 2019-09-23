@@ -15,13 +15,16 @@ buttonShowCharacters.addEventListener('click', () => {
         listOfCharacters.map(x => {
             return `
         <li class="liItem">
+
             <img class="imgRaM" src="${x.image}">
             <div class="charData">
+
                 Nombre: ${x.name}
                 Genero: ${x.gender}
                 Estado: ${x.status} 
                 Origen: ${x.location.name}
-            </div>    
+
+             </div>    
         </li>
         `;
         }).join('');
@@ -65,8 +68,8 @@ selectOrderABC.addEventListener('change', () => {
     if (selectOrderABC.value === 'ABC') {
 
         const orderABC = window.data.orderABC(listOfCharacters);
-        const el = document.getElementById('ulItem');
-        el.innerHTML =
+        const le = document.getElementById('ulItem');
+        le.innerHTML =
 
             orderABC.map(x => {
 
@@ -587,16 +590,37 @@ buttonDatos.addEventListener("click", () => {
 
 //botón portal temporadas
 const buttonSeasons = document.getElementById('seasons');
-buttonSeasons.addEventListener('click', () => {
-
+    buttonSeasons.addEventListener('click', () => {
+        
     document.getElementById('portals').style.display = 'none';
     document.getElementById('container').style.display = 'none';
     document.getElementById('datos').style.display = 'none';
     document.getElementById('list').style.display = 'none';
     document.getElementById('containerplace').style.display = 'none';
-    document.getElementById('containerSeasons').style.display = 'block';
+    document.getElementById('containerSeasons').style.display = 'block';  
 
-});
+ });
+
+ const buttonSeason1 = document.getElementById('buttonSeason1');
+    buttonSeason1.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'block';
+        document.getElementById('infoSeason2').style.display = 'none';
+        document.getElementById('infoSeason3').style.display = 'none';
+    });
+
+    const buttonSeason2 = document.getElementById('buttonSeason2');
+    buttonSeason2.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'none';
+        document.getElementById('infoSeason2').style.display = 'block';
+        document.getElementById('infoSeason3').style.display = 'none';
+    });
+
+    const buttonSeason3 = document.getElementById('buttonSeason3');
+    buttonSeason3.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'none';
+        document.getElementById('infoSeason2').style.display = 'none';
+        document.getElementById('infoSeason3').style.display = 'block';
+    });
 
 const buttonSeason1 = document.getElementById('buttonSeason1');
     buttonSeason1.addEventListener('click', () =>{
@@ -641,5 +665,3 @@ const pushlogo = document.getElementById('logo');
 pushlogo.addEventListener('click', () => {
     location.reload();
 });
-
-
