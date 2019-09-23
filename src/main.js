@@ -110,7 +110,9 @@ buttonStatus.addEventListener('click', () => {
     document.getElementById('filterStatusAlive').style.display = "block";
     document.getElementById('filterStatusDead').style.display = "block";
     document.getElementById('filterStatusUnknown').style.display = "block";
-    document.getElementById('gender').style.display = "none";
+    document.getElementById('gender').style.display = "block";
+    document.getElementById("filterStatus").style.display = 'block';
+    document.getElementById("filterGender").style.display = 'none';
     buttonStatus.style.display = "none";
     const showListOfCharacters = listOfCharacters;
     const el = document.getElementById('ulItem');
@@ -206,7 +208,7 @@ buttonGender.addEventListener('click', () => {
     document.getElementById('filterGenderFemale').style.display = "block";
     document.getElementById('filterGenderMale').style.display = "block";
     document.getElementById('filterGenderUnknown').style.display = "block";
-    document.getElementById('status').style.display = "none";
+    document.getElementById('status').style.display = "block";
     buttonGender.style.display = "none";
     const showListOfCharacters = listOfCharacters;
     const ele = document.getElementById('ulItem');
@@ -619,23 +621,6 @@ const buttonSeason1 = document.getElementById('buttonSeason1');
         document.getElementById('infoSeason3').style.display = 'block';
     });
     
-//Estado
-const buttonsHierarchy = document.getElementById('status');
-buttonsHierarchy.addEventListener("click", () => {
-    document.getElementById("filterStatus").style.display = 'block';
-    document.getElementById("gender").style.display = 'block';
-    document.getElementById("filterGender").style.display = 'none';
-
-})
-
-//Genero
-
-const buttonsHierarchy1 = document.getElementById('gender');
-buttonsHierarchy1.addEventListener("click", () => {
-    document.getElementById("filterGender").style.display = 'block';
-    document.getElementById("status").style.display = 'block';
-    document.getElementById("filterStatus").style.display = 'none';
-})
 
 const pushlogo = document.getElementById('logo');
 pushlogo.addEventListener('click', () => {
