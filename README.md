@@ -185,19 +185,33 @@ Utilizamos la regla de tres como ejercicio matemático básico para poder tener 
 # Checklist 
 
 👌 Usa VanillaJS.
+
 👌 No hace uso de this.
+
 👌 Pasa linter (npm pretest)
+
 👌 Pasa tests (npm test)
+
 👌 Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
+
 👌 Incluye Definición del producto clara e informativa en README.md.
+
 👌 Incluye historias de usuario en README.md.
+
 👌 Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
+
 👌 Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
+
 👌 Incluye link a Zeplin/Figma en README.md.
+
 👌 Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
+
 👌 UI: Muestra lista y/o tabla con datos y/o indicadores.
+
 👌 UI: Permite ordenar data por uno o más campos (asc y desc).
+
 👌 UI: Permite filtrar data en base a una condición.
+
 
 ## Planificando
 
