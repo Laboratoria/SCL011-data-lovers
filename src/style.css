@@ -85,6 +85,12 @@ header nav ul{
 
 .buttons{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.orden, .stylesButton, .filterPlace {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     font-family: Bangers;
@@ -199,7 +205,7 @@ header nav ul{
     text-align: center;
     font-family: Bangers;
 }
-.tittleDatos{
+.tittleDatos{ 
     font-size: 2em;
     font-family: Bangers;
 }
