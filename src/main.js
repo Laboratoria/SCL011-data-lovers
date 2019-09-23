@@ -2,7 +2,7 @@
 
  const ricks = window.RICKANDMORTY.results;
  // window.ricks = ricks;
- console.log(ricks);
+
 
  //Data de Masculinos
  const characMale = window.filter.filterMale(ricks);
