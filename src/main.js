@@ -39,6 +39,8 @@ listShowCharacters.addEventListener('click', () => {
     document.getElementById('list').style.display = 'block';
     document.getElementById('orderSelector').style.display = 'none';
     document.getElementById('containerSeasons').style.display = 'none';
+
+
     const showListOfCharacters = listOfCharacters;
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -68,8 +70,9 @@ selectOrderABC.addEventListener('change', () => {
     if (selectOrderABC.value === 'ABC') {
 
         const orderABC = window.data.orderABC(listOfCharacters);
-        const le = document.getElementById('ulItem');
-        le.innerHTML =
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+
             orderABC.map(x => {
 
                 return `
@@ -323,288 +326,249 @@ listShowLocation.addEventListener('click', () => {
     document.getElementById('container').style.display = 'none';
     document.getElementById('list').style.display = 'block';
     document.getElementById('containerSeasons').style.display = 'none';
+    document.getElementById('orderSelector').style.display = 'none';
 
     const ele = document.getElementById('ulItem');
     ele.innerHTML =
         listOfCharacters.map(x => {
             return `
-        <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.origin.name}
-        </div>    
-        </li>
-        `;
+                <li class="liItem">
+                    <img class="imgRaM" src="${x.image}">
+                    <div class="charData">
+                        Nombre: ${x.name}
+                        Genero: ${x.gender}
+                        Estado: ${x.status} 
+                        Origen: ${x.origin.name}
+                    </div>    
+                </li>`;
         }).join('');
 })
 
 const buttonfilterPlaces = document.getElementById('filterPlace');
- buttonfilterPlaces.addEventListener('change', () => {
+buttonfilterPlaces.addEventListener('change', () => {
 
-  if ( buttonfilterPlaces.value === "earth") {
+    if (buttonfilterPlaces.value === "earth") {
 
-const earth = window.data.earth(listOfCharacters);
-const el = document.getElementById('ulItem');
-el.innerHTML =
-  earth.map(x => {
-    return `
-          <li class="liItem">
-            <img class="imgRaM" src="${x.image}">
-          <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status}
-      Origen: ${x.origin.name}
+        const earth = window.data.earth(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            earth.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+            }).join('');
 
-</div>
-</li>
+    } else if (buttonfilterPlaces.value === "earthTwo") {
+        const earthTwo = window.data.earthTwo(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            earthTwo.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+            }).join('');
 
-`;
-}).join('');
+    } else if (buttonfilterPlaces.value === "resortPlanet") {
+        const resortPlanet = window.data.resortPlanet(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            resortPlanet.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-} else if ( buttonfilterPlaces.value === "earthTwo" ){
-    const earthTwo = window.data.earthTwo(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    earthTwo.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "resortPlanet" ){
-const resortPlanet = window.data.resortPlanet(listOfCharacters);
-const el = document.getElementById('ulItem');
-el.innerHTML =
-  resortPlanet.map(x => {
-    return `
-          <li class="liItem">
-            <img class="imgRaM" src="${x.image}">
-          <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status}
-      Origen: ${x.origin.name}
+    } else if (buttonfilterPlaces.value === "purgePlanet") {
+        const purgePlanet = window.data.purgePlanet(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            purgePlanet.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-</div>
-</li>
+    } else if (buttonfilterPlaces.value === "abadango") {
+        const abadango = window.data.abadango(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            abadango.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
+            
+    } else if (buttonfilterPlaces.value === "signusExpanse") {
+        const signusExpanse = window.data.signusExpanse(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            signusExpanse.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-`;
-}).join('');
+    } else if (buttonfilterPlaces.value === "postApocalyptic") {
+        const postApocalyptic = window.data.postApocalyptic(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            postApocalyptic.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-} else if ( buttonfilterPlaces.value === "purgePlanet" ){
-    const purgePlanet = window.data.purgePlanet(listOfCharacters);
-    const el = document.getElementById('ulItem');
-el.innerHTML =
-  purgePlanet.map(x => {
-    return `
-          <li class="liItem">
-            <img class="imgRaM" src="${x.image}">
-          <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status}
-      Origen: ${x.origin.name}
+    } else if (buttonfilterPlaces.value === "venzenulon") {
+        const venzenulon = window.data.venzenulon(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            venzenulon.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-</div>
-</li>
+    } else if (buttonfilterPlaces.value === "bepis") {
+        const bepis = window.data.bepis(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            bepis.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-`;
-}).join('');
+    } else if (buttonfilterPlaces.value === "nuptia") {
+        const nuptia = window.data.nuptia(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            nuptia.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-} else if ( buttonfilterPlaces.value === "abadango" ){
-    const abadango = window.data.abadango(listOfCharacters);
-    const el = document.getElementById('ulItem');
-el.innerHTML =
-  abadango.map(x => {
-    return `
-          <li class="liItem">
-            <img class="imgRaM" src="${x.image}">
-          <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status}
-      Origen: ${x.origin.name}
+    } else if (buttonfilterPlaces.value === "fantasyWorld") {
+        const fantasyWorld = window.data.fantasyWorld(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            fantasyWorld.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-</div>
-</li>
+    } else if (buttonfilterPlaces.value === "birdWorld") {
+        const birdWorld = window.data.birdWorld(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            birdWorld.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
 
-`;
-}).join('');
-} else if ( buttonfilterPlaces.value === "signusExpanse" ){
-    const signusExpanse = window.data.signusExpanse(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    signusExpanse.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "postApocalyptic" ){
-    const postApocalyptic = window.data.postApocalyptic(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    postApocalyptic.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "venzenulon" ){
-    const venzenulon = window.data.venzenulon(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    venzenulon.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "bepis" ){
-    const bepis = window.data.bepis(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    bepis.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "nuptia" ){
-    const nuptia = window.data.nuptia(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    nuptia.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "fantasyWorld" ){
-    const fantasyWorld = window.data.fantasyWorld(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    fantasyWorld.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "birdWorld" ){
-    const birdWorld = window.data.birdWorld(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    birdWorld.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-} else if ( buttonfilterPlaces.value === "unknownFilter" ){
-    const unknownFilter = window.data.unknownFilter(listOfCharacters);
-    const el = document.getElementById('ulItem');
-    el.innerHTML =
-    unknownFilter.map(x => {
-        return `
-              <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-              <div class="charData">
-            Nombre: ${x.name}
-            Genero: ${x.gender}
-            Estado: ${x.status}
-          Origen: ${x.origin.name}
-    
-    </div>
-    </li>
-    
-    `;
-    }).join('');
-    
-}
+    } else if (buttonfilterPlaces.value === "unknownFilter") {
+        const unknownFilter = window.data.unknownFilter(listOfCharacters);
+        const el = document.getElementById('ulItem');
+        el.innerHTML =
+            unknownFilter.map(x => {
+                return `
+                    <li class="liItem">
+                        <img class="imgRaM" src="${x.image}">
+                        <div class="charData">
+                            Nombre: ${x.name}
+                            Genero: ${x.gender}
+                            Estado: ${x.status}
+                            Origen: ${x.origin.name}
+                        </div>
+                    </li>`;
+        }).join('');
+    }
 
 })
 
@@ -618,7 +582,7 @@ buttonDatos.addEventListener("click", () => {
     document.getElementById('list').style.display = 'none';
     document.getElementById('containerSeasons').style.display = 'none';
     document.getElementById('containerplace').style.display = 'none';
-
+    document.getElementById('orderSelector').style.display = 'none';
     const numberFemale = window.data.curiositiesGenderFemale(listOfCharacters);
     const porcentFemale = ((numberFemale / listOfCharacters.length) * 100).toFixed(2);
     const numberMale = window.data.curiositiesGenderMale(listOfCharacters);
@@ -641,18 +605,21 @@ buttonDatos.addEventListener("click", () => {
    </p>`
 });
 
+
 //botón portal temporadas
 
+
 const buttonSeasons = document.getElementById('seasons');
-    buttonSeasons.addEventListener('click', () => {
-        
+buttonSeasons.addEventListener('click', () => {
+
     document.getElementById('portals').style.display = 'none';
     document.getElementById('container').style.display = 'none';
     document.getElementById('datos').style.display = 'none';
     document.getElementById('list').style.display = 'none';
     document.getElementById('containerplace').style.display = 'none';
-    document.getElementById('containerSeasons').style.display = 'block';  
+    document.getElementById('containerSeasons').style.display = 'block';
 
+<<<<<<< HEAD
  });
 
  const buttonSeason1 = document.getElementById('buttonSeason1');
@@ -678,28 +645,31 @@ const buttonSeasons = document.getElementById('seasons');
 
 
 //Jerarquía de botones
+=======
+});
+>>>>>>> 4bd5ddebc7687e17f45bc4fc4e2f20eea29743ab
 
 //Estado
-// const buttonsHierarchy = document.getElementById('status');
-// buttonsHierarchy.addEventListener("click", () => {
-//     document.getElementById("filterStatus").style.display = 'block';
-//     document.getElementById("gender").style.display = 'block';
-//     document.getElementById("filterGender").style.display = 'none';
+const buttonsHierarchy = document.getElementById('status');
+buttonsHierarchy.addEventListener("click", () => {
+    document.getElementById("filterStatus").style.display = 'block';
+    document.getElementById("gender").style.display = 'block';
+    document.getElementById("filterGender").style.display = 'none';
 
-// })
+})
 
-// //Genero
+//Genero
 
-// const buttonsHierarchy1 = document.getElementById('gender');
-// buttonsHierarchy1.addEventListener("click", () => {
-//     document.getElementById("filterGender").style.display = 'block';
-//     document.getElementById("status").style.display = 'block';
-//     document.getElementById("filterStatus").style.display = 'none';
-// })
+const buttonsHierarchy1 = document.getElementById('gender');
+buttonsHierarchy1.addEventListener("click", () => {
+    document.getElementById("filterGender").style.display = 'block';
+    document.getElementById("status").style.display = 'block';
+    document.getElementById("filterStatus").style.display = 'none';
+})
 
 const pushlogo = document.getElementById('logo');
 pushlogo.addEventListener('click', () => {
     location.reload();
-})
+});
 
 

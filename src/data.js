@@ -114,6 +114,7 @@ window.data={
 
   },
 
+
   //para select
   
   earth:(listOfCharacters) =>{
@@ -204,8 +205,6 @@ window.data={
     })
     return unknownFilter;
   },
-
-
 };
 
 

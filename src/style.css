@@ -80,6 +80,7 @@ header nav ul{
     background: #5bb040;
     overflow: hidden;
     padding: 2% 2%;
+    opacity: 0.9; 
 }
 
 .buttons{
@@ -89,26 +90,61 @@ header nav ul{
     
 }
 
+<<<<<<< HEAD
 .orden, .stylesButton, .filterPlace, .buttonSeason {
+=======
+.orden, .stylesButton, .filterPlace {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    font-family: Bangers;
+    width: 120%
+    
+}
+
+.orden, .stylesButton, .filterPlace {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.filterStatus, .filterGender{
+    display: flex !important;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 15%;
+    font-family: Bangers;
+   
+}
+
+
+.orden, .stylesButton, .filterPlace {
+>>>>>>> 4bd5ddebc7687e17f45bc4fc4e2f20eea29743ab
     background-color: #02297b;
     border: none;
     color: lightgray;
     border-radius: 8px; 
-    padding: 20px 32px;   
-   
+    padding: 20px 32px; 
+    font-family: Bangers;
+    font-size: 16px;
 }
 
-.orden, .list{
+.orden, .list, .filterGender, .filterStatus{
     display: none;
 }
+
+
 .styleButton {
     background-color: #02297b;
     border: none;
     color: lightgray;
     border-radius: 8px; 
     padding: 20px 32px;
-     margin-left: 2em;
+    margin-left: 2em;
     display: none;
+    font-family: Bangers;
+    font-size: 16px;
+    /*width: 30%*/
+    
 }
 /*Personajes con datos e imágenes*/
 
@@ -145,9 +181,10 @@ header nav ul{
 }
 /*Página lugares*/
 
-.containerplace{
+.containerplace, .orden, .list{
     display: none;
 }
+
 
 
 
@@ -172,7 +209,7 @@ header nav ul{
     text-align: center;
     font-family: Bangers;
 }
-.tittleDatos{
+.tittleDatos{ 
     font-size: 2em;
     font-family: Bangers;
 }
