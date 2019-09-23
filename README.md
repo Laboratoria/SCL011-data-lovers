@@ -148,7 +148,7 @@ Realizamos pruebas a usuarios con la página final a dos usuarios  y fue muy sat
 .
 
 
-## **8. Organización del Equipo **
+## 10. Organización del Equipo 
 
 Master: Romina Garrido.
 Developer: Paloma Zelada.
