@@ -46,7 +46,7 @@ width: 100%;
    text-align: left;
    padding: 1%;
 }
-.btnActive, .btnfilters{
+.btnfilters{
    border: none;
    border-radius: 20px;
    margin-left: 5pt;
@@ -57,13 +57,8 @@ width: 100%;
    text-transform: uppercase;
    margin-top: 14pt;
    padding: 1%;
-   /*display: flex;
-   justify-content: flex-start;*/
-   
 }
-.btnActive{
-   background-color: #B55123 !important;
-}
+
 .btnfilters{
    background-color: #FB8637;
 }
