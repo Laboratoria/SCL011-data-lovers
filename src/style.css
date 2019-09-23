@@ -8,9 +8,7 @@ body {
     width: 100%;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+header {}
 
 
 /* row papa de row img */
@@ -30,14 +28,30 @@ header {
     margin-left: 0%
 }
 
+button {
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #d50000;
+    margin-top: 60%;
+    margin-left: 30%;
+}
+
 .texto {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     width: 40%;
-    margin-bottom: 10%;
-    margin-block-start: 10%;
+    margin-bottom: 5%;
+    margin-block-start: 5%;
+    margin-right: 5%;
+    margin-left: 5%
 }
 
 .texto img {
@@ -48,7 +62,7 @@ p {
     color: #fff;
     margin: 0%;
     margin-left: 40px;
-    margin-top: 10%;
+    margin-top: 0%;
     width: 40px%;
 }
 
