@@ -15,13 +15,13 @@ buttonShowCharacters.addEventListener('click', () => {
         listOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
-        </div>    
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
+            </div>    
         </li>
         `;
         }).join('');
@@ -40,28 +40,23 @@ listShowCharacters.addEventListener('click', () => {
     document.getElementById('orderSelector').style.display = 'none';
     document.getElementById('containerSeasons').style.display = 'none';
 
-
     const showListOfCharacters = listOfCharacters;
     const el = document.getElementById('ulItem');
     el.innerHTML =
         showListOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
-        </div>    
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
+            </div>    
         </li>
         `;
         }).join('');
-
 })
-
-
-
 
 //Ordenar Datos
 const selectOrderABC = document.getElementById('orderSelector');
@@ -77,13 +72,13 @@ selectOrderABC.addEventListener('change', () => {
 
                 return `
                 <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-                <div class="charData">
-                Nombre: ${x.name}
-                Genero: ${x.gender}
-                Estado: ${x.status} 
-                Origen: ${x.location.name}
-                </div>    
+                    <img class="imgRaM" src="${x.image}">
+                    <div class="charData">
+                        Nombre: ${x.name}
+                        Genero: ${x.gender}
+                        Estado: ${x.status} 
+                        Origen: ${x.location.name}
+                    </div>    
                 </li>
                 `;
             }).join('');
@@ -106,12 +101,7 @@ selectOrderABC.addEventListener('change', () => {
                     `;
             }).join('');
     }
-
 });
-
-
-//boton genero
-
 
 // filtar datos
 
@@ -128,23 +118,21 @@ buttonStatus.addEventListener('click', () => {
         showListOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
-        </div>    
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
+            </div>    
         </li>
         `;
         }).join('');
-
 })
 
 // filtro Estado (vivo)
 const botonStatusAlive = document.getElementById('filterStatusAlive');
 botonStatusAlive.addEventListener('click', () => {
-    // asignando a alive el resultado de la fnc filterStatusAlive
     const alive = window.data.filterStatusAlive(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -163,7 +151,6 @@ botonStatusAlive.addEventListener('click', () => {
                 `;
         }).join('');
 })
-
 
 // filtro Estado (muerto)
 const botonStatusDead = document.getElementById('filterStatusDead');
@@ -187,8 +174,8 @@ botonStatusDead.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
+
 // filtro Estado (indefinido)
 const botonStatusUnknown = document.getElementById('filterStatusUnknown');
 botonStatusUnknown.addEventListener('click', () => {
@@ -211,12 +198,9 @@ botonStatusUnknown.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
 
-
 //Filtrar por Genero
-
 const buttonGender = document.getElementById('gender');
 buttonGender.addEventListener('click', () => {
     document.getElementById('filterGenderFemale').style.display = "block";
@@ -230,18 +214,18 @@ buttonGender.addEventListener('click', () => {
         showListOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
-        </div>    
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
+            </div>    
         </li>
         `;
         }).join('');
-
 })
+
 //Femenino
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
@@ -264,8 +248,8 @@ botonGenderFemale.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
+
 // Masculino
 const botonGenderMale = document.getElementById('filterGenderMale');
 botonGenderMale.addEventListener('click', () => {
@@ -288,7 +272,6 @@ botonGenderMale.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
 
 // Indefinido
@@ -312,9 +295,7 @@ botonGenderUnknown.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
-
 
 //Filtro lugares con select
 
@@ -328,8 +309,8 @@ listShowLocation.addEventListener('click', () => {
     document.getElementById('containerSeasons').style.display = 'none';
     document.getElementById('orderSelector').style.display = 'none';
 
-    const ele = document.getElementById('ulItem');
-    ele.innerHTML =
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
         listOfCharacters.map(x => {
             return `
                 <li class="liItem">
@@ -340,7 +321,8 @@ listShowLocation.addEventListener('click', () => {
                         Estado: ${x.status} 
                         Origen: ${x.origin.name}
                     </div>    
-                </li>`;
+                </li>
+                `;
         }).join('');
 })
 
@@ -569,11 +551,9 @@ buttonfilterPlaces.addEventListener('change', () => {
                     </li>`;
         }).join('');
     }
-
 })
 
 //Botón datos
-
 const buttonDatos = document.getElementById("showCuriosities");
 buttonDatos.addEventListener("click", () => {
     document.getElementById('portals').style.display = 'none';
@@ -605,10 +585,7 @@ buttonDatos.addEventListener("click", () => {
    </p>`
 });
 
-
 //botón portal temporadas
-
-
 const buttonSeasons = document.getElementById('seasons');
 buttonSeasons.addEventListener('click', () => {
 
@@ -621,6 +598,27 @@ buttonSeasons.addEventListener('click', () => {
 
 });
 
+const buttonSeason1 = document.getElementById('buttonSeason1');
+    buttonSeason1.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'block';
+        document.getElementById('infoSeason2').style.display = 'none';
+        document.getElementById('infoSeason3').style.display = 'none';
+    });
+
+    const buttonSeason2 = document.getElementById('buttonSeason2');
+    buttonSeason2.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'none';
+        document.getElementById('infoSeason2').style.display = 'block';
+        document.getElementById('infoSeason3').style.display = 'none';
+    });
+
+    const buttonSeason3 = document.getElementById('buttonSeason3');
+    buttonSeason3.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'none';
+        document.getElementById('infoSeason2').style.display = 'none';
+        document.getElementById('infoSeason3').style.display = 'block';
+    });
+    
 //Estado
 const buttonsHierarchy = document.getElementById('status');
 buttonsHierarchy.addEventListener("click", () => {

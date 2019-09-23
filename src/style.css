@@ -90,31 +90,7 @@ header nav ul{
     
 }
 
-.orden, .stylesButton, .filterPlace {
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    font-family: Bangers;
-    width: 120%
-    
-}
-
-.orden, .stylesButton, .filterPlace {
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-content: center;
-}
-
-.filterStatus, .filterGender{
-    display: flex !important;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width: 15%;
-    font-family: Bangers;
-   
-}
-
-
-.orden, .stylesButton, .filterPlace {
+.orden, .stylesButton, .filterPlace,  .buttonSeason  {
     background-color: #02297b;
     border: none;
     color: lightgray;
@@ -124,10 +100,28 @@ header nav ul{
     font-size: 16px;
 }
 
-.orden, .list, .filterGender, .filterStatus{
+.orden, .list, .containerplace, .container{
     display: none;
 }
 
+.orden, .stylesButton, .filterPlace{
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-family: Bangers;
+    width: 20%
+    
+}
+
+
+.filterStatus, .filterGender{
+    display: flex !important;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 40%;
+    font-family: Bangers;
+   
+}
 
 .styleButton {
     background-color: #02297b;
@@ -139,9 +133,8 @@ header nav ul{
     display: none;
     font-family: Bangers;
     font-size: 16px;
-    /*width: 30%*/
-    
 }
+
 /*Personajes con datos e imágenes*/
 
 .ulItem {
@@ -175,14 +168,6 @@ header nav ul{
     background: #5bb040;
     margin: 2% 2%;
 }
-/*Página lugares*/
-
-.containerplace, .orden, .list{
-    display: none;
-}
-
-
-
 
 /*Página de datos curiosos*/
 
@@ -209,14 +194,26 @@ header nav ul{
     font-size: 2em;
     font-family: Bangers;
 }
-.container{
-    display: none;
-}
 
 /*Temporadas*/
 .containerSeasons{
     display: none;
     background: #5bb040;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: lightgray;
+    font-size: 1.5em;
+    font-family: Bangers;
+    padding: 5% 5%;
+}
+#infoSeason1, #infoSeason2, #infoSeason3 {
+    display: none;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    background: #02297b;
+    padding: 1% 1%;
 }
 
 @media screen and (max-width: 1000px){
