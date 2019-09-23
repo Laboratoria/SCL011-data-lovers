@@ -64,25 +64,26 @@ Dentro del proyecto decidimos que la manera de poder ayudar a nuestro *público 
   
 
 ## #Historia1
-🗣 Yo cómo fan de la serie quiero poder buscar los personajes dentro de la página de manera amigable y que pueda escogerlo según el genero del personaje para poder buscar los personajes que aveces olvido.
+🗣 Yo cómo usuario quiero encontrar dentro de la página información relevante sobre Rick&Morty, Como por ejemplo detalles de los personajes y videos. Para poder saber cosas que no veo facilmente en la serie.
+ 
+💡 Para esto creamos un sitio web con varias secciónes; "Personaje" y "Pildoras" su objetivo es poder encontrar información adicional sobre la serie.
 
-💡 Para esto creamos un landing page donde el usuario puede seleccionar a través de botones el género del personaje.
 
   
 
 ## #Historia2
 
-🗣 Yo cómo usuario quiero encontrar dentro de la página información relevante sobre Rick&Morty, como videos y tips de secretos que se encuentran dentro de la página para poder saber cosas que no veo facilmente en la serie.
+🗣 Yo cómo usuario quiero poder buscar los personajes dentro de la página de manera amigable y que pueda escogerlo según el genero del personaje para poder buscar los personajes que aveces olvido.
 
-💡 Para esto creamos una sección dentro de la página llamada "Pildoras" su objetivo es poder encontrar información adicional sobre la serie.
+💡 Para esto creamos un landing page donde el usuario puede seleccionar a través de botones el género del personaje
 
   
 
 ## #Historia3
 
-🗣 Yo cómo usuario espero poder leer información sobre los personajes que aparecen dentro de la serie para poder recordar en que capitulo aparecen y otros temas que no recuerde.
+🗣 Yo cómo usuario quiero poder tener acceso a los personajes de Rick and Morty de forma alfabetica con solo pinchar un boton para poder ubicar los personajes en forma ordenada
 
-💡 Para esto creamos unas cartas donde aparecen la información del personaje adicional a su nombre.
+💡 Para esto creamos un landing page donde el usuario puede encontrar a través de un boton todos los personajes de Rick and Morty ordenados de la letra A, a la letra Z.
 
   <h3>Respaldo de información. 
   
@@ -92,7 +93,7 @@ Dentro del proyecto decidimos que la manera de poder ayudar a nuestro *público 
 
   
 
-Quisimos subir una pregunta más amplia para así poder entender realmente que es lo que está buscando el usuario, aunque su amplitud fue mucha y nos encontramos con respuestas que de verdad no podríamos solucionar nos sirvió para poder darnos historias de usuario relevante y que si funcionarían dentro del producto.
+Quisimos subir una pregunta más amplia para así poder entender realmente que es lo que está buscando el usuario,aunque su amplitud fue mucha y nos encontramos con respuestas que de verdad no podríamos solucionar nos sirvió para poder darnos historias de usuario relevante y que si funcionarían dentro del producto.
 
   
 

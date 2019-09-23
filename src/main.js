@@ -31,6 +31,7 @@ const btnorder = document.getElementById("btnOrdenar");
 
 
 
+<<<<<<< HEAD
 
 //Asignando eventos y funcion con argumento segun el tipo de genero a los botones. 
 btnmale.addEventListener("click", () => {
@@ -43,6 +44,27 @@ btnfemale.addEventListener("click", () => {
 btnunknown.addEventListener("click", () => {
     showData('unknown');
 });
+=======
+ //Asignando eventos y funcion con argumento segun el tipo de genero a los botones. 
+ btnmale.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
+     showData('male');
+
+ });
+ btnfemale.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
+     showData('female');
+ });
+ btnunknown.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
+     showData('unknown');
+ });
+
+ btnorder.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
+     showData("btnorder");
+ });
+>>>>>>> 4bc804fde6f0385b03680e9cf9688fb90aa35658
 
 btnorder.addEventListener("click", () => {
     showData("btnorder");
