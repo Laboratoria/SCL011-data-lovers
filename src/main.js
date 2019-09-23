@@ -1,10 +1,8 @@
-
 /* Manejo del DOM */
 const wbData = window.WORLDBANK;
 let filteredCountry = [];
-const buttonCountry = document.getElementsByClassName('botones');
+const buttonCountry = document.getElementsByClassName("botones");
 let filteredIndicators = [];
-
 
 
 //const countrySelected = document.getElementById('countrySelected');
@@ -47,10 +45,10 @@ const print = (indicatorName, indicatorCode) => {
 };
 const elements = document.getElementsByClassName("botones");
 //evento click para mostrar las opciones del select
-for (let i = 0; i < elements.length; i++) { 
-  
-  elements[i].addEventListener("click", () => { 
-    
+
+for (let i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("click", () => {
+
     indicator.innerHTML = "";
     let valElement = elements[i].value; // event.target.value
     filteredIndicators = window.worldBank.filter(filteredCountry, valElement);
@@ -94,16 +92,16 @@ indicator.addEventListener("change", () => {
           `<tr><td>${roundedData}<td></tr>`
         );
       }
+  document.getElementById("volver").style.display="block"; 
 
-      document.getElementById("volver").style.display="block"; 
-    }
+     }
   });
 
   return year;
 });
 
 
-const volver=document.getElementById("volver");
+const volver = document.getElementById("volver");
 volver.addEventListener ("click", () =>  {
   document.getElementById("datos").style.display = "none";
   document.getElementById("banner").style.display = "block";
@@ -112,3 +110,9 @@ volver.addEventListener ("click", () =>  {
   document.getElementById("instituciones").style.display = "block";
 
 });
+
+      //extrayendo los valores de años
+      //yearOfData = Object.keys(year);
+      //extrayendo los valores de datos
+      // justData = Object.values(year);
+   
