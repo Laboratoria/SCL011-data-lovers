@@ -85,7 +85,7 @@ obteniendo informacion sobre campeones, cuál fuerza es más importante etc.
 
 ***
 
-Imagen del producto finla
+Imagen del producto final
 
 
 
@@ -106,7 +106,7 @@ En este link se muestra nuestra prueba de historia de usuarios :
 
 * quedan conforme con la información entregada sobre el producto
 * queda conforme con la info de las carta sobre los personajes del video juego (LOL)
-* nos sujere ir actualizando la info amedida que el juego se va actualizando .. 
+* nos sugiere ir actualizando la info a medida que el juego se va actualizando .. 
 
 
 https://vimeo.com/user103150170/review/361632635/02b6cd912f
@@ -117,18 +117,12 @@ https://vimeo.com/user103150170/review/361634844/2d9c93ca4c
 
 ***
 
-nuestro producto final esta nos deja conforme con aber cumplido con lo sujeridos con nuestras historias de usuarios y nos deja con mira de ir mejorando nuestro poducto final a escalas de mejoras.
+nuestro producto final cumple con los requerimientos de usuarios y nos deja con mira de ir mejorando nuestro producto final a escalas de mejoras.
 
 ***
 
 * Creadoras del producto :
 
 Marcia Alegria , Macarena Sáez .
-
-
-
-
-
-
 
 
