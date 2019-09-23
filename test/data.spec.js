@@ -65,38 +65,34 @@ describe("window.worldBank.filterCountry", () => {
   describe("window.worldBank.sort", () => {
 
     const dataSort = {
-      "1989": "",
-      "1990": 33.1,
-      "1998": 25.1,
-      "2007": 18.2,
-      "2008": 17.3,
-      "2013": 14.2
-    }
+      "2011": 24.7999992370605,
+      "2012": 25.0400009155273,
+      "2014": 24.2099990844727,
+      "2015": 21.6800003051758,
+      "2017": 23.7600002288818
+      }
     
-    
-    
+        
     it('debería ser una función', () => {
       assert.equal(typeof window.worldBank.sort, 'function');
     }),
-    it('debería retornar un arreglo de datos ordenados de forma ascendente para sort(dataToSort, "ascendent")', () => {
-      assert.equal(window.worldBank.sort(dataSort, `ascendent`),[
-        ["1989", ""],
-        ["2013", 14.2],
-        ["2008", 17.3],
-        ["2007", 18.2],
-        ["1998", 25.1],
-        ["1990", 33.1]
+    it('debería retornar un arreglo de datos ordenados de forma ascendente para sort(dataSort, "ascendent")', () => {
+      assert.equal(window.worldBank.sort(dataSort, "ascendent"),[
+        ["2012", 25.0400009155273],
+        ["2011", 24.7999992370605],
+        ["2014", 24.2099990844727],
+        ["2017", 23.7600002288818],
+        ["2015", 21.6800003051758]
       ])
     })
-    it('Debería retornar un arreglo de datos ordenados de forma descendente para: sort(dataToSort, "descendent")', () => {
-      assert.equal(window.worldBank.sort(dataSort, `descendent`),[
-        ["1990", 33.1],
-        ["1998", 25.1],
-        ["2007", 18.2],
-        ["2008", 17.3],
-        ["2013", 14.2],
-        ["1989", ""],
+    it('Debería retornar un arreglo de datos ordenados de forma descendente para: sort(dataSort, "descendent")', () => {
+      assert.equal(window.worldBank.sort(dataSort, "descendent"),[
+        ["2015", 21.6800003051758],
+        ["2017", 23.7600002288818],
+        ["2014", 24.2099990844727],
+        ["2011", 24.7999992370605],
+        ["2012", 25.0400009155273]
+
       ])
     });
   })
-

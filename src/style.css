@@ -168,3 +168,88 @@ button#volver {
   
 }
  
+
+@media only screen and (max-width: 768px) {
+  
+    .container {
+      width: 100%;
+      font-size: 0.8rem;
+      grid-template-areas: "header header header header"
+                            "banner banner banner banner"
+                            "buttonPaises buttonPaises buttonPaises buttonPaises"
+                            "article article article article "
+                            "instituciones instituciones instituciones instituciones"                 
+    }
+    .logo>img{
+      width: 75%;
+      height: 50%;
+    }
+    .container .header{
+      padding: 0.3%;
+      width: 100%;
+    }
+    .secciones .titleSelect,
+.secciones .indicatorsSelect{
+  width: 95%;
+  font-size: 0.9rem;
+  font-stretch:semi-condensed;
+  text-align: justify;
+}
+
+}
+
+
+@media only screen and (max-width: 425px) {
+  
+  .container {
+    width: 100%;
+   
+    grid-template-areas: "header header header header"
+                          "banner banner banner banner"
+                          "buttonPaises buttonPaises buttonPaises buttonPaises"
+                          "article article article article "
+                          "instituciones instituciones instituciones instituciones"                 
+  }
+  .logo>img{
+    width: 70%;
+    height: 40%;
+  }
+  .container .header{
+   
+  width: 100%;
+  padding: 1%;
+  
+  } 
+.container .article,
+.container .instituciones{
+   padding: 2%;
+   margin: 0%;
+   
+}
+  .secciones {
+    font-size: 80%;
+    display: flex;
+  }
+  
+  button#volver {   
+       
+    left: 80%;
+        
+  }
+  
+  th, td {
+ 
+  padding: 3%;
+  text-align: center;
+  width:auto;
+  
+}
+.secciones .titleSelect,
+.secciones .indicatorsSelect{
+  width: 90%;
+  font-size: 0.8rem;
+  font-stretch:semi-condensed;
+  text-align: justify;
+}
+
+}

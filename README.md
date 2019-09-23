@@ -169,7 +169,7 @@ Adjunto además nuestro link de trello para la evaluación de nuestro estado de 
 * [x] No hace uso de `this`.
 * [x] Pasa linter (`npm pretest`)
 * [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+* [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
   lines y branches.
 * [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
 * [x] Incluye historias de usuario en `README.md`.
