@@ -7,6 +7,10 @@
                 padding: 0px;
             }
             
+            html {
+                scroll-behavior: smooth;
+            }
+            
             body {
                 background: rgb(255, 255, 255);
                 color: #000;
@@ -33,13 +37,10 @@
                 /*stretch, auto,center, start, end*/
                 align-items: center;
                 box-shadow: 0 1px 2px rgba(0, 0, 0, .10);
-               
             }
             
             .containerr .header .nav {
                 grid-column: 2/-1;
-              
-
             }
             
             .containerr .header .nav .nav-item-link {
@@ -49,12 +50,10 @@
                 color: rgb(62, 129, 6);
             }
             
-          
             .containerr .header .nav .nav-item-link:hover {
                 text-decoration: none;
-                background:#55acee;
+                background: #55acee;
                 color: white;
-          
             }
             
             .brand {
@@ -107,7 +106,7 @@
             }
             /*BOTONES*/
             
-            .containerr .container-welcome .btns .btn  {
+            .containerr .container-welcome .btns .btn {
                 cursor: pointer;
                 margin: 10px;
                 border-radius: 5px;
@@ -124,11 +123,10 @@
                 border: 2px #55acee solid;
             }
             
-            .containerr .container-welcome .btns .btn:hover  {
+            .containerr .container-welcome .btns .btn:hover {
                 background-color: #55acee;
                 color: #fff;
             }
-
             
             .clear {
                 cursor: pointer;
@@ -144,11 +142,8 @@
                 -o-transition: .3s;
                 color: #55acee;
                 border: 2px #55acee solid;
-              
-
-
             }
-
+            
             .clear:hover {
                 background-color: #55acee;
                 color: #fff;
@@ -178,12 +173,9 @@
                 align-items: center;
                 justify-content: center;
             }
-        
-
-        
             /*PAGE ABOUT*/
             
-            .containerr  {
+            .containerr {
                 width: 99%;
                 margin: 2px auto;
                 display: grid;
@@ -228,8 +220,6 @@
                 align-content: center;
                 box-shadow: 0 -1px 20px #c0c2c7;
             }
-            
-         
             /*RESPONSIVE*/
             /*PHONE*/
             
@@ -248,8 +238,6 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                 }
-
-                
             }
             /*Tablet*/
             
