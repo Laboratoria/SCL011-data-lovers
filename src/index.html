@@ -18,53 +18,55 @@
             <a href="#"><img id="next" src="../img/logo.png" alt="logo"></a>
         </nav>
     </header>
-    <!-- header barra menu1+logo , texto e imagen logo pokemon-->
-    <header id="pantallaBienvenida">
-        <nav class="barra" id="menu1">
-            <a href="#"><img src="../img/logo3.png" alt="logo"></a>
-        </nav>
 
-        <nav class="introduccion">
-            <div class="texto">
-                <img src="../img/pokemon.png" alt="logo"></img>
-                <p>¡Bienvenidos! Los Pokemon son criaturas misteriosas que comparten el mundo con los seres humanos. Cada Pokemon tiene sus propias habilidades de lucha especiales. Aunque tienen muchas formas y tamaños, hasta el más pequeño puede lanzar
-                    un ataque feroz. Algunos Pokemon crecen, o evolucionan, transformandose en criaturas aun mas poderosas. En la región de Kanto existen 151 diferentes Pokemon y aquí esta toda la información que necesitas para convertirte en un experto
-                    Maestro Pokemon.¿ Te gustaría conocer más sobre ellos ?
-                </p>
-            </div>
-            <div class="texto">
-                <button id="ir">¡Vamos allá!</button>
-            </div>
+    <section id="pagetwo">
+        <!-- header barra menu1+logo , texto e imagen logo pokemon-->
+        <header id="pantallaBienvenida">
+            <nav class="barra" id="menu1">
+                <a href="#"><img src="../img/logo3.png" alt="logo"></a>
+            </nav>
+
+            <nav class="introduccion">
+                <div class="texto">
+                    <img src="../img/pokemon.png" alt="logo"></img>
+                    <p>¡Bienvenidos! Los Pokemon son criaturas misteriosas que comparten el mundo con los seres humanos. Cada Pokemon tiene sus propias habilidades de lucha especiales. Aunque tienen muchas formas y tamaños, hasta el más pequeño puede lanzar
+                        un ataque feroz. Algunos Pokemon crecen, o evolucionan, transformandose en criaturas aun mas poderosas. En la región de Kanto existen 151 diferentes Pokemon y aquí esta toda la información que necesitas para convertirte en un experto
+                        Maestro Pokemon.¿ Te gustaría conocer más sobre ellos ?
+                    </p>
+                </div>
+                <div class="texto">
+                    <button id="ir">¡Vamos allá!</button>
+                </div>
 
 
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <section id="menu2">
+        <section id="menu2">
 
-        <main class="select">
+            <main class="row">
 
-            <!-- Select con opciones que se manejarán desde el DOM -->
-            <select id="type">
+                <!-- Select con opciones que se manejarán desde el DOM -->
+                <select id="type">
             <option value="0">SELECCIONA UN TIPO</option>
-            <option value="Planta">Grass</option>
-            <option value="Veneno">Poison</option>
-            <option value="Volador">Flying</option>
-            <option value="Fuego">Fire</option>
-            <option value="Agua">Water</option>
-            <option value="Bicho">Bug</option>
+            <option value="Grass">Planta</option>
+            <option value="Poison">Veneno</option>
+            <option value="Flying">Volador</option>
+            <option value="Fire">Fuego</option>
+            <option value="Water">Agua</option>
+            <option value="Bug">Bicho</option>
             <option value="Normal">Normal</option>
-            <option value="Electrico">Electric</option>
-            <option value="Tierra">Ground</option>
-            <option value="Luchador">Fighting</option>
-            <option value="Psiquico">Psychic</option>
-            <option value="Roca">Rock</option>
-            <option value="Fuego">Ice</option>
-            <option value="Fantasma">Ghost</option>
-            <option value="Dragón">Dragon</option>
+            <option value="Electric">Electrico</option>
+            <option value="Ground">Tierra</option>
+            <option value="Fighting">Luchador</option>
+            <option value="Psychic">Psiquico</option>
+            <option value="Rock">Roca</option>
+            <option value="Ice">Hielo</option>
+            <option value="Ghost">Fantasma</option>
+            <option value="Dragon">Dragón</option>
           </select>
 
-            <select id="sort">
+                <select id="sort">
             <option value="0">ORDENAR POR...</option>
             <option value="a-z">Ordenar A-Z</option>
             <option value="z-a">Ordenar Z-A</option>
@@ -72,19 +74,20 @@
             <option value="151-001">Ordenar 151-001</option>
           </select>
 
-            <select id="table">
+                <select id="table">
             <option value="0">ESTADISTICAS</option>
           </select>
-        </main>
-    </section>
-
-
-    <div class="container">
-        <!-- Nuestro contenedor de la información jalada de la DATA -->
-        <section id="root" class="container-fluid">
-
+            </main>
         </section>
-    </div>
+
+
+        <section class="container">
+            <!-- Nuestro contenedor de la información jalada de la DATA -->
+            <div id="root" class="container-fluid">
+
+            </div>
+        </section>
+    </section>
     <footer class="footer">
         <p>© Pokemon 2019 Marcela López y Andrea Vasquez - Todos los Derechos Reservados </p>
     </footer>

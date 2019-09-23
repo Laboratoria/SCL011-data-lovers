@@ -1,10 +1,19 @@
-/* Manejo de data */
+window.data = {
+    //filtrar por tipo
+    filterPokemons: (data, typeP) => {
+        const filterPokemon = data.filter(element => {
+            return element.type.includes(typeP)
+        });
+        return filterPokemon;
+    },
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-//const example = () => {
-// return 'example';
-//};
-//window.example = example;
+    sortDataP: (data) => {
+        sortDataP = data.sort((a, b) => {
+            return a.name.localeCompare(b.name)
+        });
+        return sortDataP;
+    }
 
-//filtrar por tipo
+
+
+};

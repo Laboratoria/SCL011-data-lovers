@@ -1,36 +1,13 @@
 /* Manejo del DOM */
-const data = POKEMON.pokemon;
+const data = window.POKEMON.pokemon;
 const containerRoot = document.getElementById("root");
 const selectType = document.getElementById("type");
 
-/* obtener el elemento segun su id*/
-function mostrar() {
-    document.getElementById("pantallaInicio").style.display = "block";
-    document.getElementById("pantallaBienvenida").style.display = "none";
-    document.getElementById("menu2").style.display = "none";
-}
-document.getElementById("next").addEventListener('click', (evento) => {
-    evento.preventDefault();
-    document.getElementById("pantallaInicio").style.display = "none";
-    document.getElementById("pantallaBienvenida").style.display = "block";
-    document.getElementById("menu2").style.display = "none";
-});
-document.getElementById("ir").addEventListener('click', (evento) => {
-    evento.preventDefault();
-    document.getElementById("pantallaInicio").style.display = "none";
-    document.getElementById("pantallaBienvenida").style.display = "none";
-    document.getElementById("menu2").style.display = "block";
-});
 
 //Mostrar toda la data en tarjetas
 const mostrarData = (data) => {
-    //guardada los datos
-    let result = "";
-    console.log(data);
     data.forEach(element => {
-        //element -->DATA[i]
-        console.log(element.name);
-        result = containerRoot.innerHTML += `
+        containerRoot.innerHTML += `
         <div>
         <div class="tarjeta">
         <div class="tarjeta-header">
@@ -47,9 +24,42 @@ const mostrarData = (data) => {
         </div> `
 
     });
-    return result;
 }
 
 
-window.onload = mostrar;
-window.onload = mostrarData(data);
+/* obtener el elemento segun su id*/
+/* function mostrar() { */
+document.getElementById("pantallaInicio").style.display = "block";
+document.getElementById("pantallaBienvenida").style.display = "none";
+document.getElementById("menu2").style.display = "none";
+
+document.getElementById("next").addEventListener('click', (evento) => {
+    evento.preventDefault();
+    document.getElementById("pantallaInicio").style.display = "none";
+    document.getElementById("pantallaBienvenida").style.display = "block";
+    document.getElementById("menu2").style.display = "none";
+});
+document.getElementById("ir").addEventListener('click', (evento) => {
+    evento.preventDefault();
+    document.getElementById("pantallaInicio").style.display = "none";
+    document.getElementById("pantallaBienvenida").style.display = "none";
+    document.getElementById("menu2").style.display = "block";
+    mostrarData(data);
+});
+
+
+selectType.addEventListener("change", () => {
+    let typeP = document.getElementById("type").value;
+    let printTypeP = window.data.filterPokemons(data, typeP);
+    document.getElementById("root").innerHTML = " ";
+    mostrarData(printTypeP);
+});
+
+const sortData = document.getElementById("sortDataP");
+sortData.addEventListener("change");
+document.getElementById("root").innerHTML = "";
+mostrarData(sortDataP);
+
+
+
+//window.onload = mostrarData(data);
