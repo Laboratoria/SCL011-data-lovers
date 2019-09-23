@@ -21,14 +21,19 @@ pokemonCards +=
  </div>
    <div class="flip-card-back">
 
-         <h5>Spawn: ${((element.spawn_chance)*100)}%</h5>
-         <h5>Debilidad: ${element.weaknesses}</h5>
-         <h5>Caramelos para evolución: ${element.candy_count}</h5>
-   </div>
- </div>
+   <h5>Spawn: ${((element.spawn_chance)*100).toFixed(0)}%</h5>
+   <h5>Debilidad: ${element.weaknesses}</h5>
+   <h5>Caramelos para evolución: ${element.candy_count}</h5>
+</div>
+</div>
 </div>`
-  //imprimimos en el espacio results lo que le añadimos a pokemonCards
+//imprimimos en el espacio results lo que le añadimos a pokemonCards
 showCardsComplete.innerHTML= pokemonCards;
+count = count +1;
+let percentaje= (count/151)*100;
+let calculate = "         Esta selección corresponde a un "+percentaje.toFixed(0)+ "% de los Pokemon de la región Kanto"
+showPercentajes.innerHTML= calculate;
+
 }))
 }
 pokemonCards(allPokemonOnData)
