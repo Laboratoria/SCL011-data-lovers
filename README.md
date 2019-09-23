@@ -1,20 +1,5 @@
 # ** Master Pokemon Go**
 
-## **Índice**
-
-* [Definición](#Definición)
-* [Usuario](#Usuario)
-* [Test de Usabilidad](#Test-de-Usabilidad)
-* [Historias de Usuario](#Historias-de-Usuario)
-* [Funciones de la página](#Funciones-de-la-Pagina)
-* [Pruebas unitarias](#Pruebas-Unitarias)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
-
-***
-
 ## **1. Definición**
 
 Es una página para usuarios intermedios y avanzados que juegan de forma constante y quieren conocer datos estadísticos del juego para mejorar sus opciones de jugabilidad.
@@ -115,12 +100,17 @@ Y la última función es para ordenar de manera alfabética ascendente y descend
 
 Realizamos pruebas unitarias para las tres funciones que creamos, en las cuales se declaró una constantes de muestra para poder realizar las pruebas por función en las cuales debían retornar si eran funciones (typeof) y realizar su función específica.
 
+### **8. Test de usabilidad a usuario final**
+
+Realizamos pruebas a usuarios con la página final a dos usuarios  y fue muy satisfactoria, ya que en general las observaciones fueron a nivel de datos del juego y ambos entrevistados pudieron usar la pagina sin complicación alguna.
+
+ - El usuario 1, Patricio de 33 años no tuvo ningún problema con el manejo de la página. En el siguiente link podemos ver cómo fue su experiencia: [Entrevista 1](https://youtu.be/FUtkuomQYGA). 
+  
+ - El usuario 2, Sebastián de 27 años no tuvo ningún problema con el manejo de la página, Sin emabargo hizo comentarios sobre que requiere más información del juego en la página. En el siguiente link podemos ver cómo fue su experiencia:
+   [Entrevista 2](https://youtu.be/-XGfcGoA5AE).
 
 
-
-## **5. Diagrama de flujo de la página**
-
-
+## **9. Diagrama de flujo de la página**
 
 ```text
 .
@@ -158,7 +148,7 @@ Realizamos pruebas unitarias para las tres funciones que creamos, en las cuales 
 .
 
 
-## **8. Organización del Equipo **
+## 10. Organización del Equipo 
 
 Master: Romina Garrido.
 Developer: Paloma Zelada.
