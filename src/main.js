@@ -34,17 +34,21 @@
 
  //Asignando eventos y funcion con argumento segun el tipo de genero a los botones. 
  btnmale.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
      showData('male');
 
  });
  btnfemale.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
      showData('female');
  });
  btnunknown.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
      showData('unknown');
  });
 
  btnorder.addEventListener("click", () => {
+     document.getElementById("container-cardss").innerHTML = "";
      showData("btnorder");
  });
 
