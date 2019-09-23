@@ -79,12 +79,13 @@ const showData = (type) => {
     for (let i = 0; i < dataSelected.length; i++) {
         //Creo elementos
         let card = document.createElement("div");
+        card.setAttribute("class", "card");
         let parraf = document.createElement("h3"); //Nombre
         let img = document.createElement("img"); //Imagen
         let specie = document.createElement("p"); //Especie
         let status = document.createElement("p"); //Estatus
         let origen = document.createElement("p"); //Origen
-        let percent = document.createElement("p"); //Porcentaje
+        let percent = document.createElement("h4"); //Porcentaje
 
         // Asigno el valor de las etiquetas img y p
         // al usar i recorre todos 
@@ -97,7 +98,7 @@ const showData = (type) => {
         let percentTwo = document.createTextNode(dataSelected[i].status);
 
         //Asigno un atributo de tipo clase para darle estilo
-        card.setAttribute("class", "card");
+        
         // asignando padres e hijos
         parraf.appendChild(name);
         specie.appendChild(specieT);
