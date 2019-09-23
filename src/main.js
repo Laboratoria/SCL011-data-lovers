@@ -1,13 +1,14 @@
 const allPokemonOnData= window.POKEMON;
 window.allPokemonOnData= allPokemonOnData;
-
 //Cartas
 //Llama al espacio del html para mostrar los resultados
 const showCardsComplete = document.getElementById("results");
+const showPercentajes = document.getElementById("calculation");
+
 const pokemonCards =(allPokemonOnData)=>{
 //Donde se creará la tarjeta
 let pokemonCards="";
-
+let count=0;
 //Recorre la data completa, element es el nombre que le asigna a cada elemento que contiene la data
 allPokemonOnData.forEach((element=>{
 //concatenamos para que vaya sumando una tarjeta tras otra
@@ -21,13 +22,13 @@ pokemonCards +=
  </div>
    <div class="flip-card-back">
 
-   <h5>Spawn: ${((element.spawn_chance)*100).toFixed(0)}%</h5>
-   <h5>Debilidad: ${element.weaknesses}</h5>
-   <h5>Caramelos para evolución: ${element.candy_count}</h5>
-</div>
-</div>
+         <h5>Spawn: ${((element.spawn_chance)*100).toFixed(0)}%</h5>
+         <h5>Debilidad: ${element.weaknesses}</h5>
+         <h5>Caramelos para evolución: ${element.candy_count}</h5>
+   </div>
+ </div>
 </div>`
-//imprimimos en el espacio results lo que le añadimos a pokemonCards
+  //imprimimos en el espacio results lo que le añadimos a pokemonCards
 showCardsComplete.innerHTML= pokemonCards;
 count = count +1;
 let percentaje= (count/151)*100;
@@ -54,7 +55,7 @@ typeSelect.addEventListener('change', ()=>{
   let resultType= window.filterByType(allPokemonOnData, valorType);
   pokemonCards(resultType);
 })
-
+window.typeSelect= typeSelect
 
 const eggSelect= document.getElementById("filterEgg");
 eggSelect.addEventListener('change', ()=>{
