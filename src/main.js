@@ -3,7 +3,7 @@ const data = POKEMON.pokemon;
 const containerRoot = document.getElementById("root");
 const selectType = document.getElementById("type");
 
-/* obtener el elemento por id*/
+/* obtener el elemento segun su id*/
 function mostrar() {
     document.getElementById("pantallaInicio").style.display = "block";
     document.getElementById("pantallaBienvenida").style.display = "none";
@@ -22,22 +22,22 @@ document.getElementById("ir").addEventListener('click', (evento) => {
     document.getElementById("menu2").style.display = "block";
 });
 
-//Mostrar toda la data en CARDS
-const showData = (data) => {
-    //Va ir guardado los datos entregados
+//Mostrar toda la data en tarjetas
+const mostrarData = (data) => {
+    //guardada los datos
     let result = "";
-    //console.log(data);
+    console.log(data);
     data.forEach(element => {
         //element -->DATA[i]
-        //console.log(element.name);
+        console.log(element.name);
         result = containerRoot.innerHTML += `
         <div>
-        <div class="card">
-        <div class="card-header">
+        <div class="tarjeta">
+        <div class="tarjeta-header">
             <div class="img">
                 <img src="${element.img}">
             </div>
-            <div class="card-body"
+            <div class="tarjeta-body"
             <h3>${element.num}</h3>
             <h2>${element.name}</h2>
             <p>${element.type}</p>
@@ -52,4 +52,4 @@ const showData = (data) => {
 
 
 window.onload = mostrar;
-window.onload = showData(data);
+window.onload = mostrarData(data);
