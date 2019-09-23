@@ -62,7 +62,7 @@ body{
    
 }
 .btnActive{
-   background-color: #B55123;
+   background-color: #B55123 !important;
 }
 .btnfilters{
    background-color: #FB8637;
