@@ -90,7 +90,8 @@ header nav ul{
     
 }
 
-.orden, .stylesButton, .filterPlace,  .buttonSeason  {
+
+.orden, .stylesButton, .filterPlace, .buttonSeason {
     background-color: #02297b;
     border: none;
     color: lightgray;
@@ -132,7 +133,7 @@ header nav ul{
     margin-left: 2em;
     display: none;
     font-family: Bangers;
-    font-size: 16px;
+    font-size: 16px;  
 }
 
 /*Personajes con datos e imágenes*/
