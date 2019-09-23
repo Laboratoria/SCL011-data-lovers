@@ -116,8 +116,9 @@ margin-left:20%;
 #titulo{
   margin: 0px; 
 }
-#select{
-  height: 20px;
+#selection{
+  height: 80px;
+  
 }
 }
 
@@ -138,12 +139,11 @@ header{
 #titulo{
   display:none;
 }
-#select{
-  margin:0px;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  height: 20px; 
+#selection{
+  margin:2px;
+  flex-flow: wrap;
+  text-align: center;
+  height: 80px; 
   
 }
 }
