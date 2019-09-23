@@ -1,7 +1,7 @@
  //Data completa
 
  const ricks = window.RICKANDMORTY.results;
-// window.ricks = ricks;
+ // window.ricks = ricks;
 
 
  //Data de Masculinos
