@@ -1,20 +1,5 @@
 # ** Master Pokemon Go**
 
-## **Índice**
-
-* [Definición](#Definición)
-* [Usuario](#Usuario)
-* [Test de Usabilidad](#Test-de-Usabilidad)
-* [Historias de Usuario](#Historias-de-Usuario)
-* [Funciones de la página](#Funciones-de-la-Pagina)
-* [Pruebas unitarias](#Pruebas-Unitarias)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
-
-***
-
 ## **1. Definición**
 
 Es una página para usuarios intermedios y avanzados que juegan de forma constante y quieren conocer datos estadísticos del juego para mejorar sus opciones de jugabilidad.
