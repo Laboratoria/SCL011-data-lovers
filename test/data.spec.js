@@ -92,19 +92,13 @@ describe('sortAZ()', ()=>{
 
   const order= [
     {
-      name:"Karma",
-      tags:"Mage",
-      partype:"MP"
+      id:"Karma"
     },
     {
-      name:"Draven",
-      tags:"Marksman",
-      partype:""
+      id:"Draven"
     },
     {
-      name:"Urgot",
-      tags:"Fighter",
-      partype:"Energy"
+      id:"Urgot"
     }
   ]
 
@@ -113,21 +107,15 @@ describe('sortAZ()', ()=>{
   });
 
   it('deberia retornar nombres de personajes ordenados de la a a la z',() => {
-    assert.deepEqual(window.sortAZ(order, "az"),[
+   assert.deepEqual(window.sortAZ(order, "az"),[
       {
-        name:"Draven",
-        tags:"Marksman",
-        partypes:""
+        id:"Draven"
       },
       {
-        name:"Karma",
-        tags:"Mage",
-        partype:"MP"
+        id:"Karma"
       },
       {
-        name:"Urgot",
-        tags:"Fighter",
-        partype:"Energy"
+        id:"Urgot"
       }
 
     ])
