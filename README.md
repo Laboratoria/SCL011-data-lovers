@@ -127,17 +127,34 @@ Criterio de aceptación: Se muestra en la aplicación en tablas la información 
 Evento: Generar tablas con la información de los años e índices relacionados a un tema en particular
 
 ## **Historia de Usuario 3**
+Yo como estudiante necesito  ver la tabla según sus indices de modo que pueda ver desde los valores mayores a los menor y viceversa. Para evaluar los indicadores.  
+Criterio de aceptación: Ordenar la tabla y mostrar los valores ordenados según los indicadores.
+Evento: Generar tablas con datos de los indicadores ordenados ascendente y descendentemente. 
+
+## **Historia de Usuario 4**
 
 Yo como estudiante de sociología necesito ver estadísticas respecto a los temas seleccionados como el promedio, máxima o mínima, para poder hacer un análisis mas acabado en mis estudios respecto al tema
 Criterio de aceptación: mostrar en la pantalla la media de los 57 años cuando están todos los datos por año. O un mensaje indicando que no esta toda la información para mostrar la media. En el caso de la máxima y mínima el valor más alto y el valor mas bajo. En caso de que no exista información, un mensaje indicándolo.
 Evento: se genera la media al lado de la tabla para que los usuarios puedan comparar año a año.
+
+
+## **Test de Usabilidad**
+
+Se realizaron dos test de Usabilidad a distintas personas.  Este se aplicó al avance entregado el viernes 13 de septiembre.
+El primero solo se trabajo con apuntes y el segundo fue grabado, quedando el respaldo del archivo 20190917-214616-1280x720,  en [Youtube]( https://www.youtube.com/watch?v=p2FMS-TVOB8&feature=youtu.be/), de estos se concluyó lo siguiente:
+* No se entiende el propósito de la página.
+* No es fácil acceder a la información principal, cuando se ve en la web, debido a que la imagen ocupa casi toda la pantalla y además los botones y las letras, son muy pequeños.
+* La información encima de la imagen es poco clara, y al acceder al enlace de la página confunde.
+
+A partir de estas conclusiones, se realizaron las modificaciones correspondientes de modo que la aplicación fuera mucho mas amigable con el usuario.
+Las Modificaciones realizadas se encuentran en [Loom]( https://www.loom.com/share/c852da57ab99452180bcb0b42f00a5d3/)
+
 
 ## **Estado de avance**
 
 Es preciso comentar que nuestra aplicación alcanzo a desarrollar solo la historia de usuario 1 y 2.   Entre las cosas que quedan por mejorar para la usabilidad, seria importante agregar un botón para volver al inicio.  En caso de que el estudiante quisiera ver otro país. 
 Respecto al proyecto además se debiera:
 Entregar la información por tema sacando la media de los 4 países para tener un referente.
-Crear un selector para ordenar por año tanto descendente como ascendente.
 Generar gráficos de todos los indicadores tanto por país como por Latinoamérica.
 Poder optar a realizar un comparativo entre la media de Latinoamérica y cada País, para una mejor perspectiva del estudiante. 
 Adjunto además nuestro link de trello para la evaluación de nuestro estado de avance.
@@ -150,7 +167,7 @@ Adjunto además nuestro link de trello para la evaluación de nuestro estado de 
 
 * [x] Usa VanillaJS.
 * [x] No hace uso de `this`.
-* [ ] Pasa linter (`npm pretest`)
+* [x] Pasa linter (`npm pretest`)
 * [ ] Pasa tests (`npm test`)
 * [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
   lines y branches.
@@ -161,8 +178,8 @@ Adjunto además nuestro link de trello para la evaluación de nuestro estado de 
 * [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
 * [x] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
+* [x] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
 * [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [x] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [x] UI: Permite filtrar data en base a una condición.

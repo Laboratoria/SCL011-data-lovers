@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0"/>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=0">
+    
 
   </head>
   
@@ -13,31 +14,35 @@
   <!-----PAGE1----->
   
   <body>
-    <div class="contenedor">
-  <header> 
+    <div class="container">
+  <header class="header"> 
     <h1 class="logo"><img src="./images/LogoData.png" ></h1>
     
   </header>
 
 
-<!-----banner----->
 
-<main>
-    <section  id="banner">
-      <img src="images/imgWomanMobile.jpg" alt="imgWomanMobile"> 
-      <div class="container"> 
-      <h2>Data Femme</h2>
-      <p>Esta página es para acceder con rapidez y seguridad a la base de datos del Banco Mundial , 
-        con respecto al Rol de la Mujer en Latinoamerica.</p>
-        <a href="https://www.bancomundial.org/">Banco Mundial</a>
-    </div>
-    </section>
-  </main>
+ 
 
-<!-----PAGE1 seccion botones----->
 
-  <main class="contain">
-    <section class="secciones" id="inicio">
+
+
+
+    <!-----banner----->
+
+
+    <section  id="banner" class="banner">
+        <div class="definition"> 
+           
+            <p>En esta página puedes acceder  a datos estadísticos específicos, 
+                con respecto al Rol de la Mujer en cuatro países de Latinoamérica.</p>
+              <!-- <a href="https://www.bancomundial.org/">Banco Mundial</a> -->
+          </div>
+        <img src="images/imgWomanMobile.jpg" alt="imgWomanMobile"> 
+        
+      </section>
+      <!-----PAGE1 seccion botones----->
+    <section class="buttonPaises" id="inicio">
         
       <nav class="buttonPais" >
         <button  class="botones" id="per"   value="PER">Peru</button>
@@ -53,7 +58,7 @@
 
       <!-----PAGE1 secccion articulos----->           
            
-<section id="article">
+<section id="article" class="article">
     <div >              
     <h3>Noticias</h3>
     <br>
@@ -66,7 +71,7 @@
   
   
   
-  <section  id="instituciones">
+  <section  id="instituciones" class="instituciones">
   <div >              
     <h3>Instituciones Relacionadas</h3>
     <br>
@@ -81,21 +86,31 @@
   </div>
   </section>
 
-    
+</div>
     
     
   <!-----PAGE2 seccion indicador----->  
 
 
     <section class="secciones" id="datos" >
+      <button id="volver">Inicio</button>
         <h2 id="countrySelected"></h2>
-      <h3>Selecciona el indicador:</h3>
+       
+      <div><h3>Selecciona el indicador:</h3>
         <select class="indicatorsSelect" id="indicator">
-        </select>
+        </select></div>
+        
         <h2 id="indicator-name"></h2>
+       
+        <select name="" id="type-of-order">
+          <option value="">Elige el orden del dato</option>
+          <option class="order-option" value="ascendent">Descendente</option>
+          <option class="order-option" value="descendent">Ascendente</option>
+        </select>
+       <!--  <button class="mean" id="mean-button">Calcula el promedio</button>
+        <p class="mean" id="mean-result"></p> -->
+        
       
-     
-     
      <div id="tableBox">
       
         <div>
@@ -111,16 +126,17 @@
           </table>
         </div>
       </div>
-     
       
+      
+     
     </section>
      
-  </main>
-  <footer></footer>
+  
+ 
 
 
-</div>
-    <div id="root"></div>
+
+   
     
    <script src="./data/worldbank/worldbank.js"></script> 
     
