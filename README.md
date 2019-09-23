@@ -29,7 +29,7 @@
 
   
 
-  **Para revisar nuestro proyecto, haz click [aquí]([https://mariapazbeltran.github.io/SCL011-data-lovers/src/index.html](https://mariapazbeltran.github.io/SCL011-data-lovers/src/index.html)).**
+  **Para revisar nuestro proyecto, haz click [aquí](https://mariapazbeltran.github.io/SCL011-data-lovers/src/index.html).**
 
 ## **1. Contexto**
 
