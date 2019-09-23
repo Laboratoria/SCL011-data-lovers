@@ -53,10 +53,11 @@ window.filter = {
 
     },
     
-    // apparitionPercent: (episodes) => {
-    //     let percentajeTotal = Math.round((episodes * 100) / 31);
-    //     return percentajeTotal;
-    //   }
+    apparitionPercent: (episodes) => {
+        let percentajeTotal = Math.round((episodes * 100) / 31);
+        return percentajeTotal;
+    
+      }
     
 
 

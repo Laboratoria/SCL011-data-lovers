@@ -55,3 +55,53 @@ describe('filterMale', () => {
   
 })
 
+describe('orderData', ()  => {
+  const data = [
+    {
+      "name": "Chang",
+      "status": "Alive"
+           
+    },
+
+   {
+    "name": "Dr. Eleanor Arroway",
+    "status": "Alive"
+     },
+  
+   {
+    "name": "Varrix",
+        "status": "Alive",
+    }
+
+  ];
+
+  it('debería ser una función', () => {
+    assert.equal(typeof window.filter.orderdata, 'function');
+  });
+
+  it('debería retornar "Chang", "Dr. Eleanor Arroway", "Varrix" para ordenar "Ver todo A-Z" ', () => {
+    assert.deepEqual(window.filter.orderdata(data, "ricks"), [
+      {
+        "name": "Chang",
+        "status": "Alive"
+             
+      },
+  
+     {
+      "name": "Dr. Eleanor Arroway",
+      "status": "Alive"
+       },
+    
+     {
+      "name": "Varrix",
+          "status": "Alive",
+      }
+  
+    ]);
+  
+ 
+
+
+  });
+})
+
