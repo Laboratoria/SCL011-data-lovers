@@ -15,13 +15,16 @@ buttonShowCharacters.addEventListener('click', () => {
         listOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
+
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
+
                 Nombre: ${x.name}
                 Genero: ${x.gender}
                 Estado: ${x.status} 
                 Origen: ${x.location.name}
-        </div>    
+
+             </div>    
         </li>
         `;
         }).join('');
@@ -46,13 +49,13 @@ listShowCharacters.addEventListener('click', () => {
         showListOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
                 Nombre: ${x.name}
                 Genero: ${x.gender}
                 Estado: ${x.status} 
                 Origen: ${x.location.name}
-        </div>    
+            </div>    
         </li>
         `;
         }).join('');
@@ -72,13 +75,13 @@ selectOrderABC.addEventListener('change', () => {
 
                 return `
                 <li class="liItem">
-                <img class="imgRaM" src="${x.image}">
-                <div class="charData">
-                Nombre: ${x.name}
-                Genero: ${x.gender}
-                Estado: ${x.status} 
-                Origen: ${x.location.name}
-                </div>    
+                    <img class="imgRaM" src="${x.image}">
+                    <div class="charData">
+                        Nombre: ${x.name}
+                        Genero: ${x.gender}
+                        Estado: ${x.status} 
+                        Origen: ${x.location.name}
+                    </div>    
                 </li>
                 `;
             }).join('');
@@ -118,13 +121,13 @@ buttonStatus.addEventListener('click', () => {
         showListOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
-        </div>    
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
+            </div>    
         </li>
         `;
         }).join('');
@@ -214,13 +217,13 @@ buttonGender.addEventListener('click', () => {
         showListOfCharacters.map(x => {
             return `
         <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
-        </div>    
+            <img class="imgRaM" src="${x.image}">
+            <div class="charData">
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
+            </div>    
         </li>
         `;
         }).join('');
@@ -313,16 +316,16 @@ listShowLocation.addEventListener('click', () => {
     el.innerHTML =
         listOfCharacters.map(x => {
             return `
-        <li class="liItem">
-        <img class="imgRaM" src="${x.image}">
-        <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.origin.name}
-        </div>    
-        </li>
-        `;
+                <li class="liItem">
+                    <img class="imgRaM" src="${x.image}">
+                    <div class="charData">
+                        Nombre: ${x.name}
+                        Genero: ${x.gender}
+                        Estado: ${x.status} 
+                        Origen: ${x.origin.name}
+                    </div>    
+                </li>
+                `;
         }).join('');
 })
 
@@ -619,6 +622,27 @@ const buttonSeasons = document.getElementById('seasons');
         document.getElementById('infoSeason3').style.display = 'block';
     });
 
+const buttonSeason1 = document.getElementById('buttonSeason1');
+    buttonSeason1.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'block';
+        document.getElementById('infoSeason2').style.display = 'none';
+        document.getElementById('infoSeason3').style.display = 'none';
+    });
+
+    const buttonSeason2 = document.getElementById('buttonSeason2');
+    buttonSeason2.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'none';
+        document.getElementById('infoSeason2').style.display = 'block';
+        document.getElementById('infoSeason3').style.display = 'none';
+    });
+
+    const buttonSeason3 = document.getElementById('buttonSeason3');
+    buttonSeason3.addEventListener('click', () =>{
+        document.getElementById('infoSeason1').style.display = 'none';
+        document.getElementById('infoSeason2').style.display = 'none';
+        document.getElementById('infoSeason3').style.display = 'block';
+    });
+    
 //Estado
 const buttonsHierarchy = document.getElementById('status');
 buttonsHierarchy.addEventListener("click", () => {
