@@ -5,12 +5,14 @@
     }
 
 body{
+
     background-image: url("https://i.ibb.co/xH74kDy/lom.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
+
 .menu{
   display: flex;
   justify-content: space-between;
@@ -21,11 +23,8 @@ body{
   margin: -20;
 
 }
-#current{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-
+.current{
+  margin: 0%;
 }
 #mimenu{
   
@@ -135,6 +134,15 @@ background: linear-gradient(50deg,#cfe940,#f5a031);
   margin: 0 auto;
   padding-top: 15%
 }
+footer{
+  display: inline-block;
+}
+@media (max-width:768px){
 
+  #league{
+    width: 80%;
+  }
+
+}
 
 
