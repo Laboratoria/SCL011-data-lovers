@@ -17,10 +17,10 @@ buttonShowCharacters.addEventListener('click', () => {
         <li class="liItem">
         <img class="imgRaM" src="${x.image}">
         <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
         </div>    
         </li>
         `;
@@ -40,7 +40,6 @@ listShowCharacters.addEventListener('click', () => {
     document.getElementById('orderSelector').style.display = 'none';
     document.getElementById('containerSeasons').style.display = 'none';
 
-
     const showListOfCharacters = listOfCharacters;
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -49,19 +48,15 @@ listShowCharacters.addEventListener('click', () => {
         <li class="liItem">
         <img class="imgRaM" src="${x.image}">
         <div class="charData">
-        Nombre: ${x.name}
-        Genero: ${x.gender}
-        Estado: ${x.status} 
-        Origen: ${x.location.name}
+                Nombre: ${x.name}
+                Genero: ${x.gender}
+                Estado: ${x.status} 
+                Origen: ${x.location.name}
         </div>    
         </li>
         `;
         }).join('');
-
 })
-
-
-
 
 //Ordenar Datos
 const selectOrderABC = document.getElementById('orderSelector');
@@ -70,8 +65,8 @@ selectOrderABC.addEventListener('change', () => {
     if (selectOrderABC.value === 'ABC') {
 
         const orderABC = window.data.orderABC(listOfCharacters);
-        const el = document.getElementById('ulItem');
-        el.innerHTML =
+        const le = document.getElementById('ulItem');
+        le.innerHTML =
 
             orderABC.map(x => {
 
@@ -106,12 +101,7 @@ selectOrderABC.addEventListener('change', () => {
                     `;
             }).join('');
     }
-
 });
-
-
-//boton genero
-
 
 // filtar datos
 
@@ -138,13 +128,11 @@ buttonStatus.addEventListener('click', () => {
         </li>
         `;
         }).join('');
-
 })
 
 // filtro Estado (vivo)
 const botonStatusAlive = document.getElementById('filterStatusAlive');
 botonStatusAlive.addEventListener('click', () => {
-    // asignando a alive el resultado de la fnc filterStatusAlive
     const alive = window.data.filterStatusAlive(listOfCharacters);
     const el = document.getElementById('ulItem');
     el.innerHTML =
@@ -163,7 +151,6 @@ botonStatusAlive.addEventListener('click', () => {
                 `;
         }).join('');
 })
-
 
 // filtro Estado (muerto)
 const botonStatusDead = document.getElementById('filterStatusDead');
@@ -187,8 +174,8 @@ botonStatusDead.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
+
 // filtro Estado (indefinido)
 const botonStatusUnknown = document.getElementById('filterStatusUnknown');
 botonStatusUnknown.addEventListener('click', () => {
@@ -211,12 +198,9 @@ botonStatusUnknown.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
 
-
 //Filtrar por Genero
-
 const buttonGender = document.getElementById('gender');
 buttonGender.addEventListener('click', () => {
     document.getElementById('filterGenderFemale').style.display = "block";
@@ -240,8 +224,8 @@ buttonGender.addEventListener('click', () => {
         </li>
         `;
         }).join('');
-
 })
+
 //Femenino
 const botonGenderFemale = document.getElementById('filterGenderFemale');
 botonGenderFemale.addEventListener('click', () => {
@@ -264,8 +248,8 @@ botonGenderFemale.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
+
 // Masculino
 const botonGenderMale = document.getElementById('filterGenderMale');
 botonGenderMale.addEventListener('click', () => {
@@ -288,7 +272,6 @@ botonGenderMale.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
 
 // Indefinido
@@ -312,9 +295,7 @@ botonGenderUnknown.addEventListener('click', () => {
                     
                 `;
         }).join('');
-
 })
-
 
 //Filtro lugares con select
 
@@ -328,19 +309,20 @@ listShowLocation.addEventListener('click', () => {
     document.getElementById('containerSeasons').style.display = 'none';
     document.getElementById('orderSelector').style.display = 'none';
 
-    const ele = document.getElementById('ulItem');
-    ele.innerHTML =
+    const el = document.getElementById('ulItem');
+    el.innerHTML =
         listOfCharacters.map(x => {
             return `
-                <li class="liItem">
-                    <img class="imgRaM" src="${x.image}">
-                    <div class="charData">
-                        Nombre: ${x.name}
-                        Genero: ${x.gender}
-                        Estado: ${x.status} 
-                        Origen: ${x.origin.name}
-                    </div>    
-                </li>`;
+        <li class="liItem">
+        <img class="imgRaM" src="${x.image}">
+        <div class="charData">
+        Nombre: ${x.name}
+        Genero: ${x.gender}
+        Estado: ${x.status} 
+        Origen: ${x.origin.name}
+        </div>    
+        </li>
+        `;
         }).join('');
 })
 
@@ -569,11 +551,9 @@ buttonfilterPlaces.addEventListener('change', () => {
                     </li>`;
         }).join('');
     }
-
 })
 
 //Botón datos
-
 const buttonDatos = document.getElementById("showCuriosities");
 buttonDatos.addEventListener("click", () => {
     document.getElementById('portals').style.display = 'none';
@@ -605,21 +585,17 @@ buttonDatos.addEventListener("click", () => {
    </p>`
 });
 
-
 //botón portal temporadas
-
-
 const buttonSeasons = document.getElementById('seasons');
-buttonSeasons.addEventListener('click', () => {
-
+    buttonSeasons.addEventListener('click', () => {
+        
     document.getElementById('portals').style.display = 'none';
     document.getElementById('container').style.display = 'none';
     document.getElementById('datos').style.display = 'none';
     document.getElementById('list').style.display = 'none';
     document.getElementById('containerplace').style.display = 'none';
-    document.getElementById('containerSeasons').style.display = 'block';
+    document.getElementById('containerSeasons').style.display = 'block';  
 
-<<<<<<< HEAD
  });
 
  const buttonSeason1 = document.getElementById('buttonSeason1');
@@ -643,12 +619,6 @@ buttonSeasons.addEventListener('click', () => {
         document.getElementById('infoSeason3').style.display = 'block';
     });
 
-
-//Jerarquía de botones
-=======
-});
->>>>>>> 4bd5ddebc7687e17f45bc4fc4e2f20eea29743ab
-
 //Estado
 const buttonsHierarchy = document.getElementById('status');
 buttonsHierarchy.addEventListener("click", () => {
@@ -671,5 +641,3 @@ const pushlogo = document.getElementById('logo');
 pushlogo.addEventListener('click', () => {
     location.reload();
 });
-
-
