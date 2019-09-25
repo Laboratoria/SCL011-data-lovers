@@ -21,8 +21,8 @@ body {
     "article article instituciones instituciones";
 }
 .container .header {
-  background: #b8b18c;
-
+ 
+  background:#15666985;
   grid-area: header;
 }
 
@@ -33,7 +33,8 @@ body {
   align-items: center;
   justify-content: center;
   align-items: center;
-  background: #b8b18c;
+  background:#15666985;
+  
   padding: 1%;
 }
 
@@ -45,11 +46,14 @@ body {
 }
 
 div.definition {
-  padding: 0%;
+  
   top: 40%;
   left: 90%;
   color: rgb(47, 45, 35);
-  background: #b8b18c;
+  background:#1566690a;
+ 
+  
+  
 }
 
 .container .buttonPaises {
@@ -59,7 +63,7 @@ div.definition {
   text-align: center;
 }
 .botones {
-  background: linear-gradient(45deg, #8b8462,#494533);
+  background: linear-gradient(45deg, #156669,#072627);
   color: rgb(251, 251, 247);
   padding: 1%;
   margin: 1%;
@@ -107,7 +111,7 @@ select#indicator.indicatorsSelect {
 select#type-of-order {
   box-shadow: -1px 0.5px 0.5px 0.5px;
 }
-/*tabla*/
+
 div#tableBox {
   box-align: center;
   width: 100%;
@@ -132,11 +136,12 @@ td {
 }
 
 thead {
-  background-color: #837a4bca;
+  background-color: #156669;
+  color: #ffffff;
 }
 
 button#volver {
-  background: linear-gradient(45deg, #8b8462,#494533);
+  background: linear-gradient(45deg, #156669,#072627);
   color: #ffffff;
   border-radius: 5px;
   border: 1px;
