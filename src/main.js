@@ -56,6 +56,15 @@ for (let i = 0; i < elements.length; i++) {
   });
 }
 
+
+
+
+
+
+
+
+
+
 let year = [];
 let roundedData = [];
 let datos = [];
@@ -79,6 +88,7 @@ indicator.addEventListener("change", () => {
           roundedData = year[data];
           
         }
+        if(roundedData!==""){
         document.getElementById("indicator-name").innerHTML =
           indicatorName + ":";
         const row = table.insertRow(0);
@@ -88,7 +98,7 @@ indicator.addEventListener("change", () => {
         cellData.insertAdjacentHTML(
           "beforeend",
           `<tr><td>${roundedData}<td></tr>`
-        );
+        );}
       }
       document.getElementById("volver").style.display = "block";
     }
@@ -105,25 +115,28 @@ let justDataOrdered = [];
 const printSorted = dataOrder => {
   table.innerHTML = "";
   dataOrder.forEach(element => {
-    const row = table.insertRow(0);
-    const cellYear = row.insertCell(0);
-    const cellData = row.insertCell(1);
-    if (element[1] !== "") {
+  
+    if (element[1] !=="") {
       let orderedData = Number(element[1]);
       // console.log(orderedData)
+      const row = table.insertRow(0);
+      const cellYear = row.insertCell(0);
+      const cellData = row.insertCell(1);
       justDataOrdered = orderedData.toFixed(1);
-    } else {
+      cellYear.insertAdjacentHTML(
+        "afterbegin",
+        `<tr><td>${element[0]}</td></tr>`
+      );
+      cellData.insertAdjacentHTML(
+        "afterbegin",
+        `<tr><td>${justDataOrdered}<td></tr>`
+      );
+     // yearOfDataOrdered.push(element[0]);
+    } /* else {
       justDataOrdered = element[1];
-    }
-    cellYear.insertAdjacentHTML(
-      "afterbegin",
-      `<tr><td>${element[0]}</td></tr>`
-    );
-    cellData.insertAdjacentHTML(
-      "afterbegin",
-      `<tr><td>${justDataOrdered}<td></tr>`
-    );
-    yearOfDataOrdered.push(element[0]);
+    } */
+    
+   
   });
   return yearOfDataOrdered, justDataOrdered;
   // console.log(yearOfDataOrdered, justDataOrdered)
@@ -132,8 +145,10 @@ const printSorted = dataOrder => {
 const orderOption = document.getElementById("type-of-order");
 //evento de la opción a ordenar
 orderOption.addEventListener("change", () => {
+  //if(roundedData!==""){
   dataOrder = window.worldBank.sort(year, orderOption.value);
   printSorted(dataOrder);
+//}
 });
 
 
