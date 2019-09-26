@@ -1,5 +1,5 @@
 
-#  Master Pokemon Go
+#  Maestro Pokemon Go
 
   
 
@@ -19,10 +19,10 @@ Es una página para usuarios intermedios y avanzados que juegan de forma constan
 
 Para conocer a nuestro usuario realizamos una encuesta a 59 personas donde destacamos que el jugador promedio es hombre (76%) de 25 a 35 años (66%) que juega diariamente (73%) , juega por nostalgia, usa aplicaciones para conocer las estadísticas de los Pokémon y lo hace desde su celular por lo que necesita una pagina responsive.
 
-  #### Encuesta
+#### Encuesta
 Realizamos la encuesta a través de un  [Formulario on line](https://forms.gle/GBV3iornck3b5FG19) a jugadores de Pokemon Go. 
-  Éstas fueron sus principales respuestas
-![edad](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/edad.PNG?raw=true)
+  éstas fueron sus principales respuestas
+  ![edad](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/edad.PNG?raw=true)
 ![sexo](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/sexo.PNG?raw=true)
 ![que buscas](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/buscas.PNG?raw=true)
 ![datos relevantes](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/datos.PNG?raw=true)
@@ -46,7 +46,7 @@ Los datos que más le importan en el juego son
 
   
 
-## **3. Test de Usabilidad**
+## 3. Test de Usabilidad
 
   
 
@@ -89,20 +89,11 @@ Despues de validar este diseño con nuestras compañeras y creamos un [Wireframe
 - El tercer usuario era un experto en el tema, juega actualmente Pokemon Go y ubica características específicas de los Pokemon.
 
 [Test 3](https://www.loom.com/share/ead6862678d742a0806fc9fe24e99da6)
-
-  
-
-- El cuarto usuario no utilizó la aplicación de juego, pero conocía la serie animada y sus personajes.
-
-[Test 4](https://www.loom.com/share/5d39d52734d2421d87de7c96611ebd5c)
-
   
 
 - El quinto usuario jugó Pokemon Go por un período de tiempo y conocía la serie y personajes.
 
 [Test 5](https://www.loom.com/share/5d39d52734d2421d87de7c96611ebd5c)
-
-  
 
 La mayoría opinó que la página era fácil de usar y no era confusa, que tenía un diseño llamativo, pero pidieron mejorar algunos aspectos:
 
@@ -122,16 +113,11 @@ Entonces tomando en consideración las opiniones de los usuarios que realizaron 
 
   
 
-## 4. Feedback 
 
-En uno de los talleres de UX presentamos nuestro prototipo de alta fidelidad al Bootcamp y notamos que la pagina no era visualmente funcional ya que tenía muchas imágenes y colores los que no permitían una interacción orgánca con la pagina porque entregaba mucha información al usuario y lo distraía de lo escencial.
 
-Es por ello que decidimos simplificar el diseño de la pagina y hacerlo más funcional.
+ 
 
-  
-  
-
-## 5. Historias de Usuario
+## 4. Historias de Usuario
 
   
 
@@ -209,11 +195,30 @@ Es por ello que decidimos simplificar el diseño de la pagina y hacerlo más fun
 
 ➡ Criterios de aceptación La plataforma debe tener una sección de estadísticas donde exista un selector y el usuario escoja cada huevo para mostrar en una imagen todos los pokemón que aparecen en cada tipo de huevo.
 
-  
-  
-  
+## 5. Feedback 
 
-## 6. Funciones de la página
+En uno de los talleres de UX presentamos nuestro prototipo de alta fidelidad al Bootcamp y notamos que la pagina no era visualmente funcional ya que tenía muchas imágenes y colores los que no permitían una interacción orgánca con la pagina porque entregaba mucha información al usuario y lo distraía de lo escencial.
+
+Es por ello que decidimos simplificar el diseño de la pagina y hacerlo más funcional.
+## 6. Diseño
+  En respuesta a las pruebas realizadas a los usuarios y las sugerencias obtenidas de las colegas decidimos modificar el diseño a una página más simple, en donde se pudiera ver en una pantalla toda la información.
+  realizamos un nuevo wireframe de baja fidelidad y trabajamos la agina en base a este nuevo diseño.
+![enter image description here](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/2do%20wireframe.jpg?raw=true)
+
+Para la creación de la página buscamos un fondo de color suave que reflejara intensidad 
+![enter image description here](https://image.freepik.com/vector-gratis/fondo-cielo-rayos-sol_1048-2215.jpg)
+También escogimos la siguiente paleta de colores
+![enter image description here](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/colores/tabla%20de%20colores.PNG?raw=true)
+donde se utilizaron de la siguente manera 
+
+#### Barras.
+![enter image description here](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/colores/barras.PNG?raw=true)
+
+#### Cara principal de la tarjeta.
+![enter image description here](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/colores/card%20front.PNG?raw=true)
+#### Cara lateral de la tarjeta.
+![enter image description here](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/colores/card%20back.PNG?raw=true)
+## 7. Funciones de la página
 
   
 
@@ -229,31 +234,33 @@ Y la última función es para ordenar de manera alfabética ascendente y descend
   
   
 
-## 7. Pruebas unitarias
+## 8. Pruebas unitarias
 
   
 
 Realizamos pruebas unitarias para las tres funciones que creamos, en las cuales se declaró una constantes de muestra para poder realizar las pruebas por función en las cuales debían retornar si eran funciones (typeof) y realizar su función específica.
 
-  
+## 9. Página web
 
-## 8. Test de usabilidad a usuario final
+Aquí se puede ver la  [Página Maestro pokemon Go](https://rominagarrido.github.io/SCL011-data-lovers/src/index.html). 
+
+## 10. Test de usabilidad a usuario final
 
   
 
 Realizamos pruebas a usuarios con la página final a dos usuarios y fue muy satisfactoria, ya que en general las observaciones fueron a nivel de datos del juego y ambos entrevistados pudieron usar la pagina sin complicación alguna.
 
   
-
 - El usuario 1, Patricio de 33 años no tuvo ningún problema con el manejo de la página. En el siguiente link podemos ver cómo fue su experiencia: [Entrevista 1](https://youtu.be/FUtkuomQYGA).
 
 - El usuario 2, Sebastián de 27 años no tuvo ningún problema con el manejo de la página, Sin emabargo hizo comentarios sobre que requiere más información del juego en la página. En el siguiente link podemos ver cómo fue su experiencia:
 [Entrevista 2](https://youtu.be/-XGfcGoA5AE).
 
+
   
   
 
-## 9. Diagrama de flujo de la página
+## 11. Diagrama de flujo de la página
 
 ```text
 .
@@ -290,11 +297,8 @@ Realizamos pruebas a usuarios con la página final a dos usuarios y fue muy sati
 ```
 .
 
-## 10. Página web
 
-Aquí se puede ver la [Página Maestro pokemon Go](https://rominagarrido.github.io/SCL011-data-lovers/src/index.html). 
-
-## 11. Organización del Equipo
+## 12. Organización del Equipo
 
   
 
