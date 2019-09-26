@@ -2,16 +2,7 @@
 
 ## **Índice**
 
-* [Preámbulo](#preámbulo)
-* [Descripción](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
+
 
 ***
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/4fFpc2b/iconoblanco.png" alt="iconoblanco" border="0"></a> 
@@ -21,12 +12,12 @@
 ***
 
 
-Índice
 
-*  planificación
-* investigación
-* información recolectada
-* proceso de diseño
+
+* [Planificación](#planificación)
+* [investigación](#investigación)
+* [información recolectada](#información)
+* [proceso de diseño](#proceso)
 
 ***
 
@@ -36,11 +27,17 @@
 
 ***
 
-* Investigación sobre el video juego League of legends (LOL)
+* Definición
 
-League of legends es un juego de estrategia,con dos equipos de campeones con estilo de juegos diferentes atravez de un campo de batallas. League of Legends es un juego muy competitivo y rápido con acción y estrategia diseñado para  que juegues solo o en modo cooperativo con amigos . League of Legends es un videojuego del género multijugador de arena de batalla en línea y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X. En un principio los servidores estaban alojados en la empresa GOA y fue vendida a la empresa china Tencent Holdings Limited.
+League of Legends
+(también conocido por sus siglas LoL) es un videojuego del género multijugador de arena de batalla en línea (MOBA) y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X. En un principio los servidores estaban alojados en la empresa GOA y fue vendida a la empresa china Tencent Holdings Limited.
 
-<a href="https://ibb.co/VSX6rg4"><img src="https://i.ibb.co/SnqSWtC/1280x1024-Z4lj-J.png" alt="1280x1024-Z4lj-J" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>photo upload</a><br />
+El juego fue diseñado para el sistema operativo Microsoft Windows y lanzaron una beta para OS X dejando al poco tiempo el proyecto de lado. Esta beta ha sido mejorada por parte de usuarios del juego, haciendo posible jugar a una versión actualizada de League of Legends.
+
+En octubre de 2012, contaba con 70 millones de jugadores registrados. Para marzo de 2013 se registró 5 millones de jugadores conectados al mismo tiempo en todo el mundo. Es un juego de alta competitividad siendo uno de los juegos más populares de los deportes electrónicos (e-sports).
+
+
+<a href="https://ibb.co/VSX6rg4"><img src="https://i.ibb.co/SnqSWtC/1280x1024-Z4lj-J.png" alt="1280x1024-Z4lj-J" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>juego LOL</a><br />
 <a href="https://ibb.co/XzxQR6n"><img src="https://i.ibb.co/qRYSQhH/league-of-legends-main-gameplay.jpg" alt="league-of-legends-main-gameplay" border="0"></a>
 
 ***
@@ -59,18 +56,20 @@ hombres entre 20 a 34 años
 obteniendo informacion sobre campeones, cuál fuerza es más importante etc.
 
 ***
+[Historias de usuarios](#Historias)
 
-* yo como usuario quiero poder  ver toda la data de campeones.
+* yo como usuario quiero ver a todos los campeones para saber cuántos hay.
 
-* yo como usuario quiero poder ver por debilidada y fuerza para poder decidir que campeón usar .
+* yo como usuario quiero filtrar por tipos para conocer más sobre ellos .
 
-* yo como usuario quiero poder filtar campeones por más fuerte .
+* yo como usuario quiero ver a los campeones más poderosos .
 
-* yo como usuario quiero tener la información de todos los campeones .
+* yo como usuario me gustaria saber información extra sobre los campeones .
 
 ***
 
 * Proceso del diseño
+
 
 * la interfaz nos permite ver la importancia de como llevamos el proyecto ...
 
@@ -79,8 +78,9 @@ obteniendo informacion sobre campeones, cuál fuerza es más importante etc.
 
 <a href="https://ibb.co/M8X6WSV"><img src="https://i.ibb.co/Xyw8NLs/20190911-191311.jpg" alt="20190911-191311" border="0"></a>
 
+* A continuación prototipo baja fidelidad:
 
-
+<a href="https://ibb.co/4FKdbyw"><img src="https://i.ibb.co/D1zpBXP/baja-fidelidad-data-lovers.png" alt="baja-fidelidad-data-lovers" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>baja fidelidad en balsamic</a><br />
 
 
 ***
@@ -102,27 +102,20 @@ Imagen del producto final
 
 ***
 
-En este link se muestra nuestra prueba de historia de usuarios :
+En este link se muestra testeo de usuarios :
 
-* quedan conforme con la información entregada sobre el producto
+* quedan conformes con la información entregada sobre el producto
 * queda conforme con la info de las carta sobre los personajes del video juego (LOL)
 * nos sugiere ir actualizando la info a medida que el juego se va actualizando .. 
 
 
-https://vimeo.com/user103150170/review/361632635/02b6cd912f
+***
 
 ***
 
-https://vimeo.com/user103150170/review/361634844/2d9c93ca4c
+nuestro producto final cumple con los requerimientos de usuarios..
 
 ***
 
-nuestro producto final cumple con los requerimientos de usuarios y nos deja con mira de ir mejorando nuestro producto final a escalas de mejoras.
-
-***
-
-* Creadoras del producto :
-
-Marcia Alegria , Macarena Sáez .
 
 
