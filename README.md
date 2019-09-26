@@ -31,6 +31,8 @@
 
   **Para revisar nuestro proyecto, haz click [aquí](https://mariapazbeltran.github.io/SCL011-data-lovers/src/index.html).**
 
+ **Para revisar nuestro Trello, haz click [aquí](https://trello.com/b/k3mIDmkn/steam-tf2).** 
+
 ## **1. Contexto**
 
   
