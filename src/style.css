@@ -1,153 +1,150 @@
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url("https://image.freepik.com/vector-gratis/fondo-cielo-rayos-sol_1048-2215.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-cielo-rayos-sol_1048-2215.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 #titulo{
-  position: absolute;
-  height: 100px;
-  width: 150px;
-  left:2%;
+position: absolute;
+height: 100px;
+width: 150px;
+left:2%;
 }
 
 #intro{
 text-align: center;
-  left: 50%;
+left: 50%;
 }
 
 
 #selection{
-  background-color:rgb(96, 96, 236);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  color: white;
-  font-family: Verdana, sans-serif;
-  align-items: center;
-  margin: 20px;
-  height: 30px;
-  font-style: italic;
+background-color:rgb(97, 101, 176);
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+color: white;
+font-family: Verdana, sans-serif;
+align-items: center;
+margin: 20px;
+height: 30px;
+font-style: italic;
 }
 
 
 #results {
-   
-    margin: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+ 
+  margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .flip-card {
-  background-color: transparent;
-  width: 150px;
-  height: 200px;
-  margin: 25px;
-  border-radius: 20px;
+background-color: transparent;
+width: 150px;
+height: 200px;
+margin: 25px;
+border-radius: 20px;
 }
-      
+    
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
 }       
-      
+    
 /*da la vuelta a la tarjeta*/
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
+    
+/* posicion de cada lado de la tarjeta */
+.flip-card-front, .flip-card-back {
+ position: absolute;
+ width: 80%;
+ height: 100%;
+ backface-visibility: hidden;
       
- /* posicion de cada lado de la tarjeta */
- .flip-card-front, .flip-card-back {
-   position: absolute;
-   width: 80%;
-   height: 100%;
-   backface-visibility: hidden;
-        
 }
-      
+    
 /* lado de adelante */
 .flip-card-front {
- background-color: rgb(162, 162, 233);
- width: 150px;
- height: 200px;
- margin: 15px;
- border-radius: 20px;
+background-color: rgb(170, 174, 251);
+width: 150px;
+height: 200px;
+margin: 15px;
+border-radius: 20px;
 }
-      
+    
 /* lado de atras */
 .flip-card-back {
- background-color: rgb(90, 90, 226);
- width: 150px;
- height: 200px;
- margin: 15px;
- border-radius: 20px;        
- color: white;
- transform: rotateY(180deg);
+background-color: rgb(51, 54, 118);
+width: 150px;
+height: 200px;
+margin: 15px;
+border-radius: 20px;        
+color: white;
+transform: rotateY(180deg);
 }
 
- footer{
-  font-family:  'Arial Narrow', Arial, sans-serif;
-  background-color:rgb(96, 96, 236);
-  color: white;
-  text-align: center;
-  text-align-last: center;
-  margin: 20px;
-  height: 20px;
-  font-style: italic;
-  }                  
+footer{
+font-family:  'Arial Narrow', Arial, sans-serif;
+background-color:rgb(97, 101, 176);
+color: white;
+text-align: center;
+text-align-last: center;
+margin: 20px;
+height: 20px;
+font-style: italic;
+}                  
 
 /* Para tablets */
 @media only screen and (min-width: 641px) and (max-width: 1007px){
-    #results{
-    width:100%;
-    margin: 0px;
+  #results{
+  width:100%;
+  margin: 0px;
 }
 #intro{
-   width: 70%;
+ width: 70%;
 margin-left:20%;
 }
 #titulo{
-  margin: 0px; 
+margin: 0px; 
 }
 #selection{
-  height: 80px;
-  
+height: 80px;
+
 }
 }
 
 /*Para celular*/
-@media only screen and (min-width: 350px) and (max-width:640px){
-    #results{
-      margin: 0px;
-      width:100%;
+@media only screen and (max-width: 640px){
+  #results{
+    margin: 0px;
+    width:100%;
 }
 #intro{
-  text-align: center;
-  width: 100%;
-  margin-left: 5%
+text-align: center;
+width: 100%;
+margin-left: 5%
 }
 header{
-  width: 90%;
+width: 90%;
 }
 #titulo{
-  display:none;
+display:none;
 }
 #selection{
-  margin:2px;
-  flex-flow: wrap;
-  text-align: center;
-  height: 80px; 
-  
-}
-footer{
-  height: 40px;
+margin:2px;
+flex-flow: wrap;
+text-align: center;
+height: 80px; 
+
 }
 }
