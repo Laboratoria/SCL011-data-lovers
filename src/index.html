@@ -1,20 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+    <nav id="mimenu" class="menu">
+
+      <ul id="padre" class="menuNavegation">
+   
+          <li class="current"><a href="https://las.leagueoflegends.com/es/news/">    Noticias.. .    </a></li>
+          <li class="current"><a href="https://signup.las.leagueoflegends.com/es/signup/index#/">   Jugar .  .    </a></li>
+          <li class="current"><a href="https://las.leagueoflegends.com/es/page/unete-la-comunidad-de-league-legends">   Comunidad  .   .   </a></li>
+          <li class="current"><a href="https://lolprofile.net/es/statistics">   Estadísticas . . </a></li>
+      </ul>
+  </nav>
+    <div class="row" id="leagueoflegends"> 
+    </div>
+  <div id="menu" class="header">
+  
+  </div>
+  <header>
+      
+    <div class="container-img">
+        <div id="leagueOfLegends">
+    <img id = "league" src="https://i.ibb.co/ZYnfsrY/lol-logo.png"> 
+        </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="btn">
+
+    <button value="champion" id="btnchampion">Campeones </button>
+    <button value="MostPower" id="btnMostPower">Mas Poderosos</button>
+    <button value="additional" id="stats">Mas información</button>
+
+    </div>
+
+    <div class="select">
+      <div id="select">
+      
+            <select name="lolOrder" id="order">
+              <option value="" >selecciona orden</option>
+              <option value="az" >A-Z</option>
+              <option value="za" >Z-A</option>
+
+            </select>
+            
+            <select name="tags" id="tags">
+              <option value="" >selecciona Tipos</option>
+              <option value="Fighter">Fighter</option>
+              <option value="Tank">Tank</option>
+              <option value="Assassin" >Assasin</option>
+              <option value="Support">Support</option>
+              <option value="Mage">Mage</option>
+              <option value="Marksman">Marksman</option>
+              <option value="Melee">Melee</option>
+
+            </select>
+        
+      </div>
+    </div>
+
+    </section>
+  
+
+    
+      <div value="root" id="root" >
+
+      </div>
+
+
+
+    <footer>
+
+      © 2019 Riot Games Inc. Todos los derechos reservados. Riot Games, League of Legends y PvP.net son marcas comerciales, marcas de servicios o marcas registradas de Riot Games, Inc.
+      
+    </footer>
+      <script src="./data/lol/lol.js"></script>
+      <script src="data.js"></script>
+      <script src="main.js"></script>
+    </body>
 </html>
