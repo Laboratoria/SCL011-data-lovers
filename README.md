@@ -19,7 +19,14 @@ Es una página para usuarios intermedios y avanzados que juegan de forma constan
 
 Para conocer a nuestro usuario realizamos una encuesta a 59 personas donde destacamos que el jugador promedio es hombre (76%) de 25 a 35 años (66%) que juega diariamente (73%) , juega por nostalgia, usa aplicaciones para conocer las estadísticas de los Pokémon y lo hace desde su celular por lo que necesita una pagina responsive.
 
-  
+  #### Encuesta
+Realizamos la encuesta a través de un  [Formulario on line](https://forms.gle/GBV3iornck3b5FG19) a jugadores de Pokemon Go. 
+  Éstas fueron sus principales respuestas
+![edad](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/edad.PNG?raw=true)
+![sexo](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/sexo.PNG?raw=true)
+![que buscas](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/buscas.PNG?raw=true)
+![datos relevantes](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/datos.PNG?raw=true)
+![cuanto juegas](https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/encuesta/juegas.PNG?raw=true)
 
 Los datos que más le importan en el juego son
 
