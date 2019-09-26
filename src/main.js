@@ -1,5 +1,16 @@
-//declaramos una variable con la que podremos acceder a la data
-const takeData = window.STEAM.appnews.newsitems;
+//utiliza la info guardada en Json.
+fetch("https://raw.githubusercontent.com/mariaPazBeltran/SCL011-data-lovers/master/src/data/steam/steam.json")
+.then(response => {
+   return response.json()})
+    //console.log( response.json())})
+    .then(data1=>{
+        //declaramos una variable con la que podremos acceder a la data
+        const takeData = data1.appnews.newsitems;
+        console.log(takeData)
+  
+
+
+
 //declaramos una variable que contenga los botones
 let buttonFilters = document.getElementsByClassName("btnfilters");
 // declaramos una variable vacia a la cual luego le concatenaremos el valor de los botones de filtrado
@@ -8,6 +19,7 @@ let valueButton = "";
 let resultadoFor = "";
 //declaramos variable vacía para luego usarla para conectar estadisticas, filtrado y tarjetas.
 let statisticsNews = "";
+
 
 // Llamar base de datos y dejar info en tarjetas nuevas... esta se despliega apenas el usuario ingrese a la Página
 for (let j = 0; j<takeData.length;j++){
@@ -93,3 +105,4 @@ selectSort.addEventListener ('change', ()=>{
     let ascendente = window.filterData.sortByDate(resultadoFor,  document.getElementById("orderSelect").value)
     renderNews(ascendente);
 })
+});
