@@ -21,8 +21,7 @@ body {
     "article article instituciones instituciones";
 }
 .container .header {
- 
-  background:#15666985;
+  background: #15666985;
   grid-area: header;
 }
 
@@ -33,27 +32,22 @@ body {
   align-items: center;
   justify-content: center;
   align-items: center;
-  background:#15666985;
-  
+  background: #15666985;
+
   padding: 1%;
 }
 
 .container .banner > img {
   margin: 0%;
-
   width: 50%;
   height: 50%;
 }
 
 div.definition {
-  
   top: 40%;
   left: 90%;
   color: rgb(47, 45, 35);
-  background:#1566690a;
- 
-  
-  
+  background: #1566690a;
 }
 
 .container .buttonPaises {
@@ -63,7 +57,7 @@ div.definition {
   text-align: center;
 }
 .botones {
-  background: linear-gradient(45deg, #156669,#072627);
+  background: linear-gradient(45deg, #156669, #072627);
   color: rgb(251, 251, 247);
   padding: 1%;
   margin: 1%;
@@ -103,26 +97,34 @@ section#datos.secciones {
 select#indicator.indicatorsSelect {
   text-justify: auto;
   box-shadow: -1px 0.5px 0.5px 0.5px;
-
   color: #272417d5;
-
   margin-top: 1%;
 }
 select#type-of-order {
   box-shadow: -1px 0.5px 0.5px 0.5px;
 }
-
+.chartcontainer {
+  transform: translate(450px, 150px);
+  position: absolute;
+  width: 50vw;
+  height:40vh;
+  
+  margin: 0%;
+}
 div#tableBox {
   box-align: center;
   width: 100%;
-}
-#tableBox {
+  display: none;
   text-align: center;
   border-collapse: collapse;
   align-items: center;
   margin-top: 1%;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+}
+.titletablet {
+  display: none;
 }
 h2#indicator-name {
   margin-top: 2%;
@@ -141,17 +143,31 @@ thead {
 }
 
 button#volver {
-  background: linear-gradient(45deg, #156669,#072627);
+  background: linear-gradient(45deg, #156669, #072627);
   color: #ffffff;
   border-radius: 5px;
   border: 1px;
   padding: 1%;
-  display: none;
+
   position: relative;
-  left: 90%;
+  left: 78%;
   top: 0%;
+  width: 17%;
+  height: 10%;
 }
 
+@media only screen and (max-width: 1440px) {
+
+  chartcontainer {
+    transform: translate(500px, 150px);
+  }
+}
+@media only screen and (max-width: 1280px) {
+
+  chartcontainer {
+    transform: translate(480px, 150px);
+  }
+}
 @media only screen and (max-width: 768px) {
   .container {
     width: 100%;
@@ -175,8 +191,19 @@ button#volver {
   .secciones .indicatorsSelect {
     width: 95%;
     font-size: 0.9rem;
-
     text-align: justify;
+  }
+  #tabledate{
+    width: 40%;
+  }
+  th,
+  td {
+    padding: 0%;
+   
+  }
+  .chartcontainer {
+    transform: translate(300px, 100px);
+   
   }
 }
 
@@ -212,12 +239,23 @@ button#volver {
   button#volver {
     left: 0%;
   }
-
+  .chartcontainer {
+    transform: translate(0px, 5px);
+    position: relative;
+    width: 90vw;
+    height: 30vh;
+  }
+  select#type-of-order{
+    transform: translate(0px, 55px);
+  }
+  div#tableBox{
+    transform: translate(0px, 70px);
+  }
   th,
   td {
     padding: 3%;
     text-align: center;
-    width: auto;
+   
   }
   .secciones .titleSelect,
   .secciones .indicatorsSelect {
@@ -226,3 +264,11 @@ button#volver {
     text-align: justify;
   }
 }
+@media only screen and (max-width: 320px) {
+  select#type-of-order{
+    transform: translate(0px, 22px);
+  }
+  div#tableBox{
+    transform: translate(0px, 32px);
+  }
+  }

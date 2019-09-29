@@ -4,7 +4,6 @@ let filteredCountry = [];
 const buttonCountry = document.getElementsByClassName("botones");
 let filteredIndicators = [];
 
-//const countrySelected = document.getElementById('countrySelected');
 //evento click en los botones pais para filtrar el pais que se selecciona
 for (let i = 0; i < buttonCountry.length; i++) {
   buttonCountry[i].addEventListener("click", () => {
@@ -31,7 +30,7 @@ for (let i = 0; i < buttonCountry.length; i++) {
 }
 
 const indicator = document.getElementById("indicator");
-//Ponemos valore inicial en el select
+//Ponemos valor inicial en el select
 indicator.insertAdjacentHTML(
   "beforeend",
   '<option value="">Selecciona un indicador</option>'
@@ -56,29 +55,25 @@ for (let i = 0; i < elements.length; i++) {
   });
 }
 
-
-
-
-
-
-
-
-
-
 let year = [];
 let roundedData = [];
 let datos = [];
 const table = document.getElementById("indicator-table");
-
+let yearOfData = [];
+let justData = [];
+const chart = document.getElementById("chart").getContext("2d");
 //función para imprimir datos de variable en el html
 indicator.addEventListener("change", () => {
+  document.getElementById("tableBox").style.display = "block";
   document.getElementById("indicator-name").innerHTML = "";
   table.innerHTML = "";
+
   let indicatorSelect = indicator.value;
   filteredIndicators.forEach(element => {
     if (element.indicatorCode === indicatorSelect) {
       let indicatorName = element.indicatorName;
       year = element.data;
+
       for (let data in year) {
         if (year[data] !== "") {
           datos = parseFloat(year[data]);
@@ -86,26 +81,54 @@ indicator.addEventListener("change", () => {
           //console.log(year)
         } else {
           roundedData = year[data];
-          
         }
-        if(roundedData!==""){
-        document.getElementById("indicator-name").innerHTML =
-          indicatorName + ":";
-        const row = table.insertRow(0);
-        const cellYear = row.insertCell(0);
-        const cellData = row.insertCell(1);
-        cellYear.insertAdjacentHTML("beforeend", `<tr><td>${data}</td></tr>`);
-        cellData.insertAdjacentHTML(
-          "beforeend",
-          `<tr><td>${roundedData}<td></tr>`
-        );}
+        if (roundedData !== "") {
+          document.getElementById("indicator-name").innerHTML =
+            indicatorName + ":";
+          const row = table.insertRow(0);
+          const cellYear = row.insertCell(0);
+          const cellData = row.insertCell(1);
+          cellYear.insertAdjacentHTML("beforeend", `<tr><td>${data}</td></tr>`);
+          cellData.insertAdjacentHTML(
+            "beforeend",
+            `<tr><td>${roundedData}<td></tr>`
+          );
+        }
       }
+
+      //extrayendo los valores de años
+      yearOfData = Object.keys(year);
+      //extrayendo los valores de datos
+      justData = Object.values(year);
+
       document.getElementById("volver").style.display = "block";
     }
   });
 
+  getMyChartPlease(yearOfData, justData, chart);
   return year;
 });
+
+//función de gráfica normal
+const getMyChartPlease = (yearOfData, justData, chart) => {
+  //Pintando la gráfica
+  let lineChartData = new window.Chart(chart, {
+    type: "line",
+    data: {
+      labels: yearOfData,
+      datasets: [
+        {
+          label: "Datos del indicador entre 1960 a 2017",
+          backgroundColor: "rgba(184, 161, 29, 0.246)",
+          borderColor: "rgba(21, 102, 105 )",
+          data: justData
+        }
+      ]
+    }
+  });
+  return lineChartData;
+};
+
 let dataOrder = [];
 //let yearOfData = [];
 //let justData = [];
@@ -115,8 +138,7 @@ let justDataOrdered = [];
 const printSorted = dataOrder => {
   table.innerHTML = "";
   dataOrder.forEach(element => {
-  
-    if (element[1] !=="") {
+    if (element[1] !== "") {
       let orderedData = Number(element[1]);
       // console.log(orderedData)
       const row = table.insertRow(0);
@@ -131,12 +153,7 @@ const printSorted = dataOrder => {
         "afterbegin",
         `<tr><td>${justDataOrdered}<td></tr>`
       );
-     // yearOfDataOrdered.push(element[0]);
-    } /* else {
-      justDataOrdered = element[1];
-    } */
-    
-   
+    }
   });
   return yearOfDataOrdered, justDataOrdered;
   // console.log(yearOfDataOrdered, justDataOrdered)
@@ -148,10 +165,8 @@ orderOption.addEventListener("change", () => {
   //if(roundedData!==""){
   dataOrder = window.worldBank.sort(year, orderOption.value);
   printSorted(dataOrder);
-//}
+  //}
 });
-
-
 
 const volver = document.getElementById("volver");
 volver.addEventListener("click", () => {
@@ -161,18 +176,3 @@ volver.addEventListener("click", () => {
   document.getElementById("article").style.display = "block";
   document.getElementById("instituciones").style.display = "block";
 });
-
-
-/* const meanButton = document.getElementById('mean-button');
-const meanResult = document.getElementById('mean-result');
-meanButton.addEventListener("click", () => {
-    let dataValues = [];
-  for (let i = 0; i < justData.length; i++) {
-    if (justData[i] !== "") {
-      dataValues.push(Number(justData[i]));
-      
-    }
-  }
-  let result = window.worldBank.meanOfValues(dataValues);
-  meanResult.innerHTML = result;
-}); */

@@ -1,123 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    
-
   </head>
-  
-    
+
   <body>
     <div class="container">
-  <header class="header"> 
-    <h1 class="logo"><img src="./images/LogoData.png" alt="logos" ></h1>
-    
-  </header>
+      <header class="header">
+        <h1 class="logo"><img src="./images/LogoData.png" alt="logos" /></h1>
+      </header>
 
-
-    <section  id="banner" class="banner">
-        <div class="definition"> 
-           
-            <p>En esta página puedes acceder  a datos estadísticos específicos, 
-                con respecto al Rol de la Mujer en cuatro países de Latinoamérica.</p>
-           
-          </div>
-        <img src="images/imgWomanMobile.jpg" alt="imgWomanMobile"> 
-        
-      </section>
-     
-    <section class="buttonPaises" id="inicio">
-        
-      <nav class="buttonPais" >
-        <button  class="botones" id="per"   value="PER">Peru</button>
-        <button  class="botones"  id="chl"  value="CHL">Chile</button>
-        <button  class="botones"  id="mex"  value="MEX">México</button>
-        <button  class="botones"  id="bra"  value="BRA">Brasil</button>
-
-       
-      </nav>
+      <section id="banner" class="banner">
+        <div class="definition">
+          <p>
+            En esta página puedes acceder a datos estadísticos específicos, con
+            respecto al Rol de la Mujer en cuatro países de Latinoamérica.
+          </p>
+        </div>
+        <img src="images/imgWomanMobile.jpg" alt="imgWomanMobile" />
       </section>
 
+      <section class="buttonPaises" id="inicio">
+        <nav class="buttonPais">
+          <button class="botones" id="per" value="PER">Peru</button>
+          <button class="botones" id="chl" value="CHL">Chile</button>
+          <button class="botones" id="mex" value="MEX">México</button>
+          <button class="botones" id="bra" value="BRA">Brasil</button>
+        </nav>
+      </section>
 
+      <section id="article" class="article">
+        <div>
+          <h3>Noticias</h3>
+          <article>
+            <p>
+              El sistema hace agua: la adversa ruta de las 197 mujeres
+              asesinadas, que sí habían denunciado a sus parejas. Con gran
+              convocatoria se lleva a cabo seminario sobre el rol de las mujeres
+            </p>
+          </article>
+        </div>
+      </section>
 
+      <section id="instituciones" class="instituciones">
+        <div>
+          <h3>Instituciones Relacionadas</h3>
+          <article>
+            <p>
+              <a href="https://www.sernameg.gob.cl/">Sernagem</a><br />
+              <a href="http://cem.cl/">Centro de estudios de la Mujer</a><br />
+              <a href="https://www.unwomen.org/es/"> ONU Mujeres </a><br />
+              <a href="http://www.comunidadmujer.cl/">Comunidad Mujer </a><br />
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
 
-           
-<section id="article" class="article">
-    <div >              
-        <h3>Noticias</h3>
-     <article>
-       
-        <p>El sistema hace agua: la adversa ruta de las 197 mujeres asesinadas, que sí habían denunciado a sus parejas.
-            Con gran convocatoria se lleva a cabo seminario sobre el rol de las mujeres</p>
-    </article>
-  </div>
-  </section>
-  
-  
-  
-  <section  id="instituciones" class="instituciones">
-  <div >              
-      <h3>Instituciones Relacionadas</h3>
-    <article>
-        
-        <p> <a href="https://www.sernameg.gob.cl/">Sernagem</a><br>
-            <a href="http://cem.cl/">Centro de estudios de la Mujer</a><br>
-            <a href="https://www.unwomen.org/es/"> ONU Mujeres </a><br>
-            <a href="http://www.comunidadmujer.cl/">Comunidad Mujer </a><br>
-          
-        </p>
-    </article>
-  </div>
-  </section>
-
-</div>
-
-    <section class="secciones" id="datos" >
+    <section class="secciones" id="datos">
       <button id="volver">Inicio</button>
-        <h2 id="countrySelected"></h2>
-       
-      <div><h3>Selecciona el indicador:</h3>
-        <select class="indicatorsSelect" id="indicator">
-        </select></div>
-        
-        <div class="titleSelect"><h2 id="indicator-name"></h2>
-       
+      <h2 id="countrySelected"></h2>
+
+      <div>
+        <h3>Selecciona el indicador:</h3>
+        <select class="indicatorsSelect" id="indicator"> </select>
+
+        <div class="titleSelect">
+          <h2 id="indicator-name"></h2>
+          <div class="chartcontainer"><canvas id="chart"></canvas></div>
           <select id="type-of-order">
             <option value="">Elige el orden del dato</option>
             <option class="order-option" value="ascendent">Descendente</option>
-            <option class="order-option" value="descendent">Ascendente</option>
-          </select></div>
-        
-      
-     <div id="tableBox">
-      
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <td ><strong>Año</strong> </td>
-                <td ><strong>Dato</strong></td>
-              </tr>
-            </thead>
-            <tbody id="indicator-table">
-            </tbody>
-          </table>
+            <option class="order-option" value="descendent"
+              >Ascendente</option
+            > </select
+          ><!-- <button id="stats">Estadísticas</button> -->
+        </div>
+
+        <div id="tableBox">
+          
+            <table id="tabledate">
+              <thead>
+                <tr>
+                  <td><strong>Año</strong></td>
+                  <td><strong>Dato</strong></td>
+                </tr>
+              </thead>
+              <tbody id="indicator-table"></tbody>
+            </table>
+          
         </div>
       </div>
-      
-      
-     
     </section>
-     
 
-   
-    
-   <script src="./data/worldbank/worldbank.js"></script> 
-    
+    <script src="./data/worldbank/worldbank.js"></script>
+
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
