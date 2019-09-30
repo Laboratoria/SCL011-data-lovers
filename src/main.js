@@ -7,7 +7,7 @@ fetch('https://raw.githubusercontent.com/NataliaSaavedraM/SCL011-data-lovers/mas
   .then(data=>{
   
    const buttonCountry = document.getElementsByClassName("botones");
-    
+   let filteredCountry = []; 
 //evento click en los botones pais para filtrar el pais que se selecciona
 for (let i = 0; i < buttonCountry.length; i++) {
   buttonCountry[i].addEventListener("click", () => {
