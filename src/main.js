@@ -1,9 +1,13 @@
-/* Manejo del DOM */
-const wbData = window.WORLDBANK;
-let filteredCountry = [];
-const buttonCountry = document.getElementsByClassName("botones");
-let filteredIndicators = [];
 
+
+
+fetch('https://raw.githubusercontent.com/NataliaSaavedraM/SCL011-data-lovers/master/src/data/worldbank/worldbank.json')
+.then(response=>{
+  return response.json()})
+  .then(data=>{
+  
+   const buttonCountry = document.getElementsByClassName("botones");
+    
 //evento click en los botones pais para filtrar el pais que se selecciona
 for (let i = 0; i < buttonCountry.length; i++) {
   buttonCountry[i].addEventListener("click", () => {
@@ -24,7 +28,7 @@ for (let i = 0; i < buttonCountry.length; i++) {
     } else if (countryValue === "CHL") {
       countrySelected.innerHTML = " Chile";
     }
-    filteredCountry = window.worldBank.filterCountry(wbData, countryValue);
+    filteredCountry = window.worldBank.filterCountry(data, countryValue);
     return filteredCountry;
   });
 }
@@ -40,6 +44,10 @@ const print = (indicatorName, indicatorCode) => {
   const result = `<option value = "${indicatorCode}" > ${indicatorName} </option>`;
   indicator.insertAdjacentHTML("beforeend", result);
 };
+
+
+
+let filteredIndicators = [];
 const elements = document.getElementsByClassName("botones");
 //evento click para mostrar las opciones del select
 for (let i = 0; i < elements.length; i++) {
@@ -176,3 +184,9 @@ volver.addEventListener("click", () => {
   document.getElementById("article").style.display = "block";
   document.getElementById("instituciones").style.display = "block";
 });
+
+
+
+
+
+})
