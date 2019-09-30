@@ -1,11 +1,11 @@
 # **Data Lovers**
 
-  
+  ## Web
+  ![enter image description here](https://i.ibb.co/Lh8CHYh/index.png)
+
+  ![enter image description here](https://i.ibb.co/RbN4mVZ/seccion-Datos.png)
 
 ## **Usuario**
-
-  
-
 Hemos escogido la Data WorlBank, puesto que el perfil de nuestro usuario son personas, principalmente **Estudiantes de ciencias sociales**, que estan interesadas en saber cómo ha ido evolucionando **el rol de la mujer en la sociedad latinoamericana**. Por lo cual nos hemos enfocado principalmente en, Estudiantes y académicos de estudios Humanistas.
 
 En primera instancia fuimos a la Universidad Católica, a la facultad de ciencias sociales donde tomamos una muestra de 5 alumnos de distintas carreras, con el propósito de obtener información respecto a la percepción del usuario sobre nuestra aplicación.
@@ -62,7 +62,7 @@ Mujeres Lideres 5
 
 **Sujeto 3**
 
-Audio: AUD-20190830WA0012
+Audio: AUD-20190830WA0012 
 
 Perfil: Mujer estudiante de Psicología
 

@@ -161,6 +161,9 @@ button#volver {
   chartcontainer {
     transform: translate(500px, 150px);
   }
+  #tabledate{
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 1280px) {
 
