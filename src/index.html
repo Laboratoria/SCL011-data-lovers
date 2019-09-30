@@ -68,31 +68,34 @@
       <div>
         <h3>Selecciona el indicador:</h3>
         <select class="indicatorsSelect" id="indicator"> </select>
-
+        <a href="#popup" class="popup-link">Ver Grafíco</a>
         <div class="titleSelect">
           <h2 id="indicator-name"></h2>
+       
+          <div class="modal-wrapper" id="popup">
+              <a class="popup-cerrar" href="#">X</a>
           <div class="chartcontainer"><canvas id="chart"></canvas></div>
+       
+        </div>
+       
           <select id="type-of-order">
             <option value="">Elige el orden del dato</option>
             <option class="order-option" value="ascendent">Descendente</option>
-            <option class="order-option" value="descendent"
-              >Ascendente</option
-            > </select
-          ><!-- <button id="stats">Estadísticas</button> -->
+            <option class="order-option" value="descendent">Ascendente</option>
+          </select>
+          <!-- <button id="stats">Estadísticas</button> -->
         </div>
-
+<br>
         <div id="tableBox">
-          
-            <table id="tabledate">
-              <thead>
-                <tr>
-                  <td><strong>Año</strong></td>
-                  <td><strong>Dato</strong></td>
-                </tr>
-              </thead>
-              <tbody id="indicator-table"></tbody>
-            </table>
-          
+          <table id="tabledate">
+            <thead>
+              <tr>
+                <td><strong>Año</strong></td>
+                <td><strong>Dato</strong></td>
+              </tr>
+            </thead>
+            <tbody id="indicator-table"></tbody>
+          </table>
         </div>
       </div>
     </section>
