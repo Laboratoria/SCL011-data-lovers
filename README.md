@@ -293,6 +293,8 @@ Las Modificaciones realizadas se encuentran en [Loom]( https://www.loom.com/shar
 
   Colores
   ![enter image description here](https://i.ibb.co/vYw25zF/Paletade-Colores.png)
+
+  
  Se escogieron estas tonalidades por tratarse de una pagina que si bien entrega información de distintos aspectos sobre la mujer, gran parte de esta información tiene que ver con datos duros, donde los usuarios son principalmente estudiantes que buscan analizar el contenido de la pagina.  Es por este motivo que creo que colores tan purpura pueden violentar visualmente a nuestro target. Siendo estos colores mas eficaces al transmitir un concepto de seriedad, femineidad y entusiasmo. 
 
 ## **Evaluación Heurística**
