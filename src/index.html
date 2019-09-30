@@ -1,20 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="dataLovers-contents">
+        <header id="titleHeader">
+                <!-- Banner y Titulo -->
+ 
+         <div id="banner">
+             <a href="index.html">
+                 <img id="bannerImg" src="../images/banner_datalovers.jpg" alt="banner-TF2">
+             </a>
+             <div class="container">
+                     <h2>Novedades TF2</h2>
+                 </div>
+         </div>
+         <!-- Links a Steam y TF2 wiki -->
+         <nav id="linksNav">
+                 <a target="_blank" class="links" href="https://steamcommunity.com/app/440">Steam Community</a>
+                 <a target="_blank" class="links" href="https://help.steampowered.com/es-419/">Steam Support</a>
+                 <a target="_blank" class="links" href="https://wiki.teamfortress.com/wiki/Main_Page">TF2 Wiki</a>
+         </nav>
+     </header>
+     <main>
+         <!-- botones para filtrar según blogs (atributo "feedlabel") -->
+         <section id="filters">
+             <button class="btnfilters" value="feedlabel">Mostrar Todo</button>
+             <button class="btnfilters" value="Product Update">Steam Updates</button>
+             <button class="btnfilters" value="TF2 Blog">TF2 Blog</button>
+             <button class="btnfilters" value="Eurogamer">Eurogamer</button>
+             <button class="btnfilters" value="PC Gamer">PC Gamer</button>
+             <button class="btnfilters" value="Rock, Paper, Shotgun">RPS</button>
+         </section>
+         <!-- select que permite al usuario ordenar por fecha -->
+         <section id="orderDate">
+             <label id="textSelect">Ordenar por Fecha:</label>
+             <select name="select" id="orderSelect">
+                 <option value="">ordenar desde...</option>
+                 <option value="recent">Más recientes</option>
+                 <option value="older">Más antiguos</option>
+             </select>
+         </section>
+         <section>
+             <!-- contenedor en el que aparecerá la estadística de las noticias -->
+             <div id="statisticsContent"></div>
+             <!-- contenedor en el que se desplegan las noticias -->
+             <div id="content"></div>
+         </section>
+     </main>
+  </div>
+  <script src="data/steam/steam.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
 </html>

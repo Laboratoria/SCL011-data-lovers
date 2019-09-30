@@ -1,0 +1,189 @@
+body{
+   font-family: Roboto;
+   margin: 0px;
+   background-color: #1B2838;
+}
+/* -- Header -- */
+
+.links{
+   color: white;
+   font-size: 16px;
+   padding: 2em;
+   text-decoration: none;
+}
+.links:hover{
+   color: #B55123;
+   text-decoration: none;
+   font-weight: bold;
+}
+#linksNav{
+   background-color: #2A475E;
+   padding: 1%;
+   text-align: right;
+   }
+#banner .container{
+   text-align: left;
+   padding-left: 1%;
+   position: absolute;
+   top: 150px;
+   left: 50px;
+}
+#banner{
+   color: white;
+   font-family: Poller One;
+  font-size: 20px;
+}
+#bannerImg{
+width: 100%;
+   margin: 0 auto;
+   height: auto;
+   position: relative;
+}
+
+/* -- Filtros -- */
+
+#filters{
+   text-align: left;
+   padding: 1%;
+}
+.btnfilters{
+   border: none;
+   border-radius: 20px;
+   margin-left: 5pt;
+   height: 40px;
+   font-size: 12px;
+   font-weight: bold;
+   color: white;
+   text-transform: uppercase;
+   margin-top: 14pt;
+   padding: 1%;
+}
+.btnActive{
+   background-color: #B55123 !important;
+}
+
+.btnfilters{
+   background-color: #FB8637;
+}
+.btnfilters:hover{
+   background-color: #C36C2D;
+}
+
+
+/* -- Combobox orden -- */
+
+#textSelect{
+   color: white;
+   font-size: 14px;
+}
+#orderDate{
+   text-align: left;
+   padding: 1%;
+   margin-bottom: 1%;
+}
+
+/* -- Porcentaje noticias -- */
+
+#percentNews{
+   color:#66C0F4;
+   font-style: italic;
+   font-size: 16px;
+   font-weight: 100;
+   text-align: left;
+   padding-left: 1%;
+}
+
+/* -- noticias -- */
+
+.imgCards{
+   width: 300px;
+}
+.cards{
+   background-color: #2A475E;
+   text-align: center;
+   color: white;
+   width: 350px;
+   height: 400px;
+   margin-left: 10pt;
+   padding: 1em;
+   margin-top: 5pt;
+   float: left;
+   font-size: 14px;
+}
+.cards a:link {
+   color: #FB8637;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ 
+.cards a:visited {
+   color: #FB8637;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ 
+.cards a:hover {
+   color: #B55123;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ 
+.cards a:active {
+   color: #B55123;
+   font-weight: bold;
+   text-decoration: none;
+ }
+#content{
+   text-align: center;
+}
+.date{
+   font-size: 12px;
+   font-style: italic;
+   color: white;
+   text-align: left;
+}
+.url{
+   font-weight: 700;
+}
+
+@media screen and (max-width:1200px)and (min-width:780px){
+   .container>h2{
+      transform:translatex(-10%) translateY(-200%);
+      font-size: 30px;
+   }
+   }
+
+@media screen and (max-width:780px)and (min-width:480px){
+.container>h2{
+  transform:translatex(-10%) translateY(-500%);
+      font-size: 20px;
+}
+.links{
+   font-size: 15px;
+}
+}
+@media screen and (max-width:480px)and (min-width:320px){
+         .links{
+            font-size: 12px;
+            padding: .5em;
+         }
+   #linksNav{
+      text-align: center;
+   }
+   .container>h2{
+      transform:translatex(-20%) translateY(-600%);
+      font-size: 20px;
+   }
+
+   .cards{
+      width: 250px;
+      height: 410px;
+      padding: .5em;
+      margin-top: 10pt;
+      float: left;
+      font-size: 12px;
+   }
+   .imgCards{
+      width: 200px;
+   }
+}
