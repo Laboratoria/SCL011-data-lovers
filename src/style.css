@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-stretch: semi-condensed;
+  font-size: 1em;
+}
+.container {
+  width: 100%;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr, 1fr, 2fr, 2fr;
+  grid-template-areas:
+    "header header header header"
+    "banner banner banner banner"
+    "buttonPaises buttonPaises buttonPaises buttonPaises"
+    "article article instituciones instituciones";
+}
+.container .header {
+  background: #15666985;
+  grid-area: header;
+}
+
+.container .banner {
+  grid-area: banner;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: #15666985;
+
+  padding: 1%;
+}
+
+.container .banner > img {
+  margin: 0%;
+  width: 50%;
+  height: 50%;
+}
+
+div.definition {
+  top: 40%;
+  left: 90%;
+  color: rgb(47, 45, 35);
+  background: #1566690a;
+}
+
+.container .buttonPaises {
+  margin: 0%;
+  grid-area: buttonPaises;
+  align-items: center;
+  text-align: center;
+}
+.botones {
+  background: linear-gradient(45deg, #156669, #072627);
+  color: rgb(251, 251, 247);
+  padding: 1%;
+  margin: 1%;
+  border: 2px;
+  border-radius: 5px;
+  width: 17%;
+  height: 10%;
+
+  margin-left: 3px;
+}
+button:hover {
+  transform: translatey(5px);
+  box-shadow: 0px, 30px, 5px, -15px rgba(0, 0, 0, 0.3);
+}
+
+.container .article,
+.container .instituciones {
+  background: rgba(184, 161, 29, 0.246);
+
+  padding: 2%;
+}
+.container .article {
+  grid-area: article;
+}
+
+.container .instituciones {
+  grid-area: instituciones;
+}
+
+section#datos.secciones {
+  display: none;
+  height: auto;
+  float: auto;
+  position: absolute;
+  margin-left: 4%;
+}
+select#indicator.indicatorsSelect {
+  text-justify: auto;
+  box-shadow: -1px 0.5px 0.5px 0.5px;
+  color: #272417d5;
+  margin-top: 1%;
+}
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  margin: 0px;
+}
+#popup:target {
+  visibility:visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:0;
+  z-index: 999;
+  transition:all 1s;
+}
+.chartcontainer {
+  transform: translate(300px, 150px);
+  position: relative;
+  margin:1% auto;
+  padding:5%;
+  background-color: #fafafa;
+  color:#333;
+  border-radius: 3px;
+  width:50vw;
+  height: 80vh;
+}
+#chart{
+  height: 50%;
+  width: 50%;
+  
+ 
+}
+a.popup-cerrar {
+  position: absolute;
+  top:3px;
+  right:3px;
+  background-color: #333;
+  padding:7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color:#fff;
+}
+select#type-of-order {
+  box-shadow: -1px 0.5px 0.5px 0.5px;
+}
+.chartcontainer {
+ 
+  position: absolute;
+  width: 50vw;
+  height:40vh;
+  
+  margin: 0%;
+}
+div#tableBox {
+  box-align: center;
+  width: 100%;
+  display: none;
+  text-align: center;
+  border-collapse: collapse;
+  align-items: center;
+  margin-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.titletablet {
+  display: none;
+}
+h2#indicator-name {
+  margin-top: 2%;
+}
+th,
+td {
+  border: solid 1px #49274a;
+  padding: 2%;
+  text-align: center;
+  width: 10%;
+}
+
+thead {
+  background-color: #156669;
+  color: #ffffff;
+}
+
+button#volver {
+  background: linear-gradient(45deg, #156669, #072627);
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px;
+  padding: 1%;
+
+  position: relative;
+  left: 78%;
+  top: 0%;
+  width: 17%;
+  height: 10%;
+}
+
+@media only screen and (max-width: 1440px) {
+
+  .chartcontainer {
+    transform: translate(300px, 200px);
+   
+  }
+  select#type-of-order {
+    margin-top: 1%;
+  }
+  #tabledate{
+
+    width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    font-size: 0.8rem;
+    grid-template-areas:
+      "header header header header"
+      "banner banner banner banner"
+      "buttonPaises buttonPaises buttonPaises buttonPaises"
+      "article article article article "
+      "instituciones instituciones instituciones instituciones";
+  }
+  .logo > img {
+    width: 75%;
+    height: 50%;
+  }
+  .container .header {
+    padding: 0.3%;
+    width: 100%;
+  }
+  .secciones .titleSelect,
+  .secciones .indicatorsSelect {
+    width: 95%;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  select#indicator.indicatorsSelect {
+   width: 90%;
+  }
+  a.popup-link{
+    position: relative;
+    
+  }
+  .chartcontainer {
+    transform: translate(170px, 150px);
+   
+  }
+  #tabledate{
+    width: 40%;
+  }
+  th,
+  td {
+    padding: 0%;
+   
+  }
+ 
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+
+    grid-template-areas:
+      "header header header header"
+      "banner banner banner banner"
+      "buttonPaises buttonPaises buttonPaises buttonPaises"
+      "article article article article "
+      "instituciones instituciones instituciones instituciones";
+  }
+  .logo > img {
+    width: 70%;
+    height: 40%;
+  }
+  .container .header {
+    width: 100%;
+    padding: 1%;
+  }
+  .container .article,
+  .container .instituciones {
+    padding: 2%;
+    margin: 0%;
+  }
+  .secciones {
+    font-size: 80%;
+    display: flex;
+  }
+
+  button#volver {
+    left: 0%;
+  }
+ 
+  select#indicator.indicatorsSelect {
+    width: 90%;
+   }
+   .chartcontainer {
+    transform: translate(0px, 150px);
+    font-size: 0.7rem; 
+    width: 90%;
+
+  }
+  a.popup-link{
+    position: absolute;
+    margin: 1%;
+    
+  }
+  select#indicator.indicatorsSelect {
+    width: 80%;
+   }
+  #chart{
+    height: 80%;
+    width: 40%;}
+  th,
+  td {
+    padding: 3%;
+    text-align: center;
+   
+  }
+  .secciones .titleSelect,
+  .secciones .indicatorsSelect {
+    width: 90%;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 320px) {
+  select#type-of-order{
+    transform: translate(0px, 13px);
+  }
+
+  }
