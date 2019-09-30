@@ -2,11 +2,9 @@
 fetch("https://raw.githubusercontent.com/mariaPazBeltran/SCL011-data-lovers/master/src/data/steam/steam.json")
 .then(response => {
    return response.json()})
-    //console.log( response.json())})
     .then(data1=>{
         //declaramos una variable con la que podremos acceder a la data
         const takeData = data1.appnews.newsitems;
-        console.log(takeData)
   
 
 
@@ -16,7 +14,7 @@ let buttonFilters = document.getElementsByClassName("btnfilters");
 // declaramos una variable vacia a la cual luego le concatenaremos el valor de los botones de filtrado
 let valueButton = "";
 // declaramos una variable vacía a la que le sumamos los valores de cada filtrado para así conectar filtrado con el orden
-let resultadoFor = "";
+let forResult = "";
 //declaramos variable vacía para luego usarla para conectar estadisticas, filtrado y tarjetas.
 let statisticsNews = "";
 
@@ -66,35 +64,35 @@ for (let i = 0; i < buttonFilters.length; i++){
        if(valueButton==="feedlabel"){
         let btnAll = window.filterData.filter(takeData, valueButton);
         renderNews(btnAll)
-        resultadoFor=btnAll;
+        forResult = btnAll;
        }
         if (valueButton==="TF2 Blog"){
             let tf2Btn= window.filterData.filter(takeData, valueButton);
            renderNews(tf2Btn)
-           resultadoFor=tf2Btn
+           forResult = tf2Btn
         }
         if (valueButton ==="Product Update"){
             let updateBtn =  window.filterData.filter(takeData, valueButton);
             renderNews(updateBtn)
-            resultadoFor=updateBtn
+            forResult = updateBtn
         }
         if(valueButton=== "PC Gamer"){
             let pcBtn = window.filterData.filter(takeData, valueButton);
             renderNews(pcBtn);
-            resultadoFor=pcBtn
+            forResult = pcBtn
         }
         if (valueButton==="Eurogamer"){
             let euroBtn = window.filterData.filter(takeData, valueButton);
             renderNews (euroBtn);
-            resultadoFor=euroBtn
+            forResult = euroBtn
         }
         if (valueButton==="Rock, Paper, Shotgun"){
            let rspBtn =  window.filterData.filter(takeData, valueButton);
            renderNews(rspBtn);
-           resultadoFor=rspBtn
+           forResult = rspBtn
           }
           // aquí unimos las funciones de filtrado, tarjetas y estadisticas para que estas ultimas se muestren
-    statisticsNews =window.filterData.statistics(resultadoFor, takeData, valueButton);
+    statisticsNews =window.filterData.statistics(forResult, takeData, valueButton);
     document.getElementById("statisticsContent").innerHTML = `<p id="percentNews">${statisticsNews}% de las Noticias</p>`
     })
  }
@@ -102,7 +100,7 @@ for (let i = 0; i < buttonFilters.length; i++){
 //le damos uso al select el cúal se conecta con la función de ordenar por fecha.
 let selectSort = document.getElementById("orderSelect");
 selectSort.addEventListener ('change', ()=>{
-    let ascendente = window.filterData.sortByDate(resultadoFor,  document.getElementById("orderSelect").value)
-    renderNews(ascendente);
+    let orderResult = window.filterData.sortByDate(forResult,  document.getElementById("orderSelect").value)
+    renderNews(orderResult);
 })
 });

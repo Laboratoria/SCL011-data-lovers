@@ -12,16 +12,17 @@
 <body>
   <div id="dataLovers-contents">
         <header id="titleHeader">
-                <!-- <p class="bannerTitle">Novedades TF2</p> -->
+                <!-- Banner y Titulo -->
  
-         <section id="banner">
+         <div id="banner">
              <a href="index.html">
                  <img id="bannerImg" src="../images/banner_datalovers.jpg" alt="banner-TF2">
              </a>
              <div class="container">
                      <h2>Novedades TF2</h2>
                  </div>
-         </section>
+         </div>
+         <!-- Links a Steam y TF2 wiki -->
          <nav id="linksNav">
                  <a target="_blank" class="links" href="https://steamcommunity.com/app/440">Steam Community</a>
                  <a target="_blank" class="links" href="https://help.steampowered.com/es-419/">Steam Support</a>
@@ -29,6 +30,7 @@
          </nav>
      </header>
      <main>
+         <!-- botones para filtrar según blogs (atributo "feedlabel") -->
          <section id="filters">
              <button class="btnfilters" value="feedlabel">Mostrar Todo</button>
              <button class="btnfilters" value="Product Update">Steam Updates</button>
@@ -37,6 +39,7 @@
              <button class="btnfilters" value="PC Gamer">PC Gamer</button>
              <button class="btnfilters" value="Rock, Paper, Shotgun">RPS</button>
          </section>
+         <!-- select que permite al usuario ordenar por fecha -->
          <section id="orderDate">
              <label id="textSelect">Ordenar por Fecha:</label>
              <select name="select" id="orderSelect">
@@ -46,7 +49,9 @@
              </select>
          </section>
          <section>
+             <!-- contenedor en el que aparecerá la estadística de las noticias -->
              <div id="statisticsContent"></div>
+             <!-- contenedor en el que se desplegan las noticias -->
              <div id="content"></div>
          </section>
      </main>
