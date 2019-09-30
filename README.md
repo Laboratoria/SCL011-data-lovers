@@ -99,19 +99,12 @@ Uno de los mayores problemas al querer buscar noticias con respecto a un juego, 
 
   
 
-_Steam_, al ser una plataforma tan conocida en el mundo de los videojuegos, tiene una cantidad enorme de usuarios que la utilizan a diario y nos fijamos que la _data_ que teníamos disponible para trabajar, contenía noticias de un mismo videojuego: _Team Fortress 2_. Debido a lo anterior y al hecho de que ambas conocíamos la plataforma por ser jugadoras, fuimos capaces de definir rápidamente un usuario objetivo.
-
-  
-
-  
+_Steam_, al ser una plataforma tan conocida en el mundo de los videojuegos, una enorme cantidad de usuarios la utilizan a diario y debido a que la _data_ disponible para trabajar, contenía noticias de un mismo videojuego, _Team Fortress 2_, además de que el tema es familiar para ambas, fuimos capaces de definir rápidamente un usuario objetivo.
 
 Nuestros usuarios son:
 
-  
 
-Personas que juegen o hayan jugado el videojuego _"Team Fortress 2"_ en su versión para computador, con una rango etario entre los 20 y 30 años.
-
-  
+Personas que juegen o hayan jugado el videojuego _"Team Fortress 2"_ en su versión para computador, con un rango etario entre los 20 y 30 años.
 
   
 
@@ -433,7 +426,7 @@ En base a nuestras entrevistas y primeros testeos de usuario, hicimos 3 historia
 
   
 
-> Yo como persona apasionada a los videojuegos quiero saber cada cuánto hay actualizaciones y mejoras del TF2 para poder darme cuenta si el juego aún está vigente.
+> Yo como persona apasionada a los videojuegos quiero saber cada cuánto hay actualizaciones y mejoras del TF2 para poder mantenerme informado si el juego aún está vigente.
 
   
   
@@ -539,21 +532,19 @@ El primer prototipo tenía la información que habíamos recabado de nuestras en
   
 
   
-
-Este primer prototipo se puede ver en el siguiente enlace de [Figma](images/steam-figma1.PNG)
+![Figma](images/steam-figma1.PNG)
 
   
 
 ### **3.4 Prototipo de alta fidelidad: Feedback**
-
   
 
-  
-
-Luego del feedback recibido por los testeos, rediseñamos nuestro primer prototipo. En esta parte del proceso, tuvimos en consideración el diseño mobile, que pueden ver en este enlace de [Figma](images/steam-figma2.PNG). Como siempre tuvimos en mente el diseño mobile, no hubo problemas al ordenar la información en su versión responsive.
-[Figma](images/steam-movile.PNG).[Figma](images/steam-figma2.PNG).
+Luego del feedback recibido por los testeos, rediseñamos nuestro primer prototipo.
+![Figma](images/steam-figma2.PNG).
+ Como siempre tuvimos en mente el diseño mobile, no hubo problemas al ordenar la información en su versión responsive.
+![Figma](images/steam-movile.PNG).
 
 ### **3.5 Producto Final**
 
-
+Así fue nuestro producto final.
 ![Imagen-deploy](images/img_deploy.png)
