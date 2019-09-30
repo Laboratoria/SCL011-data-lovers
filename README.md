@@ -540,7 +540,7 @@ El primer prototipo tenía la información que habíamos recabado de nuestras en
 
   
 
-Este primer prototipo se puede ver en el siguiente enlace de [Figma](https://www.figma.com/file/GrrxmIWLWE2uAhYsJAEtbM/Untitled?node-id=0%3A1)
+Este primer prototipo se puede ver en el siguiente enlace de [Figma](images/steam-figma1.PNG)
 
   
 
@@ -550,7 +550,8 @@ Este primer prototipo se puede ver en el siguiente enlace de [Figma](https://www
 
   
 
-Luego del feedback recibido por los testeos, rediseñamos nuestro primer prototipo. En esta parte del proceso, tuvimos en consideración el diseño mobile, que pueden ver en este enlace de [Figma](https://www.figma.com/file/GrrxmIWLWE2uAhYsJAEtbM/Untitled?node-id=84%3A0). Como siempre tuvimos en mente el diseño mobile, no hubo problemas al ordenar la información en su versión responsive.
+Luego del feedback recibido por los testeos, rediseñamos nuestro primer prototipo. En esta parte del proceso, tuvimos en consideración el diseño mobile, que pueden ver en este enlace de [Figma](images/steam-figma2.PNG). Como siempre tuvimos en mente el diseño mobile, no hubo problemas al ordenar la información en su versión responsive.
+[Figma](images/steam-movile.PNG).[Figma](images/steam-figma2.PNG).
 
 ### **3.5 Producto Final**
 

@@ -5,9 +5,6 @@ fetch("https://raw.githubusercontent.com/mariaPazBeltran/SCL011-data-lovers/mast
     .then(data1=>{
         //declaramos una variable con la que podremos acceder a la data
         const takeData = data1.appnews.newsitems;
-  
-
-
 
 //declaramos una variable que contenga los botones
 let buttonFilters = document.getElementsByClassName("btnfilters");
