@@ -540,9 +540,16 @@ El primer prototipo tenía la información que habíamos recabado de nuestras en
   
 
 Luego del feedback recibido por los testeos, rediseñamos nuestro primer prototipo.
+
 ![Figma](images/steam-figma2.PNG).
+
+
  Como siempre tuvimos en mente el diseño mobile, no hubo problemas al ordenar la información en su versión responsive.
+
+
 ![Figma](images/steam-movile.PNG).
+
+
 
 ### **3.5 Producto Final**
 
