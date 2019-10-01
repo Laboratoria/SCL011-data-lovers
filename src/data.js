@@ -1,10 +1,48 @@
-/* Manejo de data */
+const orderABC=(allPokemonOnData, valorAbc) =>{
+  let pokeNames= allPokemonOnData;
+  if(valorAbc == "ABC"){
+    pokeNames.sort((a,b)=>{
+      if(a.name>b.name){
+        return 1
+      } return -1
+    })
+  }
+  if(valorAbc == "XYZ"){
+      pokeNames.sort((a,b)=>{
+        if(a.name<b.name){
+          return 1
+        } return -1
+      })
+    }
+  return pokeNames;
+}
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+window.orderABC= orderABC;
 
-const example = () => {
-  return 'example';
-};
 
-window.example = example;
+const filterByType= (allPokemonOnData, valorType) =>{
+  let typeFilter= allPokemonOnData.filter(element=>{
+    return element.type.includes(valorType);
+  })
+  return typeFilter;
+}
+
+window.filterByType= filterByType;
+
+const filterByWeaknesses= (allPokemonOnData, valorWeaknesses) =>{
+  let weaknessesFilter= allPokemonOnData.filter(element=>{
+    return element.weaknesses.includes(valorWeaknesses);
+  })
+  return weaknessesFilter;
+}
+
+window.filterByWeaknesses= filterByWeaknesses;
+
+const filterByEgg= (allPokemonOnData, valorEgg) =>{
+  let eggFilter= allPokemonOnData.filter(element=>{
+    return element.egg.includes(valorEgg);
+  })
+  return eggFilter;
+}
+
+window.filterByEgg= filterByEgg;

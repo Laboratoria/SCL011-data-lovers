@@ -1,20 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro Pokemon</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Signika:600,700&display=swap" rel="stylesheet">
+  <body>  
+    <header>
+        <input id= "titulo" type="image" src="https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/mp%20logo.png?raw=true"  alt="LogoPagina" value="Actualizar" onclick="location.reload()"/>
+ <div id="intro" >
+   <h2>Bienvenido a Maestro Pokemon Go!</h2>
+            Aquí podrás conocer información relevante sobre los personajes del juego Pokemon Go, sus caracteristicas y la aparicion en huevos.
+        <br>
+        Te invitamos a usar los siguientes filtros para obtener la información que buscas
+     </div> 
+       <br> 
+      
+      </header> 
+
+  <div id="selection">  
+      <div id="ordenAlfabetico">
+        <select id="alphabeticOrder">
+          <option value="select">Orden Alfabetico</option>
+          <option id="ABC" value="ABC"> A - Z</option>
+          <option id="XYZ" value="XYZ"> Z - A</option>
+        </select>
+      </div>
+      <div id="tipoPokemon">
+        <select id="filterType">
+          <option value="select">Orden por tipo</option>
+          <option value="Normal">Normal</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Electrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psiquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragon</option>
+        </select> 
+      </div>
+      
+      <div id="huevos">
+          <select id="filterEgg">
+            <option value="select"> Orden por huevo</option>
+            <option value="2 km">2 kilometros</option>
+            <option value="5 km">5 kilometros</option>
+            <option value="10 km">10 kilometros</option>
+            <option value="Not in Eggs">No esta en huevos</option>
+          </select>
+      </div>  
+            <div id="weaknesses">
+        <select id="filterWeaknesses">
+          <option value="select">Orden por Debilidad</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Electrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psiquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragon</option>
+        </select> 
+      </div>
+      <div id= "calculation"></div>
+
+  </div>
+
+
+    <div id="results"></div>
+<footer>Creado por Romina Garrido y Paloma Zelada. ~ Proyecto SCL011-data-lovers </footer>
+    <script src="./data/pokemon/pokemon.js"></script> 
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
   </body>
 </html>
