@@ -1,4 +1,6 @@
+
 window.data={
+  
   filterStatusAlive:(listOfCharacters)=>{
   
     const alive = listOfCharacters.filter((e) => {

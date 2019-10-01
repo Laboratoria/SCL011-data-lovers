@@ -11,10 +11,12 @@
    
 -   Definición UX
     -   Experiencia/Requerimientos
-    -   Wireframes
+    -   Sketch
     -   Planificación
-    -   Prototipo de baja Fidelidad
-    -   Prototipo de mediana Fidelidad
+    -   Decisiones de diseño
+    -   Prototipo de mediana fidelidad
+    -   Prototipo de alta fidelidad
+
    
 -   Desarrollo de Interfaz UI
  
@@ -97,6 +99,8 @@ Esta pregunta fue con fines de analizar la composición y estructura de los dist
 ### Conclusión de encuesta:
 
 La conclusión que sacamos de esta encuesta general que a pesar de sus actividades que se dedican, muchos de ellos son **personas dinámicas, que se adaptan a la tecnología**, que ven series animadas o caricaturas. Este perfil de personas es al cual se va a dirigir la investigación, sobre sus reacciones e interacciones con la app.
+ 
+ El usuario es **millennials** ya que es una generación más conectada y que se adapta rápidamente a la tecnología, en los años de nacimiento donde fluctúan estos usuarios son 1981 y 1999 (16 y 36 años).
  
   A raíz de esta información, contactamos a 2 encuestados para entrevistar presencialmente con un prototipo de mediana y alta fidelidad de la app.
  
@@ -189,10 +193,12 @@ Ponga nota al sitio web:
 
 Muchas gracias por tu tiempo.
 ****
-Entrevista Italo:
+**Entrevista Italo:**
+
 A Italo se le entrevistó con el prototipo de mediana fidelidad realizada en **balsamiq** ([https://balsamiq.cloud/swqllqt/poymnmm/r63F8](https://balsamiq.cloud/swqllqt/poymnmm/r63F8))y se realizó un video ([https://www.youtube.com/watch?v=HvuhxHShkzQ]) de dicha entrevista.
 
-Entrevista Javiera:
+**Entrevista Javiera:**
+
 A Javiera se le entrevistó utilizando prototipo de alta fidelidad realizado en **figma** ([https://www.figma.com/file/2Gc9KSpsEbf9Nzs6NO4jM0/Personal-Colors?node-id=33%3A139](https://www.figma.com/file/2Gc9KSpsEbf9Nzs6NO4jM0/Personal-Colors?node-id=33%3A139)) y se documentó en el siguiente video.
 [https://www.youtube.com/watch?v=CASPuc_Nt-o](https://www.youtube.com/watch?v=CASPuc_Nt-o)
 *****
@@ -231,15 +237,24 @@ A Javiera le gusta mucho mirar series y películas en Netflix. Vio las tres temp
 
 1° Historia de usuario
 
-**Yo como** telespectador de la serie Rick and Morty **quiero** ver a las personajes en orden **para** descubrir cuantos personajes me    quedan por conocer.
+**Yo como** telespectador de la serie Rick and Morty **quiero** ver a todos los personajes en orden **para** descubrir cuantos personajes me quedan por conocer.
 
 2°  Historia de usuario
 
-**Yo como** seguidor de Rick and Morty **quiero** hacer una búsqueda de los personajes de toda la serie **para** comprender la teoría de cada personaje.
+**Yo como** seguidor de Rick and Morty **quiero** hacer una búsqueda con un filtro por características de los personajes **para** comprender la teoría de cada uno.
 
 3°  Historia de usuario
 
 **Yo como** fan de Rick and Morty **quiero** conocer datos divertidos y curiosos **para** compartir con mis amigos y prepararme para la cuarta temporada.
+
+### Definición de hecho (Definition of done)
+
+1° Historia de usuario: Al ingresar a la página, se observa un menú superior y dos botones-imágenes centrales. Al presionar el izquierdo de estos, el cual dice "Haz clic aquí y conoce a todos los personajes de la serie!!" se pueden ver todos los personajes en pantalla y además en la parte superior aparece un selector para escoger entre ordenar a los personajes de la A a la Z o de la Z a la A.
+
+2° Historia de usuario: Al presionar el botón "personajes" del menú principal, se accede a ver una cuadricula con todos los personajes y en la parte superior de estos un contenedor el cual cuenta con dos botones. Uno para filtrar por **estado** y otro por **género**, al presionar el primero aparecen tres botones (vivo, muerto e indefinido) y con el segundo tres botones más (femenino, masculino e indefinido).
+
+3° Historia de usuario: Al presionar el botón "datos" del menú principal se accede a una pantalla donde sale un contenedor con dos datos estadísticos y curiosos sobre la serie, el primero,  "En la serie el 14.81 % está compuesto por **mujeres**, el 75.46 % corresponde a **hombres** y el 8.52% tienen un **género desconocido**" y el segundo, "En la serie el 57.00 % está **vivo**, 29.82 % está **muerto** y el 13.18% tiene un paradero **desconocido**". Por debajo de esto se muestra un link que redirecciona a otra página donde salen 17 datos curiosos de la serie.
+
 
 ## 3. Definición UX
 
@@ -262,7 +277,7 @@ Este mapa fue lo primero que diseñamos para poder establecer una planificación
 
 <a href="https://ibb.co/1MPTX6p"><img src="https://i.ibb.co/sCNq1HD/Whats-App-Image-2019-09-23-at-11-54-36.jpg" alt="Whats-App-Image-2019-09-23-at-11-54-36" border="0"></a>
 
-###  **Wireframes**
+###  **Sketch**
 
 Los primeros trazos del diseño y composición de la App:
 
@@ -283,47 +298,61 @@ Y por último se observa el logo de Rick and Morty en la esquina superior izquie
 
 Estos prototipos rápidos nos permitieron comenzar a trazar y crear la aplicación de manera más clara para nosotras como equipo.
 ***
-###  **Planificación**
+###  Planificación
 Las tareas a realizar durante el proceso se  definieron en un Trello a continuación: [https://trello.com/b/dFXyugfh/rick-y-morty](https://trello.com/b/dFXyugfh/rick-y-morty)
 ***
+### Decisiones de diseño
+
+Se generó un estudio del estado del arte sobre el contenido de Rick and Morty, para que exista una coherencia de la interfaz de la app con la serie.
+ ### Imágenes de páginas de Rick and Morty
+<a href="https://ibb.co/k384XHP"><img src="https://i.ibb.co/q0sNpy2/Screenshot-20.png" alt="Screenshot-20" border="0"></a>
+Esta captura de pantalla se hizo de la interfaz de la serie en Netflix, donde se observan colores oscuros de fondo, con un video principal y colorido en la derecha de la pantalla.
+****
+<a href="https://ibb.co/Fb6NcrJ"><img src="https://i.ibb.co/3y1GV3W/Screenshot-22.png" alt="Screenshot-22" border="0"></a>
+<a href="https://ibb.co/2s6gWck"><img src="https://i.ibb.co/jW5gb3r/Screenshot-21.png" alt="Screenshot-21" border="0"></a>
+La siguiente capturas son de la página oficial de la serie, la primera de cuando se carga la página, donde aparece el portal de la serie girando y seguidamente de la página principal que también tiene mucho dinamismo.
+
+En vista de estos dos sitios deducimos que la interfaz de la app que se está diseñando debe tener un fondo oscuro y una imagen principal de la serie. Agregar dinamismo o bien hacer uso de los portales que son tan caracteristicos de Rick and Morty.
 
 ###  **Prototipo de mediana Fidelidad**
 
-Los prototipos a continuación se realizaron para testear usabilidad según mini tareas.
+Los prototipos a continuación se realizaron para testear usabilidad según mini tareas. Las cuales se muestran a continuación:
 
-**Entrar a la página, buscar un personaje de género indefinido y ordenar los personajes por detalle.**
+**- Ingresar a la página, buscar un personaje de género indefinido y ordenar los personajes por detalle.**
+
 <a href="https://ibb.co/8PGTrsj"><img src="https://i.ibb.co/1RBhrQ9/Wireframe-Inexperto.png" alt="Wireframe-Inexperto" border="0"></a>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/SmV3HDR/Wireframe-Inexperto1.png" alt="Wireframe-Inexperto1" border="0"></a>
 
 ***
-**Ingresar a la página, busca un personaje de especie animal y selecciona uno de estos personajes encontrados.**
+
+**- Ingresar a la página, busca un personaje de especie animal y selecciona uno de estos personajes encontrados.**
 <a href="https://ibb.co/H4V1dzV"><img src="https://i.ibb.co/YQ3YZk3/Wireframe-Inexperto2.png" alt="Wireframe-Inexperto2" border="0"></a>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/5sxMXsC/Wireframe-Inexperto2-0.png" alt="Wireframe-Inexperto2-0" border="0"></a>
 
 ****
-**Entrar a la página, buscar un personaje de género femenino y de lugar de origen indefinido. Y seleccionar cualquiera.**
+**- Entrar a la página, buscar un personaje de género femenino y de lugar de origen indefinido. Y seleccionar cualquiera.**
 
 <a href="https://ibb.co/hdc8VNt"><img src="https://i.ibb.co/xgY56bR/Wireframe-Medio.png" alt="Wireframe-Medio" border="0"></a>
 <a href="https://ibb.co/KD2W2wy"><img src="https://i.ibb.co/cw6Q6LT/Wireframe-Medio1.png" alt="Wireframe-Medio1" border="0"></a>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/pfS6XP6/Wireframe-Medio1-0.png" alt="Wireframe-Medio1-0" border="0"></a>
 ****
-**Ingresar a la página, buscar un personaje de especie animal, de género indefinido y ordenar la vista por detalle.**
+**- Ingresar a la página, buscar un personaje de especie animal, de género indefinido y ordenar la vista por detalle.**
 
 <a href="https://ibb.co/tzVKtpX"><img src="https://i.ibb.co/0KH2Syt/Wireframe-Medio2.png" alt="Wireframe-Medio2" border="0"></a>
 <a href="https://ibb.co/2nTFJwr"><img src="https://i.ibb.co/3rnTKwb/Wireframe-Medio2-0.png" alt="Wireframe-Medio2-0" border="0"></a>
 <a href="https://ibb.co/2db8S06"><img src="https://i.ibb.co/Rc5hNGS/Wireframe-Medio2-1.png" alt="Wireframe-Medio2-1" border="0"></a>
 
 ****
-**Entrar a la página, ir a datos porcentuales y buscar por género.**
+**- Entrar a la página, ir a datos porcentuales y buscar por género.**
 
 <a href="https://ibb.co/V9JYyVc"><img src="https://i.ibb.co/NCt2hxd/Wireframe-Experto.png" alt="Wireframe-Experto" border="0"></a>
 ***
-**Ingresar a la página, buscar un personaje de especie animal, de género indefinido y ordenes la vista por detalle.**
+**- Ingresar a la página, buscar un personaje de especie animal, de género indefinido y ordenes la vista por detalle.**
 <a href="https://ibb.co/JF7ZPKm"><img
 src="https://i.ibb.co/M5VdLsZ/Wireframe-Experto1.png" alt="Wireframe-Experto1" border="0"></a>
 <a href="https://ibb.co/S61RMH5"><img src="https://i.ibb.co/df3GVXj/Wireframe-Experto1-0.png" alt="Wireframe-Experto1-0" border="0"></a>
 ***
-**En el proceso de diseño realizamos tres diseños distintos de la interfaz web:**
+**En el proceso de diseño se realizaron tres diseños distintos de la interfaz web:**
 
 En el primero establecimos un modelo con pagina de bienvenida y un menú  en horizontal, donde se desplegarán las alternativas de filtrar como otro menú. Este modelo mostraba a los personajes en forma de lista, con foto y descripción horizontales.  
 
@@ -337,7 +366,7 @@ Y por ultimo, en el tercer modelo, establecimos dos menus  fijos, tanto de forma
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/zPfRqcw/Captura-de-Pantalla-2019-09-23-a-la-s-10-50-41.png" alt="Captura-de-Pantalla-2019-09-23-a-la-s-10-50-41" border="0"></a>
 
-Hicimos tres modelos distintos guiados en la primera encuesta realizada, tomando como referencia las paginas mas utilizadas por nuestros usuarios. Luego al realizar el primer testeo determinamos que el menú que mejor acomodaba al usuario era el Horizontal y , en cuanto a la forma de mostrar los personajes, le parecía más amigable verlos en cuadriculas. Estas criticas nos ayudaron a establecer mejoras en nuestro prototipo de alta fidelidad.
+Se hicieron tres modelos distintos guiados en la primera encuesta realizada, tomando como referencia las paginas mas utilizadas por nuestros usuarios. Luego al realizar el primer testeo determinamos que el menú que mejor acomodaba al usuario era el horizontal y en cuanto a la forma de mostrar los personajes, le parecía más amigable verlos en cuadriculas. Estas criticas nos ayudaron a establecer mejoras en nuestro prototipo de alta fidelidad.
 
 ###  **Prototipo de alta Fidelidad**
 El prototipo de alta fidelidad para el testeo se realizó en figma, en un principio se hicieron pruebas de color, composición y diseño. Hasta que finalmente de llegó al prototipo definitivo.
@@ -345,19 +374,38 @@ El prototipo de alta fidelidad para el testeo se realizó en figma, en un princi
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/wLdfspb/Figma-primeras-opciones.png" alt="Figma-primeras-opciones" border="0"></a>
 Estas primeras plantillas se crearon en base a la información recopilada de las entrevistas, pero se descartaron ya que no había una unidad en todos los elementos.
 
-Prototipo final: https://www.figma.com/file/2Gc9KSpsEbf9Nzs6NO4jM0/Personal-Colors?node-id=33%3A139
+### Prototipo final:
+
+Como se dedujo en las **decisiones de diseño** se dejó un fondo oscuro, con un cielo sutilmente estrellado, el logo de la serie junto al menú principal en la parte superior, dos portales de ingreso a distintos sitios y los personajes principales en el medio de la pantalla.
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/GQpqxYG/Screenshot-24.png" alt="Screenshot-24" border="0"></a>
+ 
+Link interactuar con el prototipo en figma:
+https://www.figma.com/file/2Gc9KSpsEbf9Nzs6NO4jM0/Personal-Colors?node-id=33%3A139
 
 
 
 ## **4. Desarrollo de Interfaz UI**
+
+Para el desarrollo UI se definieron elementos acordes con lo que transmite la serie.
  
  ###  **Paleta de colores**
  <a href="https://ibb.co/CmF7Qkz"><img src="https://i.ibb.co/0m3Mrgc/paleta-de-colores.jpg" alt="paleta-de-colores" border="0"></a>
 Se definieron sólo 2 colores para el diseño de la interfaz, estos fueron el verde y azul, ya que hace alución a la serie y entre ellos son adyacentes.
+Esto sumado al color negro de fondo más los puntos blancos del cielo estrellado, además de la imagen principal de los personajes.
  ###  **Tipografías**
-   Se utilizaron dos tipografías, **Bangers** para títulos y palabras a destacar y **sans serif** para el cuerpo e información de mayor lectura.
-
+   Se utilizaron dos tipografías, **Bangers** para títulos y palabras a destacar y **Sans serif** para el cuerpo e información de mayor lectura.
+   
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/qJQnfgD/Screenshot-19.png" alt="Screenshot-19" border="0"></a>
+
+###  Evaluación Heurística
+A continuación se realizó una evaluación heurística para conocer y entender que se debe mejorar prioritariamente en la app.
+
+<a href="https://ibb.co/DCQ8jZ8"><img src="https://i.ibb.co/xj6frNf/heu.png" alt="heu" border="0"></a>
+<a href="https://ibb.co/6t5Y1V9"><img src="https://i.ibb.co/B6RLrdW/heu1.png" alt="heu1" border="0"></a>
+<a href="https://ibb.co/NSQcgrX"><img src="https://i.ibb.co/Qdzy7kZ/heu2.png" alt="heu2" border="0"></a>
+<a href="https://ibb.co/x7QX65y"><img src="https://i.ibb.co/MCLZ7Nb/heu3.png" alt="heu3" border="0"></a>
+<a href="https://ibb.co/RTF6vs0"><img src="https://i.ibb.co/r2jp7z6/heu4.png" alt="heu4" border="0"></a>
 
 ## **5. Testeos**  
 
@@ -374,12 +422,19 @@ En el siguiente link se muestra el video de la entrevista completa:
 https://www.loom.com/share/97fc4fa0c9434a38ba6cdde4358587c6
 ***
 ### Problema de usabilidad
-La entrevistada pareció cómoda y pudo realizar correctamente cada tarea solicitada.
 
+Para que la experiencia del usuario sea la más optima se hizo un análisis de las entrevistas y se identificaron los problemas y futuras mejoras del proyecto.
 
+- La entrevistada pareció cómoda y pudo realizar correctamente cada tarea solicitada.
+
+- Se notó que el usuario presionaba botones sin saber que funciones podría realizar por cada camino que tomaba.
 
 ### Mejoras
-El objetivo de la app es mostrar y destacar a los distintos personajes de Rick y Morty, sin embargo, esta función no estuvo del todo presente, ya que no existe la posibilidad de pinchar un personaje y destacarlo.
+
+- El objetivo de la app es mostrar y destacar a los distintos personajes de Rick y Morty, sin embargo, esta función no estuvo del todo presente, ya que no existe la posibilidad de pinchar un personaje y destacarlo.
+
+- Especificar en el botón-imagen del portal izquierdo explicando que ahí se podían buscar los personajes ordenados de la A a la Z y viceversa.
+
 
 ## **6. Conclusiones**
 
@@ -388,3 +443,4 @@ La web está enfocada a telespectadores regulares del show de TV Rick y Morty, o
 El proceso de diseño fue acompañado siempre de testeos para conocer las necesidades del usuario, adaptando nuestros prototipos a las sugerencias de estos. en nuestro tipo de baja fidelidad contábamos con tres tipos de menús diferentes (uno en la parte superior, uno en la lateral izquierda, y otro que contaba con la implementación de ambos), siendo el usuario el que nos señaló con cual se sentía más cómodo. Algo similar ocurrió con el prototipo de media fidelidad, donde, por preferencias del usuario las fichas de los personajes quedaron en forma de cuadrícula. Finalmente con nuestro prototipo de alta decidimos simplificar el diseño y añadimos dos portales, que en un principio solo existían de forma estética, pero luego de varias pruebas decidimos darle funcionalidad, ya que el usuario se confundía con su sola presencia.
 
 Es así como llegamos a nuestro MPV (mínimo producto viable) el que cuenta con funcionalidad, por lo que los usuarios pueden realizar filtros de personajes según su sexo y estado, y además de poder ordenarlos en orden alfabético, también, podrá encontrar un listado de datos curiosos de la serie. Logramos que la web se viese muy similar a lo estimado en nuestro prototipo de alta fidelidad.
+
