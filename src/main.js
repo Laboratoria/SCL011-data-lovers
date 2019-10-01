@@ -4,6 +4,7 @@ window.allPokemonOnData= allPokemonOnData;
 //Llama al espacio del html para mostrar los resultados
 const showCardsComplete = document.getElementById("results");
 const showPercentajes = document.getElementById("calculation");
+function actualizar(){location.reload(true);}
 
 const pokemonCards =(allPokemonOnData)=>{
 //Donde se creará la tarjeta
@@ -21,10 +22,9 @@ pokemonCards +=
      <h4>${element.name}</h4>
  </div>
    <div class="flip-card-back">
-
-         <h4>${element.name}</h4>
+         <h3>${element.name}</h3>
          <h5>Spawn: ${((element.spawn_chance)*100).toFixed(0)}%</h5>
-         <h5>Debilidad: ${element.weaknesses}</h5>
+         <h5>Hora de Aparición: ${element.spawn_time}</h5>
          <h5>Caramelos para evolución: ${element.candy_count}</h5>
    </div>
  </div>
@@ -65,3 +65,9 @@ eggSelect.addEventListener('change', ()=>{
   pokemonCards(resultEgg);
 })
 
+const weaknessesSelect= document.getElementById("filterWeaknesses");
+weaknessesSelect.addEventListener('change', ()=>{
+  const valorWeaknesses= weaknessesSelect.value;
+  let resultWeaknesses=window.filterByWeaknesses(allPokemonOnData, valorWeaknesses);
+  pokemonCards(resultWeaknesses);
+})

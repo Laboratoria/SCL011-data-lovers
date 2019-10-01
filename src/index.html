@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestro Pokemon</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-
+    <link href="https://fonts.googleapis.com/css?family=Signika:600,700&display=swap" rel="stylesheet">
   <body>  
     <header>
-     <img id= "titulo" src="https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/mp%20logo.png?raw=true"  alt="LogoPagina">
+        <input id= "titulo" type="image" src="https://github.com/RominaGarrido/SCL011-data-lovers/blob/master/images/mp%20logo.png?raw=true"  alt="LogoPagina" value="Actualizar" onclick="location.reload()"/>
  <div id="intro" >
    <h2>Bienvenido a Maestro Pokemon Go!</h2>
             Aquí podrás conocer información relevante sobre los personajes del juego Pokemon Go, sus caracteristicas y la aparicion en huevos.
         <br>
         Te invitamos a usar los siguientes filtros para obtener la información que buscas
      </div> 
- 
-      <br>  
+       <br> 
+      
       </header> 
 
   <div id="selection">  
@@ -58,7 +58,25 @@
             <option value="Not in Eggs">No esta en huevos</option>
           </select>
       </div>  
-      
+            <div id="weaknesses">
+        <select id="filterWeaknesses">
+          <option value="select">Orden por Debilidad</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Electrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psiquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragon</option>
+        </select> 
+      </div>
       <div id= "calculation"></div>
 
   </div>

@@ -29,6 +29,14 @@ const filterByType= (allPokemonOnData, valorType) =>{
 
 window.filterByType= filterByType;
 
+const filterByWeaknesses= (allPokemonOnData, valorWeaknesses) =>{
+  let weaknessesFilter= allPokemonOnData.filter(element=>{
+    return element.weaknesses.includes(valorWeaknesses);
+  })
+  return weaknessesFilter;
+}
+
+window.filterByWeaknesses= filterByWeaknesses;
 
 const filterByEgg= (allPokemonOnData, valorEgg) =>{
   let eggFilter= allPokemonOnData.filter(element=>{
