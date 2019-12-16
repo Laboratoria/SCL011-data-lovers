@@ -1,20 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
+    <title>Rick & Morty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Html Semantico -->
+    <section class="containerr" id="container">
+        <!-- Encabezado -->
+        <header class="header" id="main-header">
+
+            <!-- Menu -->
+            <img class="brand" id="logo" src="../img/logo-2.png" alt="Logo-png">
+            <nav class="nav">
+
+                <a class="nav-item-link" href="index.html">Personajes </a>
+                <a class="nav-item-link" href="videos.html">Pildoras</a>
+
+            </nav>
+
+
+        </header>
+
+        <!-- Bienvenido -->
+        <section class="container-welcome">
+
+            <h1 class="item-Welcome">Rick <span class="span">And</span> Morty</h1>
+
+            <div class="btns" id="buttons">
+               
+                <a href="#container-cardss"> <button class="btnmale btn" id="male" type="button">Masculino  </button></a>
+             
+                <a href="#container-cardss"><button class="btnfemale btn" id="female" type="button">Femenino</button></a>
+               
+                <a href="#container-cardss"><button class="btnunknown btn" id="unknown" type="button">Desconocido</button></a>
+                <a href="#container-cardss"><button class="btn" id="btnOrdenar"> Ver todo A-Z</button></a>
+                <button id="clear" class="clear">Limpiar</button>
+            </div>
+
+
+
+        </section>
+
+        <section class="container-container-cardss" id="containerOne">
+
+            <section class="container-cards" id="container-cardss">
+                <!-- <h1>CARDS</h1> -->
+
+            </section>
+
+        </section>
+
+        <footer class="footerr">
+            <div class="footer-container" id="prueba">
+                <h4> © Copyright 2019 Crusiris Nuñez y Constanza Zárate - Todos los Derechos Reservados </h4>
+            </div>
+        </footer>
+
+    </section>
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
